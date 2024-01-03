@@ -1,0 +1,445 @@
+*{
+  font-family: 'Chillax', sans-serif;
+  box-sizing: border-box;
+
+
+}
+/* Services Section */
+/* Services Section */
+.card-clip1 {
+  position: relative;
+  overflow: hidden;
+  cursor: all-scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 550px!important;
+  height: 650px!important;
+  clip-path: inset(0 0 0 0)!important;
+  transition: transform 0.3s;
+  border-right: 1px solid white!important;
+
+
+  
+}
+.card-clip1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px!important;
+  height: 650px!important;
+  background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+  z-index: -1;
+  clip-path: inset(0 0 0 0)!important;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.card-clip1:hover{
+    transform: scale(1.1);
+      z-index:1; 
+      height: 550px!important;   
+}
+.card-clip1:hover::before {
+
+  opacity: 1;
+}
+.card-clip1 h1{
+  position: relative;
+      z-index: 1;
+      right: 8%;
+      margin-top: 15rem;
+      text-align: center;
+   font-size: 25px;
+
+}
+.card-clip1 :hover h1{
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  font-size: 20px!important;
+
+}
+.card-clip1 p{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s transform 0.5s ease-in-out;;
+  z-index: 1;
+  top: 50%!important;
+  /* right: 8%!important;
+  left: 3%!important; */
+}
+
+
+.card-clip1:hover p{
+  opacity: 1;
+  transform: translateY(0,-50%);
+
+}
+
+.card-clip1 h4{
+  position: relative;
+  z-index:1;
+  opacity: 0;
+  top: 10%;
+  transform: translate(-0%,-100%);
+  right: 5%!important;
+}
+.card-clip1:hover h4{
+  opacity: 1;
+  position: relative;
+  transform: translateY(0,-50%);
+  right: 5%!important;
+
+}
+
+/* Clip2 */
+.card-clip2{
+      position: relative;
+      overflow: hidden;
+      cursor: all-scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 550px!important;
+      height: 650px!important;
+      clip-path:inset(0 0 0 0)!important;
+      transition: transform 0.3s;
+      border-right: 1px solid white!important;
+  }
+  .card-clip2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 550px!important;
+      height: 650px!important;
+      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      z-index: -1;
+      clip-path: inset(0 0 0 0)!important;
+      transition: opacity 0.3s;
+      opacity: 0;
+  }
+  .card-clip2:hover{
+      transform: scale(1.1);
+      z-index: 1;
+      height: 550px!important;
+
+  }
+  
+  .card-clip2:hover::before {
+      opacity: 1;
+  }
+  .card-clip2 h1{
+      position: relative;
+      z-index: 1;
+      right: 8%;
+      margin-top: 15rem;
+      text-align: center;
+      font-size: 25px;
+  }
+  .card-clip2 :hover h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+  }
+  
+  
+  .card-clip2 p{
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s transform 0.5s ease-in-out;;
+      z-index: 1;
+      top: 50%!important;
+      right: 8%!important;
+      left: 3%!important;
+  }
+  
+  
+  .card-clip2:hover p{
+      opacity: 1;
+      transform: translateY(0,-50%);
+  
+  }
+  
+  .card-clip2 h4{
+      position: relative;
+      z-index:1;
+      opacity: 0;
+      top: 10%;
+      transform: translate(-0%,-100%);
+  }
+  .card-clip2:hover h4{
+      opacity: 1;
+      position: relative;
+      transform: translateY(0,-50%);
+  
+  }
+
+  /* Clip3 */
+  .card-clip3{
+      position: relative;
+      overflow: hidden;
+      cursor: all-scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 550px!important;
+      height: 650px!important;
+      clip-path:inset(0 0 0 0)!important;
+      transition: transform 0.3s;
+      border-right: 1px solid white!important;
+  }
+  .card-clip3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 550px!important;
+      height: 650px!important;
+      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      z-index: -1;
+      clip-path: inset(0 0 0 0)!important;
+      transition: opacity 0.3s;
+      opacity: 0;
+  }
+  .card-clip3:hover {
+      transform: scale(1.1);
+      z-index:1;
+      height: 550px!important;
+  }
+  .card-clip3:hover::before {
+      opacity: 1;
+  }
+  .card-clip3 h1{
+      position: relative;
+      z-index: 1;
+      right: 8%;
+      margin-top: 15rem;
+      text-align: center;
+      font-size: 25px;
+  }
+  .card-clip3 :hover h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+  }
+  .card-clip3:active h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+  }
+  
+  .card-clip3 p{
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s transform 0.5s ease-in-out;;
+      z-index: 2;
+      top: 50%!important;
+      right: 8%!important;
+      left: 3%!important;
+  }
+  
+  
+  .card-clip3:hover p{
+      opacity: 1;
+      transform: translateY(0,-50%);
+  
+  }
+  
+  .card-clip3 h4{
+      position: relative;
+      z-index:1;
+      opacity: 0;
+      top: 10%;
+      transform: translate(-0%,-100%);
+  }
+  .card-clip3:hover h4{
+      opacity: 1;
+      position: relative;
+      transform: translateY(0,-50%);
+  
+  }
+   /* Clip4 */
+
+   .card-clip4{
+      position: relative;
+      overflow: hidden;
+      cursor: all-scroll;
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 550px!important;
+      height: 650px!important;
+      clip-path: inset(0 0 0 0)!important;
+      border-right: 1px solid white!important;
+      
+  }
+  .card-clip4::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 550px!important;
+      height: 650px!important;
+      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      z-index: -1;
+      clip-path: inset(0 0 0 0)!important;
+      transition: opacity 0.3s;
+      opacity: 0;
+      border-right: 10px solid white!important;
+  }
+  
+  .card-clip4:hover::before {
+      opacity: 1;
+      
+
+  }
+  .card-clip4:hover{
+      transform: scale(1.1);
+      height: 550px!important;
+  }
+  .card-clip4 h1{
+      font-size: 25px;
+      position: relative;
+      z-index: 1;
+      right: 8%;
+      margin-top: 15rem;
+      text-align: center;
+  }
+  .card-clip4 :hover h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+  }
+  .card-clip4:active h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+  }
+  
+  .card-clip4 p{
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s transform 0.5s ease-in-out;;
+      z-index: 2;
+      top: 50%!important;
+      right: 8%!important;
+      left: 3%!important;
+  }
+  
+  
+  .card-clip4:hover p{
+      opacity: 1;
+      transform: translateY(0,-50%);
+  
+  }
+  
+  .card-clip4 h4{
+      position: relative;
+      z-index:1;
+      opacity: 0;
+      top: 10%;
+      transform: translate(-0%,-100%);
+  }
+  .card-clip4:hover h4{
+      opacity: 1;
+      position: relative;
+      transform: translateY(0,-50%);
+  
+  }
+
+  /* Clip5 */
+  .card-clip5{
+      position: relative;
+      overflow: hidden;
+      cursor: all-scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 550px!important;
+      height: 650px!important;
+      clip-path: inset(0 0 0 0)!important;
+      transition: transform 0.3s;
+      border-right: 1px solid white!important;
+
+     
+  }
+  .card-clip5::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 550px!important;
+      height: 650px!important;
+      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      z-index: -1;
+      clip-path: inset(0 0 0 0)!important;
+      transition: opacity 0.3s;
+      opacity: 0;
+  }
+  
+  .card-clip5:hover {
+      transform: scale(1.1);
+      z-index:1;
+      width: 450px!important;
+      height: 550px!important;
+  }
+  .card-clip5:hover::before {
+      opacity: 1;
+
+  }
+ 
+  .card-clip5 h1{
+      position: relative;
+      z-index: 1;
+      right: 8%;
+      margin-top: 15rem;
+      text-align: center;
+     font-size: 25px;
+  }
+  .card-clip5 :hover h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      margin-top: 0;
+  }
+  .card-clip5:active h1{
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      top: 0;
+  }
+  .card-clip5 p{
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s transform 0.5s ease-in-out;;
+      z-index: 2;
+      top: 50%!important;
+      right: 8%!important;
+      left: 3%!important;
+  }
+  
+  
+  .card-clip5:hover p{
+      opacity: 1;
+      transform: translateY(0,-50%);
+      top: 40%!important;
+  
+  }
+  
+  .card-clip5 h4{
+      position: relative;
+      z-index:1;
+      opacity: 0;
+      top: 8%;
+      transform: translate(-0%,-100%);
+  }
+  .card-clip5:hover h4{
+      opacity: 1;
+      position: relative;
+      transform: translateY(0,-50%);
+  
+  }
+
