@@ -162,7 +162,6 @@ input::-webkit-outer-spin-button,
     box-shadow: none!important;
 
 }
-
 figcaption{
     position: absolute;
     bottom: 15rem;
@@ -318,10 +317,55 @@ font-weight: 450!important;
     }
 }
 
+/* Testiominals */ 
+.card-main{
+    width: 600px!important;
+    height: 300px!important;
+    border: none!important;
+   box-shadow:0px 0px 5px 5px rgba(128, 128, 128, 0.308)!important;
+   background-color: rgba(0, 0, 0, 0.897)!important;
+
+}
+.review h4{
+   position: relative;
+   font-size: 18px;
+   color:#ffffff;
+
+}
+.review h4::before{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 100%;
+    left: 0;
+    height:1px;
+    width: 50%;
+    background-color: white;
+}
+.review h5{
+    font-size: 14px;
+    color:#ffffff;
+
+
+}
+
+.review img{
+    margin-top: 0px;
+    width: 20px;
+    height: 20px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none!important;
+    background-color: #3B7FBF!important;
+    border-radius: 50px;
+}
+
+
+
+
  
 /* Crad section */
-
-.custom-card{
+ /* .custom-card{
     background-color: black!important;
     transition:transform 0.2s;
     opacity: 0.8;
@@ -358,10 +402,5 @@ font-weight: 450!important;
     z-index: 1; 
     color:white; 
 }
-
-.custom-card:hover .card-body {
-    background-color: white;
-    color: black; /* Text color on hover */
-    z-index: 1;
-}
+ */
 

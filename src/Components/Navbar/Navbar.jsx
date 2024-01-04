@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Navbar, NavLink, NavbarBrand, NavbarToggle, NavbarCollapse } from 'react-bootstrap';
+import { Navbar, NavLink, NavbarBrand, NavbarToggle, NavbarCollapse, InputGroup,Form } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
@@ -33,6 +33,8 @@ export default function Header() {
             <Nav className="ml-auto">
               <NavLink href='/login' style={{ marginLeft:"1em",color:"white" }}> 
               <Button variant="light" className='btnmain'>Book a Session</Button>
+              </NavLink>
+              <NavLink>
               </NavLink>
             </Nav>
           </NavbarCollapse>

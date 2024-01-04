@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import { FaRegStar } from "react-icons/fa";
-import { Button, CardBody, CardImg, CardText, CardTitle, CarouselCaption, CarouselItem, FormCheck, FormControl, FormGroup, FormLabel,Carousel } from 'react-bootstrap';
+import { Button, CardBody, CardImg, CardText, CardTitle, CarouselCaption, CarouselItem, FormCheck, FormControl, FormGroup, FormLabel, Carousel } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { useState, useEffect } from 'react';
 import { FcGoogle } from "react-icons/fc";
@@ -212,52 +212,52 @@ export default function Home() {
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image005-300x200.jpg" alt=" hello" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius:"50px"
-                                
-                                    
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
+
+
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image004-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/galuku_logo-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
-                                }}/>
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
+                                }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/ohreco-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
 
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
-                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image009-300x200.jpg" alt="" className='img-fluid'style={{
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/image009-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
-                                <img src="https://razobyte.com/wp-content/uploads/2019/04/yes-creation-1-300x200.png" alt="" className='img-fluid'style={{
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/yes-creation-1-300x200.png" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
-                                }}/>
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
+                                }} />
                             </div>
                         </Marquee>
                         <Marquee autoFill pauseOnClick direction='right'>
@@ -265,41 +265,41 @@ export default function Home() {
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image008-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image007-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/image006-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
-                                }}/>
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
+                                }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
-                                <img src="https://razobyte.com/wp-content/uploads/2019/04/avon-logo-300x200.jpg" alt="" className='img-fluid'style={{
+                                <img src="https://razobyte.com/wp-content/uploads/2019/04/avon-logo-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
                                 }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img src="https://razobyte.com/wp-content/uploads/2019/04/astro-logo-300x200.jpg" alt="" className='img-fluid' style={{
                                     width: "300px",
                                     height: "200px",
-                                    boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                    borderRadius: "50px" 
-                                }}/>
+                                    boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                    borderRadius: "50px"
+                                }} />
                             </div>
                             <div className='m-1 rounded-xl flex space-x-5 p-4'>
                                 <img
@@ -309,8 +309,8 @@ export default function Home() {
                                     style={{
                                         width: "300px",
                                         height: "200px",
-                                        boxShadow :"10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
-                                        borderRadius: "50px" 
+                                        boxShadow: "10px 10px 10px 10px rgba(128, 128, 128, 0.164)",
+                                        borderRadius: "50px"
                                     }}
                                 />
 
@@ -421,70 +421,122 @@ export default function Home() {
                         </Card>
                     </Col>
                 </Row>
-                <Row className='my-5'>
-                <Col>
-                    <div style={{ marginLeft: "25px" }} className='text-center text-light'>
-                        <h2 className='hed2 text-dark'>TESTIMONIALS</h2>
-                        <h3 className='hed3 text-dark pb-5'>Don’t Go only with our commitments : Here what our clients says about us</h3>
-                    </div>
-                    <Row className='px-0 justify-content-evenly'>
-                        <Col md={4} className='mb-2'>
-                            <Card className='rounded-3'>
-                                <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                <CardBody >
-                                    <CardTitle>Chandler
-                                    </CardTitle>
-                                    <p>Deo thomes</p>
-                                    
-                                    <p><FaRegStar color='orange' /> <FaRegStar  color='orange' /><FaRegStar  color='orange' /><FaRegStar  color='orange' /><FaRegStar /></p>
-                                    <CardText>
-                                        “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
-                                      
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col md={4}>
-                            <Card className='rounded-3'>
-                                <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                <CardBody >
-                                    <CardTitle>Chandler
-                                    </CardTitle>
-                                   
-                                    <p>Deo thomes</p>
-                                    <p><FaRegStar   color='orange'/> <FaRegStar   color='orange'/><FaRegStar   color='orange'/><FaRegStar  color='orange' /><FaRegStar   color='orange'/></p>
-                                    <CardText>
-                                        “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
-                                    </CardText>
-                                </CardBody>
-                            </Card>
 
+                <Row  className='my-3'>
+                <div className='text-center align-items-center my-3 py-3'>
+                <h3>TESTIMONIALS</h3>
+                <p className='sm'>Don’t Go only with our commitments : Here what our clients says about us:</p>
+                </div>
+                <Col md={12}>
+                  <Carousel  indicators={true} >
+                    <Carousel.Item>
+                      <Row className='justify-content-center align-items-center py-3 '>
+                        <Col md={6}  className='py-3'>
+                          <Card className='card-main'>
+                            <CardImg variant="top" src='Image/third.png' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
+                            <CardBody>
+                              <CardTitle>
+                                <div className='review'>
+                                  <h4>Alvin Hong</h4>
+                                  <h5>Sales manager</h5>
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                </div>
+                              </CardTitle>
+                              <CardText>
+                                <p className='sm text-light'>The SEO and PPC service have been fantastically executed and delivered the Top ranking of my website. All the best</p>
+                              </CardText>
+                            </CardBody>
+                          </Card>
                         </Col>
-                        <Col md={4} >
-                            <Card className='rounded-3'>
-                                <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
-                                <CardBody >
-                                    <CardTitle>Chandler
-                                    </CardTitle>
-                                    <p>Deo thomes</p>
-                                    <p><FaRegStar  color='orange'/> <FaRegStar color='orange'  /><FaRegStar  color='orange'/><FaRegStar color='orange' /></p>
-                                    <CardText>
-                                        “Every detail has been taken care these team are realy amazing and talented! I will work only to help your sales goals.”
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-
+                        <Col md={6}  className='py-3'>
+                          <Card className='card-main'>
+                            <CardImg variant="top" src='Image/Raseo-Technology-Solutions.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
+                            <CardBody>
+                              <CardTitle>
+                                <div className='review'>
+                                  <h4>Eunice Yong</h4>
+                                  <h5>Director</h5>
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                </div>
+                              </CardTitle>
+                              <CardText>
+                                <p className='sm text-light'>They have been very good to boost my business through SEO campaign and Google adwords, thanks</p>
+                              </CardText>
+                            </CardBody>
+                          </Card>
                         </Col>
-                    </Row>
+                      </Row>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Row className='align-items-center py-3'>
+                        <Col md={6}  className='py-3'>
+                          <Card className='card-main'>
+                              <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
+                              <CardBody >
+                                  <CardTitle>
+                                  <div className='review'>
+                                      <h4>Eric Lim</h4>
+                                     
+                                      <h5>Owner</h5>
+                                      <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                      <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                      <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                      <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                      <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  </div>
+                                  </CardTitle>
+                                  
+                                  <CardText>
+                                      <p className='sm text-light'>They are at their words in terms of providing service and support!! all the best.</p>
+                                  </CardText>
+                              </CardBody>
+                          </Card>
+                          </Col>
+                        <Col md={6}  className='py-3'>
+                          <Card className='card-main'>
+                          <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
+                          <CardBody >
+                              <CardTitle>
+                              <div className='review'>
+                                  <h4>Eric Lim</h4>
+                                 
+                                  <h5>Owner</h5>
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                  <img src="Image/star 3.png" alt="" className='img-fluid' />
+                              </div>
+                              </CardTitle>
+                              
+                              <CardText>
+                                  <p className='sm text-light' >They are at their words in terms of providing service and support!! all the best.</p>
+                              </CardText>
+                          </CardBody>
+                           
+                          </Card>
+                        </Col>
+                      </Row>
+                    </Carousel.Item>
+                  </Carousel>
                 </Col>
-            </Row>
-            <Footer/>
-</Container >
-            
+                </Row>
 
-            
-            
-            
+                <Footer />
+            </Container >
+
+
+
+
+
 
         </>
 
