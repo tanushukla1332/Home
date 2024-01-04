@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <>
 
-        <Row className=" justify-content-evenly px-0  bgsection">
+        <Row className="justify-content-evenly px-0  bgsection">
           <Col md={5} className="align-items-center mb-5">
             <div>
               <img src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg" alt="" className="img-fluid, mt-5" width={220} height={50} />
@@ -18,7 +18,7 @@ export default function Footer(){
               <button className="fsbtn">Get in Touch</button>
             </div>
           </Col>
-          <Col className="mb-5" style={{borderLeft: '1px solid rgba(255, 255, 255, 0.493)', marginTop: '30px'}}>
+          <Col md={5} style={{borderLeft: '1px solid rgba(255, 255, 255, 0.493)', marginTop: '30px'}}>
             <div className="d-flex align-items-center">
               <div>
                 <img src="Image/google 1.png" alt="" className="img-fluid" />
