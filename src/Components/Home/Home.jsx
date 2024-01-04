@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import Footer from '../Footer/Fotter';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -12,7 +13,6 @@ import { FaLinkedin, FaTwitter, FaApple } from "react-icons/fa";
 import Marquee from 'react-fast-marquee';
 import Data from '../../Data.json';
 import '../Home/Home.css'
-import Test from '../../Test' ;
 
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
                     </Col>
                 </Row>
                 <Row className=' d-none d-sm-flex justify-content-evenly'>
-                    <Col md={6} className=' px-1 py-3 '>
+                    <Col md={6} className=' px-1  py-3 '>
                         <Image src='/Image/Svg2.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) " }} /></Col>
                     <Col className='mt-4 ml-4'>
                         <div className='spacing'>
@@ -419,17 +419,15 @@ export default function Home() {
                                 </CardText>
                             </CardBody>
                         </Card>
-
-
                     </Col>
                 </Row>
-                <Row className='py-5'>
+                <Row className='my-5'>
                 <Col>
                     <div style={{ marginLeft: "25px" }} className='text-center text-light'>
                         <h2 className='hed2 text-dark'>TESTIMONIALS</h2>
-                        <h3 className='hed3 text-dark'>Don’t Go only with our commitments : Here what our clients says about us</h3>
+                        <h3 className='hed3 text-dark pb-5'>Don’t Go only with our commitments : Here what our clients says about us</h3>
                     </div>
-                    <Row className='px-0 justify-content-evenly py-5'>
+                    <Row className='px-0 justify-content-evenly'>
                         <Col md={4} className='mb-2'>
                             <Card className='rounded-3'>
                                 <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
@@ -446,7 +444,7 @@ export default function Home() {
                                 </CardBody>
                             </Card>
                         </Col>
-                        <Col md={4} className='mb-2'>
+                        <Col md={4}>
                             <Card className='rounded-3'>
                                 <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
                                 <CardBody >
@@ -462,7 +460,7 @@ export default function Home() {
                             </Card>
 
                         </Col>
-                        <Col md={4} className='mb-2'>
+                        <Col md={4} >
                             <Card className='rounded-3'>
                                 <CardImg variant="top" src='https://images.pexels.com/photos/1839963/pexels-photo-1839963.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginLeft: "10px", marginTop: "5px" }} />
                                 <CardBody >
@@ -480,31 +478,13 @@ export default function Home() {
                     </Row>
                 </Col>
             </Row>
-            <Row>
-            <Col>
-            <div className='mt-5'>
-            {Test.map((item,id)=>{
-                <div key={id}>
-                <img src={item.Image} alt="" />
-                </div>
-
-
-            })}
-
-            </div>
-            </Col>
+            <Footer/>
+</Container >
             
-            </Row>
-           
 
-
-
-
-
-
-
-
-            </Container >
+            
+            
+            
 
         </>
 

@@ -1,0 +1,146 @@
+
+*{
+    font-family: 'Chillax', sans-serif;
+    box-sizing: border-box!important;
+}
+.bgsection{
+    background-color: #3B7FBF;
+
+}
+.fsbtn{
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #3B7FBF;
+    border: 1px solid white;
+    border-radius:5px;
+    margin-top: 17px;
+    font-weight: 600px;
+    padding: 5px;
+    width: 28%;
+}
+.fsbtn:hover{
+    outline: none;
+    border: none;
+    color: #3B7FBF;
+    background-color: white;
+    border: 1px solid white;
+    border-radius:5px;
+    margin-top: 17px;
+    font-weight:bold;
+}
+.Companytext{
+    position: relative;
+    text-transform: uppercase;
+
+}
+.Companytext::after{
+    background-color:rgba(255, 255, 255, 0.493);
+    display: block;
+    width: 81%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    margin-right: 75px;
+    right: 0;
+    top: 65%;
+    z-index: 1;
+    text-align: center;
+}
+.Companytext2{
+    position: relative;
+    text-transform: uppercase;
+
+}
+.Companytext2::after{
+    background-color:rgba(255, 255, 255, 0.493);
+    display: block;
+    width: 77%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    margin-right: 75px;
+    right: 0px;
+    top: 65%;
+    z-index: 1;
+    text-align: center;
+}
+.Companytext3{
+    position: relative;
+    text-transform: uppercase;
+}
+.Companytext3::after{
+    background-color:rgba(255, 255, 255, 0.493);
+    display: block;
+    width: 82%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    margin-right: 75px;
+    right: 0px;
+    top: 65%;
+    z-index: 1;
+    text-align: center;
+
+}
+.col-md-5 .para{
+   color: rgba(255, 255, 255, 0.603);
+   margin-top: 20px;
+
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.603);
+   margin-top: 20px;
+
+}
+.link ul li {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
+.link ul li:hover {
+    text-decoration:underline;
+    color: rgba(255, 255, 255, 0.603);
+
+}
+
+.Secbtn{
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #3B7FBF;
+}
+.Secbtn:hover{
+    outline: none;
+    border: none;
+    color:rgba(255, 255, 255, 0.603);
+    text-decoration: underline;
+}
+.icon{
+    cursor: pointer;
+
+}
+.icon img{
+    border-radius: 50%;
+    width:30px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.icon img:hover {
+    transform: translate(0, -10%) scale(1.1);
+    transition: transform 0.3s ease; 
+}
+.last{
+    font-size: 12px;
+   
+}
+.icon-link{
+  margin-left: px;
+  
+}
+
+
+
+
+
