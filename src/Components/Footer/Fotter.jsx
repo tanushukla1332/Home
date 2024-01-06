@@ -19,24 +19,33 @@ export default function Footer(){
             </div>
           </Col>
           <Col md={5} style={{borderLeft: '1px solid rgba(255, 255, 255, 0.493)', marginTop: '30px'}}>
-            <div className="d-flex align-items-center">
+            <div className='d-flex align-items-center'>
               <div>
                 <img src="Image/google 1.png" alt="" className="img-fluid" />
               </div>
-              <div className="d-block">
+              <div className="d-block align-items-center Rating ">
                 <img src="Image/rating 1.png" alt="" style={{marginBottom: '0px'}} />
-                <p style={{marginTop: '-58px', marginLeft: '5px'}} className="text-light">Google rating</p>
+               <p className="google-rating-text">Google Rating</p>
               </div>
-              <div className="mt-3">
-                <div style={{borderLeft: '15px solid rgba(255, 255, 255, 0.76)', height: '50px'}}>
-                  <img src="Component/Image/social 1.png" alt="" className="img-fluid" style={{marginTop: '-15px', marginBottom: '5px', marginLeft: '5px'}} />
-                  <p className="text-white fs-5" style={{marginTop: '-30px', marginLeft: '5px'}}>partner</p>
+              <div className="mt-3 d-flex align-items-center justify-content-center Border">
+                <div className='partner'>
+                  <img src="Image/social 1.png" alt="" className="img-fluid" style={{marginBottom: '5px', marginLeft:"5px"}} />
+                  <p className="text-white fs-5" >partner</p>
                 </div>
               </div>
+           
+              <div  className='Fb '>
+              <img src="Image/Group 568.png" alt="" className="img-fluid mt-5"
+              />
             </div>
-            <div>
-              <img src="Image/Group 568.png" alt="" className="img-fluid mt-5" style={{marginLeft: '5px'}} />
             </div>
+            <div className='d-flex align=items-center'>
+            <img src="Image/logo1.png"alt="" className='img-fluid' />
+            <img src="Image/logo4.png" alt="" className='img-fluid'/>
+            <img src="Image/logo5.png" alt="" className='img-fluid'/>
+            <img src="Image/logo6.png" alt="" className='img-fluid'/>
+            </div>
+            
           </Col>
         </Row>
         <Row className="bgsection px-5">

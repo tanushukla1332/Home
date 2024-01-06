@@ -1,4 +1,96 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn1{
     color: #3B7FBF!important;
     font-weight: 550!important;
@@ -33,7 +125,6 @@
     display: inline-block;
     background-color: #3B7FBF !important;
     color: #ffffff !important;
-    border: none !important;
     border:  1px solid white !important;
     width: 150px;
     font-weight: 550 !important;
@@ -103,6 +194,7 @@
     border-top-right-radius: 15%!important;
     border-bottom-left-radius: 15%!important;
     /* padding-top:3rem!important; */
+    box-shadow:none !important;
     
 
 
@@ -110,6 +202,8 @@
 
 .form-Group {
     margin-bottom:10px!important;
+    box-shadow:none !important;
+    
   
 }
 
@@ -118,6 +212,8 @@
     margin-left:55px;
     font-weight: bold!important;
     display: block!important; 
+    box-shadow:none !important;
+    
 }
 
 .form-control {
@@ -128,10 +224,14 @@
     border-bottom: 1px solid gray!important;
     background-color: white!important;
     outline: none!important;
+    box-shadow:none !important;
+    
 }
 .form-check{
     margin-left:55px;
     margin-top: 10px;
+    box-shadow:none !important;
+    
 }
 input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
@@ -319,12 +419,17 @@ font-weight: 450!important;
 
 /* Testiominals */ 
 .card-main{
-    width: 600px!important;
+    width: 700px!important;
     height: 300px!important;
     border: none!important;
-   box-shadow:0px 0px 5px 5px rgba(128, 128, 128, 0.308)!important;
+   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
    background-color: rgba(0, 0, 0, 0.897)!important;
 
+}
+card-main .card-img {
+    padding: 16px !important;
+    max-height: 100px !important;
+    max-width: 100px !important;
 }
 .review h4{
    position: relative;
@@ -345,8 +450,6 @@ font-weight: 450!important;
 .review h5{
     font-size: 14px;
     color:#ffffff;
-
-
 }
 
 .review img{
@@ -359,11 +462,61 @@ font-weight: 450!important;
     background-color: #3B7FBF!important;
     border-radius: 50px;
 }
+/* Our Clients */
+.allclients{
+    display: flex;
+} 
+.allclients img{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    width: 300px;
+    height: 200px;
+}
+.clients-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:650px;
+    height:150px;
+    background-color: white;
+    padding: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 
 
+}
+.clients-card2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 
 
- 
+}
+.clients-card:hover{
+    border-top: 15px solid rgba(0, 0, 0, 0.164);
+    border-bottom: 15px solid rgba(0,0,0,0.164);
+
+}
+.clients-card2 img{
+    width: 100px;
+    height: 80px;
+}
+.clients-card2 h5{
+    font-size: 18px;
+
+}
+.clients-card2 p{
+    font-size: 14px;
+}
+.clients-card2 img:hover {
+    transform: rotateY(-360deg);
+    transition: transform 300ms ease-in-out;
+}
 /* Crad section */
  /* .custom-card{
     background-color: black!important;

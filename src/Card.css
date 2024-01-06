@@ -9,7 +9,7 @@
 .card-clip1 {
   position: relative;
   overflow: hidden;
-  cursor: all-scroll;
+  cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -36,9 +36,7 @@
   opacity: 0;
 }
 .card-clip1:hover{
-    transform: scale(1.1);
-      z-index:1; 
-      height: 550px!important;   
+    transform: scale(1.1); 
 }
 .card-clip1:hover::before {
 
@@ -97,7 +95,7 @@
 .card-clip2{
       position: relative;
       overflow: hidden;
-      cursor: all-scroll;
+      cursor: pointer;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
@@ -122,8 +120,8 @@
   }
   .card-clip2:hover{
       transform: scale(1.1);
-      z-index: 1;
-      height: 550px!important;
+
+
 
   }
   
@@ -180,7 +178,7 @@
   .card-clip3{
       position: relative;
       overflow: hidden;
-      cursor: all-scroll;
+      cursor: pointer;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
@@ -205,8 +203,7 @@
   }
   .card-clip3:hover {
       transform: scale(1.1);
-      z-index:1;
-      height: 550px!important;
+
   }
   .card-clip3:hover::before {
       opacity: 1;
@@ -265,14 +262,14 @@
    .card-clip4{
       position: relative;
       overflow: hidden;
-      cursor: all-scroll;
-      
+      cursor:pointer;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
       width: 550px!important;
       height: 650px!important;
       clip-path: inset(0 0 0 0)!important;
+      transition: transform 0.3s;
       border-right: 1px solid white!important;
       
   }
@@ -298,7 +295,6 @@
   }
   .card-clip4:hover{
       transform: scale(1.1);
-      height: 550px!important;
   }
   .card-clip4 h1{
       font-size: 25px;
@@ -354,7 +350,7 @@
   .card-clip5{
       position: relative;
       overflow: hidden;
-      cursor: all-scroll;
+      cursor: pointer;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
@@ -382,12 +378,12 @@
   
   .card-clip5:hover {
       transform: scale(1.1);
-      z-index:1;
-      width: 450px!important;
-      height: 550px!important;
+
+    
   }
   .card-clip5:hover::before {
       opacity: 1;
+
 
   }
  

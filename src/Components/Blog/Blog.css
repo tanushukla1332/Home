@@ -1,0 +1,64 @@
+.bgSection{
+    background-color: #3B7FBF;
+}
+
+.card-img{
+    width: 100%!important;
+    height: 200px!important;
+    padding:16px!important;
+}
+.cardmain{
+    margin-top:20px!important;
+    border: none!important;
+    padding:5px!important;
+    border-radius:10px!important;
+}
+.cardmain:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px  rgb(0, 0, 0,0.4)!important;
+}
+.allcardData h3{
+    font-size: 20px;
+    color: #3B7FBF;
+
+}
+.allcardData h6{
+    font-size: 17px;
+}
+.allcardData p{
+    font-size: 14px;
+}
+.allcardData>h6>span{
+    font-weight: 600;
+}
+.date{
+    font-weight:600;
+}
+.filter-button{
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-button .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none!important;
+    border: none!important;
+    outline: none!important;
+    font-size: .85rem;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.4)!important;
+    font-weight: 600!important;
+    letter-spacing: 2px!important;
+    color:white!important;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)!important;
+}
+
+
+.filter-button .btn:hover{
+    color: black!important;
+    background-color: white!important;
+    
+}

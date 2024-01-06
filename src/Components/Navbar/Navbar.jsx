@@ -1,11 +1,13 @@
 
 import React from 'react';
-import { Navbar, NavLink, NavbarBrand, NavbarToggle, NavbarCollapse, InputGroup,Form } from 'react-bootstrap';
+import { Navbar, NavLink, NavbarBrand, NavbarToggle, NavbarCollapse,Form,Row,Col } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import '../Navbar/Navbar.css'
+
+import { IoSearchSharp } from "react-icons/io5";
 
 export default function Header() {
   
@@ -29,12 +31,13 @@ export default function Header() {
               <NavLink   href='/services' style={{ marginLeft: "1em",color:"white" }}>Potfolio</NavLink>
               <NavLink   href='/login' style={{ marginLeft: "1em",color:"white" }}>Get in Touch</NavLink>
               <NavLink   href='/services' style={{ marginLeft: "1em",color:"white" }}>Career</NavLink>
+              <NavLink>
+              <IoSearchSharp color='#3B7FBF' size={30}/>
+              </NavLink>
             </Nav>
             <Nav className="ml-auto">
               <NavLink href='/login' style={{ marginLeft:"1em",color:"white" }}> 
               <Button variant="light" className='btnmain'>Book a Session</Button>
-              </NavLink>
-              <NavLink>
               </NavLink>
             </Nav>
           </NavbarCollapse>
