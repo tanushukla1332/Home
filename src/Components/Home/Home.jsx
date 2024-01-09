@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import Data from '../../Data.json';
 import '../Home/Home.css';
-import Blog from '../Blog/Blog';
+import Blog2 from '../Blog/Blog2';
 import ScrollTrigger from 'react-scroll-trigger'
 import Contact from '../Contact/Contact';
 
@@ -39,9 +39,6 @@ export default function Home() {
         }, 3000)
         return () => clearInterval(intervalId)
     }, [titles.length,subtitles.length,paragraphs.length,allimages.length])
-    
-
-
     return (
 
         <>
@@ -113,9 +110,9 @@ export default function Home() {
             <Col md className='mb-4 d-flex px-0 py-5'>
                 <Card className='card-clip1'
                     style={{
-                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (1).jpeg')"
+                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (3).jpeg')"
                     }} >
-                    <CardBody >
+                    <CardBody  className='text-light'>
                         <CardTitle>
                             <h1 className='fw-bold'>Innovative Web Design</h1>
                         </CardTitle>
@@ -132,9 +129,9 @@ export default function Home() {
                 </Card>
                 <Card className='card-clip2'
                     style={{
-                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (2).jpeg')"
+                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/up1 (2).jpeg')"
                     }} >
-                    <CardBody>
+                    <CardBody  className='text-light'>
                         <CardTitle>
                             <h1 className='fw-bold text-center' >Ecommerce Solutions</h1>
                         </CardTitle>
@@ -151,7 +148,7 @@ export default function Home() {
                 </Card>
                 <Card className='card-clip3'
                     style={{
-                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (5).jpeg')"
+                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (1).jpeg')"
                     }} >
                     <CardBody className='text-light '>
                         <CardTitle>
@@ -170,7 +167,7 @@ export default function Home() {
                 </Card>
                 <Card className='card-clip4'
                     style={{
-                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (3).jpeg')"
+                        backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/up1 (1).jpeg')"
                     }} >
                     <CardBody className='text-light '>
                         <CardTitle>
@@ -377,7 +374,7 @@ export default function Home() {
                 </Carousel>
             </Col>
         </Row>
-        <Blog />
+        <Blog2 />
 
         <Footer />
 

@@ -5,12 +5,12 @@
 .card-img{
     width: 100%!important;
     height: 200px!important;
-    padding:16px!important;
 }
 .cardmain{
+    display: flex;
+    justify-content: center;
     margin-top:20px!important;
     border: none!important;
-    padding:5px!important;
     border-radius:10px!important;
 }
 .cardmain:hover{
@@ -29,7 +29,7 @@
     font-size: 14px;
 }
 .allcardData>h6>span{
-    font-weight: 600;
+    font-weight: 500;
 }
 .date{
     font-weight:600;
@@ -41,24 +41,130 @@
     align-items: center;
 }
 .filter-button .btn{
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: none!important;
-    border: none!important;
+    width: 120px!important;
+    height: 100%important;
+    background: white!important;
+    border: 2px solid white !important;
     outline: none!important;
     font-size: .85rem;
     cursor: pointer;
-    background-color:rgba(0, 0, 0, 0.4)!important;
     font-weight: 600!important;
     letter-spacing: 2px!important;
-    color:white!important;
-   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)!important;
+    color:#3B7FBF!important;
+   box-shadow:5px 5px 5px  5px (0,0,0,0.9)!important;
+   overflow: hidden!important;
+   z-index: 1!important;
+   box-shadow:none !important;
+
 }
+.filter-button .btn:nth-child(-n+4){
+    background: transparent!important;
+    color: white!important;
+}
+.filter-button .btn::before{
+    content: "";
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 0!important;
+    height: 100%!important;
+    background:rgba(0, 0, 0, 0.705)!important;
+    z-index: -1!Important;
+    transition: .7s!important;
+}
+.filter-button .btn:hover::before{
+    width: 100%!important; 
+ 
+}
+.read-more-btn{
+    position: relative!important;
+    display: flex!important;
+    justify-content:center!important;
+    align-items: center!important;
+    align-items: center;
+    width: 120px!important;
+    height: 100%important;
+    background: none!important;
+    border: 2px solid #3B7FBF !important;
+    outline: none!important;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 500!important;
+    letter-spacing: 2px!important;
+   box-shadow:5px 5px 5px  5px (0,0,0,0.9)!important;
+   overflow: hidden!important;
+   z-index: 1!important;
+   box-shadow:none !important;
+   color: #3B7FBF!important;
+   z-index: 1!important;
 
 
-.filter-button .btn:hover{
-    color: black!important;
-    background-color: white!important;
-    
+
+}
+.read-more-btn :nth-child(){
+background: transparent!important;
+}
+.read-more-btn::before{
+content: "";
+position: absolute!important;
+top: 0;
+left: 0;
+width: 0!important;
+height: 100%!important;
+background:#3B7FBF!important;
+z-index: -1!Important;
+transition: .7s!important;
+}
+.read-more-btn:hover::before{
+width: 100%!important;
+}
+.read-more-btn:hover{
+    color: white!important;
+}
+.explore-btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px!important;
+    height: 100%important;
+    background: none!important;
+    border: 2px solid white !important;
+    outline: none!important;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 600!important;
+    letter-spacing: 2px!important;
+   box-shadow:5px 5px 5px  5px (0,0,0,0.9)!important;
+   overflow: hidden!important;
+   z-index: 1!important;
+   box-shadow:none !important;
+   color: white!important;
+
+
+}
+.explore-btn :nth-child(1){
+background: transparent!important;
+}
+.explore-btn::before{
+content: "";
+position: absolute!important;
+top: 0;
+left: 0;
+width: 0!important;
+height: 100%!important;
+background:white!important;
+z-index: -1!Important;
+transition: .7s!important;
+}
+.explore-btn:hover::before{
+width: 100%!important;
+}
+.explore-btn:hover{
+    color: #3B7FBF!important;
+
 }

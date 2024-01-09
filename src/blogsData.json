@@ -110,13 +110,13 @@
     {
         "id": 10,
         "title": "TC Startup",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16lOZY9VhyD4M4f9j-Uwja9T0ISvyLQb0bcd_tzqPKnC99Zpx4CQI-X8hnmEHD79OydE&usqp=CAU",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0EztGrrGWCA9CYjGkTmcQEmmqdDQaxLvQg&usqp=CAU",
         "category": "Security",
         "author": "Neesha A. Tambe",
         "authorPic": "author1.jpg",
         "published_date": "2023-10-01",
         "reading_time": "5 minutes",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         "tags": ["Growth", "Writing"]
     },
     {

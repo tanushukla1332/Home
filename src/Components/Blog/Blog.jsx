@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, CardImg, CardBody, CardTitle, Card, Button } from 'react-bootstrap';
+import { Row, Col, CardImg, CardBody, CardTitle, Card, Button,Carousel,CarouselCaption,CarouselItem,} from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
 import blogsData from '../../blogsData.json';
 import '../Blog/Blog.css';
@@ -23,7 +23,11 @@ export default function Blog() {
                     </div>
                 </div>
                 {filteredBlogs.map((data, id) => (
+                   
                     <Col key={id} md={4} className='pb-5 d-flex justify-conent-center' >
+                    <Carousel>
+                    <CarouselItem>
+
                         <Card className='cardmain'>
                             <CardImg src={data.image} variant='top' fluid className='card-img' />
                             <CardBody>
@@ -36,12 +40,15 @@ export default function Blog() {
                                              /> 
                                             <span> {data.author}</span>
                                         </h6>
-                                        <p>Published:<span className='date'>{data.published_date}</span> </p>
                                         <p>{data.content}</p>
+                                        <Button className='read-more-btn'>Read more</Button>
                                     </div>
                                 </CardTitle>
                             </CardBody>
+                          
                         </Card>
+                        </CarouselItem>
+                        </Carousel>
                     </Col>
                 ))}
             </Row>

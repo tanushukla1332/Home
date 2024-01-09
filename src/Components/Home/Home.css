@@ -122,9 +122,10 @@
 }
 /* For button */
 .btm {
+    position: relative!important;
     display: inline-block;
-    background-color: #3B7FBF !important;
-    color: #ffffff !important;
+    background-color: #3B7FBF!important;
+    color: white!important;
     border:  1px solid white !important;
     width: 150px;
     font-weight: 550 !important;
@@ -132,23 +133,36 @@
     border-radius: 5px;
     outline: none !important;
     box-shadow: none!important;
+    z-index: 1!important;
   }
-  
+  .btm :nth-child(-n+2){
+    background: transparent!important;
+    font-weight: bold!important;
+  }
+  .btm::before{
+    position: absolute!important;
+    content: ""!important;
+    top: 0!important;
+    left: 0!important;
+    background-color: white!important;
+    z-index: -1!important;
+    width: 0!important;
+    height: 100%!important;
+    transition: .5s!important;
+    color:#3B7FBF!important;
+  }
+  .btm:hover::before {
+   width: 100%!important;
+  }
   .btm:hover {
-    color: #3b7fbf !important;
-    background-color: white !important;
+    color: #3B7FBF !important;
     font-weight: 550 !important;
-    outline: none !important;
-    border: none !important;
-    box-shadow: none!important;
-  }
+    transition: .5s!important;
+    z-index: 2!important;
+
+}
   
-  .btm:active,
-  .btm:focus {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none!important;
-  }
+
   .btm1 {
     display: inline-block;
     background-color: #5e5e5e !important;
@@ -261,6 +275,10 @@ input::-webkit-outer-spin-button,
     outline: none!important;
     box-shadow: none!important;
 
+}
+.instra{
+    width: 30px;
+    height: auto;
 }
 figcaption{
     position: absolute;
@@ -458,9 +476,9 @@ card-main .card-img {
     height: 20px;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
-    display: none!important;
+    /* display: none!important;
     background-color: #3B7FBF!important;
-    border-radius: 50px;
+    border-radius: 50px; */
 }
 /* Our Clients */
 .allclients{

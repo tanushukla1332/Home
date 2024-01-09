@@ -28,3 +28,28 @@ a.nav-link:hover {
     border: none!important;
     box-shadow: none!important;
 }
+.navbar-nav .dropdown-menu{
+    border-radius: 0px!important;
+}
+.MainDropDownList{
+  border-radius:0!important;
+ 
+
+
+}
+.dropdown-item:active{
+    background-color:white!important;
+    color: #000!important;
+
+}
+.dropDownMwnuItems{
+    position: relative!important;
+}
+.dropDownMwnuItems>div{
+    position: absolute!important;
+    top: -11px!important;
+    left: 26px!important;
+    border-left: 0px!important;
+}
+
+

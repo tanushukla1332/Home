@@ -138,7 +138,7 @@ export default function Footer(){
         <Row className="bgsection justify-content-center px-5">
           <Col>
             <div className=" d-flex justify-content-center gap-lg-3 icon my-3" style={{borderBottom: '1px solid rgba(255, 255, 255, 0.493)', borderTop: '1px solid rgba(255, 255, 255, 0.493)'}}>
-              <img src="Image/instagram (1) 1.png" alt="" className="img-fluid" />
+              <img src="Image/instagram (1) 1.png" alt="" className="img-fluid"/>
               <img src="Image/FB logo final.png" alt=" " className="img-fluid" />
               <img src="Image/LinkedIn Logo final.png" alt="" className="img-fluid" />
               <img src="Image/Twitter_new_X_logo Final.png" alt="" className="img-fluid" />
