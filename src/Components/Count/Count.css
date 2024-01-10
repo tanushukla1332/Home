@@ -28,13 +28,14 @@
 .clients-card2 h5{
     font-size: 45px;
     align-items: center;
-    text-shadow: 1px 1px 1px #3B7FBF;
-    background: linear-gradient(to right, red, #3B7FBF); 
-    -webkit-background-clip: text;
-    color: transparent;
+    background: linear-gradient(to bottom, #4ECFFF, #3B7FBF);
+-webkit-background-clip: text;
+color: transparent;
+text-shadow: 0 0 1px , #3B7FBF, #4ECFFF;
 }
 .clients-card2 p{
     font-size: 16px;
+    font-weight: 450;
     align-items: center;
 }
 .clients-card2 img:hover {

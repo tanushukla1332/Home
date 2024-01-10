@@ -64,7 +64,14 @@ export default function Home() {
             </Col>
         </Row>
         <Count clients={clients}/>
-        <Row className=' d-none d-sm-flex justify-content-evenly my-5'>
+        <Row className=' d-none d-sm-flex justify-content-evenly py-5 
+    '
+    style={{backgroundImage:"url('/Image/gfg.png')",
+    backgroundSize:"cover",
+    backgroundPosition:"center",
+    backgroundRepeat:"no-repeat"
+
+}}>
             <Col md={6} className=' px-1  py-3 '>
                 <Image src='/Image/our.jpg' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 2px 2px 2px rgba(0,0,0,0.1) " }} /></Col>
             <Col className='mt-4 ml-4'>
@@ -81,7 +88,11 @@ export default function Home() {
         </Row>
      
         
-        <Row className='d-block d-sm-none  justify-content-evenly my-5'>
+        <Row className='d-block d-sm-none  justify-content-evenly my-5'
+        style={{backgroundImage:"url('/Image/gfg.png')",
+        backgroundSize:"cover",
+        backgroundPosition:"center"}}
+        >
             <Col className='mt-4' >
                 <div className='spacing'>
                     <h1 className='hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -103,10 +114,15 @@ export default function Home() {
                     fluid /></Col>
         </Row>
         <Contact clients={clients}/>
-        <Row className='shadow-xl '>
-            <h2 className='text-center  pt-5'> My Awesome Services</h2>
-            <p className='text-center  '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
-            <Col md className='mb-4 d-flex px-0 py-5'>
+        <Row className='shadow-xl  py-5'
+        style={{backgroundImage:"url('/Image/gfg2.png')",
+        backgroundSize:"cover",
+        backgroundPosition:"center",
+        backgroundRepeat:"no-repeat"
+    }}>
+            <h2 className='text-center'> My Awesome Services</h2>
+            <p className='text-center '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
+            <Col md className='mb-4 d-flex px-0 py-3'>
                 <Card className='card-clip1'
                     style={{
                         backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (3).jpeg')"
@@ -204,7 +220,7 @@ export default function Home() {
                 </Card>
             </Col>
         </Row>
-        <Row className='d-flex justify-content-center flex-wrap mb-4 py-5' 
+        <Row className='d-flex justify-content-center flex-wrap  py-5' 
         style=
         {{backgroundImage:"url('Image/Rectangle 51 (1).png')",
         backgroundRepeat:"no-repeat",
@@ -272,9 +288,9 @@ export default function Home() {
         </Row>
 
         <Row className='my-5 py-5' style={{backgroundColor:"#3B7FBF"}}>
-            <div className='text-center'>
+            <div className='text-center text-light'>
                 <h3>TESTIMONIALS</h3>
-                <p className='sm'>Don’t Go only with our commitments : Here what our clients says about us:</p>
+                <p className='sm text-light'>Don’t Go only with our commitments : Here what our clients says about us:</p>
             </div>
             <Col md={12} className='d-flex justify-content-center align-items-center'>
                 <Carousel indicators={true} >
@@ -282,7 +298,7 @@ export default function Home() {
                         <Row className='justify-content-center align-items-center'>
                             <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <Card className='card-main-Testominals'>
-                                    <CardImg variant="top" src='Image/third.png' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%",marginTop: "5px" ,padding:"16px"}} />
+                                    <CardImg variant="top" src='Image/third.png' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%",marginTop: "5px" ,padding:"16px"}} />
                                     <CardBody>
                                         <CardTitle>
                                             <div className='review'>
@@ -294,16 +310,20 @@ export default function Home() {
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                             </div>
+                                            <div>
+                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  />
+
+                                            </div>
                                         </CardTitle>
                                         <CardText>
-                                            <p className='sm text-light'>The SEO and PPC service have been fantastically executed and delivered the Top ranking of my website. All the best</p>
+                                            <p className='sm'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
                             </Col>
                             <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <Card className='card-main-Testominals'>
-                                    <CardImg variant="top" src='Image/Raseo-Technology-Solutions.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%",  padding:"16px" ,marginTop: "5px" }} />
+                                    <CardImg variant="top" src='Image/Raseo-Technology-Solutions.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%",  padding:"16px" ,marginTop: "5px" }} />
                                     <CardBody>
                                         <CardTitle>
                                             <div className='review'>
@@ -315,9 +335,13 @@ export default function Home() {
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                             </div>
+                                            <div>
+                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  />
+
+                                            </div>
                                         </CardTitle>
                                         <CardText>
-                                            <p className='sm text-light'>They have been very good to boost my business through SEO campaign and Google adwords, thanks</p>
+                                            <p className='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -328,12 +352,11 @@ export default function Home() {
                         <Row className='align-items-center justify-content-center py-3'>
                             <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <Card className='card-main-Testominals'>
-                                    <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginTop: "5px" ,padding:"16px"}} />
+                                    <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", marginTop: "5px" ,padding:"16px"}} />
                                     <CardBody >
                                         <CardTitle>
                                             <div className='review'>
                                                 <h4>Eric Lim</h4>
-
                                                 <h5>Owner</h5>
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
@@ -341,10 +364,14 @@ export default function Home() {
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                             </div>
+                                            <div>
+                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  />
+
+                                            </div>
                                         </CardTitle>
 
                                         <CardText>
-                                            <p className='sm text-light'>They are at their words in terms of providing service and support!! all the best.</p>
+                                            <p className='sm'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </CardText>
                                     </CardBody>
 
@@ -352,7 +379,7 @@ export default function Home() {
                             </Col>
                             <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <Card className='card-main-Testominals'>
-                                    <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginTop: "5px",padding:"16px" }} />
+                                    <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", marginTop: "5px",padding:"16px" }} />
                                     <CardBody >
                                         <CardTitle>
                                             <div className='review'>
@@ -365,10 +392,15 @@ export default function Home() {
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 <img src="Image/star 3.png" alt="" className='img-fluid' />
                                             </div>
+                                            <div>
+                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  />
+
+                                            </div>
+
                                         </CardTitle>
 
                                         <CardText>
-                                            <p className='sm text-light' >They are at their words in terms of providing service and support!! all the best.</p>
+                                            <p className='sm' >TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </CardText>
                                     </CardBody>
 

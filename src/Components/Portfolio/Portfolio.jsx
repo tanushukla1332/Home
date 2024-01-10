@@ -12,7 +12,16 @@ export default function Portfolio() {
     };
     return (
         <>
-            <Row className='my-5'>
+            <Row className='my-5' 
+            style={{backgroundImage:"url('/Image/gfg2.png')",
+            backgroundRepeat:"no-repeat",
+            backgroundSize:"50%",
+            backgroundPosition:"center"
+
+            
+
+            
+        }}>
                 <div className='text-center'>
                     <h3>Portfolio</h3>
                     <p>Lorem ipsum dolor sit amet.</p>

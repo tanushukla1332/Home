@@ -14,10 +14,10 @@
   background-repeat: no-repeat;
   background-position: center top;
   width: 550px!important;
-  height: 650px!important;
+  height: 500px!important;
   clip-path: inset(0 0 0 0)!important;
   transition: transform 0.3s;
-  border-right: 1px solid white!important;
+  /* border-right: 1px solid white!important; */
 
 
   
@@ -28,8 +28,8 @@
   top: 0;
   left: 0;
   width: 550px!important;
-  height: 650px!important;
-  background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+  height: 500px!important;
+  background: linear-gradient(45deg,rgba(128, 128, 128, 0.493), #063b6d21)!important;
   z-index: -1;
   clip-path: inset(0 0 0 0)!important;
   transition: opacity 0.3s;
@@ -100,10 +100,10 @@
       background-repeat: no-repeat;
       background-position: center top;
       width: 550px!important;
-      height: 650px!important;
+      height: 500px!important;
       clip-path:inset(0 0 0 0)!important;
       transition: transform 0.3s;
-      border-right: 1px solid white!important;
+      /* border-right: 1px solid white!important; */
   }
   .card-clip2::before {
       content: "";
@@ -112,7 +112,7 @@
       left: 0;
       width: 550px!important;
       height: 650px!important;
-      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      background: linear-gradient(45deg,rgba(128, 128, 128, 0.493), #063b6d21)!important;
       z-index: -1;
       clip-path: inset(0 0 0 0)!important;
       transition: opacity 0.3s;
@@ -144,7 +144,7 @@
       opacity: 0;
       transition: opacity 0.3s transform 0.5s ease-in-out;;
       z-index: 1;
-      top: 50%!important;
+      top: 40%!important;
       right: 8%!important;
       left: 3%!important;
   }
@@ -179,10 +179,10 @@
       background-repeat: no-repeat;
       background-position: center top;
       width: 550px!important;
-      height: 650px!important;
+      height: 500px!important;
       clip-path:inset(0 0 0 0)!important;
       transition: transform 0.3s;
-      border-right: 1px solid white!important;
+      /* border-right: 1px solid white!important; */
   }
   .card-clip3::before {
       content: "";
@@ -191,7 +191,7 @@
       left: 0;
       width: 550px!important;
       height: 650px!important;
-      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      background: linear-gradient(45deg,rgba(128, 128, 128, 0.493), #063b6d21)!important;
       z-index: -1;
       clip-path: inset(0 0 0 0)!important;
       transition: opacity 0.3s;
@@ -209,7 +209,7 @@
       z-index: 1;
       right: 8%;
       margin-top: 15rem;
-      text-align: center;
+      text-align:center;
       font-size: 25px;
   }
   .card-clip3 :hover h1{
@@ -228,7 +228,7 @@
       opacity: 0;
       transition: opacity 0.3s transform 0.5s ease-in-out;;
       z-index: 2;
-      top: 50%!important;
+      top: 40%!important;
       right: 8%!important;
       left: 3%!important;
   }
@@ -263,10 +263,10 @@
       background-repeat: no-repeat;
       background-position: center top;
       width: 550px!important;
-      height: 650px!important;
+      height: 500px!important;
       clip-path: inset(0 0 0 0)!important;
       transition: transform 0.3s;
-      border-right: 1px solid white!important;
+      /* border-right: 1px solid white!important; */
       
   }
   .card-clip4::before {
@@ -276,7 +276,7 @@
       left: 0;
       width: 550px!important;
       height: 650px!important;
-      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      background: linear-gradient(45deg,rgba(128, 128, 128, 0.493), #063b6d21)!important;
       z-index: -1;
       clip-path: inset(0 0 0 0)!important;
       transition: opacity 0.3s;
@@ -316,7 +316,7 @@
       opacity: 0;
       transition: opacity 0.3s transform 0.5s ease-in-out;;
       z-index: 2;
-      top: 50%!important;
+      top: 40%!important;
       right: 8%!important;
       left: 3%!important;
   }
@@ -351,10 +351,10 @@
       background-repeat: no-repeat;
       background-position: center top;
       width: 550px!important;
-      height: 650px!important;
+      height: 500px!important;
       clip-path: inset(0 0 0 0)!important;
       transition: transform 0.3s;
-      border-right: 1px solid white!important;
+      /* border-right: 1px solid white!important; */
 
      
   }
@@ -365,7 +365,7 @@
       left: 0;
       width: 550px!important;
       height: 650px!important;
-      background: linear-gradient(45deg, #3b7fbfdc, #3b7fbf21)!important;
+      background: linear-gradient(45deg,rgba(128, 128, 128, 0.493), #063b6d21)!important;
       z-index: -1;
       clip-path: inset(0 0 0 0)!important;
       transition: opacity 0.3s;
@@ -408,7 +408,7 @@
       opacity: 0;
       transition: opacity 0.3s transform 0.5s ease-in-out;;
       z-index: 2;
-      top: 50%!important;
+      top: 40%!important;
       right: 8%!important;
       left: 3%!important;
   }

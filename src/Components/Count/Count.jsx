@@ -20,7 +20,7 @@ export default function Count({ clients }) {
 
                                 %</h5>
 
-                            <p>Clients satisfied</p>
+                            <p>Clients Satisfied</p>
                         </div>
                     </div>
                     <div className='clients-card2'>
@@ -34,7 +34,7 @@ export default function Count({ clients }) {
                             }
                                 +
                             </h5>
-                            <p>Successful project</p>
+                            <p>Successful Project</p>
                         </div>
                     </div>
                     <div className='clients-card2'>
@@ -46,7 +46,7 @@ export default function Count({ clients }) {
                                 {clients &&
                                     <CountUp start={0} end={4} duration={3} delay={0} />}
                                 M+</h5>
-                            <p>Lines of code</p>
+                            <p>Lines of Code</p>
                         </div>
                     </div>
                     <div className='clients-card2'>
