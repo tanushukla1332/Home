@@ -40,10 +40,7 @@ export default function Portfolio() {
                                                 padding: "16px",
                                                 objectFit: "cover",
                                                 opacity: "0.9",
-
-
                                             }}
-
                                         />
                                         <CardTitle><h4>{item.title}</h4></CardTitle>
                                         <CardText>

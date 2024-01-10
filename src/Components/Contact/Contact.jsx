@@ -10,7 +10,10 @@ export default function Contact() {
     
     return (
     
-        <Row style={{ background: "#3B7FBF" }} className='py-5 px-0  justify-content-center gap-5' >
+        <Row 
+        style={{ background: 'linear-gradient(to bottom,#3B7FBF, #A1E6FF)'}}
+         className='py-5 px-0  justify-content-center gap-5'
+         >
         <h2 className=' hed2 text-resize-lg  text-center formlayout text-light mb-5'>Let's Talk To Our Experts</h2>
         <Col md={5} className='mb-3  py-3'>
             <div className='justify-content-center align-items-center'>
@@ -70,12 +73,21 @@ export default function Contact() {
            <div className=' d-flex justify-content-center align-items-center'>
            <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
            </div>
-           <Row className='px-0 justify-content-center  align-items-center gap-5 mt-5'>
+           <Row className='px-0 justify-content-center align-items-center gap-3 mt-5
+           ' style={{backgroundImage:"url('Image/Rectangle 211.png')",
+        backgroundRepeat:"no-repeat",backgroundPosition:"180px 25px " ,backgroundSize:"25%"}}>
            <Col md={5}>
-           <img src="/Image/for-logo (1).png" alt="" className='img-fluid' />
+           <div>
+           <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
+           <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
+           </div>
            </Col>
            <Col md={5}>
-           <img src="/Image/for-logo (2).png" alt=""  className='img-fluid'/>
+           <div>
+           <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
+           <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
+           </div>
+           
            </Col>
            <Col>
            </Col>
