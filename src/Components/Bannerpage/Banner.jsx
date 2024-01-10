@@ -1,7 +1,6 @@
 import React,{ useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import Particles, {initParticlesEngine } from "@tsparticles/react";
 import {Row,Col,Button,Image} from 'react-bootstrap'
-
 import { loadSlim } from "@tsparticles/slim"; 
 import Data from '../../Data.json';
 export default function App (){
@@ -37,7 +36,7 @@ export default function App (){
   }, []);
 
   const particlesLoaded = (container) => {
-
+    console.log(container);
   };
 
   const options = useMemo(

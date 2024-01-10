@@ -27,7 +27,7 @@ export default function Home() {
 
             <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)}>
                 <Container fluid >
-                    <Banner />
+                    <Banner/>
                     <Count clients={clients} />
                     <Row className=' d-none d-sm-flex justify-content-evenly py-5 '
                         style={{
