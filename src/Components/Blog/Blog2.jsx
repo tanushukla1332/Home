@@ -14,9 +14,14 @@ export default function Blog() {
     
     return (
         <>
-            <Row className='justify-content-center my-5 bgSection align-items-center'>
+            <Row className='justify-content-center align-items-center' style=
+            {{backgroundImage:"url('/Image/bannerfnjf.png')",
+            backgroundRepeat:"no-repeat",
+            backgroundSize:"cover",
+            backgroundPosition:"center"
+        }}>
                 <div className='text-center text-light py-5'>
-                    <h3>Our Blogs</h3>
+                    <h3>Blogs</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
                 </div>
                 <Col md={12} className='pb-5 d-flex justify-content-center'>
@@ -29,7 +34,7 @@ export default function Blog() {
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>
                                         <CardTitle>
-                                            <div className='allcardData '>
+                                            <div className='allcardData'>
                                                 <h3>{data.title}</h3>
                                                 <h6 className='d-flex align-items-center gap-2'>
                                                     <FaUser color='white' className='rounded-5' size={22}

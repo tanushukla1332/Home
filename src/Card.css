@@ -120,11 +120,7 @@
   }
   .card-clip2:hover{
       transform: scale(1.1);
-
-
-
   }
-  
   .card-clip2:hover::before {
       opacity: 1;
   }

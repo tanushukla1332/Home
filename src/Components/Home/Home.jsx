@@ -3,8 +3,6 @@ import Footer from '../Footer/Fotter';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import Form from 'react-bootstrap/Form';
-import { FaRegStar } from "react-icons/fa";
 import { Button, CardBody, CardImg, CardText, CardTitle, CarouselCaption, CarouselItem, Carousel } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { useState, useEffect } from 'react';
@@ -14,8 +12,9 @@ import '../Home/Home.css';
 import Blog2 from '../Blog/Blog2';
 import ScrollTrigger from 'react-scroll-trigger'
 import Contact from '../Contact/Contact';
-
-
+import Port from '../Portfolio/Portfolio';
+import Banner from '../Bannerpage/Banner';
+import Count from '../Count/Count';
 
 
 export default function Home() {
@@ -30,6 +29,8 @@ export default function Home() {
     const subtitles = Data.map((data) => data.subTitle)
     const paragraphs = Data.map((data) => data.paragraph)
     const allimages = Data.map((data) => data.image)
+
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentTitle((prev) => (prev + 1) % titles.length)
@@ -42,10 +43,12 @@ export default function Home() {
     return (
 
         <>
+        
         <ScrollTrigger onEnter={()=>setClients(true)} onExit={()=>setClients(false)}>
         <Container fluid >
-        <Row className='py-3' style={{ backgroundColor: "#3B7FBF" }}
-        >
+       
+        <Row className='py-3'  style={{backgroundColor:"#3B7FBF"}}>
+       
             <Col className='text-light'>
                 <h1 className='hed1  mt-5 '>{titles[currentTitle]} </h1>
                 <h3 className=' hed3 '>{subtitles[subheading]}
@@ -60,9 +63,10 @@ export default function Home() {
                 />
             </Col>
         </Row>
-        <Row className=' d-none d-sm-flex justify-content-evenly'>
+        <Count clients={clients}/>
+        <Row className=' d-none d-sm-flex justify-content-evenly my-5'>
             <Col md={6} className=' px-1  py-3 '>
-                <Image src='/Image/Svg2.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 0px 2px rgba(0,0,0,0.2) " }} /></Col>
+                <Image src='/Image/our.jpg' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px", boxShadow: "2px 2px 2px 2px rgba(0,0,0,0.1) " }} /></Col>
             <Col className='mt-4 ml-4'>
                 <div className='spacing'>
                     <h1 className=' hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -71,13 +75,13 @@ export default function Home() {
                     <div className='spacing2'>
                         At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                     </div>
-                    <Button variant='light' className='btnmain my-3 pt-1'>Get a quote</Button>
 
                 </div>
             </Col>
-
         </Row>
-        <Row className='d-block d-sm-none  justify-content-evenly'>
+     
+        
+        <Row className='d-block d-sm-none  justify-content-evenly my-5'>
             <Col className='mt-4' >
                 <div className='spacing'>
                     <h1 className='hed1 pb-4' style={{ color: "#3B7FBF" }}>Our Features</h1>
@@ -91,19 +95,14 @@ export default function Home() {
                 </div>
             </Col>
             <Col md={6} className='px-1 py-3'>
-                <Image src='/Image/Svg2.png' alt=''
+                <Image src='/Image/our.jpg' alt=''
                     style={{
                         width: "100%", maxHeight: "100%", borderRadius: "3px",
-                        boxShadow: "2px 0px 2px rgba(0,0,0,0.2)"
+                        boxShadow: "2px 2px 2px 2px rgba(0,0,0,0.1)"
                     }}
                     fluid /></Col>
         </Row>
         <Contact clients={clients}/>
-
-
-       
-
-
         <Row className='shadow-xl '>
             <h2 className='text-center  pt-5'> My Awesome Services</h2>
             <p className='text-center  '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
@@ -205,8 +204,14 @@ export default function Home() {
                 </Card>
             </Col>
         </Row>
-        <Row className='d-flex justify-content-center flex-wrap mb-4' style={{ backgroundColor: "#3B7FBF" }}>
-            <div className='text-center py-5 text-light'>
+        <Row className='d-flex justify-content-center flex-wrap mb-4 py-5' 
+        style=
+        {{backgroundImage:"url('Image/Rectangle 51 (1).png')",
+        backgroundRepeat:"no-repeat",
+        backgroundSize:"cover",
+        backgroundPosition:"center"
+    }}>
+            <div className='text-center py-3 text-light'>
                 <h2 className='hed2 '>Our Clients</h2>
                 <p className='sm'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, a!</p>
             </div>
@@ -266,17 +271,17 @@ export default function Home() {
 
         </Row>
 
-        <Row className='my-3'>
-            <div className='text-center align-items-center my-3 py-3'>
+        <Row className='my-5 py-5' style={{backgroundColor:"#3B7FBF"}}>
+            <div className='text-center'>
                 <h3>TESTIMONIALS</h3>
                 <p className='sm'>Don’t Go only with our commitments : Here what our clients says about us:</p>
             </div>
             <Col md={12} className='d-flex justify-content-center align-items-center'>
                 <Carousel indicators={true} >
                     <Carousel.Item>
-                        <Row className='justify-content-center align-items-center py-3 '>
-                            <Col md={6} className='py-3 d-flex justify-content-center align-items-center'>
-                                <Card className='card-main'>
+                        <Row className='justify-content-center align-items-center'>
+                            <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
+                                <Card className='card-main-Testominals'>
                                     <CardImg variant="top" src='Image/third.png' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%",marginTop: "5px" ,padding:"16px"}} />
                                     <CardBody>
                                         <CardTitle>
@@ -296,8 +301,8 @@ export default function Home() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={6} className='py-3 d-flex justify-content-center align-items-center'>
-                                <Card className='card-main '>
+                            <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
+                                <Card className='card-main-Testominals'>
                                     <CardImg variant="top" src='Image/Raseo-Technology-Solutions.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%",  padding:"16px" ,marginTop: "5px" }} />
                                     <CardBody>
                                         <CardTitle>
@@ -320,9 +325,9 @@ export default function Home() {
                         </Row>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Row className='align-items-center py-3'>
-                            <Col md={6} className='py-3 d-flex justify-content-center align-items-center'>
-                                <Card className='card-main'>
+                        <Row className='align-items-center justify-content-center py-3'>
+                            <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
+                                <Card className='card-main-Testominals'>
                                     <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginTop: "5px" ,padding:"16px"}} />
                                     <CardBody >
                                         <CardTitle>
@@ -345,8 +350,8 @@ export default function Home() {
 
                                 </Card>
                             </Col>
-                            <Col md={6} className='py-3 d-flex justify-content-center align-items-center'>
-                                <Card className='card-main'>
+                            <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
+                                <Card className='card-main-Testominals'>
                                     <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '100px', maxWidth: "100px", borderRadius: "50%", marginTop: "5px",padding:"16px" }} />
                                     <CardBody >
                                         <CardTitle>
@@ -375,7 +380,7 @@ export default function Home() {
             </Col>
         </Row>
         <Blog2 />
-
+        <Port/>
         <Footer />
 
     </Container >

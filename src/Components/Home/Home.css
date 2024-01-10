@@ -436,7 +436,7 @@ font-weight: 450!important;
 }
 
 /* Testiominals */ 
-.card-main{
+.card-main-Testominals{
     width: 700px!important;
     height: 300px!important;
     border: none!important;
@@ -444,7 +444,7 @@ font-weight: 450!important;
    background-color: rgba(0, 0, 0, 0.897)!important;
 
 }
-card-main .card-img {
+.card-main-Testominals.card-img {
     padding: 16px !important;
     max-height: 100px !important;
     max-width: 100px !important;
@@ -475,11 +475,7 @@ card-main .card-img {
     width: 20px;
     height: 20px;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    /* display: none!important;
-    background-color: #3B7FBF!important;
-    border-radius: 50px; */
-}
+
 /* Our Clients */
 .allclients{
     display: flex;

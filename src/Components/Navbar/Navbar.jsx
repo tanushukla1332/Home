@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink, NavbarBrand, NavbarToggle, NavbarCollapse } from
-  'react-bootstrap';
+'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
