@@ -6,7 +6,7 @@ import '../Count/Count.css'
 export default function Count({ clients }) {
     return (
         <>
-            <Row>
+            <Row style={{backgroundColor:"#FFF"}}>
                 <Col md={12} className='col-count'>
                     <div className='clients-card2'>
                         <div className='count-img'>

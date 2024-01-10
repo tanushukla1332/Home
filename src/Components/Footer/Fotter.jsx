@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <>
 
-        <Row className="justify-content-evenly px-0  bgsection">
+        <Row className="justify-content-evenly px-0 bgsection">
           <Col md={5} className="align-items-center mb-5">
             <div>
               <img src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg" alt="" className="img-fluid, mt-5" width={220} height={50} />

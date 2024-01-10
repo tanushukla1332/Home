@@ -7,12 +7,10 @@ import Login from "./Components/Login/Login";
 import './App.css'
 
 
-
 export default function App() {
 
   return (
     <>
-   
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />

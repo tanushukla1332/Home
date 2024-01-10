@@ -16,13 +16,13 @@ export default function Header() {
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#FFFFF" }} variant="light" sticky="bottom" expand="lg" className='p-0'>
+      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='p-0 navmaindiv'  >
         <Container fluid>
           <NavbarBrand href="/#">
             <Image
               src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg"
               alt=""
-              style={{ width: '250px', height: 'auto',}}
+              style={{ width: '250px',height: 'auto',}}
             />
           </NavbarBrand>
           <NavbarToggle aria-controls="responsive-navbar-nav" style={{ marginRight: "10px" }} />

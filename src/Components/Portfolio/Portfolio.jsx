@@ -7,27 +7,24 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Portfolio() {
     const [visiblePort, setVisiblePort] = useState(2);
 
-    const handleButtonClick = (newVisiblePort) => {
+    const handleButtonClick =(newVisiblePort) => {
         setVisiblePort(newVisiblePort);
     };
     return (
         <>
-            <Row className='my-5' 
+            <Row className='py-5' 
             style={{backgroundImage:"url('/Image/gfg2.png')",
             backgroundRepeat:"no-repeat",
             backgroundSize:"50%",
-            backgroundPosition:"center"
-
-            
-
-            
+            backgroundPosition:"center",
+            backgroundColor:"#FFFF"
         }}>
                 <div className='text-center'>
                     <h3>Portfolio</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div className={`AllbuttonForMove port-text ${visiblePort === 2 ? '' : 'slide'}`} >
-                    {Port.slice(0, visiblePort).map((item) => (
+                    {Port.slice(0,visiblePort).map((item) => (
                         <Col key={item.id} md={6}>
                             <div className='port-text'>
                                 <Card className='card-portfolio-main'>
