@@ -2,7 +2,7 @@ import React,{ useEffect, useMemo, useState } from "react";
 import Particles, {initParticlesEngine } from "@tsparticles/react";
 import {Row,Col,Button,Image} from 'react-bootstrap'
 import { loadSlim } from "@tsparticles/slim"; 
-import Data from '../../Data.json';
+import Data from '../../../Data.json';
 export default function App (){
   const [init, setInit] = useState(false);
   const [currentTitle, setCurrentTitle] = useState(0)

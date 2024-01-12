@@ -435,47 +435,7 @@ font-weight: 450!important;
     }
 }
 
-/* Testiominals */ 
-.card-main-Testominals{
-    width: 700px!important;
-    border: none!important;
-   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
 
-}
-.card-main-Testominals.card-img {
-    padding: 16px !important;
-    max-height: 100px !important;
-    max-width: 100px !important;
-}
-.review h4{
-   position: relative;
-   font-size: 18px;
- 
-}
-.review h4::before{
-    position: absolute;
-    display: block;
-    content: "";
-    top: 100%;
-    left: 0;
-    height:1px;
-    width: 50%;
-    background-color: rgba(128, 128, 128, 0.438);
-}
-.review h5{
-    font-size: 14px;
-}
-
-.review img{
-    margin-top: 0px;
-    width: 20px;
-    height: 20px;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    /* display: none!important;
-    background-color: #3B7FBF!important;
-    border-radius: 50px; */
-}
 /* Our Clients */
 .allclients{
     display: flex;

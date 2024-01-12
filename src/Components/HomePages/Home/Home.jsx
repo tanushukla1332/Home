@@ -1,5 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Footer from '../Footer/Fotter';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -7,28 +6,29 @@ import { Button, CardBody, CardImg, CardText, CardTitle, CarouselCaption, Carous
 import Card from 'react-bootstrap/Card';
 import { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
-
-import '../Home/Home.css';
-import Blog2 from '../Blog/Blog2';
+import '../../HomePages/Home/Home.css'
+import Blog2 from '../../HomePages/Blog/Blog2';
+import Contact from '../../HomePages/Contact/Contact';
+import Port from '../../HomePages/Portfolio/Portfolio';
+import Banner from '../../HomePages/Bannerpage/Banner';
+import Count from '../../HomePages/Count/Count'
 import ScrollTrigger from 'react-scroll-trigger'
-import Contact from '../Contact/Contact';
-import Port from '../Portfolio/Portfolio';
-import Banner from '../Bannerpage/Banner';
-import Count from '../Count/Count';
+import Testominials from '../Testominals/Testomnials';
 
 export default function Home() {
+    const[clients, setClients]=useState(false)
+  
 
-    const [clients, setClients] = useState(false)
+  
 
 
     return (
 
         <>
 
-            <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)}>
-                <Container fluid >
+        <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)} >
                     <Banner/>
-                    <Count clients={clients} />
+                    <Count clients={clients}/>
                     <Row className=' d-none d-sm-flex justify-content-evenly py-5 '
                         style={{
                             backgroundImage: "url('/Image/gfg.png')",
@@ -257,138 +257,16 @@ export default function Home() {
                         </Col>
 
                     </Row>
+                    <Testominials/>
 
-                    <Row className='py-5' style={{ backgroundColor: "#3B7FBF" }}>
-                        <div className='text-center text-light'>
-                            <h3>TESTIMONIALS</h3>
-                            <p className='sm text-light'>Don’t Go only with our commitments : Here what our clients says about us:</p>
-                        </div>
-                        <Col md={12} className='d-flex justify-content-center align-items-center'>
-                            <Carousel indicators={true} >
-                                <Carousel.Item>
-                                    <Row className='justify-content-center align-items-center'>
-                                        <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
-                                            <Card className='card-main-Testominals'>
-                                                <CardImg variant="top" src='Image/third.png' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", marginTop: "5px", padding: "16px" }} />
-                                                <CardBody>
-                                                    <CardTitle>
-                                                        <div className='review'>
-                                                            <h4>Alvin Hong</h4>
-                                                            <h5>Sales manager</h5>
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                        </div>
-                                                        <div>
-                                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' />
-
-                                                        </div>
-                                                    </CardTitle>
-                                                    <CardText>
-                                                        <p className='sm'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                    </CardText>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                        <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
-                                            <Card className='card-main-Testominals'>
-                                                <CardImg variant="top" src='Image/Raseo-Technology-Solutions.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", padding: "16px", marginTop: "5px" }} />
-                                                <CardBody>
-                                                    <CardTitle>
-                                                        <div className='review'>
-                                                            <h4>Eunice Yong</h4>
-                                                            <h5>Director</h5>
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                        </div>
-                                                        <div>
-                                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' />
-
-                                                        </div>
-                                                    </CardTitle>
-                                                    <CardText>
-                                                        <p className='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                    </CardText>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <Row className='align-items-center justify-content-center py-3'>
-                                        <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
-                                            <Card className='card-main-Testominals'>
-                                                <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", marginTop: "5px", padding: "16px" }} />
-                                                <CardBody >
-                                                    <CardTitle>
-                                                        <div className='review'>
-                                                            <h4>Eric Lim</h4>
-                                                            <h5>Owner</h5>
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                        </div>
-                                                        <div>
-                                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' />
-
-                                                        </div>
-                                                    </CardTitle>
-
-                                                    <CardText>
-                                                        <p className='sm'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                    </CardText>
-                                                </CardBody>
-
-                                            </Card>
-                                        </Col>
-                                        <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
-                                            <Card className='card-main-Testominals'>
-                                                <CardImg variant="top" src='Image/Eric-yong.jpg' fluid style={{ maxHeight: '150px', maxWidth: "150px", borderRadius: "50%", marginTop: "5px", padding: "16px" }} />
-                                                <CardBody >
-                                                    <CardTitle>
-                                                        <div className='review'>
-                                                            <h4>Eric Lim</h4>
-
-                                                            <h5>Owner</h5>
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                            <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                        </div>
-                                                        <div>
-                                                            <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' />
-
-                                                        </div>
-
-                                                    </CardTitle>
-
-                                                    <CardText>
-                                                        <p className='sm' >TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                    </CardText>
-                                                </CardBody>
-
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Carousel.Item>
-                            </Carousel>
-                        </Col>
-                    </Row>
+                   
                     <Blog2 />
                     <Port />
-                    <Footer />
+                    </ScrollTrigger>
+              
+             
 
-                </Container >
-
-            </ScrollTrigger>
+    
 
 
 

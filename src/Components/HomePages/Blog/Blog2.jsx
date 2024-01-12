@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col, CardImg, CardBody, CardTitle, Card, Button, Carousel, CarouselItem } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
-import blogsData from '../../blogsData.json';
+import blogsData from '../../../blogsData.json';
 import '../Blog/Blog.css';
 
 export default function Blog() {
