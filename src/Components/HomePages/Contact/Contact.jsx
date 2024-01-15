@@ -12,7 +12,7 @@ export default function Contact() {
     
         <Row 
         style={{ background: 'linear-gradient(to bottom,#3B7FBF, #A1E6FF)'}}
-         className='py-5 px-0  justify-content-center gap-5'
+         className='py-5 px-0  justify-content-center gap-5 align-items-center'
          >
         <h2 className=' hed2 text-resize-lg  text-center formlayout text-light mb-5'>Let's Talk To Our Experts</h2>
         <Col md={5} className='mb-3  py-3'>

@@ -1,6 +1,6 @@
 /* Testiominals */ 
 .card-main-Testominals{
-    width: 700px!important;
+    width: 600px!important;
     border: none!important;
    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
    background-color: #3B7FBF!important;
@@ -38,6 +38,14 @@
     height: 20px;
 }
 .carousel-control-next-icon,.carousel-control-prev-icon{
-    background-color: rgba(0, 0, 0, 0.521)!important;
-    border-radius: 50px;
+    border-radius: 50px!important;
+    border: 2px solid #3B7FBF!important;
+    color: #3B7FBF !important;
+
+    
+ 
+}
+.carousel-control-next-icon::before,
+.carousel-control-prev-icon::before {
+    color: #3B7FBF !important;
 }

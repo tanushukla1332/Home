@@ -68,7 +68,7 @@ export default function Header() {
 
                 
               </NavDropdown>
-              <NavLink href='/services' style={{color: "white" }}>Potfolio</NavLink>
+              <NavLink href='/portfolio' style={{color: "white" }}>Potfolio</NavLink>
               <NavLink href='/login' style={{color: "white" }}>Get in Touch</NavLink>
               <NavLink href='/services' style={{color: "white" }}>Career</NavLink>
               <NavLink>

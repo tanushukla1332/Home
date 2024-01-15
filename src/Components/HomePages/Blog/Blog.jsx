@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Row, Col, CardImg, CardBody, CardTitle, Card, Button,Carousel,CarouselCaption,CarouselItem,} from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
-import blogsData from '../../blogsData.json';
-import '../Blog/Blog.css';
 
 export default function Blog() {
     const [currentCategory, setCurrentCategory] = useState('All');
 
-    const filteredBlogs = currentCategory === 'All' ? blogsData : blogsData.filter(blog => blog.category === currentCategory);
+    const filteredBlogs = currentCategory === 'All' ? PortData : PortData.filter(blog => blog.category === currentCategory);
 
     return (
         <>

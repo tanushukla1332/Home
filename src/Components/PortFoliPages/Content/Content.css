@@ -1,31 +1,103 @@
 .bgSection{
     background-color: #3B7FBF;
 }
-.cardmain{
+
+.card-imgPort{
+    width: 100%!important;
+    height: 200px!important;
+}
+.cardmainPortfolioSec{
     display: flex;
     justify-content: center;
     margin-top:20px!important;
     border: none!important;
     border-radius:10px!important;
 }
-.cardmain:hover{
+.cardmainPortfolioSec:hover{
     cursor: pointer;
     box-shadow: 10px 10px 10px  rgb(0, 0, 0,0.4)!important;
 }
-.allcardData h3{
+.allcardDataPortfolioSec h3{
     font-size: 20px;
     color: #3B7FBF;
 
 }
-.allcardData h6{
+.allcardDataPortfolioSec h6{
     font-size: 17px;
 }
-.allcardData p{
+.allcardDataPortfolioSec p{
     font-size: 14px;
 }
-.allcardData>h6>span{
+.allcardDataPortfolioSec>h6>span{
     font-weight: 500;
 }
+
+
+.allportfoliobutton{
+    gap:25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.055);
+}
+.allportfoliobutton>button{
+    display: inline-flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 500!important;
+    letter-spacing: 2px!important;
+   overflow: hidden!important;
+   box-shadow:none!important;
+   border: none!important;
+   background-color:rgba(128, 128, 128, 0)!important;
+   color: #5E5E5E!important;
+   border-radius: 0px!important;
+   text-transform: uppercase;
+   border-left: 0.5px solid rgba(128, 128, 128, 0.226)!important;
+
+}
+.secportbutton{
+    gap:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.055);
+
+}
+.secportbutton>button{
+    display: block;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 500!important;
+    letter-spacing: 2px!important;
+    background-color:rgba(128, 128, 128, 0)!important;
+    color:#5E5E5E!important;
+    box-shadow:none!important;
+    border: none!important;
+    border-radius: 0px!important;
+    text-transform: uppercase;
+    border-left: 0.5px solid rgba(128, 128, 128, 0.226)!important;
+
+}
+.secportbutton>button:hover{
+    padding-bottom:5px!important;
+            border-bottom-style: solid!important;
+            border-bottom-width: 2.5px!important;
+            width: fit-content!important;
+            border-bottom-color: #3B7FBF!important;
+}
+.allportfoliobutton>button:hover{
+    padding-bottom:5px!important;
+            border-bottom-style: solid!important;
+            border-bottom-width: 2.5px!important;
+            width: fit-content!important;
+            border-bottom-color: #3B7FBF!important;
+}
+
+
 
 .read-more-btn{
     position: relative!important;

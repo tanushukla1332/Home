@@ -39,7 +39,7 @@ export default function Footer(){
               />
             </div>
             </div>
-            <div className='d-flex align=items-center'>
+            <div className='d-md-flex align=items-center'>
             <img src="Image/logo1.png"alt="" className='img-fluid' />
             <img src="Image/logo4.png" alt="" className='img-fluid'/>
             <img src="Image/logo5.png" alt="" className='img-fluid'/>

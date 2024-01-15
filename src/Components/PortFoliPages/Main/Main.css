@@ -1,0 +1,43 @@
+.Pormainsec-text{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    color: #3b7fbf;;
+}
+.Pormainsec-text>button{
+position: absolute;
+    color: white!important;
+    background-color: #5E5E5E!important;
+    box-shadow:none!important;
+    border: none!important;
+    margin-top: 35px!important;
+    cursor: pointer;
+    width: 150px;
+    font-weight:550;
+   padding: 10px;
+    border-radius: 5px;
+
+}
+.Pormainsec-text:hover>button{
+    background-color: #3b7fbf!important;
+}
+.Por1-text{
+    text-align: center;
+    color: #5E5E5E;
+    font-size: 14px;
+    padding-bottom:40px;
+}
+.Por1-text>h3{
+    padding-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.Por1-text>p{
+    color: #5E5E5E;
+    font-weight:500;
+}
+.Por1-text>span{
+    color: #5E5E5E;
+    font-weight:500;
+
+}

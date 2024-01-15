@@ -68,7 +68,7 @@ export default function App (){
           },
           repulse: {
             distance: 200,
-            duration: 0.8,
+            duration: 0.5,
           },
         },
       },
@@ -90,7 +90,7 @@ export default function App (){
             default: "bounce",
           },
           random: false,
-          speed: 5,
+          speed: 3,
           straight: false,
         },
         number: {
@@ -103,7 +103,7 @@ export default function App (){
           value: 0.5,
         },
         shape: {
-          type: "",
+          type: "triangle",
         },
         size: {
           value: { min: 5, max: 10 },

@@ -22,7 +22,8 @@ export default function Sections(){
 
         </Col>
         </Row>
-        <Row className='justify-content-center py-5 align-items-center'>
+        <Row className='justify-content-center py-5 align-items-center
+        '>
         <Col md={10}>
         <div className='Ab1-text'>
         <h3>What we provide</h3>
@@ -39,7 +40,9 @@ export default function Sections(){
 
         </Col>
         </Row>
-        <Row className='justify-content-center py-5 align-items-center'>
+        <Row className='justify-content-center py-5 align-items-center'
+        style={{backgroundImage:"url('Image/blue.png')",backgroundRepeat:"no-repeat",
+    backgroundSize:"55%",backgroundPosition:"left"}}>
         <Col md={10}>
         <div className='Ab1-text'>
         <h3>Digital Marketing Solutions</h3>

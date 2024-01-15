@@ -1,39 +1,51 @@
 import React, { useState } from 'react';
 import { Row, Col, Card, CardBody, CardImg, CardTitle, CardText, Button } from 'react-bootstrap';
-import '../Portfolio/Portfolio.css';
-import Port from '../Portfolio/Port';
+import Portdata from '..//Port/Port.json';
+import '../Port/Port.css'
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-export default function Portfolio() {
-    const [visiblePort, setVisiblePort] = useState(2);
+export default function Port() {
+    const [currentPage, setCurrentPage] = useState(2);
+    const recordsPerPage =2;
+    const lastIndex = currentPage * recordsPerPage;
+    const firstIndex = lastIndex - recordsPerPage;
+    const visibleRecords = Portdata.slice(firstIndex, lastIndex);
+    const numberOfPages = Math.ceil(Portdata.length / recordsPerPage);
 
-    const handleButtonClick =(newVisiblePort) => {
-        setVisiblePort(newVisiblePort);
+    const handlePageClick = (index) => {
+        setCurrentPage(index);
+
+       
     };
+
+    const pageArray = Array.from({ length: numberOfPages }, (item, index) => index + 1);
+
     return (
         <>
-            <Row className='py-5' 
-            style={{backgroundImage:"url('/Image/gfg2.png')",
-            backgroundRepeat:"no-repeat",
-            backgroundSize:"50%",
-            backgroundPosition:"center",
-            backgroundColor:"#FFFF"
-        }}>
+            <Row className='py-5'
+                style={{
+                    backgroundImage: "url('/Image/blue.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "60%",
+                    backgroundPosition: "center",
+                    backgroundColor: "#FFFF"
+                }}
+            >
                 <div className='text-center'>
                     <h3>Portfolio</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div className={`AllbuttonForMove port-text ${visiblePort === 2 ? '' : 'slide'}`} >
-                    {Port.slice(0,visiblePort).map((item) => (
+                <div className={`AllbuttonForMove port-text ${currentPage === 2 ? '' : 'slide'}`} >
+                    {visibleRecords.map((item) => (
                         <Col key={item.id} md={6}>
                             <div className='port-text'>
                                 <Card className='card-portfolio-main'>
                                     <CardBody>
                                         <FaExternalLinkAlt className='icon-link' size={45} color='#3B7FBF' />
-                                        <CardImg src={item.image} alt="" className='img-fluid d-flex'
+                                        <img src={item.image} alt="" className='img-fluid d-flex'
                                             style={{
-                                                maxWidth: "550px",
-                                                minHeight: "350px",
+                                                width:"500px",
+                                                height:"400px",
                                                 padding: "16px",
                                                 objectFit: "cover",
                                                 opacity: "0.9",
@@ -42,7 +54,6 @@ export default function Portfolio() {
                                         <CardTitle><h4>{item.title}</h4></CardTitle>
                                         <CardText>
                                             <h6>{item.subTitle}</h6>
-
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -51,9 +62,11 @@ export default function Portfolio() {
                     ))}
                 </div>
                 <div className='AllbuttonForMove'>
-                    <Button onClick={() => handleButtonClick(2)}>1</Button>
-                    <Button onClick={() => handleButtonClick(4)}>2</Button>
-                    <Button onClick={() => handleButtonClick(6)}>3</Button>
+                    {pageArray.map((page) => (
+                        <Button key={page} onClick={() => handlePageClick(page)}>
+                            {page}
+                        </Button>
+                    ))}
                 </div>
             </Row>
         </>

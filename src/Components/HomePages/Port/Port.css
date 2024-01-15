@@ -19,8 +19,7 @@
 }
 
 .card-portfolio-main{
-    max-width: 600px!important;
-   min-height:350px!important;
+    height: 75vh!important;
    position: relative!important;
    border: 1px solid rgba(94, 94, 94, 0.123)!important;
 }
@@ -40,9 +39,5 @@
     color: black!Important;
  
 }
-
- .port-text.slide{
-    transform: translateX(-50%);
- }
 
 

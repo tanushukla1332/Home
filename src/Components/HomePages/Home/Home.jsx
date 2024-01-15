@@ -2,18 +2,20 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import { Button, CardBody, CardImg, CardText, CardTitle, CarouselCaption, CarouselItem, Carousel } from 'react-bootstrap';
+import { Button, CardBody,  CardText,CardTitle } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import { useState, useEffect } from 'react';
+import { useState, } from 'react';
 import Marquee from 'react-fast-marquee';
 import '../../HomePages/Home/Home.css'
 import Blog2 from '../../HomePages/Blog/Blog2';
 import Contact from '../../HomePages/Contact/Contact';
-import Port from '../../HomePages/Portfolio/Portfolio';
 import Banner from '../../HomePages/Bannerpage/Banner';
 import Count from '../../HomePages/Count/Count'
 import ScrollTrigger from 'react-scroll-trigger'
 import Testominials from '../Testominals/Testomnials';
+import Port from '../Port/Port';
+
+
 
 export default function Home() {
     const[clients, setClients]=useState(false)
@@ -31,9 +33,9 @@ export default function Home() {
                     <Count clients={clients}/>
                     <Row className=' d-none d-sm-flex justify-content-evenly py-5 '
                         style={{
-                            backgroundImage: "url('/Image/gfg.png')",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
+                            backgroundImage: "url('/Image/grey.png')",
+                            backgroundSize: "60%",
+                            backgroundPosition: "right",
                             backgroundRepeat: "no-repeat",
                             backgroundColor:"#FFFF"
 
@@ -84,7 +86,7 @@ export default function Home() {
                     <Contact clients={clients} />
                     <Row className='shadow-xl  py-5'
                         style={{
-                            backgroundImage: "url('/Image/gfg2.png')",
+                            backgroundImage: "url('/Image/blue.png')",
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             backgroundRepeat: "no-repeat",
@@ -261,7 +263,8 @@ export default function Home() {
 
                    
                     <Blog2 />
-                    <Port />
+                    <Port/>
+               
                     </ScrollTrigger>
               
              

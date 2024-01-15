@@ -1,10 +1,9 @@
 /* Testiominals */ 
 .card-main-Testominals2{
-    width: 700px!important;
     border: none!important;
    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
    background-color: white!important;
-
+   max-width:200px!important;
 }
 .card-main-Testominals2.card-img {
     padding: 16px !important;
@@ -38,8 +37,4 @@
     margin-top: 0px;
     width: 20px;
     height: 20px;
-}
-.carousel-control-next-icon,.carousel-control-prev-icon{
-    background-color: black!important;
-    border-radius: 50px;
 }
