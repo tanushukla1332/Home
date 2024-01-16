@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import { Container } from "react-bootstrap";
 import Footer from './Components/Footer/Fotter';
 import Portfolio from "./Components/PortFoliPages/Portfolio/Portfolio";
+import Career from "./Components/CareerPages/Career/Career";
 
 import './App.css';
 
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/career"  element={<Career/>}></Route>
         </Routes>
         <Footer />
       </Container>
