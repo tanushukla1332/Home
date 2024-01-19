@@ -1,0 +1,11 @@
+.Temp1-textMain{
+    color: white;
+    padding-top: 20px;
+    
+}
+.Temp1-textMain>ul>li{
+    list-style: none;
+}
+.Temp1-textMain>h2{
+    padding-left: 35px;
+}

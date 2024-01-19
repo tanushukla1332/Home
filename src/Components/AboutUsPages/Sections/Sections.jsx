@@ -16,8 +16,8 @@ export default function Sections(){
         <span> With 10+ years of experience in measuring the landscape of every industry and a passion for technology, our team has successfully provided IT 
         solutions and marketing strategies to clients all around the globe.</span>
         </div>
-        <div>
-        <img src="Image/Ab-2.png" alt="" className='img-fluid' />
+        <div className='d-md-flex justify-content-center align-items-center'>
+        <img src="Image/Ab-2.png" alt="" className='img-fluid d-md-flex justify-content-center align-items-center' />
         </div>
 
         </Col>
@@ -34,8 +34,8 @@ export default function Sections(){
         administration, cybersecurity, system integration, and cloud solutions. Our expertise ensures that your technology infrastructure is robust, secure, and 
         optimized for performance</p>
         </div>
-        <div>
-        <img src="Image/Ab-3.png" alt="" className='img-fluid' />
+        <div className='d-md-flex justify-content-center align-items-center'>
+        <img src="Image/Ab-3.png" alt="" className='img-fluid d-md-flex justify-content-center align-items-center' />
         </div>
 
         </Col>
@@ -52,7 +52,7 @@ export default function Sections(){
         content creation, and more.
         </p>
         </div>
-        <div>
+        <div className='d-md-flex justify-content-center align-items-center'>
         <img src="Image/Ab-4.png" alt="" className='img-fluid' />
         </div>
 
@@ -68,8 +68,8 @@ export default function Sections(){
         <span> Join the ranks of our satisfied clients who have experienced the transformative power of our IT solutions and digital marketing services. Let RazoByte 
         be your trusted partner in navigating the digital landscape and achieving unparalleled success.</span>
         </div>
-        <div>
-        <img src="Image/Ab-5.png" alt="" className='img-fluid' />
+        <div className='d-md-flex justify-content-center align-items-center' >
+        <img src="Image/Ab-5.png" alt="" className='img-fluid d-md-flex justify-content-center align-items-center' />
         </div>
 
         </Col>

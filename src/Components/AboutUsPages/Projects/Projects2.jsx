@@ -9,7 +9,7 @@ export default function Testominials() {
                 <h4>Tow Web Design Projects</h4>
                 <p className='sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, consequuntur.</p>
             </div>
-            <Col md={12} className='d-flex justify-content-center align-items-center' >
+            <Col md={12} className='d-flex justify-content-center align-items-center projectsindictaors' >
                 <Carousel indicators={true}>
                     <Carousel.Item>
                         <Row className='justify-content-center align-items-center'>
@@ -41,10 +41,7 @@ export default function Testominials() {
                                 <div className='img-1-style2'>
                                     <h3>MDRC</h3>
                                     <img src="Image/Ab-6.jpg" alt="" className='img-fluid' style={{ height: "70vh", width: "650px" }} />
-
                                 </div>
-
-
                             </Col>
                         </Row>
                     </Carousel.Item>

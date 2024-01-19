@@ -1,0 +1,22 @@
+.project-section-shadow-part{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.068);
+    background-color:white!important;
+   border-radius:20px;
+   min-height: 40vh;
+}
+.project-section-shadow-part img{
+    background-color:white!important;
+
+}
+.img-shadow-Projectsec img {
+    border-radius:5%;
+    height: 60vh;
+  
+}
+.allsections-text-desgin{
+    color: #5E5E5E;
+}
+.allsections-text-desgin>h2{
+    font-size: 25px;
+    font-weight:600;
+}

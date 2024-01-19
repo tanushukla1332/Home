@@ -7,7 +7,7 @@ export default function Count({ clients }) {
     return (
         <>
         <Row style={{ backgroundColor: "#FFF" }}>
-                <Col md={12} className='col-count d-block  d-sm-flex'>
+                <Col md={12} className='col-count d-block d-none d-md-flex'>
                     <div className='clients-card2'>
                         <div className='count-img'>
                             <img src="Image/Mask group (1).png" alt="" className='img-fluid' />

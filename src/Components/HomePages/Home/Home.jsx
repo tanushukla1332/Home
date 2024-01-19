@@ -2,8 +2,7 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import { Button, CardBody, CardText, CardTitle } from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
+import { Button} from 'react-bootstrap';
 import { useState, } from 'react';
 import Marquee from 'react-fast-marquee';
 import '../../HomePages/Home/Home.css'
@@ -14,11 +13,16 @@ import Count from '../../HomePages/Count/Count'
 import ScrollTrigger from 'react-scroll-trigger'
 import Testominials from '../Testominals/Testomnials';
 import Port from '../Port/Port';
+import { useNavigate } from 'react-router';
+import Services from '../Services/Services';
+
+
 
 
 
 export default function Home() {
     const [clients, setClients] = useState(false)
+    const navigate=useNavigate()
 
 
 
@@ -31,193 +35,102 @@ export default function Home() {
             <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)} >
                 <Banner />
                 <Count clients={clients} />
-                <Row className=' d-none d-sm-flex justify-content-evenly py-5'
+                <Row className=' d-none d-sm-flex justify-content-center align-items-center py-5 px-0 gap-5'
                     style={{
-                        backgroundImage: "url('/Image/grey.png')",
-                        backgroundSize: "60%",
-                        backgroundPosition: "right",
-                        backgroundRepeat: "no-repeat",
-                        backgroundColor:"#FFF"
+                        backgroundColor:"#FFFF "
 
                     }}>
-                    <Col md={6} className=' px-1 py-3 d-flex align-items-center' 
+                    <div className='text-center'>
+                    <h2 className='hed2'>Our Features</h2>
+                    <h2 className='subheading-sections'>Transforming Ideas into Digital Solutions</h2>
+                    </div>
+                    <Col md={4} className='d-md-flex align-items-center justify-content-center' 
                   >
-                        <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "95%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c "}}
+                        <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c "}}
                     
                         /></Col>
-                    <Col  >
-                        <div className='spacing'>
-                            <h1 className=' hed1 pb-4 '>Our Features</h1>
-                            <h2 className='pb-3 hed2'>Transforming Ideas into Digital Solutions</h2>
-                            <p className='sm fs-6  fs-md-3'>Welcome to RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
+                    <Col md={5}>
+                        <div className='spacing'
+                        style={{
+                            backgroundImage: "url('/Image/grey.png')",
+                            backgroundSize: "70%",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundColor:"#FFFF "
+    
+                        }}>
+                          
+                            <p className='sm fs-6 fs-md-3'>Welcome to RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
                             <div className='spacing2'>
                                 At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                             </div>
-                            <Button variant='light' className='btnmain my-3 pt-1' style={{ borderRadius: '1px' }} >Get a quote</Button>
+                            <div className='py-3'>
+                            <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }} 
+                            onClick={()=>navigate('/about')}>Know More</Button>
+                            </div>
+                           
                         </div>
                     </Col>
                 </Row>
-                <Row className='d-block d-sm-none  justify-content-evenly py-5'
+                <Row className='d-block d-sm-none pt-5'
                     style={{
                         backgroundImage: "url('/Image/grey.png')",
-                        backgroundSize: "cover",
+                        backgroundSize: "80%",
                         backgroundPosition: "center",
-                        backgroundColor:"red"
+                        backgroundColor:"#FFFF",
+                        backgroundRepeat:"no-repeat"
                     }}
                 >
-                    <Col >
+                <div className='text-center'>
+                <h2 className='hed2'>Our Features</h2>
+                <h2 className='subheading-sections'>Transforming Ideas into Digital Solutions</h2>
+                </div>
+                    <Col md ={6}>
                         <div className='spacing'>
-                            <h1 className='hed1 pb-4 '>Our Features</h1>
-                            <h3 className='pb-3 hed3 '>Transforming Ideas into Digital Solutions</h3>
-                            <p className='sm fs-6  fs-md-3'>Welcome to
+                            <p className='sm fs-6 fs-md-3 pt-3'>Welcome to
                                 RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
-                            <div className=' spacing2 '>s
-                                At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
-                            </div>
-
-                            <Button variant='light' className='btnmain my-3 pt-1' style={{ borderRadius: '1px' }} >Get a quote</Button>
+                                <div className='d-flex justify-content-center  py-3'> 
+                                <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }}
+                                onClick={()=>navigate('/about')}
+                             >Know More</Button>
+                                </div>
                         </div>
                     </Col>
-                    <Col md={6} className='px-1 py-3 d-flex align-items-center' style={{backgroundColor:"rgba(90, 161, 227, 0.322)"}} 
+                    <Col md={4} className='d-md-flex align-items-center d-none'
                     >
-                        <Image src='/Image/our.jpg' alt=''
-                            style={{
-                                width: "100%", maxHeight: "100%", borderRadius: "3px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.2)"
-                            }}
-                            fluid /></Col>
-                </Row>
-                <Row className='shadow-xl '
-                    style={{
-                        
-                        backgroundColor: "#FFFF"
-                    }}>
-                    <h2 className='text-center'> My Awesome Services</h2>
-                    <p className='text-center '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, unde!</p>
-                    <Col md className='mb-4 d-flex px-0'>
-                        <Card className='card-clip1'
-                            style={{
-                                backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (3).jpeg')"
-                            }} >
-                            <CardBody className='text-light'>
-                                <CardTitle>
-                                    <h1 className='fw-bold'>Innovative Web Design</h1>
-                                </CardTitle>
-                                <CardText>
-                                    <h4 className='fw-bold text-center'>Crafting Exceptional Web
-                                        Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
-                                        exceptional web design solutions. We
-                                        are a team of passionate designers
-                                        and developers who believe in the
-                                        power of captivating web experiences.</p>
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                        <Card className='card-clip2'
-                            style={{
-                                backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/up1 (2).jpeg')"
-                            }} >
-                            <CardBody className='text-light'>
-                                <CardTitle>
-                                    <h1 className='fw-bold text-center' >Ecommerce Solutions</h1>
-                                </CardTitle>
-                                <CardText>
-                                    <h4 className='fw-bold text-center'>Crafting Exceptional Web
-                                        Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
-                                        exceptional web design solutions. We
-                                        are a team of passionate designers
-                                        and developers who believe in the
-                                        power of captivating web experiences.</p>
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                        <Card className='card-clip3'
-                            style={{
-                                backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (1).jpeg')"
-                            }} >
-                            <CardBody className='text-light '>
-                                <CardTitle>
-                                    <h1 className='fw-bold text-center' >Search Engine Optimization</h1>
-                                </CardTitle>
-                                <CardText>
-                                    <h4 className='fw-bold'>Crafting Exceptional Web
-                                        Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
-                                        exceptional web design solutions. We
-                                        are a team of passionate designers
-                                        and developers who believe in the
-                                        power of captivating web experiences.</p>
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                        <Card className='card-clip4'
-                            style={{
-                                backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/up1 (1).jpeg')"
-                            }} >
-                            <CardBody className='text-light '>
-                                <CardTitle>
-                                    <h1 className='fw-bold' >GOOGLE LOCAL LISTING</h1>
-                                </CardTitle>
-                                <CardText>
-                                    <h4 className='fw-bold text-center'>Crafting Exceptional Web
-                                        Experiences</h4>
-                                    <p className='sm '>Welcome to razObyte, your partner in
-                                        exceptional web design solutions. We
-                                        are a team of passionate designers
-                                        and developers who believe in the
-                                        power of captivating web experiences.</p>
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                        <Card className='card-clip5'
-                            style={{
-                                backgroundImage: "linear-gradient(45deg, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.514)), url('Image/Ser1 (4).jpeg')"
-                            }} >
-                            <CardBody className='text-light'>
-                                <CardTitle>
-                                    <h1 className='fw-bold ' >GOOGLE ADWORDS</h1>
-                                </CardTitle>
-                                <CardText>
-                                    <h4 className='fw-bold text-center'>Crafting Exceptional Web
-                                        Experiences</h4>
-                                    <p className='sm '>Welcome to razObyte, your partner in
-                                        exceptional web design solutions. We
-                                        are a team of passionate designers
-                                        and developers who believe in the
-                                        power of captivating web experiences.</p>
-                                </CardText>
-                            </CardBody>
-                        </Card>
+                    <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c ",paddingTop:"50px"}}
+                
+                    />
                     </Col>
                 </Row>
-                <Row className='d-flex justify-content-center flex-wrap'
-                style={{backgroundColor:"#FFFF"}}
+                <Services/>
+                <Row className='d-flex justify-content-center align-items-center flex-wrap py-5'
+                style={{backgroundImage:"url('Image/Rectangle 51 (1).png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"}}
                     >
-                    <div className='text-center py-3'>
-                        <h2 className='hed2'>Our Clients</h2>
-                        <p className='sm'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, a!</p>
+                    <div className='text-center'>
+                        <h2 className='hed2 text-light'>Our Clients</h2>
+                        <p className='sm text-light text-center'>From startups to Fortune 500 companies,</p>
                     </div>
-                    <Col >
+                    <Col md >
                         <Marquee>
                             <div className='allclients'>
-                                <div className='m-1 flex space-x-5 p-4' >
+                                <div className='d-flex   ' >
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image005-300x200.jpg" alt=" hello" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image004-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/galuku_logo-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/ohreco-300x200.jpg" alt="" className='img-fluid' />
 
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image009-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/yes-creation-1-300x200.png" alt="" className='img-fluid' />
                                 </div>
                             </div>
@@ -225,22 +138,22 @@ export default function Home() {
                         </Marquee>
                         <Marquee autoFill pauseOnClick direction='right'>
                             <div className='allclients'>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className=' d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image008-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image007-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image006-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/avon-logo-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex '>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/astro-logo-300x200.jpg" alt="" className='img-fluid' />
                                 </div>
-                                <div className='m-1 rounded-xl flex space-x-5 p-4'>
+                                <div className='d-flex'>
                                     <img
                                         src="https://razobyte.com/wp-content/uploads/2019/04/verona-logo3-1-300x200.png"
                                         alt=""

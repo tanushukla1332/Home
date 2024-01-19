@@ -1,8 +1,10 @@
 
 import {Row,Col,Button} from 'react-bootstrap'
 import '../Main/Main.css'
+import { useNavigate } from 'react-router'
 
 export default function Main(){
+  const navigate=useNavigate()
     return(
         <>
       
@@ -15,7 +17,7 @@ export default function Main(){
         <h2>we must design for the way people behave,not for how we wuld to wish them behave"
         </h2>
         <h3 >~Don norman (The Father Of UX)</h3>
-        <Button>Know More</Button>
+        <Button onClick={()=>navigate('/template')}>Know More</Button>
       </div>
         </Col>
         <Col md={3}>

@@ -11,27 +11,28 @@ export default function Blog() {
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+
+    
     return (
         <>
-            <Row className='justify-content-center align-items-center py-4' style=
-            {{backgroundImage:"url('/Image/blog-bg.jpg')",
+            <Row className='justify-content-center align-items-center mb-5' style=
+            {{backgroundImage:"url('/Image/bannerfnjf.png')",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
-            backgroundPosition:"center"
-            
-           
+            backgroundPosition:"center",
+            backgroundColor:"ffffff52"
         }}>
-                <div className='text-center text-light'>
-                    <h3 className='hed2'>Blogs</h3>
-                    <p className='subheading-sections'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
+                <div className='text-center text-light py-5'>
+                    <h3>Blogs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
                 </div>
-                <Col md={12} className='pb-3 d-flex justify-content-center align-items-center blogsindicators'>
+                <Col md={12} className='pb-5 d-flex justify-content-center'>
                     <Carousel indicators   activeIndex={index} onSelect={handleSelect}>
                         {blogsData.map((data, id) => (
                             <CarouselItem key={id} >
-                            <Row className='d-flex justify-content-center align-items-center'>
-                            <Col md={3} className='d-flex justify-content-center align-items-center '>
-                            <Card className='cardmain d-flex justify-content-center align-items-center'>
+                            <Row className='d-flex justify-content-center'>
+                            <Col md={3} className='d-flex justify-content-center'>
+                            <Card className='cardmain d-flex justify-content-center'>
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>
                                         <CardTitle>
@@ -50,8 +51,8 @@ export default function Blog() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-md-flex d-none  justify-content-center align-items-center'>
-                            <Card className='cardmain d-flex justify-content-center align-items-center'>
+                            <Col md={3} className='d-flex justify-content-center'>
+                            <Card className='cardmain d-flex justify-content-center'>
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>
                                         <CardTitle>
@@ -70,7 +71,7 @@ export default function Blog() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-md-flex d-none justify-content-center align-items-center'>
+                            <Col md={3} className='d-flex justify-content-center'>
                             <Card className='cardmain d-flex justify-content-center align-items-center' >
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>
@@ -90,7 +91,10 @@ export default function Blog() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            </Row>                              
+                        
+                            
+                            </Row>
+                              
                             </CarouselItem>
                             
                         ))}
@@ -98,7 +102,7 @@ export default function Blog() {
                     </Carousel>
                 
                 </Col>
-                    <Button className='explore-btn-blog mb-5'>Explore all blogs</Button>
+                    <Button className='explore-btn-port mb-5'>Explore all blogs</Button>
             </Row>
         </>
     );

@@ -206,11 +206,10 @@
   }
 .Form{
     background-color: white;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.2)!important;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.178)!important;
     border-top-right-radius: 15%!important;
     border-bottom-left-radius: 15%!important;
     /* padding-top:3rem!important; */
-    box-shadow:none !important;
     
 
 
@@ -342,10 +341,9 @@ figcaption{
 /* For h2  */
 
 .hed2{
-    font-size: 38px!important;
-    font-weight:500!important;
-    letter-spacing: 2px!important;
-
+    font-size:25px;
+    font-weight:600;
+    color: #5e5e5e;
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -355,19 +353,19 @@ figcaption{
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .hed2{
         font-size: 30px!important;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) and (min-width:576px) {
     .hed2 {
-        font-size: 20px!important;
+        font-size:22px!important;
     }
 }
-@media screen  and (max-width: 575.98px) {
+@media screen  and (max-width: 576px) and(min-width:360px) {
     .hed2 {
-        font-size: 18px!important;
+        font-size: 20px!important;
     }
 }
 /* heading 3  */
@@ -393,19 +391,61 @@ figcaption{
     }
 }
 
-@media (max-width: 575.98px){
+@media (max-width: 576px){
     .hed3 {
         font-size: 16px!important;
+        letter-spacing: 1px;
     }
+    .hed3{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp:1; /* Adjust the number of lines to show */
+        -webkit-box-orient: vertical;
+
+      }
 }
+/* //For banner para */
+@media (max-width: 768px) and (min-width:576px) {
+    .bannerpara {
+        font-size: 12px!important;
+        letter-spacing: 1px;
+    }
+    .bannerpara {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Adjust the number of lines to show */
+        -webkit-box-orient: vertical;
+      }
+      
+}
+@media (max-width: 576px) and (min-width:360px) {
+    .bannerpara{
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+    .bannerpara{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Adjust the number of lines to show */
+        -webkit-box-orient: vertical;
+      }
+}
+
 /* For parra */
 
 .sm{
-font-size: 15px!important;
-letter-spacing: 1px!important;
-font-weight: 450!important;
+font-size:15px!important;
+letter-spacing:2px;
+font-weight: 450;
+text-align: justify;
 }
-
+.subheading-sections{
+    font-size: 15px;
+    color: #5e5e5e;
+    letter-spacing:2px;
+    font-weight: 450;
+    text-align: center;
+}
 
 
 @media (min-width: 992px) {
@@ -413,22 +453,27 @@ font-weight: 450!important;
         font-size:15px!important;
     }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .sm{
-        font-size:13.5px;
+        font-size:13px;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) and (min-width:576px) {
     .sm {
-        font-size: 12.5px!important;
+        font-size: 12px!important;
+        letter-spacing: 1px;
     }
+    
 }
 
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+
+@media (max-width: 576px) and (min-width:360px) {
     .sm {
-        font-size: 11.5px;
+        font-size: 11px;
+        letter-spacing: 0px;
     }
+    
 }
 @media (max-width: 767.98px) {
     .txt {
@@ -440,13 +485,18 @@ font-weight: 450!important;
 
 /* Our Clients */
 .allclients{
-    display: flex;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    color:#5e5e5e3a;
+
 } 
 .allclients img{
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 50px;
-    width: 300px;
-    height: 200px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.078);
+    border-radius:40px;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
 }
 .clients-card {
     display: flex;
@@ -493,14 +543,7 @@ font-weight: 450!important;
     transform: rotateY(-360deg);
     transition: transform 300ms ease-in-out;
 }
-/* Crad section */
- /* .custom-card{
-    background-color: black!important;
-    transition:transform 0.2s;
-    opacity: 0.8;
 
-
-}
 .custom-card:hover{
     background-color:#3B7FBF!important;
     transform: translateY(-5px);
@@ -531,5 +574,88 @@ font-weight: 450!important;
     z-index: 1; 
     color:white; 
 }
- */
+ 
+/* Home page Resoponsive */
+/* 1st section */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .banner-images-firstsection{
+        height:40vh!important; /* or specify a pixel value */
+    }
 
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) { 
+    .banner-images-firstsection{
+        height:38vh!important; /* or specify a pixel value */
+    }
+
+
+}
+@media  screen and (max-width: 768px) and (min-width: 576px) { 
+    .banner-images-firstsection{
+        height:32vh!important; /* or specify a pixel value */
+        width: 400px!important;
+    }
+ }
+ @media screen and  (max-width: 576px) { 
+    .banner-images-firstsection{
+        height:30vh!important; /* or specify a pixel value */
+        width:300px!important;
+    }
+
+ }
+ /* //Our clinets */
+
+ @media screen and (max-width:576px) and (min-width: 30px){
+
+    .allclients img{
+        width: 120px;
+        height: 80px;
+        border-radius:20px;
+        padding: 10px;
+        
+    }
+    
+ }
+ 
+ /* //Our clinets */
+
+ @media screen and (min-width:360px) and (max-width:360px){
+
+    .allclients img{
+        width: 100px;
+        height:80px;
+        border-radius:20px;
+        padding: 10px;
+        
+    }
+    .banner-text-all{
+        padding-left: 20px;
+    }
+    .banner-text-all>h1{
+        font-size:16px;
+
+    }
+    .banner-text-all>h3{
+        font-size: 12px;
+    }
+    .banner-text-all>p{
+        font-size: 10px;
+    }
+    
+ }
+ /* //Contact section */
+
+ @media screen  and (max-width:768px) and (min-width:576px){
+    .contactpartnerimage>div>img{
+        width: 100px;
+        height: 50px;
+    }
+
+ }
+ @media screen  and (max-width:576px) and (min-width:360px){
+    .contactpartnerimage>div>img{
+        width: 80px;
+        height: 50px;
+    }
+
+ }

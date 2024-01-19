@@ -3,6 +3,7 @@ import Particles, {initParticlesEngine } from "@tsparticles/react";
 import {Row,Col,Button,Image} from 'react-bootstrap'
 import { loadSlim } from "@tsparticles/slim"; 
 import Data from '../../../Data.json';
+
 export default function App (){
   const [init, setInit] = useState(false);
   const [currentTitle, setCurrentTitle] = useState(0)
@@ -11,6 +12,7 @@ export default function App (){
     const [Allimagess, setAllImage] = useState(0)
     
     const titles = Data.map((data) => data.title)
+ 
     const subtitles = Data.map((data) => data.subTitle)
     const paragraphs = Data.map((data) => data.paragraph)
     const allimages = Data.map((data) => data.image)
@@ -36,7 +38,7 @@ export default function App (){
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+
   };
 
   const options = useMemo(
@@ -124,20 +126,25 @@ export default function App (){
       options={options}
     />
       </div>
-      <Row className='py-3'>      
-            <Col className='text-light'>
-                <h1 className='hed1  mt-5 '>{titles[currentTitle]} </h1>
-                <h3 className=' hed3 '>{subtitles[subheading]}
+      <Row className='py-2 justify-content-center align-items-center px-0'>      
+            <Col md= {5} className='text-light '>
+                <h1 className='hed1  pt-2'>{titles[currentTitle]} </h1>
+                <h3 className='hed3'>{subtitles[subheading]}
                 </h3>
-                <p className=' sm '>{paragraphs[paras]}</p>
-                <Button className=" btm mr-5" variant='dark'>Get in touch </Button>
-                <Button variant='dark' className=" btm mr-5 my-3">About Us</Button>
+                <p className='bannerpara'>{paragraphs[paras]}</p>
+                <div className="d-flex jjustify-content-center align-itmes-center gap-3">
+                <Button className=" btm" variant='dark'>Get in touch </Button>
+                <Button variant='dark' className=" btm ">About Us</Button>
+                </div>
             </Col>
-            <Col md={7} className='pt-2'>
+            
+            
+            <Col md={6} className='d-flex justify-content-center align-items-center  pt-2 '>
                 <Image src={allimages[Allimagess]} alt='' fluid
-                    className='rounded-1' style={{ width: "100%", height: "500px" }}
+                    className='rounded-1 banner-images-firstsection' style={{height:"60vh"}}
                 />
             </Col>
+           
         </Row>  
       </>
     

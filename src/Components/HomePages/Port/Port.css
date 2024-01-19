@@ -19,7 +19,6 @@
 }
 
 .card-portfolio-main{
-    height: 75vh!important;
    position: relative!important;
    border: 1px solid rgba(94, 94, 94, 0.123)!important;
 }
@@ -28,16 +27,71 @@
     justify-content:center;
     align-items: center;
     gap:3px;
-    padding-top:10px;
- 
+    padding-top:30px;
 }
-
 .AllbuttonForMove Button {
-    background-color: rgba(94, 94, 94, 0.267)!important;
+    background-color:#3B7FBF!important;
     border: none!important;
     box-shadow: none!important;
-    color: black!Important;
+    color: white!Important;
+    
  
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .card-portfolio-main{
+        height:40vh!important; /* or specify a pixel value */
+        width:420px!important ;
+    }
+    .card-portfolio-main img{
+        height: 30vh!important;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) { 
+    .card-portfolio-main{
+        height:30vh!important; /* or specify a pixel value */
+        width:320px!important ;
+    }
+    .card-portfolio-main img{
+        height: 20vh!important;
+    }
+    .port-text:hover .icon-link {
+        opacity:0;
+    }
+    
+
+
+}
+@media  screen and (max-width: 768px) and (min-width: 576px) { 
+    .card-portfolio-main{
+        height:40vh!important; /* or specify a pixel value */
+        width:280px!important ;
+    }
+    .card-portfolio-main img{
+        height: 30vh!important;
+    }
+    .port-text:hover .icon-link {
+        opacity:0;
+    }
+ }
+ @media screen and  (max-width: 576px) { 
+    .card-portfolio-main{
+        height:30vh!important; /* or specify a pixel value */
+        width:150px!important ;
+    }
+    .card-portfolio-main img{
+        height:15vh!important;
+    }
+    .port-text:hover .icon-link {
+        opacity:0;
+    }
+ }
+ @media screen and (max-width:300px) {
+    .card-portfolio-main{
+    display:none!important;
+    }
+
+    
+ }
 
 

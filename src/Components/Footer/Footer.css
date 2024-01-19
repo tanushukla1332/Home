@@ -37,7 +37,7 @@
 .Companytext::after{
     background-color:rgba(255, 255, 255, 0.493);
     display: block;
-    width: 81%;
+    width: 83%;
     height: 1px;
     content: "";
     position: absolute;
@@ -55,7 +55,7 @@
 .Companytext2::after{
     background-color:rgba(255, 255, 255, 0.493);
     display: block;
-    width: 77%;
+    width: 78.5%;
     height: 1px;
     content: "";
     position: absolute;
@@ -72,7 +72,7 @@
 .Companytext3::after{
     background-color:rgba(255, 255, 255, 0.493);
     display: block;
-    width: 82%;
+    width: 83.5%;
     height: 1px;
     content: "";
     position: absolute;
@@ -93,6 +93,19 @@
    margin-top: 20px;
 
 }
+.link ul{
+    justify-content: center;
+    align-items: center;
+    gap:100px
+  
+}
+.link ul>li{
+    justify-content: center;
+    align-items: center;
+
+  
+    
+}
 .link ul li {
     list-style: none;
     cursor: pointer;
@@ -104,6 +117,20 @@
     color: rgba(255, 255, 255, 0.603);
 
 }
+.mainServicesDiv{
+    justify-content: center;
+    align-items: center;
+    gap:40px
+}
+.AdresssectionText{
+    justify-content: center;
+    align-items:center;
+    gap:0px
+    
+
+}
+
+
 
 .Secbtn{
     outline: none;
@@ -135,13 +162,10 @@
   
 }
 .last{
-    font-size: 12px;
+    font-size: 14px;
    
 }
-.icon-link{
-  margin-left: px;
-  
-}
+
 
 
 .Rating {
@@ -186,6 +210,118 @@
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .Companytext::after{
+        width:76%;
+
+    }
+    .link ul{
+        justify-content: center;
+        align-items: center;
+        gap:40px
+      
+    }
+    .mainServicesDiv{
+        gap:20px
+    }
+ .Companytext2::after{
+    width:72%;
 
 
+    }
 
+.Companytext3::after{
+   width:78%;
+   }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) { 
+    .Companytext::after{
+        width:70%;
+
+    }
+    .link ul{
+        justify-content: center;
+        align-items: center;
+        gap:20px
+      
+    }
+    .mainServicesDiv{
+        gap:10px
+    }
+ .Companytext2::after{
+    width:65%;
+
+
+    }
+
+.Companytext3::after{
+   width:70%;
+   }
+
+}
+@media  screen and (max-width: 767.98px) and (min-width: 575.98px) {
+    .Companytext::after{
+        width:68%;
+
+    }
+    .link ul{
+        justify-content: center;
+        align-items: center;
+        gap:20px
+      
+    }
+    .mainServicesDiv{
+        gap:10px
+    }
+ .Companytext2::after{
+    width:60%;
+
+
+    }
+
+.Companytext3::after{
+   width:68%;
+   }
+
+} 
+    
+ 
+ @media screen and  (max-width: 575.98px) { 
+    .Companytext::after{
+        width:60%;
+
+    }
+    .link ul{
+        justify-content: center;
+        align-items: center;
+        gap:20px
+      
+    }
+    .mainServicesDiv{
+        gap:10px
+    }
+ .Companytext2::after{
+    width:50%;
+
+
+    }
+.Companytext3::after{
+   width:60%;
+   }
+} 
+@media screen and (max-width:360px){
+    .Companytext::after{
+   display: none;
+    }
+ .Companytext2::after{
+    display: none;
+
+
+    }
+.Companytext3::after{
+display: none;
+   }
+
+
+}

@@ -1,0 +1,293 @@
+
+
+.card-clip {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 550px !important;
+    height: 500px !important;
+    clip-path: inset(0 0 0 0) !important;
+    transition: transform 0.3s;
+    /* border-right: 1px solid white!important; */
+    
+
+
+
+}
+
+.card-clip::before {
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px !important;
+    height: 500px !important;
+    background: linear-gradient(45deg, rgba(128, 128, 128, 0.493), #063b6d21) !important;
+    z-index: -1;
+    clip-path: inset(0 0 0 0) !important;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.card-clip:hover {
+    transform: scale(1.1);
+}
+
+.card-clip:hover::before {
+    opacity: 1;
+}
+
+.card-clip h1 {
+    position: relative;
+    z-index: 1;
+    right: 8%;
+    margin-top:15rem;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.card-clip :hover h1 {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    font-size: 20px !important;
+
+}
+
+.card-clip p {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s transform 0.5s ease-in-out;
+    ;
+    z-index: 1;
+    top: 100px !important;
+    right: 8%!important; 
+  left: 3%!important; 
+  text-align: justify;
+}
+
+
+.card-clip:hover p {
+    opacity: 1;
+    transform: translateY(0, -50%);
+
+}
+
+.card-clip h4 {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    top: 10px;
+    transform: translate(-0%, -100%);
+    right: 5px !important;
+}
+
+.card-clip:hover h4 {
+    opacity: 1;
+    position: relative;
+    transform: translateY(0, -50%);
+    right: 5px !important;
+
+}
+
+
+
+.explore-btn-services{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px!important;
+    border: 1px solid #3B7FBF!important;
+    height: 100%important;
+    background: #3B7FBF!important;
+    outline: none!important;
+    font-size: .85rem;
+    cursor: pointer;
+    font-weight: 550!important;
+    letter-spacing: 2px!important;
+   box-shadow:5px 5px 5px  5px (0,0,0,0.9)!important;
+   overflow: hidden!important;
+   z-index: 1!important;
+   box-shadow:none !important;
+   color:#3B7FBF!important;
+   border-radius: 5px!important;
+}
+.explore-btn-services:nth-child(1){
+background:transparent !important;
+}
+.explore-btn-services::before{
+content: "";
+position: absolute!important;
+top: 0;
+left: 0;
+width: 0!important;
+height: 100%!important;
+background:#3B7FBF!important;
+z-index: -1!Important;
+transition: .7s!important;
+border-radius: 5px!important;
+}
+.explore-btn-services:hover::before{
+width: 100%!important;
+}
+.explore-btn-services:hover{
+    color: white!important;
+
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .card-clip {
+        height: 300px !important;
+        width: 250px !important;
+
+    }
+
+    .card-clip:hover {
+        transform: none !important;
+    }
+
+    .card-clip h4 {
+        font-size: 17px;
+        top: 2px
+    }
+
+    .card-clip p {
+        top: 40px !important
+    }
+
+    .card-clip h1 {
+        margin-top: 7rem;
+        font-size:25px!important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .card-clip {
+        height:200px !important;
+        width: 350px !important;
+
+    }
+
+    .card-clip:hover {
+        transform: none !important;
+        
+    }
+
+    .card-clip h4 {
+        font-size: 15px !important;
+        top:8px
+    }
+
+    .card-clip p {
+        top:20px !important;
+        font-size: 14px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .card-clip h1 {
+        margin-top: 7rem;
+        font-size: 20px!important;
+
+
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 576px) {
+    .card-clip {
+        height:150px !important;
+        width: 720px !important;
+    }
+
+    .card-clip:hover {
+        transform: none !important;
+    }
+
+    .card-clip h4 {
+        font-size: 15px !important;
+        top:5px
+    }
+
+    .card-clip p {
+        top: 15px !important;
+        font-size: 14px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .card-clip h1 {
+        margin-top:3rem;
+        font-size: 17px !important;
+
+
+    }
+
+}
+
+@media screen and (max-width: 576px) and (min-width:360px) {
+    .card-clip {
+        height:200px !important;
+        width:400px !important;
+
+    }
+
+    .card-clip:hover {
+        transform: none !important;
+    }
+
+    .card-clip h4 {
+        font-size: 13px !important;
+        top: 12px
+    }
+    .card-clip p {
+        top: 40px !important;
+        font-size: 12px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .card-clip h1 {
+        margin-top: 4rem;
+        font-size: 16px !important;
+
+
+    }
+
+}
+@media screen and (max-width:360px) and (min-width:300px){
+    .card-clip {
+        height:200px !important;
+        width:300px !important;
+
+    }
+
+    .card-clip:hover {
+        transform: none !important;
+    }
+
+    .card-clip h4 {
+        font-size: 13px !important;
+        top: 12px
+    }
+    .card-clip p {
+        top: 60px !important;
+        font-size: 12px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .card-clip h1 {
+        margin-top: 4rem;
+        font-size: 16px !important;
+
+
+    }
+    
+}    

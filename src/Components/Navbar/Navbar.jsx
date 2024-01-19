@@ -8,15 +8,17 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
-import '../Navbar/Navbar.css'
+import '../Navbar/Navbar.css';
+import { useNavigate } from 'react-router';
 
 import { IoSearchSharp } from "react-icons/io5";
 
 export default function Header() {
+  const navigate=useNavigate()
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='p-0 navmaindiv'  >
+      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='p-0 navmaindiv'>
         <Container fluid>
           <NavbarBrand href="/#">
             <Image
@@ -28,12 +30,11 @@ export default function Header() {
           <NavbarToggle aria-controls="responsive-navbar-nav" style={{ marginRight: "10px" }} />
           <NavbarCollapse id="responsive-navbar-nav">
             <Nav className="d-flex gap-2 justify-content-start mr-auto ml-4">
-              <NavLink href='/' style={{color: "white" }} active>Home</NavLink>
-              <NavLink href='/about' style={{color: "white" }}>About</NavLink>
-              <NavDropdown title="Services" id="navbarScrollingDropdown" className='MainDropDownList'  style={{color: "white" }}>
+              <NavLink href='/'  className='navlinkmenutitle' active>Home</NavLink>
+              <NavLink href='/about' className='navlinkmenutitle'>About</NavLink>
+              <NavDropdown id="navbarScrollingDropdown" title="Services" className='MainDropDownList  navlinkmenutitle' onClick={()=>navigate('/services')} >
                 <div className='d-flex backgroundhover'>
-                  <NavDropdown.Item >Digital Marketing</NavDropdown.Item>
-                  <NavDropdown title="" menuRight className='dropDownMwnuItems'>
+                  <NavDropdown title="Digital Marketing" id='navbarScrrolllingDigitalMarketing'  className="dropDownMwnuItems">
                     <div >
                     <NavDropdown.Item >SEO</NavDropdown.Item>
                     <NavDropdown.Item >Sem</NavDropdown.Item>
@@ -43,24 +44,25 @@ export default function Header() {
                 </div>
                 <NavDropdown.Divider />
                 <div className='d-flex'>
-                  <NavDropdown.Item >Design</NavDropdown.Item>
-                  <NavDropdown title=""  menuRight className='dropDownMwnuItems' >
+                  <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
+                 
                     <NavDropdown.Item >SEO</NavDropdown.Item>
                     <NavDropdown.Item >Sem</NavDropdown.Item>
                   </NavDropdown>
                 </div>
                 <NavDropdown.Divider />
                 <div className='d-flex'>
-                  <NavDropdown.Item >Development</NavDropdown.Item>
-                  <NavDropdown title=""  menuRight className='dropDownMwnuItems' >
+                <NavDropdown title="Development" id="navbarDevelopmentScroll"className='dropDownMwnuItems' >
+                
+                
                     <NavDropdown.Item >SEO</NavDropdown.Item>
                     <NavDropdown.Item >Sem</NavDropdown.Item>
                   </NavDropdown>
                 </div>
                 <NavDropdown.Divider />
                 <div className='d-flex'>
-                <NavDropdown.Item >Design</NavDropdown.Item>
-                <NavDropdown title=""  menuRight className='dropDownMwnuItems' >
+                <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
+
                   <NavDropdown.Item >SEO</NavDropdown.Item>
                   <NavDropdown.Item >Sem</NavDropdown.Item>
                 </NavDropdown>
@@ -68,9 +70,9 @@ export default function Header() {
 
                 
               </NavDropdown>
-              <NavLink href='/portfolio' style={{color: "white" }}>Potfolio</NavLink>
-              <NavLink href='/login' style={{color: "white" }}>Get in Touch</NavLink>
-              <NavLink href='/career' style={{color: "white" }}>Career</NavLink>
+              <NavLink href='/portfolio'  className='navlinkmenutitle'>Potfolio</NavLink>
+              <NavLink href='/login' className='navlinkmenutitle'>Get in Touch</NavLink>
+              <NavLink href='/career' className='navlinkmenutitle'>Career</NavLink>
               <NavLink>
                 <IoSearchSharp color='#3B7FBF' size={30} />
               </NavLink>

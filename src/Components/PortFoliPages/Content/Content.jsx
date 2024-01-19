@@ -11,7 +11,7 @@ export default function Content() {
     const filteredBlogs = currentCategory === 'All' ? portfolioData : portfolioData.filter(blog => blog.category === currentCategory);
 
     return (
-        <Row className='justify-content-center'>
+        <Row className='justify-content-center align-items-center'>
             <div className='PortfoliomaindivButton'>
                 <div className='allportfoliobutton'>
                     <Button variant='dark' onClick={() => setCurrentCategory('All')}>Show All</Button>
@@ -28,7 +28,7 @@ export default function Content() {
 
             {filteredBlogs.map((data, id) => (
 
-                <Col key={id} md={4} className='pb-5 d-flex justify-conent-center' >
+                <Col key={id} md={4} className='pb-5 d-md-flex justify-conent-center align-items-center' >
 
                     <Card className='cardmainPortfolioSec'>
                         <CardImg src={data.image} variant='top' fluid className='card-imgPort' />

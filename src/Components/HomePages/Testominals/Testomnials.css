@@ -1,20 +1,29 @@
 /* Testiominals */ 
 .card-main-Testominals{
-    width: 600px!important;
+    display:flex!important;
+    justify-content: center!important;
     border: none!important;
    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
-   background-color: #3B7FBF!important;
+   background-color: #FFFF!important;
 
 }
-.card-main-Testominals.card-img {
-    padding: 16px !important;
-    max-height: 100px !important;
-    max-width: 100px !important;
+.cardinnerdata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:250px;
 }
+.card-img-testominials .card-img{   
+    max-height:150px !important;
+    max-width: 250px !important;
+    border-radius: 50%!important;
+}
+
 .review h4{
    position: relative;
-   font-size: 18px;
-   color: #ffffff;
+   font-size: 22px;
+   color: #5e5e5e;
+   font-weight:600;
  
 }
 .review h4::before{
@@ -24,28 +33,49 @@
     top: 100%;
     left: 0;
     height:1px;
-    width: 50%;
-    background-color:white;
+    width: 100%;
+    background-color:#5e5e5e5d;
 }
 .review h5{
     font-size: 14px;
-    color: #ffffff;
+    color: #5e5e5e;
 }
+.testpara{
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
 
 .review img{
     margin-top: 0px;
     width: 20px;
     height: 20px;
 }
-.carousel-control-next-icon,.carousel-control-prev-icon{
-    border-radius: 50px!important;
-    border: 2px solid #3B7FBF!important;
-    color: #3B7FBF !important;
-
+ @media screen and  (max-width: 576px) { 
+.cardinnerdata{
+    gap: 50px;
     
- 
+
 }
-.carousel-control-next-icon::before,
-.carousel-control-prev-icon::before {
-    color: #3B7FBF !important;
+
 }
+@media screen and (min-width:576px)  {
+    .testominialsindicators>div>.carousel-control-prev {
+          left:-20px!important;
+    }
+    .testominialsindicators>div>.carousel-control-next {
+        right:-20px!important;
+    }
+    
+}
+@media screen and (max-width:576px) and (min-width:300px)  {
+    .testominialsindicators>div>.carousel-control-prev {
+        display: none!important;
+    }
+    .testominialsindicators>div>.carousel-control-next {
+        display: none!important;
+    }
+    
+}
+
+

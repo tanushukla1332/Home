@@ -22,7 +22,7 @@ export default function Port() {
 
     return (
         <>
-            <Row className='py-5'
+            <Row className='py-5 justify-content-center align-items-center'
                 style={{
                     backgroundImage: "url('/Image/blue.png')",
                     backgroundRepeat: "no-repeat",
@@ -32,8 +32,8 @@ export default function Port() {
                 }}
             >
                 <div className='text-center'>
-                    <h3>Portfolio</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3 className='hed2 '>Portfolio</h3>
+                    <p className='subheading-sections'>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div className={`AllbuttonForMove port-text ${currentPage === 2 ? '' : 'slide'}`} >
                     {visibleRecords.map((item) => (
@@ -42,10 +42,9 @@ export default function Port() {
                                 <Card className='card-portfolio-main'>
                                     <CardBody>
                                         <FaExternalLinkAlt className='icon-link' size={45} color='#3B7FBF' />
-                                        <img src={item.image} alt="" className='img-fluid d-flex'
+                                        <img src={item.image} alt="" className='img-fluid'
                                             style={{
-                                                width:"500px",
-                                                height:"400px",
+                                               height  :"50vh",
                                                 padding: "16px",
                                                 objectFit: "cover",
                                                 opacity: "0.9",

@@ -10,12 +10,15 @@ export default function Contact() {
     
     return (
     
-        <Row 
-        style={{ background: 'linear-gradient(to bottom,#3B7FBF, #A1E6FF)'}}
-         className='py-5 px-0  justify-content-center gap-5 align-items-center'
+        <Row style={{backgroundColor:"#FFFF"}}
+         className='px-0 justify-content-center  align-items-center gap-5 py-5'
          >
-        <h2 className=' hed2 text-resize-lg  text-center formlayout text-light mb-5'>Let's Talk To Our Experts</h2>
-        <Col md={5} className='mb-3  py-3'>
+         <div>
+         <h2 className=' hed2 text-center'>Let's Talk To Our Experts</h2>
+         <p className='subheading-sections'>Let's Talk To Our Experts Let's Talk To Our Experts</p>
+         </div>
+    
+        <Col md={5}>
             <div className='justify-content-center align-items-center'>
 
                 <Form className='Form p-4'
@@ -69,30 +72,46 @@ export default function Contact() {
                 </Form>
             </div>
         </Col>
-        <Col md={5} className='mb-3  py-3'>
-           <div className=' d-flex justify-content-center align-items-center'>
-           <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
-           </div>
-           <Row className='px-0 justify-content-center align-items-center gap-3 mt-5
-           ' style={{backgroundImage:"url('Image/Rectangle 211.png')",
-        backgroundRepeat:"no-repeat",backgroundPosition:"180px 25px " ,backgroundSize:"25%"}}>
-           <Col md={5}>
-           <div>
-           <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
-           <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
-           </div>
+        <Col md={5} className='d-none d-md-flex'>
+          <div  className='d-flex  flex-column  justify-content-center align-items-center'>
+          <div className='d-flex justify-content-center align-items-center'>
+          <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
+          </div>
+          <div style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"no-repeat",backgroundSize:"155px 105px",backgroundPosition:"center"}} className='pt-5'>
+         <div >
+          <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
+          <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
+          </div>
+          <div >
+          <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
+          <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
+          </div>
+          </div>
+         
+          </div>
+    
            </Col>
-           <Col md={5}>
-           <div>
-           <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
-           <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
-           </div>
-           
+             <Col md={5} className='d-sm-none'>
+          <div  className='d-flex  flex-column  justify-content-center align-items-center'>
+          <div className='d-flex justify-content-center align-items-center'>
+          <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
+          </div>
+          <div className='d-flex flex-sm-row contactpartnerimage pt-5'>
+         <div>
+          <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
+          <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
+          </div>
+          <div >
+          <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
+          <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
+          </div>
+          </div>
+         
+          </div>
+    
            </Col>
-           <Col>
-           </Col>
-           </Row>
-            </Col>
+    
+            
     </Row>
 
     
