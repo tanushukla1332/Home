@@ -11,38 +11,41 @@ export default function Testominials() {
                 <h3 className='hed2 text-light'>TESTIMONIALS</h3>
                 <p className='testpara text-light'>Don’t Go only with our commitments : Here what our clients says about us:</p>
             </div>
-            <Col md={12} className='d-md-flex justify-content-center align-items-center testominialsindicators' >
+            <Col md className='d-md-flex justify-content-center align-items-center testominialsindicators' >
                 <Carousel indicators={true}>
                     <Carousel.Item>
                         <Row className='justify-content-center align-items-center'>
-                            <Col md={5} className='py-3 d-md-flex justify-content-center align-items-center'>
+                            <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <Card className='card-main-Testominals'>
                                     <CardBody>
                                         <CardTitle>
                                             <div className="cardinnerdata">
                                                 <div className='review'>
-                                                    <h4>Lalit Kumar</h4>
-                                                    <h5>Chief Executive Officer</h5>
+                                                    <h4>Alvin Hong</h4>
+                                                    <h5>Sales manager</h5>
+                                                    <div className='d-flex align-items-center justify-content-center px-4'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                 </div>
+                                                   
+                                                </div>
                                                 <div className='card-img-testominials'>
-                                                    <CardImg src='Image/Rectangle 181.png' fluid
+                                                    <CardImg src='Image/6.jpg' fluid
                                                     />
                                                 </div>
 
                                             </div>
-                                           
+
 
                                         </CardTitle>
                                         <CardText>
-                                        <div>
-                                        <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  style={{width:"2opx",height:"20px"}}/>
-                                    </div>
-                                            <p className='testpara'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div>
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
+                                            </div>
+                                            <p className='testpara'>The SEO and PPC service have been fantastically executed and delivered the Top ranking of my website. All the best</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -54,13 +57,16 @@ export default function Testominials() {
                                             <div className="cardinnerdata">
                                                 <div className='review'>
                                                     <h4>Eunice Yong</h4>
+                                                    <h5>Director</h5>
+                                                    <div className='d-flex align-items-center justify-content-center px-4'>
+                                                        <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                        <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                        <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                        <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                        <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                    </div>
 
-                                                    <h5>Chief Executive Officer</h5>
-                                                    <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                    <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                    <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                    <img src="Image/star 3.png" alt="" className='img-fluid' />
-                                                    <img src="Image/star 3.png" alt="" className='img-fluid' />
+
                                                 </div>
                                                 <div className='card-img-testominials'>
                                                     <CardImg src='Image/Raseo-Technology-Solutions.jpg' fluid
@@ -68,13 +74,13 @@ export default function Testominials() {
                                                 </div>
 
                                             </div>
-                                           
+
                                         </CardTitle>
                                         <CardText>
-                                        <div>
-                                        <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  style={{width:"2opx",height:"20px"}}/>
-                                    </div>
-                                            <p className='testpara'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div>
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
+                                            </div>
+                                            <p className='testpara'>They have been very good to boost my business through SEO campaign and Google adwords, thanks</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -90,12 +96,15 @@ export default function Testominials() {
                                             <div className="cardinnerdata">
                                                 <div className='review'>
                                                     <h4>Eric Lim</h4>
-                                                    <h5>Chief Executive Officer</h5>
+                                                    <h5>Owner</h5>
+                                                    <div className='d-flex align-items-center justify-content-center px-4'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                </div>
+                                                   
                                                 </div>
                                                 <div className='card-img-testominials'>
                                                     <CardImg src='Image/Eric-yong.jpg' fluid
@@ -109,9 +118,9 @@ export default function Testominials() {
 
                                         <CardText>
                                             <div>
-                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{width:"2opx",height:"20px"}} />
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
                                             </div>
-                                            <p className='testpara'>TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p className='testpara'>They are at their words in terms of providing service and support!! all the best.</p>
                                         </CardText>
                                     </CardBody>
 
@@ -124,13 +133,20 @@ export default function Testominials() {
                                         <CardTitle>
                                             <div className="cardinnerdata">
                                                 <div className='review'>
-                                                    <h4>Eric Lim</h4>
-                                                    <h5>Chief Executive Officer</h5>
+                                              
+                                                <h4>Eric Lim</h4>
+                                                <h5>Owner</h5>
+                                           
+
+                                                   
+                                                    <div className='d-flex align-items-center justify-content-center px-4'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
+                                                </div>
+                                                   
                                                 </div>
                                                 <div className='card-img-testominials'>
                                                     <CardImg src='Image/Eric-yong.jpg' fluid
@@ -138,16 +154,16 @@ export default function Testominials() {
                                                 </div>
 
                                             </div>
-                                           
+
 
                                         </CardTitle>
 
 
                                         <CardText>
-                                        <div>
-                                        <img src="Image/inverted-commas 1.png" alt="" className='img-fluid'  style={{width:"20px",height:"20px"}} />
-                                    </div>
-                                            <p className='testpara' >TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div>
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
+                                            </div>
+                                            <p className='testpara' >They are at their words in terms of providing service and support!! all the best.</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
