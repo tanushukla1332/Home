@@ -10,7 +10,6 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import '../Navbar/Navbar.css';
 import { useNavigate } from 'react-router';
-
 import { IoSearchSharp } from "react-icons/io5";
 
 export default function Header() {
@@ -34,9 +33,10 @@ export default function Header() {
               <NavLink href='/about' className='navlinkmenutitle'>About</NavLink>
               <NavDropdown id="navbarScrollingDropdown" title="Services" className='MainDropDownList  navlinkmenutitle' onClick={()=>navigate('/services')} >
                 <div className='d-flex backgroundhover'>
-                  <NavDropdown title="Digital Marketing" id='navbarScrrolllingDigitalMarketing'  className="dropDownMwnuItems">
+                <NavDropdown title="Digital Marketing" id='navbarScrrolllingDigitalMarketing' className="dropDownMenuItems">
+
                     <div >
-                    <NavDropdown.Item >SEO</NavDropdown.Item>
+                    <NavDropdown.Item href='/seo'>SEO</NavDropdown.Item>
                     <NavDropdown.Item >Sem</NavDropdown.Item>
                     </div>
                   </NavDropdown>
@@ -46,26 +46,27 @@ export default function Header() {
                 <div className='d-flex'>
                   <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
                  
-                    <NavDropdown.Item >SEO</NavDropdown.Item>
+                    <NavDropdown.Item href='/socialMedia' >SEO</NavDropdown.Item>
                     <NavDropdown.Item >Sem</NavDropdown.Item>
                   </NavDropdown>
                 </div>
                 <NavDropdown.Divider />
                 <div className='d-flex'>
                 <NavDropdown title="Development" id="navbarDevelopmentScroll"className='dropDownMwnuItems' >
+                <NavDropdown.Item href='/development' className='navlinkmenutitle'>Dvelopment</NavDropdown.Item>
                 
                 
-                    <NavDropdown.Item >SEO</NavDropdown.Item>
-                    <NavDropdown.Item >Sem</NavDropdown.Item>
+                    
                   </NavDropdown>
                 </div>
                 <NavDropdown.Divider />
                 <div className='d-flex'>
                 <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
+                <NavDropdown.Item  href='/socialmediaopt'>SEO</NavDropdown.Item>
 
-                  <NavDropdown.Item >SEO</NavDropdown.Item>
-                  <NavDropdown.Item >Sem</NavDropdown.Item>
+          
                 </NavDropdown>
+             
               </div>
 
                 
@@ -73,7 +74,7 @@ export default function Header() {
               <NavLink href='/portfolio'  className='navlinkmenutitle'>Potfolio</NavLink>
               <NavLink href='/contact' className='navlinkmenutitle'>Get in Touch</NavLink>
               <NavLink href='/career' className='navlinkmenutitle'>Career</NavLink>
-              <NavLink href='/development' className='navlinkmenutitle'>Dvelopment</NavLink>
+            
               <NavLink><IoSearchSharp color='#3B7FBF' size={30} /></NavLink>
               <Button variant="light" className='btnmain'>Book a Session</Button>
             </Nav>

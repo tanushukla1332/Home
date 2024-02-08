@@ -2,7 +2,6 @@ import Header from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router";
 import Home from "./Components/HomePages/Home/Home";
 import About from "./Components/AboutUspages/About/About";
-import Services from "./Components/Services/Services";
 import { Container } from "react-bootstrap";
 import Footer from './Components/Footer/Fotter';
 import Portfolio from "./Components/PortFoliPages/Portfolio/Portfolio";
@@ -11,9 +10,13 @@ import Template from "./Components/PortFoliPages/Template/Template";
 import Contact from "./Components/ContactUsPages/ContactPage/Contact";
 import BlogMain from "./Components/BlogPages/Blog/Blog";
 import FirstBlog from "./Components/BlogPages/SubBlog/FirstBlogpage/FirstBlog";
-import Development from './Components/DevelopmentsPages/DetailPage/DevelopmentMain/Development'
+import Development from './Components/DevelopmentsPages/DetailPage/DevelopmentMain/Development';
+import ServicesMain from './Components/ServicesPages/ServicesMain/Services'
 import './App.css';
 import Modal from "./Components/Modal/Modal";
+import SEO from "./Components/ServicesPages/SEO/SEO";
+import SocialMedia from "./Components/ServicesPages/SocialMedia/SocialMedia";
+import SocialMediaOpt from "./Components/ServicesPages/Social-Media-optimization/SocialMediaOptimization";
 
 
 export default function App() {
@@ -25,7 +28,8 @@ export default function App() {
         <Routes>   
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<ServicesMain />} />
+          <Route path="/seo" element={<SEO/>}/>
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/career" element={<Career/>}></Route>
           <Route path="/development"  element={<Development/>}></Route>
@@ -33,6 +37,9 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/blogmain" element={<BlogMain/>}></Route>
           <Route path="/firstBlog" element={<FirstBlog/>}></Route>
+          <Route path="socialMedia" element={<SocialMedia/>}></Route>
+          <Route path="socialMediaOpt" element={<SocialMediaOpt/>}></Route>
+
         </Routes>
         <Footer/>
       </Container>

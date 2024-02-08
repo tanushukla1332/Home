@@ -9,7 +9,6 @@
 }
 .inputfield:focus{
     border: 1px solid gray!important;
-  
 }
 .card-main-blog{
     display: flex;

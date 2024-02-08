@@ -16,14 +16,14 @@ export default function Blog() {
     return (
         <>
             <Row className='justify-content-center align-items-center py-4' style=
-            {{backgroundImage:"url('/Image/330 bg.png')",
+            {{backgroundImage:"url('/Image/blogbanner.png')",
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
             backgroundPosition:"center"
         }}>
                 <div className='text-center text-light'>
-                    <h3 className='hed2 text-light'>Blogs</h3>
-                    <p className='subheading-sections text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
+                    <h3 className='hed2 '>Blogs</h3>
+                    <p className='subheading-sections'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
                 </div>
                 <Col md={12} className='pb-3 d-flex justify-content-center align-items-center blogsindicators'>
                     <Carousel indicators   activeIndex={index} onSelect={handleSelect}>
