@@ -15,6 +15,7 @@ import Testominials from '../Testominals/Testomnials';
 import Port from '../Port/Port';
 import { useNavigate } from 'react-router';
 import Services from '../Services/Services';
+import Technical from '../TechnicalDev/Technical';
 
 
 
@@ -64,7 +65,7 @@ export default function Home() {
                             <div className='spacing2'>
                                 At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                             </div>
-                            <div className='py-3'>
+                            <div className='py-2'>
                             <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }} 
                             onClick={()=>navigate('/about')}>Know More</Button>
                             </div>
@@ -72,7 +73,7 @@ export default function Home() {
                         </div>
                     </Col>
                 </Row>
-                <Row className='d-block d-sm-none pt-5'
+                <Row className='d-block d-sm-none pt-3'
                     style={{
                         backgroundImage: "url('/Image/grey.png')",
                         backgroundSize: "80%",
@@ -87,9 +88,9 @@ export default function Home() {
                 </div>
                     <Col md ={6}>
                         <div className='spacing'>
-                            <p className='sm fs-6 fs-md-3 pt-3'>Welcome to
+                            <p className='sm fs-6 fs-md-3 pt-2'>Welcome to
                                 RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
-                                <div className='d-flex justify-content-center  py-3'> 
+                                <div className='d-flex justify-content-center  pb-3'> 
                                 <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }}
                                 onClick={()=>navigate('/about')}
                              >Know More</Button>
@@ -99,11 +100,11 @@ export default function Home() {
                     <Col md={4} className='d-md-flex align-items-center d-none'
                     >
                     <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c ",paddingTop:"50px"}}
-                
                     />
                     </Col>
                 </Row>
                 <Services/>
+                <Technical/>
                 <Row className='d-flex justify-content-center align-items-center flex-wrap py-5'
                 style={{backgroundImage:"url('Image/Rectangle 51 (1).png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"}}
                     >

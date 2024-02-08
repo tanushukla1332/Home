@@ -51,7 +51,7 @@ export default function Blog() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-flex justify-content-center'>
+                            <Col md={3} className='d-md-flex d-none justify-content-center'>
                             <Card className='cardmain d-flex justify-content-center'>
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>
@@ -71,7 +71,7 @@ export default function Blog() {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-flex justify-content-center'>
+                            <Col md={3} className='d-md-flex  d-none justify-content-center'>
                             <Card className='cardmain d-flex justify-content-center align-items-center' >
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
                                     <CardBody>

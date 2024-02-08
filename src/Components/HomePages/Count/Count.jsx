@@ -6,10 +6,10 @@ import '../Count/Count.css'
 export default function Count({ clients }) {
     return (
         <>
-        <Row style={{ backgroundColor: "#FFF" }}>
-                <Col md={12} className='col-count d-block d-none d-md-flex'>
-                    <div className='clients-card2'>
-                        <div className='count-img'>
+        <Row style={{ backgroundColor: "#FFFF" }}>
+                <Col md={12} className='col-count-homepage d-block d-none d-md-flex'>
+                    <div className='clients-card-homepage'>
+                        <div className='count-img-homepage'>
                             <img src="Image/Mask group (1).png" alt="" className='img-fluid' />
                         </div>
                         <div>
@@ -22,8 +22,8 @@ export default function Count({ clients }) {
                             <p>Clients Satisfied</p>
                         </div>
                     </div>
-                    <div className='clients-card2'>
-                        <div className='count-img'>
+                    <div className='clients-card-homepage'>
+                        <div className='count-img-homepage'>
                             <img src="Image/Mask group (2).png" alt="" className='img-fluid' />
                         </div>
                         <div>
@@ -36,8 +36,8 @@ export default function Count({ clients }) {
                             <p>Successful Project</p>
                         </div>
                     </div>
-                    <div className='clients-card2'>
-                        <div className='count-img'>
+                    <div className='clients-card-homepage'>
+                        <div className='count-img-homepage'>
                             <img src="Image/Mask group (3).png" alt="" className='img-fluid' />
                         </div>
                         <div>
@@ -49,8 +49,8 @@ export default function Count({ clients }) {
                             <p>Lines of Code</p>
                         </div>
                     </div>
-                    <div className='clients-card2'>
-                        <div className='count-img'>
+                    <div className='clients-card-homepage'>
+                        <div className='count-img-homepage'>
                             <img src="Image/Mask group (4).png" alt="" className='img-fluid' />
                         </div>
                         <div>

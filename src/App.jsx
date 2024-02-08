@@ -8,23 +8,33 @@ import Footer from './Components/Footer/Fotter';
 import Portfolio from "./Components/PortFoliPages/Portfolio/Portfolio";
 import Career from "./Components/CareerPages/Career/Career";
 import Template from "./Components/PortFoliPages/Template/Template";
-
+import Contact from "./Components/ContactUsPages/ContactPage/Contact";
+import BlogMain from "./Components/BlogPages/Blog/Blog";
+import FirstBlog from "./Components/BlogPages/SubBlog/FirstBlogpage/FirstBlog";
+import Development from './Components/DevelopmentsPages/DetailPage/DevelopmentMain/Development'
 import './App.css';
+import Modal from "./Components/Modal/Modal";
+
 
 export default function App() {
   return (
     <>
-      <Header />
+      <Header/>
+      <Modal/>
       <Container fluid className="noscroll" >  
         <Routes>   
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/career"  element={<Career/>}></Route>
+          <Route path="/career" element={<Career/>}></Route>
+          <Route path="/development"  element={<Development/>}></Route>
           <Route path="/template"  element={<Template/>}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/blogmain" element={<BlogMain/>}></Route>
+          <Route path="/firstBlog" element={<FirstBlog/>}></Route>
         </Routes>
-        <Footer />
+        <Footer/>
       </Container>
     </>
   );

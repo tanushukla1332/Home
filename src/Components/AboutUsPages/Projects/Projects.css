@@ -53,3 +53,35 @@
     background-color:#020f1b5e!important; 
     padding: 20px;
 }
+@media screen and (max-width:768px) and (min-width:576px) {
+    .img-1-style{
+        height: 45vh;
+        width: 350px;
+    }
+    .img-1-style2{
+        height: 45vh;
+        width: 350px;
+
+    }
+    
+}
+@media screen  and (max-width:576px) and (min-width:360px){
+    .img-1-style{
+        height:30vh;
+        width: 250px;
+    }
+    .img-1-style2{
+        height: 30vh;
+        width: 250px;
+
+    }
+    .projectsindictaors>div>a>.carousel-control-next-icon{
+      display: none!important;
+    }
+    .projectsindictaors>div>a>.carousel-control-prev-icon{
+        display: none!important;
+    }
+    
+
+    
+}

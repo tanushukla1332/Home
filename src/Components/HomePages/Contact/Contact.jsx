@@ -4,7 +4,9 @@ import { FaLinkedin,  FaFacebook, FaInstagram } from "react-icons/fa";
 
 
 
+
 export default function Contact() {
+
 
     
     
@@ -20,24 +22,23 @@ export default function Contact() {
     
         <Col md={5}>
             <div className='justify-content-center align-items-center'>
-
                 <Form className='Form p-4'
                 >
-                    <FormGroup >
+                    <FormGroup>
                         <FormLabel>Name</FormLabel>
-                        <FormControl type='text' placeholder='Enter your name' required />
+                        <FormControl type='text' placeholder='Enter your name' required className='form-control-main-page' />
                     </FormGroup>
                     <FormGroup >
                         <FormLabel>Email Adress</FormLabel>
-                        <FormControl type='email' placeholder='Enter your email' required />
+                        <FormControl type='email' placeholder='Enter your email' required  className='form-control-main-page' />
                     </FormGroup>
                     <FormGroup>
                         <FormLabel>Phone</FormLabel>
-                        <FormControl type='number' placeholder='Enter your number' required />
+                        <FormControl type='number' placeholder='Enter your number' required  className='form-control-main-page'/>
                     </FormGroup>
                     <FormGroup>
                         <FormLabel>Project</FormLabel>
-                        <FormControl as='select' placeholder='Project type' required >
+                        <FormControl as='select' placeholder='Project type' required  className='form-control-main-page'>
                             <option value=''>Project type</option>
                             <option value=''>SEO</option>
                             <option value=''>SMO</option>
@@ -48,7 +49,7 @@ export default function Contact() {
                         </FormControl>
                     </FormGroup>
                     <FormGroup controlId='formBasicCheckbox'>
-                        <FormCheck type="checkbox" label="Remember Me ">
+                        <FormCheck type="checkbox" label="Remember Me " className='form-check-mian-page'>
                         </FormCheck>
                     </FormGroup>
                     <div className='w-100  d-flex justify-content-center align-items-center'>

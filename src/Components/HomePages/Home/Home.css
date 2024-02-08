@@ -231,7 +231,7 @@
     
 }
 
-.form-control {
+.form-control-main-page{
     width:80%!important; /* Make the input width 100% */
     margin: auto;
     border: none!important;
@@ -242,11 +242,10 @@
     box-shadow:none !important;
     
 }
-.form-check{
+.form-check-mian-page{
     margin-left:55px;
     margin-top: 10px;
     box-shadow:none !important;
-    
 }
 input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
@@ -605,7 +604,7 @@ text-align: justify;
  }
  /* //Our clinets */
 
- @media screen and (max-width:576px) and (min-width: 30px){
+ @media screen and (max-width:576px) and (min-width:300px){
 
     .allclients img{
         width: 120px;
@@ -619,7 +618,7 @@ text-align: justify;
  
  /* //Our clinets */
 
- @media screen and (min-width:360px) and (max-width:360px){
+ @media screen and (max-width:360px) {
 
     .allclients img{
         width: 100px;

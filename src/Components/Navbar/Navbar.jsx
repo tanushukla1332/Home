@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='p-0 navmaindiv'>
+      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='px-0 navmaindiv'>
         <Container fluid>
           <NavbarBrand href="/#">
             <Image
@@ -71,16 +71,11 @@ export default function Header() {
                 
               </NavDropdown>
               <NavLink href='/portfolio'  className='navlinkmenutitle'>Potfolio</NavLink>
-              <NavLink href='/login' className='navlinkmenutitle'>Get in Touch</NavLink>
+              <NavLink href='/contact' className='navlinkmenutitle'>Get in Touch</NavLink>
               <NavLink href='/career' className='navlinkmenutitle'>Career</NavLink>
-              <NavLink>
-                <IoSearchSharp color='#3B7FBF' size={30} />
-              </NavLink>
-            </Nav>
-            <Nav className="ml-4">
-              <NavLink href='/login' style={{color: "white"}}>
-                <Button variant="light" className='btnmain'>Book a Session</Button>
-              </NavLink>
+              <NavLink href='/development' className='navlinkmenutitle'>Dvelopment</NavLink>
+              <NavLink><IoSearchSharp color='#3B7FBF' size={30} /></NavLink>
+              <Button variant="light" className='btnmain'>Book a Session</Button>
             </Nav>
           </NavbarCollapse>
         </Container>

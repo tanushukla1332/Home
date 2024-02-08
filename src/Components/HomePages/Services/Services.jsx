@@ -1,6 +1,8 @@
 import { Row, Col, Card, CardBody, CardText, CardTitle, Button } from 'react-bootstrap';
 import '../Services/Services.css'
 
+
+
 export default function Services() {
     return (
         <>
@@ -23,7 +25,7 @@ export default function Services() {
                                 <CardText>
                                     <h4 className='fw-bold text-center'>Crafting Exceptional Web
                                         Experiences</h4>
-                                    <p className='sm' >Welcome to razObyte, your partner in
+                                    <p>Welcome to razObyte, your partner in
                                         exceptional web design solutions. We
                                         are a team of passionate designers
                                         and developers who believe in the
@@ -42,7 +44,7 @@ export default function Services() {
                                 <CardText>
                                     <h4 className='fw-bold text-center'>Crafting Exceptional Web
                                         Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
+                                    <p>Welcome to razObyte, your partner in
                                         exceptional web design solutions. We
                                         are a team of passionate designers
                                         and developers who believe in the
@@ -56,12 +58,12 @@ export default function Services() {
                             }} >
                             <CardBody className='text-light '>
                                 <CardTitle>
-                                    <h1 className='fw-bold text-center' >Search Engine Optimization</h1>
+                                    <h1 className='fw-bold text-center'>Search Engine Optimization</h1>
                                 </CardTitle>
                                 <CardText>
                                     <h4 className='fw-bold text-center'>Crafting Exceptional Web
                                         Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
+                                    <p >Welcome to razObyte, your partner in
                                         exceptional web design solutions. We
                                         are a team of passionate designers
                                         and developers who believe in the
@@ -80,7 +82,7 @@ export default function Services() {
                                 <CardText>
                                     <h4 className='fw-bold text-center'>Crafting Exceptional Web
                                         Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
+                                    <p>Welcome to razObyte, your partner in
                                         exceptional web design solutions. We
                                         are a team of passionate designers
                                         and developers who believe in the
@@ -99,7 +101,7 @@ export default function Services() {
                                 <CardText>
                                     <h4 className='fw-bold text-center'>Crafting Exceptional Web
                                         Experiences</h4>
-                                    <p className='sm'>Welcome to razObyte, your partner in
+                                    <p>Welcome to razObyte, your partner in
                                         exceptional web design solutions. We
                                         are a team of passionate designers
                                         and developers who believe in the
@@ -109,8 +111,6 @@ export default function Services() {
                         </Card>
                     </div>
                     <div className='d-flex justify-content-center align-items-center pt-2'>
-
-                     <Button className='explore-btn-services'>explore all services</Button>
                     </div>
 
 

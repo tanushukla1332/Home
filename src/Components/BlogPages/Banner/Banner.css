@@ -1,0 +1,15 @@
+.Mainrodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    min-height:60vh;
+
+}
+.Mainrodiv > div > h1 {
+    -webkit-background-clip: text;
+    color:white;
+    text-shadow: 2px  2px  5px #3b7fbff3, 0 0 1px #4ed0ff;
+}

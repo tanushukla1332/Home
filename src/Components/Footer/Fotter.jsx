@@ -48,7 +48,7 @@ export default function Footer() {
         </Col>
       </Row>
       <Row className="bgsection justify-content-center align-items-center">
-        <Col md={10} className="link ">
+        <Col md={10} className="link">
           <h3 className="Companytext text-light fs-4">
             <span className="text-light fs-1 ">C</span>ompany
           </h3>
@@ -142,7 +142,7 @@ export default function Footer() {
       </Row>
       <Row className="bgsection justify-content-center align-items-center px-5">
         <Col  md={10}>
-          <div className=" d-flex justify-content-center gap-lg-3 icon my-3" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.493)', borderTop: '1px solid rgba(255, 255, 255, 0.493)' }}>
+          <div className=" d-flex justify-content-center icon my-3" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.493)', borderTop: '1px solid rgba(255, 255, 255, 0.493)' }}>
             <img src="Image/instagram (1) 1.png" alt="" className="img-fluid" />
             <img src="Image/FB logo final.png" alt=" " className="img-fluid" />
             <img src="Image/LinkedIn Logo final.png" alt="" className="img-fluid" />
@@ -151,11 +151,13 @@ export default function Footer() {
         </Col>
       </Row>
       <Row className="bgsection justify-content-center align-items-center">
-        <Col md={10} className="d-md-flex  justify-content-center align-items-center text-light gap-3 last">
+        <Col md={10}>
+          <div className='d-sm-flex  justify-content-center align-items-center text-light last gap-3'>
           <p>© COPYRIGHT 2023 RAZOBYTE SOFTTECH. ALL RIGHTS RESERVED.</p>
           <p>Privacy Policy</p>
-          <p className="icon-link"><a href="mailto:razobyte.com" className="text-light"> < CiMail /></a>contact-us@razobyte.com</p>
-          <p className="icon-link"><a href className="text-light"><FaPhoneAlt /></a>+91-8448158188</p>
+          <p className='d-flex align-items-center gap-1'><a href="mailto:razobyte.com" className="text-light"><CiMail  size={20}/></a>contact-us@razobyte.com</p>
+          <p className='d-flex align-items-center gap-1'><a href className="text-light"><FaPhoneAlt size={20}/></a>+91-8448158188</p>
+          </div>
         </Col>
       </Row>
 

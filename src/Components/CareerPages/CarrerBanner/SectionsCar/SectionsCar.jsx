@@ -10,7 +10,7 @@ export default function CarSection() {
         <>
             <Row className='justify-content-center align-items-center py-5'>
                 <Col md={10}>
-                    <div className='Sec1-txt'>
+                    <div className='Sec1-txt py-3'>
                         <h3>What’s Inside</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                             dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
@@ -27,7 +27,7 @@ export default function CarSection() {
                                 unknown printer took a galley of type and
                                 a type specimen book.</p>
                         </div>
-                        <div className='sec2-txt2'>
+                        <div className='sec2-txt2 mt-3'>
                             <img src="Image/car-3.png" alt="" style={{ backgroundColor: "#FFFF", borderRadius: "50%", padding: "5px" }} />
                             <h3>Work-Life Balance</h3>
                             <p>Lorem Ipsum is simply dummy text of the
@@ -38,7 +38,7 @@ export default function CarSection() {
                                 a type specimen book.</p>
 
                         </div>
-                        <div className='sec2-txt'>
+                        <div className='sec2-txt mt-3'>
                             <img src="Image/car-4.png" alt="" style={{ backgroundColor: "#3B7FBF", borderRadius: "50%", padding: "5px" }} />
                             <h3>Boredom Not-Allowed</h3>
                             <p>Lorem Ipsum is simply dummy text of the
@@ -65,8 +65,8 @@ export default function CarSection() {
                             a type specimen book.</p>
                     </div>
                     <div>
-                        <div className='d-md-flex gap-4'>
-                            <div className='sec3-txt'>
+                        <div className='d-md-flex gap-4 '>
+                            <div className='sec3-txt mt-3'>
                                 <img src="Image/car-5 (3).png" alt="" style={{ backgroundColor: "#3B7FBF", borderRadius: "50%", padding: "5px" }} />
                                 <h3>Creativity</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -74,7 +74,7 @@ export default function CarSection() {
                                     text ever since the 1500s, when an unknown printer took a galley
                                     of type anda type specimen book.</p>
                             </div>
-                            <div className='sec3-txt3'>
+                            <div className='sec3-txt3 mt-3'>
                                 <img src="Image/car-5 (2).png" alt="" style={{ borderRadius: "50%", padding: "5px", backgroundColor: "#FFFF" }} />
                                 <h3>Dedication</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -83,8 +83,8 @@ export default function CarSection() {
                                     of type anda type specimen book.</p>
                             </div>
                         </div>
-                        <div className='d-md-flex gap-4 pt-4'>
-                            <div className='sec3-txt'>
+                        <div className='d-md-flex gap-4'>
+                            <div className='sec3-txt mt-3'>
                                 <img src="Image/car-6.png" alt="" style={{ backgroundColor: "#3B7FBF", borderRadius: "50%", padding: "5px" }} />
                                 <h3>Innovation</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -92,7 +92,7 @@ export default function CarSection() {
                                     text ever since the 1500s, when an unknown printer took a galley
                                     of type anda type specimen book.</p>
                             </div>
-                            <div className='sec3-txt'>
+                            <div className='sec3-txt mt-3'>
                                 <img src="Image/car-5 (1).png" alt="" style={{ backgroundColor: "#3B7FBF", borderRadius: "50%", padding: "5px" }} />
                                 <h3>Stepping-up</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -104,8 +104,8 @@ export default function CarSection() {
                     </div>
                 </Col>
             </Row>
-            <Row className='justify-content-center py-5'>
-            <h2 className='text-center pb-3' style={{color:"#5E5E5E"}}>Openings</h2>
+            <Row className='justify-content-center py-3'>
+            <h2 className='text-center pb-3 hed2' style={{color:"#5E5E5E"}}>Openings</h2>
                 <Col md={10}>
                     <Accordion defaultActiveKey="0" className='main-accrodinstart'>
                         <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-2'>
@@ -201,9 +201,9 @@ export default function CarSection() {
             </div>
             <Col md={10}>
             <div className='d-md-flex gap-4 allimages'>
-            <div> <img src="Image/car-7 (2).jpg" alt=""  className='img-fluid' /></div>
-            <div><img src="Image/car-7 (1).jpg" alt=""  className='img-fluid'/></div>
-            <div><img src="Image/car-7 (3).jpg" alt=""  className='img-fluid' /></div>
+            <div> <img src="Image/car-7 (2).jpg" alt=""  className='img-fluid  mt-3'  /></div>
+            <div><img src="Image/car-7 (1).jpg" alt=""  className='img-fluid  mt-3'/></div>
+            <div><img src="Image/car-7 (3).jpg" alt=""  className='img-fluid mt-3 ' /></div>
            
             
        

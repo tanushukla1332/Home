@@ -66,7 +66,7 @@ export default function App (){
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 10,
           },
           repulse: {
             distance: 200,
@@ -105,10 +105,16 @@ export default function App (){
           value: 0.5,
         },
         shape: {
-          type: "triangle",
+          type: "image",
+        image:{
+          src:"https://img.freepik.com/free-photo/creative-composition-world-book-day_23-2148883765.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705708800&semt=sph",
+          width:100,
+          height:100
+        }  
+        
         },
         size: {
-          value: { min: 5, max: 10 },
+          value: { min:10, max: 20 },
         },
       },
       detectRetina: true,

@@ -25,10 +25,10 @@ export default function Content() {
                     <Button variant='dark' onClick={() => setCurrentCategory('SEO')}>Web Development</Button>
                 </div>
             </div>
-
+ 
             {filteredBlogs.map((data, id) => (
 
-                <Col key={id} md={4} className='pb-5 d-md-flex justify-conent-center align-items-center' >
+                <Col key={id} md={4} className='pb-5 d-md-flex justify-conent-center align-items-center p-4' >
 
                     <Card className='cardmainPortfolioSec'>
                         <CardImg src={data.image} variant='top' fluid className='card-imgPort' />

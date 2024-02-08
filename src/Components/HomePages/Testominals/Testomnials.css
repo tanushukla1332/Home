@@ -54,20 +54,11 @@
  @media screen and  (max-width: 576px) { 
 .cardinnerdata{
     gap: 50px;
-    
-
 }
 
 }
-@media screen and (min-width:576px)  {
-    .testominialsindicators>div>.carousel-control-prev {
-          left:-20px!important;
-    }
-    .testominialsindicators>div>.carousel-control-next {
-        right:-20px!important;
-    }
-    
-}
+
+
 @media screen and (max-width:576px) and (min-width:300px)  {
     .testominialsindicators>div>.carousel-control-prev {
         display: none!important;
