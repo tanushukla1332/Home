@@ -1,4 +1,5 @@
-import {Row,Col} from 'react-bootstrap'
+import {Row,Col} from 'react-bootstrap';
+import '../Banner/Banner.css'
 export default function Banner(){
     return(
         <>

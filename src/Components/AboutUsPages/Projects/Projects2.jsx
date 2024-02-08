@@ -16,14 +16,14 @@ export default function Testominials() {
                             <Col md={5} className='py-3 d-md-flex d-none justify-content-center align-items-center'>
                                 <div className='img-1-style'>
                                     <h3>King Clean</h3>
-                                    <img src="Image/King-Clean.png" alt="" className='img-fluid' style={{ height: "70vh", width: "650px" }} />
+                                    <img src="Image/King-Clean.png" alt="" className='img-fluid'  />
 
                                 </div>
                             </Col>
                             <Col md={4} className='py-3 d-flex  justify-content-center align-items-center '>
                                 <div className='img-1-style2'>
                                     <h3>MDRc</h3>
-                                    <img src="Image/Ab-7.png" alt="" className='img-fluid' style={{ height: "70vh", width: "650px" }} />
+                                    <img src="Image/Ab-7.png" alt="" className='img-fluid' />
 
                                 </div>
                             </Col>
@@ -34,13 +34,13 @@ export default function Testominials() {
                             <Col md={5} className='py-3 d-flex justify-content-center align-items-center'>
                                 <div className="img-1-style">
                                     <h3>King Clean</h3>
-                                    <img src="Image/King-Clean.png" alt="" className='img-fluid' style={{ height: "70vh", width: "650px" }} />
+                                    <img src="Image/King-Clean.png" alt="" className='img-fluid'  />
                                 </div>
                             </Col>
                             <Col md={4} className='py-3 d-md-flex d-none justify-content-center align-items-center'>
                                 <div className='img-1-style2'>
                                     <h3>MDRC</h3>
-                                    <img src="Image/Ab-6.jpg" alt="" className='img-fluid' style={{ height: "70vh", width: "650px" }} />
+                                    <img src="Image/Ab-6.jpg" alt="" className='img-fluid'  />
                                 </div>
                             </Col>
                         </Row>

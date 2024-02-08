@@ -74,15 +74,15 @@ width: 100%!important;
 .read-more-btn:hover{
     color: white!important;
 }
-.explore-btn-port{
+.explore-btn-blog{
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 250px!important;
-    height: 100%important;
-    background: none!important;
     border: 1px solid white !important;
+    height: 100%important;
+    background: white!important;
     outline: none!important;
     font-size: .85rem;
     cursor: pointer;
@@ -92,30 +92,75 @@ width: 100%!important;
    overflow: hidden!important;
    z-index: 1!important;
    box-shadow:none !important;
-   color: white!important;
+   color:#3B7FBF!important;
    border-radius: 5px!important;
 
 
 }
-.explore-btn-port :nth-child(1){
-background: transparent!important;
+.explore-btn-blog :nth-child(1){
+background:transparent !important;
 }
-.explore-btn-port::before{
+.explore-btn-blog::before{
 content: "";
 position: absolute!important;
 top: 0;
 left: 0;
 width: 0!important;
 height: 100%!important;
-background:white!important;
+background:#3B7FBF!important;
 z-index: -1!Important;
 transition: .7s!important;
 border-radius: 5px!important;
 }
-.explore-btn-port:hover::before{
+.explore-btn-blog:hover::before{
 width: 100%!important;
 }
-.explore-btn-port:hover{
-    color: #3B7FBF!important;
+.explore-btn-blog:hover{
+    color: white!important;
 
+}
+.blogsindicators>div>a>.carousel-control-next-icon{
+    border-radius: 50px!important;
+    border: 2px solid white!important;
+    background-color:#020f1b5e!important;
+    padding: 20px; 
+}
+.blogsindicators>div>a>.carousel-control-prev-icon{
+    border-radius: 50px!important;
+    border: 2px solid white!important;
+    background-color:#020f1b5e!important; 
+    padding: 20px;
+}
+@media screen and (max-width:786px) {
+    .blogsindicators>div>a>.carousel-control-next-icon{
+        position: absolute;
+        border-radius: 0px!important;
+        border: none!important;
+        background-color:transparent!important;
+        padding:0px; 
+        right: -30px;
+
+    }
+    .blogsindicators>div>a>.carousel-control-prev-icon{
+        position: absolute;
+        border-radius: 0px!important;
+        border: 0px!important;
+        background-color:transparent!important; 
+        padding:0px;
+        left: -30px;
+    
+    }
+    .card-imgblogs2{
+        max-width:300px;
+        padding-top: 10px;
+
+    }
+    .cardmain{
+        max-width: 320px!important;
+
+    }
+    .explore-btn-blog{
+        width: 200px!important;
+
+    }
 }
