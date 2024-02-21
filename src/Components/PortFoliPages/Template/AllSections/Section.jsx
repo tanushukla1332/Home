@@ -80,7 +80,8 @@ export default function Section() {
                     <img src="/Image/temp-4.png" alt="" className='img-fluid' />
                 </Col>
             </Row>
-            <Row className='justify-content-center align-items-center py-5 gap-5' style={{ background: "linear-gradient(to bottom,rgba(90,161,227,30%), rgba(90,161,227,10%))" }}
+            <Row className='justify-content-center align-items-center py-5 gap-5'
+             style={{ background: "linear-gradient(to bottom,rgba(90,161,227,30%), rgba(90,161,227,10%))" }}
 
             >
                 <Col md={5} className='d-md-flex justify-content-center align-items-center'>

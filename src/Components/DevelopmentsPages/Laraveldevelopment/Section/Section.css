@@ -1,0 +1,134 @@
+
+.laravle-section{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    padding: 10px 30px;
+    border-radius:20px;
+    width:100%;
+    border-left:20px solid #3b7fbf;
+}
+.laravle-section2{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    padding: 10px 30px;
+    border-radius:30px;
+    width:100%;
+    background-color: #3b7fbf;
+
+}
+.laravel-section3{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:20px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 10px 20px ;
+    width:400px;
+
+
+}
+.laravel-section4{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:20px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b7fbf;
+    height:400px;
+    padding: 10px 20px ;
+    width:400px;
+
+}
+
+.laravel-section6{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:20px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   z-index: 100;
+   background-color: white;
+   width:100%;
+   padding:20px 30px;
+   height: 300px;
+
+}
+.laravelindicators>div>a>.carousel-control-next-icon{
+    position: absolute;
+    border-radius: 50px!important;
+    border: 2px solid #3b7fbf!important;
+    background-color:#3b7fbf!important; 
+    padding: 20px; 
+    right: -10px;
+}
+.laravelindicators>div>a>.carousel-control-prev-icon{
+    position: absolute;
+    border-radius: 50px!important;
+    border: 2px solid #3b7fbf!important;
+    background-color:#3b7fbf!important; 
+    padding: 20px;
+    left: -5px;
+}
+.laravel-card-section{
+    border: 0px!important;
+    border-radius: 0px!important;
+}
+.laravel-card-section>.card-img{
+    border-radius: 0px!important;
+
+}
+.Laravelsection8{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+    padding: 10px 20px ;
+    margin: 20px;
+
+
+    
+}
+.laravelsection9{
+    background: linear-gradient(to bottom, rgba(78,207,255), rgba(59,127,191));
+
+}
+.laravelSection10{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px ;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+.laravelSection12{
+    background: linear-gradient(to bottom, rgba(59,127,191), #ffff);
+}
+.laravelSection13{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px ;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height: 400px;
+
+}

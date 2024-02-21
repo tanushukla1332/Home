@@ -1,86 +1,63 @@
 
-import React from 'react';
-import { NavLink, NavbarBrand, NavbarToggle, NavbarCollapse } from
-'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import '../Navbar/Navbar.css';
-import { useNavigate } from 'react-router';
-import { IoSearchSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+
 
 export default function Header() {
-  const navigate=useNavigate()
+
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#FFFF"}} variant="light" sticky="bottom" expand="lg" className='px-0 navmaindiv'>
-        <Container fluid>
-          <NavbarBrand href="/#">
-            <Image
-              src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg"
-              alt=""
-              style={{ width: '250px',height: 'auto',}}
-            />
-          </NavbarBrand>
-          <NavbarToggle aria-controls="responsive-navbar-nav" style={{ marginRight: "10px" }} />
-          <NavbarCollapse id="responsive-navbar-nav">
-            <Nav className="d-flex gap-2 justify-content-start mr-auto ml-4">
-              <NavLink href='/'  className='navlinkmenutitle' active>Home</NavLink>
-              <NavLink href='/about' className='navlinkmenutitle'>About</NavLink>
-              <NavDropdown id="navbarScrollingDropdown" title="Services" className='MainDropDownList  navlinkmenutitle' onClick={()=>navigate('/services')} >
-                <div className='d-flex backgroundhover'>
-                <NavDropdown title="Digital Marketing" id='navbarScrrolllingDigitalMarketing' className="dropDownMenuItems">
+    <nav className='bg-white navmaindiv'>
+    <div className='flex items-center font-medium justify-around'>
+    <div>
+    <img  className ='w-80 h-20 md:cursor-pointer 'src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg" alt="RazoByte Softtech - Developing Digital Solutions"></img>
+    </div>
+    <ul className=' md:flex hidden gap-8 mr-16 text-[18px] font-[500] py-3 items-center'>
+    <Link to='/' className='no-underline  inline-block navlinkmenutitle'>
+    
+    <li className='hover:text-[#3B7FBF] transition border-b-2 border-white hover:border-gray-500 cusror-pointer text-[#5e5e5e]    '>Home</li></Link>
+    <Link to='/About' className='no-underline   inline-block navlinkmenutitle'> <li>About</li></Link>
+    <Link to='/Services' className='no-underline   inline-block navlinkmenutitle'><li>Services</li></Link>
+    <Link to='/BlogMain' className='no-underline   inline-block navlinkmenutitle'><li>Blog</li></Link>
+    <Link to='/Career' className='no-underline   inline-block navlinkmenutitle'><li>Career</li></Link>
+    <Link to='/Portfolio' className='no-underline   inline-block navlinkmenutitle'><li>PortFolio</li></Link>
+    <Link to='/Contact' className='no-underline   inline-block navlinkmenutitle'><li>Get in Touch</li></Link>
+    <button className='btnmain' >Book a Session</button>
+    
+    </ul>
 
-                    <div >
-                    <NavDropdown.Item href='/seo'>SEO</NavDropdown.Item>
-                    <NavDropdown.Item >Sem</NavDropdown.Item>
-                    </div>
-                  </NavDropdown>
-                  <NavDropdown.Divider />
-                </div>
-                <NavDropdown.Divider />
-                <div className='d-flex'>
-                  <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
-                 
-                    <NavDropdown.Item href='/socialMedia' >SEO</NavDropdown.Item>
-                    <NavDropdown.Item >Sem</NavDropdown.Item>
-                  </NavDropdown>
-                </div>
-                <NavDropdown.Divider />
-                <div className='d-flex'>
-                <NavDropdown title="Development" id="navbarDevelopmentScroll"className='dropDownMwnuItems' >
-                <NavDropdown.Item href='/development' className='navlinkmenutitle'>Dvelopment</NavDropdown.Item>
-                
-                
-                    
-                  </NavDropdown>
-                </div>
-                <NavDropdown.Divider />
-                <div className='d-flex'>
-                <NavDropdown title="Design" id="navbarDesginScroll"className='dropDownMwnuItems' >
-                <NavDropdown.Item  href='/socialmediaopt'>SEO</NavDropdown.Item>
+    </div>
 
-          
-                </NavDropdown>
-             
-              </div>
+    </nav>
+     {/* <nav className='z-50 bg-white'>
+    <div className='h-10vh flex  lg:py-5 '>
+    <div className='flex items-center flex-1 text-3xl'>
+    <img src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg" width="250px" alt="RazoByte Softtech - Developing Digital Solutions"></img>
+    </div>
+    <div>
+    <ul className='flex gap-8 mr-16 text-[18px] font-[500]'>
+    <Link to='/' className='no-underline'> <li className='hover:text-[#3B7FBF] transition border-b-2 border-white hover:border-gray-500 cusror-pointer text-[#5e5e5e]    '>Home</li></Link>
+    <Link to='/About'> <li>About</li></Link>
+    <Link to='/Services'><li>Services</li></Link>
+    <Link to='/BlogMain'><li>Blog</li></Link>
+    <Link to='/Career'><li>Career</li></Link>
+    <Link to='/Portfolio'><li>PortFolio</li></Link>
+    <Link to='/Contact'><li>Get in Touch</li></Link>
 
-                
-              </NavDropdown>
-              <NavLink href='/portfolio'  className='navlinkmenutitle'>Potfolio</NavLink>
-              <NavLink href='/contact' className='navlinkmenutitle'>Get in Touch</NavLink>
-              <NavLink href='/career' className='navlinkmenutitle'>Career</NavLink>
-            
-              <NavLink><IoSearchSharp color='#3B7FBF' size={30} /></NavLink>
-              <Button variant="light" className='btnmain'>Book a Session</Button>
-            </Nav>
-          </NavbarCollapse>
-        </Container>
-      </Navbar>
+
+
+  
+   
+    
+  
+  
+    <button className='btnmain'>Book a Session</button>
+    
+    </ul></div>
+    </div>
+  </nav> */}
+     
     </>
   );
 }

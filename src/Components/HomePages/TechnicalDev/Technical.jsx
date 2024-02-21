@@ -20,7 +20,7 @@ export default function Technical() {
 
     return (
         <>
-            <Row className=' d-flex justify-content-center align-items-center' style={{ backgroundColor: "white" }}>
+            <Row className=' d-md-flex d-none justify-content-center align-items-center' style={{ backgroundColor: "white" }}>
             <h2 className='hed2 text-center py-3' style={{color:"#3B7FBF"}}>Core Development</h2>
                 <div className='alltechnicalbutton d-md-flex d-none'>
                     <Button onClick={() => setTechnicalData("Programming Languages")}>Programming Languages</Button>

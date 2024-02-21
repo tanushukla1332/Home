@@ -1,10 +1,16 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
     font-family: 'Chillax', sans-serif;
     box-sizing: border-box;
 
 
 }
+
  body::-webkit-scrollbar {
         display: none;
       }

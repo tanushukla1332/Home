@@ -1,4 +1,4 @@
-import Header from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar2/Navbar/Navbar";
 import { Route, Routes } from "react-router";
 import Home from "./Components/HomePages/Home/Home";
 import About from "./Components/AboutUspages/About/About";
@@ -10,19 +10,21 @@ import Template from "./Components/PortFoliPages/Template/Template";
 import Contact from "./Components/ContactUsPages/ContactPage/Contact";
 import BlogMain from "./Components/BlogPages/Blog/Blog";
 import FirstBlog from "./Components/BlogPages/SubBlog/FirstBlogpage/FirstBlog";
-import Development from './Components/DevelopmentsPages/DetailPage/DevelopmentMain/Development';
 import ServicesMain from './Components/ServicesPages/ServicesMain/Services'
 import './App.css';
 import Modal from "./Components/Modal/Modal";
 import SEO from "./Components/ServicesPages/SEO/SEO";
 import SocialMedia from "./Components/ServicesPages/SocialMedia/SocialMedia";
 import SocialMediaOpt from "./Components/ServicesPages/Social-Media-optimization/SocialMediaOptimization";
+import Development from "./Components/DevelopmentsPages/Development";
+import Laraveldevlopment from "./Components/DevelopmentsPages/Laraveldevelopment/Laraveldevlopment";
+
 
 
 export default function App() {
   return (
     <>
-      <Header/>
+      <Navbar/>
       <Modal/>
       <Container fluid className="noscroll" >  
         <Routes>   
@@ -37,9 +39,8 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/blogmain" element={<BlogMain/>}></Route>
           <Route path="/firstBlog" element={<FirstBlog/>}></Route>
-          <Route path="socialMedia" element={<SocialMedia/>}></Route>
-          <Route path="socialMediaOpt" element={<SocialMediaOpt/>}></Route>
-
+          <Route path="/socialMedia" element={<SocialMedia/>}></Route>
+          <Route path="/laraveldevlopment" element={<Laraveldevlopment/>}></Route>
         </Routes>
         <Footer/>
       </Container>

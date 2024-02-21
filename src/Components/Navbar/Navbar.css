@@ -97,6 +97,24 @@
 .dropDownMwnuItems>a::after{
     display: none!important;
 }
+/* Navbar.css */
+/* Navbar.css */
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    z-index: 1000;
+  }
+  
+  .mega-menu .flex {
+    justify-content: start;
+  }
+  
+
+
 
   
   

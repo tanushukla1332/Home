@@ -23,7 +23,7 @@ export default function Testominials() {
                                                 <div className='review'>
                                                     <h4>Alvin Hong</h4>
                                                     <h5>Sales manager</h5>
-                                                    <div className='d-flex align-items-center justify-content-center px-4'>
+                                                    <div className='d-flex  px-0'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
@@ -33,7 +33,7 @@ export default function Testominials() {
                                                    
                                                 </div>
                                                 <div className='card-img-testominials'>
-                                                    <CardImg src='Image/6.jpg' fluid
+                                                    <CardImg src='Image/lar-7.png' fluid
                                                     />
                                                 </div>
 
@@ -43,7 +43,7 @@ export default function Testominials() {
                                         </CardTitle>
                                         <CardText>
                                             <div>
-                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
                                             </div>
                                             <p className='testpara'>The SEO and PPC service have been fantastically executed and delivered the Top ranking of my website. All the best</p>
                                         </CardText>
@@ -58,7 +58,7 @@ export default function Testominials() {
                                                 <div className='review'>
                                                     <h4>Eunice Yong</h4>
                                                     <h5>Director</h5>
-                                                    <div className='d-flex align-items-center justify-content-center px-4'>
+                                                    <div className='d-flex  px-0'>
                                                         <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                         <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                         <img src="Image/star 3.png" alt="" className='img-fluid' />
@@ -78,7 +78,7 @@ export default function Testominials() {
                                         </CardTitle>
                                         <CardText>
                                             <div>
-                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
                                             </div>
                                             <p className='testpara'>They have been very good to boost my business through SEO campaign and Google adwords, thanks</p>
                                         </CardText>
@@ -97,7 +97,7 @@ export default function Testominials() {
                                                 <div className='review'>
                                                     <h4>Eric Lim</h4>
                                                     <h5>Owner</h5>
-                                                    <div className='d-flex align-items-center justify-content-center px-4'>
+                                                    <div className='d-flex  px-0'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
@@ -118,7 +118,7 @@ export default function Testominials() {
 
                                         <CardText>
                                             <div>
-                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "2opx", height: "20px" }} />
+                                                <img src="Image/inverted-commas 1.png" alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
                                             </div>
                                             <p className='testpara'>They are at their words in terms of providing service and support!! all the best.</p>
                                         </CardText>
@@ -139,7 +139,7 @@ export default function Testominials() {
                                            
 
                                                    
-                                                    <div className='d-flex align-items-center justify-content-center px-4'>
+                                                    <div className='d-flex  px-0'>
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />
                                                     <img src="Image/star 3.png" alt="" className='img-fluid' />

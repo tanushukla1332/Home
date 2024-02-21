@@ -135,7 +135,7 @@ export default function App (){
       <Row className='py-2 justify-content-center align-items-center px-0'>      
             <Col md= {5} className='text-light '>
                 <h1 className='hed1  pt-2'>{titles[currentTitle]} </h1>
-                <h3 className='hed3'>{subtitles[subheading]}
+                <h3 className='hed3 text-white'>{subtitles[subheading]}
                 </h3>
                 <p className='bannerpara'>{paragraphs[paras]}</p>
                 <div className="d-flex jjustify-content-center align-itmes-center gap-3">

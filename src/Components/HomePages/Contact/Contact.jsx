@@ -78,12 +78,14 @@ export default function Contact() {
           <div className='d-flex justify-content-center align-items-center'>
           <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
           </div>
-          <div style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"no-repeat",backgroundSize:"155px 105px",backgroundPosition:"center"}} className='pt-5'>
-         <div >
+          <div style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",
+          backgroundRepeat:"no-repeat",backgroundSize:"155px 105px",backgroundPosition:"center"}} 
+          className='pt-5'>
+         <div className='d-flex justify-content-center align-items-center'>
           <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
           <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
           </div>
-          <div >
+          <div className='d-flex justify-content-center align-items-center'>
           <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
           <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
           </div>
@@ -92,7 +94,7 @@ export default function Contact() {
           </div>
     
            </Col>
-             <Col md={5} className='d-sm-none'>
+        <Col md={5} className='d-sm-none'>
           <div  className='d-flex  flex-column  justify-content-center align-items-center'>
           <div className='d-flex justify-content-center align-items-center'>
           <img src="/Image/163mbj 1.png" alt="" className='img-fluid' />
@@ -102,7 +104,7 @@ export default function Contact() {
           <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
           <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
           </div>
-          <div >
+          <div>
           <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
           <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
           </div>

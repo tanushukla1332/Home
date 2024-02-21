@@ -279,7 +279,9 @@ figcaption{
 /* heading 3  */
 .hed3{
     font-size: 22px !important;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    color: #5e5e5e;
+    font-weight:600;
 }
 
 @media (min-width: 992px) {
