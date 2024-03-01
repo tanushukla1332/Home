@@ -135,13 +135,13 @@ Informative Website</h5>
         <div className='d-flex justify-content-center align-items-center gap-4 devundercontentdiv
         '>
         <div className= 'img-devdivser'>
-        <img src="Image/dev-ser1 (5).png" alt="" className='img-fluid'/>
+        <img src="Image/dev-word.png" alt="" className='img-fluid w-20'/>
         </div>
         <div className='text-left text-light  devtext'>
         <h5>
-      
-Live Chat</h5>
-        <p>Real time chatting with a customers on website.</p>
+
+          WordPress Developer</h5>
+        <p>All WordPress developers are web developers and designers.</p>
         </div>
         </div>
         </div>

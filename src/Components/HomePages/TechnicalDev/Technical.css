@@ -75,48 +75,10 @@
     
 }
 
-.view-more-btn{
-    position: relative!important;
-    display: flex!important;
-    justify-content:center!important;
-    align-items: center!important;
-    align-items: center;
-    background: none!important;
-    border: 1px solid #3B7FBF !important;
-    font-weight: 550 !important;
-    outline: none!important;
-    font-size: .85rem;
-    cursor: pointer;
-    letter-spacing: 2px!important;
-   box-shadow:5px 5px 5px  5px (0,0,0,0.9)!important;
-   overflow: hidden!important;
-   z-index: 1!important;
-   box-shadow:none !important;
-   color: #3B7FBF!important;
-   z-index: 1!important;
-   border-radius: 5px!important;
-}
-.view-more-btn:nth-child(1){
-background: transparent!important;
-}
-.view-more-btn::before{
-content: "";
-position: absolute!important;
-top: 0;
-left: 0;
-width: 0!important;
-height: 100%!important;
-background:#3B7FBF!important;
-z-index: -1!Important;
-transition: .7s!important;
-border-radius: 5px!important;
-}
-.view-more-btn:hover::before{
-width: 100%!important;
-}
-.view-more-btn:hover{
-    color: white!important;
-}
+
+
+
+
 
 @media screen and (max-width:786px) {
     .alltechincalshowdatadiv{

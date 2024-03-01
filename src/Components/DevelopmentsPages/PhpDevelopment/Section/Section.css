@@ -1,0 +1,79 @@
+.phpImage{
+    box-shadow: 2px 5px 2px 5px rgba(0, 0, 0, 0.057);
+    border-radius:10px;
+    width:100px;
+}
+.bgphp{
+    background: linear-gradient( #3B7FBF,#4ECEFE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.php-section-services{
+    background-color: white;
+    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
+    padding: 20px 15px;
+    width:230px;
+    height: 300px;
+}
+.php-section-services2{
+    background-color: white;
+    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width:230px;
+    height: 260px;
+
+}
+.php-section1{
+    box-shadow: 3px 5px 3px 5px rgba(0, 0, 0, 0.055);
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height:300px;
+    transition: 0.3ms ease-in;
+    
+}
+.php-section1:hover{
+    transform:  translateY(-5px);
+
+
+}
+.btn-php-get-in-touch{
+    border: none!important;
+    background-color: white !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-weight:  600 !important;
+    color: #3B7FBF !important;
+
+
+}
+.btn-php-get-in-touch:hover{
+    color: white !important;
+    background-color: #3B7FBF !important;
+
+
+
+}
+.phpindicators>a>.carousel-control-next-icon{
+    border-radius: 50px !important;
+    border: 1px solid white !important;
+    padding: 10px;
+
+    
+}
+.phpindicators>a>.carousel-control-prev-icon{
+    border-radius: 50px !important;
+    border: 1px solid white !important;
+    padding:10px;
+    
+    
+}

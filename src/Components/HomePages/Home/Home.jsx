@@ -66,7 +66,7 @@ export default function Home() {
                                 At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
                             </div>
                             <div className='py-2'>
-                            <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }} 
+                            <Button variant='light' className='btnmain'
                             onClick={()=>navigate('/about')}>Know More</Button>
                             </div>
                            
@@ -174,9 +174,9 @@ export default function Home() {
 
                 <Testominials />
 
-
-                <Blog2 />
                 <Port />
+                <Blog2 />
+           
 
             </ScrollTrigger>
 

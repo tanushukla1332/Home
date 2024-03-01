@@ -16,75 +16,74 @@ export default function Blog() {
     return (
         <>
             <Row className='justify-content-center align-items-center py-4' style=
-            {{backgroundImage:"url('/Image/blogbanner.png')",
-            backgroundRepeat:"no-repeat",
-            backgroundSize:"cover",
-            backgroundPosition:"center"
+            {{backgroundColor:"white"
+           
         }}>
                 <div className='text-center text-light'>
                     <h3 className='hed2 '>Blogs</h3>
-                    <p className='subheading-sections'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
+                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
                 </div>
-                <Col md={12} className='pb-3 d-flex justify-content-center align-items-center blogsindicators'>
+                <Col md={12} className='pb-3 d-flex justify-content-center align-items-center 
+                blogsindicators'>
                     <Carousel indicators   activeIndex={index} onSelect={handleSelect}>
                         {blogsData.map((data, id) => (
                             <CarouselItem key={id} >
                             <Row className='d-flex justify-content-center align-items-center'>
-                            <Col md={3} className='d-flex justify-content-center align-items-center '>
-                            <Card className='cardmain d-flex justify-content-center align-items-center'>
+                            <Col md={3} className='d-flex justify-content-center align-items-center  my-3'>
+                            <Card className=' cardmain-blog2 d-flex justify-content-center align-items-center'>
                                     <CardImg src={data.image} variant='top' fluid className='card-imgblogs2'/>
-                                    <CardBody>
+                                    <CardBody style={{backgroundColor:"#3b7fbf"}}>
                                         <CardTitle>
                                             <div className='allcardData'>
-                                                <h3>{data.title}</h3>
-                                                <h6 className='d-flex align-items-center gap-2'>
-                                                    <FaUser color='white' className='rounded-5' size={22}
-                                                        style={{ backgroundColor: "#3B7FBF", padding: "5px" }}
+                                                <h3 className='hed3 text-white'>{data.title}</h3>
+                                                <h6 className='d-flex align-items-center gap-2 text-white'>
+                                                    <FaUser color='#3b7fbf' className='rounded-5' size={22}
+                                                        style={{ backgroundColor: "#ffff", padding: "5px" }}
                                                     />
-                                                    <span> {data.author}</span>
+                                                    <span className='text-white'> {data.author}</span>
                                                 </h6>
-                                                <p>{data.content}</p>
-                                                <Button className='read-more-btn'>Read more</Button>
+                                                <p className='text-white'>{data.content}</p>
+                                                <Button className='read-more-btn-blog'>Read more</Button>
                                             </div>
                                         </CardTitle>
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-md-flex d-none  justify-content-center align-items-center'>
-                            <Card className='cardmain d-flex justify-content-center align-items-center'>
+                            <Col md={3} className='d-md-flex d-none  justify-content-center align-items-center my-3'>
+                            <Card className='cardmain-blog2 d-flex justify-content-center align-items-center'>
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
-                                    <CardBody>
+                                    <CardBody style={{backgroundColor:"#3b7fbf"}}>
                                         <CardTitle>
                                             <div className='allcardData'>
-                                                <h3>{data.title}</h3>
-                                                <h6 className='d-flex align-items-center gap-2'>
-                                                    <FaUser color='white' className='rounded-5' size={22}
-                                                        style={{ backgroundColor: "#3B7FBF", padding: "5px" }}
+                                                <h3 className='text-white'>{data.title}</h3>
+                                                <h6 className=' text-white d-flex align-items-center gap-2'>
+                                                    <FaUser color='#3b7fbf' className='rounded-5' size={22}
+                                                        style={{ backgroundColor: "#ffff", padding: "5px" }}
                                                     />
-                                                    <span> {data.author}</span>
+                                                    <span className='text-white'> {data.author}</span>
                                                 </h6>
-                                                <p>{data.content}</p>
-                                                <Button className='read-more-btn'>Read more</Button>
+                                                <p className=' text-white'>{data.content}</p>
+                                                <Button className='read-more-btn-blog'>Read more</Button>
                                             </div>
                                         </CardTitle>
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md={3} className='d-md-flex d-none justify-content-center align-items-center'>
-                            <Card className='cardmain d-flex justify-content-center align-items-center' >
+                            <Col md={3} className='d-md-flex d-none justify-content-center align-items-center my-3'>
+                            <Card className=' cardmain-blog2 d-flex justify-content-center align-items-center' >
                                     <CardImg src={data.image} variant='top' fluid className='card-img' />
-                                    <CardBody>
+                                    <CardBody style={{backgroundColor:"#3b7fbf"}}>
                                         <CardTitle>
                                             <div className='allcardData'>
-                                                <h3>{data.title}</h3>
-                                                <h6 className='d-flex align-items-center gap-2'>
-                                                    <FaUser color='white' className='rounded-5' size={22}
-                                                        style={{ backgroundColor: "#3B7FBF", padding: "5px" }}
+                                                <h3 className='text-white'>{data.title}</h3>
+                                                <h6 className=' text-white d-flex align-items-center gap-2'>
+                                                    <FaUser color='#3B7FBF' className='rounded-5' size={22}
+                                                        style={{ backgroundColor: "#ffff", padding: "5px" }}
                                                     />
-                                                    <span> {data.author}</span>
+                                                    <span className='text-white'> {data.author}</span>
                                                 </h6>
-                                                <p>{data.content}</p>
-                                                <Button className='read-more-btn'>Read more</Button>
+                                                <p className='text-white'>{data.content}</p>
+                                                <Button className='read-more-btn-blog'>Read more</Button>
                                             </div>
                                         </CardTitle>
                                     </CardBody>
@@ -98,7 +97,7 @@ export default function Blog() {
                     </Carousel>
                 
                 </Col>
-                    <Button className='explore-btn-blog mb-5' onClick={()=>navigate('/blogMain')}>Explore all blogs</Button>
+                    <Button className='btnmain mb-5' onClick={()=>navigate('/blogMain')}>Explore all blogs</Button>
             </Row>
         </>
     );

@@ -12,7 +12,8 @@
     color:#3B7FBF !important;
     text-decoration: underline;
     text-underline-offset:10px;
-    text-decoration-thickness:2.5px
+    text-decoration-thickness:2.5px;
+  
 }
 .navlinkmenutitle:hover>a{
     display: block!important;
@@ -117,6 +118,9 @@
   
   .mega-menu a:hover {
     background-color: #f4f4f4;
+  }
+  .inside-dev-shado-des{
+    box-shadow: 2px 4px 2px 5px rgba(0, 0, 0, 0.048);
   }
   
 

@@ -90,12 +90,11 @@
     display: inline-block;
     color:#3B7FBF!important;
     border: 1px solid #5e5e5e91!important;
-    width: 150px;
     font-weight: 550 !important;
-    height: 40px;
     border-radius: 5px;
     outline: none !important;
     box-shadow: none!important;
+    width: auto !important;
 }
 .btnmain:hover{
     color: white!important;

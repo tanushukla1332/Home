@@ -34,7 +34,7 @@ export default function Technical() {
                             {category.languages.map((language, languageId) => (
                                 <div key={languageId}>
                                     <img src={language.image} alt={language.name} className='img-fluid' />
-                                    <p className='para text-center'>{language.name}</p>
+                                    <p className='para text-center text-white'>{language.name}</p>
                                 </div>
                             ))}
                         </div>
@@ -43,7 +43,7 @@ export default function Technical() {
                  
                 </Col>
                 <div className='d-md-flex d-none justify-content-center align-items-center py-4'>
-                <Button className='view-more-btn p-2 fw-bolder fs-6 ' onClick={()=>navigate('/Development')}>View Detail Page</Button>
+                <Button className='btnmain p-2 fw-bolder fs-6 ' onClick={()=>navigate('/Development')}>View Detail Page</Button>
                 </div>
             </Row>
         </>

@@ -1,0 +1,39 @@
+
+.main-heading{
+    position: relative;
+}
+.main-heading>h1{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+   
+}
+.btn-main-banner-knw-more{
+    display: inline-block!important;
+    color: #5E5E5E!important;
+    background-color: #FFFFFF!important;
+    font-weight:550!important;
+    border: none!important;
+    width: 150px!important;
+    height:40px!important;
+    border-radius: 5px!important;
+    border: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+
+}
+.btn-main-banner-knw-more:hover{
+    color: #FFFFFF!important;
+    background-color:#3B7FBF!important;
+    border: none!important;
+    width: 150px!important;
+    height:40px!important;
+    border-radius: 5px!important;
+
+}
+.For-gap{
+    gap:500px;
+}

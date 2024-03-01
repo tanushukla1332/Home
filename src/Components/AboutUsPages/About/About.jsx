@@ -20,7 +20,7 @@ export default function About() {
         <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)}>
 
             <Row>
-                <Col md className='p-0'>
+                <Col md className='p-0'>;
                     <img src="Image/Ab-1 (2).png" alt="" className='img-fluid' />
                 </Col>
             </Row>

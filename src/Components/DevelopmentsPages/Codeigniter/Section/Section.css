@@ -1,0 +1,41 @@
+.Codesectionbg{
+    background: linear-gradient(to bottom, rgba(78,207,255), rgba(59,127,191));
+}
+
+.CodeIgniter-section{
+    box-shadow: 2px 5px 10px 5px  rgba(0, 0, 0, 0.062);
+    padding: 15px 10px ;
+    border-radius:15px;
+    height:330px;
+    transition: 0.3ms ease-in;
+    
+}
+.CodeIgniter-section:hover{
+    transform: translateY(-5px);
+   
+}
+.CodeIgniter-section1{
+    box-shadow: 2px 5px 10px 5px  rgba(0, 0, 0, 0.062);
+    padding: 10px ;
+    border-radius:15px;
+    height:280px;
+    transition: 0.3ms ease-in;
+    justify-content: center;
+    
+}
+.CodeIgniter-section1:hover{
+    transform: translateY(-3px);
+
+}
+.Code-section-3{
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+   background-color: white;
+   height: 200px;
+   width: 200px;
+}

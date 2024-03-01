@@ -1,0 +1,71 @@
+.btn-hire-developers{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+    outline:  none !important;
+    box-shadow:  none !important;
+    background-color: white !important;
+    color: #3b7fbf !important;
+    gap: 5px !important;
+    border-radius: 0px!important;
+    font-weight: 550 !important;
+    padding: 10px !important;
+   
+
+}
+.btn-hire-developers:hover{
+    background-color: #3b7fbf!important;
+    color: white !important;
+}
+.Ruby-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Ruby-buttons>.btn{
+    background-color: white!important;
+    color: gray;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-left: 1px solid rgba(128, 128, 128, 0.301) !important;
+    border-radius:  0px !important;
+    font-weight: 550 !important;
+    font-size: .85rem !important;
+}
+.Ruby-buttons >.btn:nth-child(1){
+    border-left:  0px !important;
+    color: gray;
+
+}
+.Ruby-buttons>.btn:nth-child(1):hover{
+    border-left:  0px !important;
+
+}
+.Ruby-buttons>.btn:hover{
+    color: #3b7fbf !important;
+    cursor: pointer;
+    border-left:  1px solid #3b7fbf !important;
+}
+.Ruby-section1{
+    box-shadow: 2px 4px 2px 4px rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+    width: 140px;
+    padding: 10px;
+}
+.Rubyindicators>a>.carousel-control-next-icon{
+    background-color: #3b7fbf !important;
+    border-radius: 50px !important;
+    padding: 5px !important;
+    position: absolute;
+    left:-180px !important;
+}
+.Rubyindicators>a>.carousel-control-prev-icon{
+    background-color: #3b7fbf !important;
+    border-radius: 50px !important;
+    padding:5px !important;
+    position: absolute;
+    right: -180px;
+}

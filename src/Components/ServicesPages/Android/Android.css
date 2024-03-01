@@ -1,0 +1,29 @@
+
+.android-btn{
+    outline: none !important;
+    border: none !important;
+    box-shadow:  none !important;
+    background-color: #3b7fbf !important;
+    color: white !important;
+    font-weight: 550 !important;
+    border-radius: 5px !important;
+    border: 1px solid white !important;
+
+}
+.And-section1{
+    box-shadow: 3px 5px 3px 5px rgba(0, 0, 0, 0.055);
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+    padding: 20px;
+min-width:230px;
+    transition: 0.3ms ease-in;
+}
+.android-btn:hover{
+    color: #3b7fbf !important;
+    background-color: white !important;
+    border: 1px solid #5e5e5e91!important;
+} 

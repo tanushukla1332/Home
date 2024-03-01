@@ -20,14 +20,14 @@ export default function SocialMediaOpt() {
                 <Row className='justify-content-center align-items-center py-lg-4   bgim'  style={{backgroundImage:"url('Image/blue.png')",backgroundPosition:"right",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
                     <Col md={10} >
                         <h1  className='text-center hed2 py-4'>Much more than posting!!!</h1>
-                        <p className='text-justify para'>
+                        <p className='text-center para'>
                         Instagram has around 2 billion active mobile users, about 28% of the whole world population with its largest database consisting of a young audience of 18-34 years of age. Twitter is one of the most active social media to ever exist with brands, leaders and celebrities regularly interacting with people.
                         LinkedIn is the unopposed pioneer as a professional social media platform.
                         
-                        <p className='py-3'>This is just the tip of the iceberg.</p>
+                    This is just the tip of the iceberg.
                         
-                       <p className='pb-3'> In the current age of Social Media dominance the regular random post here and there isn’t going to make the cut.
-                       </p>
+                      In the current age of Social Media dominance the regular random post here and there isn’t going to make the cut.
+                     
                         So let’s dive into the depth of Social Media to understand what can make you stand out in the modern world.
                         
 
@@ -139,37 +139,44 @@ export default function SocialMediaOpt() {
                         />
                     </Col>
                 </Row>
-                <Row className='justify-content-center align-items-center py-3'>
-                    <h2 className='hed2 text-center my-3'>Top Social Media  projects</h2>
-                    <Col md={5}>
-                        <div className='img-shadow py-3'>
-                            <img src="/Image/img (5).png" alt="" className='img-fluid' />
-                        </div>
-                    </Col>
-                    <Col md={5}>
-                        <div className='custom-shadow d-md-flex d-none'>
-                            <div className='d-flex flex-wrap justify-content-between py-3'style={{ paddingLeft: "15px", paddingRight: "10px" }}>
-                                <img src="/Image/image 2 (1).png" alt="" className='img-fluid mb-2' />
-                                <img src="/Image/img (11).png" alt="" className='img-fluid mb-2' />
-                                <img src="/Image/img (13).png" alt="" className='img-fluid mb-2' />
-                                <img src="/Image/img (9).png" alt="" className='img-fluid mb-2' />
-                                <img src="/Image/img (12).png" alt="" className='img-fluid mb-2' />
-                                <img src="/Image/img (15).png" alt="" className='img-fluid mb-2' />
-                            </div>
-                        </div>
-                    </Col>
-                </Row>  
+                <Row className='flex justify-content-center align-items-center py-5'>
+                <Col md={10}>
+                <h2 className='hed2 text-center'>Top Soical Media Projects</h2>
+                <div className='d-flex justify-content-center align-items-center gap-[150px] py-5'>
+                <div className='Semproj-shadow'>
+                <img src="Image/Sem-top-pr-1.png" alt="" className='img-fluid'/>
+                <img src=" Image/Sem-top-pr-2.png" alt="" className='img-fluid w-50'/>
+                </div>
+                <div className='Semproj-shadow'> 
+                <div className='d-flex justify-content-center align-items-center gap-2'>
+                <img src="Image/image 2 (1).png" alt=""  className='img-fluid w-50' />
+                <img src="Image/img (11).png" alt=""  className='img-fluid w-50'/>
+                <img src="Image/img (13).png" alt=""  className='img-fluid w-50'/>
+                
+                </div>
+                <div className='d-flex justify-content-center align-items-center gap-2'>
+                <img src="Image/img (9).png" alt=""  className='img-fluid w-50'/>
+                <img src="Image/img (12).png" alt=""  className='img-fluid w-50'/>
+                <img src="Image/img (15).png" alt=""  className='img-fluid w-50'/>
+                
+        
+                </div>
+                </div>
+                
+                </div>
+                </Col>
+                </Row>   
                 <Row className='justify-content-center align-items-center py-3 bgsection-homepage-smo  bgim'  style={{backgroundImage:"url('Image/grey.png')",backgroundPosition:"left",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
-                    <Col md={5} className='d-flex justify-content-center align-items-center my-5'>
+                    <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
                         <div className='custom2-shadow'>
-                            <img src="/Image/social.png" alt="" className='img-fluid' style={{ paddingTop: "30px" }} />
-                            <p className='para pt-2'>Social Media Optimization</p>
+                            <img src="/Image/Sem-last.png" alt="" className='img-fluid' style={{ paddingTop: "30px" }} />
+                            <p className='para pt-2 text-center'>Social Media Optimization</p>
                         </div>
                     </Col>
-                    <Col md={5} className='d-flex justify-content-center align-items-center my-5'>
+                    <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
                         <div className='custom2-shadow'>
                             <img src="/Image/programming (1) 1 (3).png" alt="" className='img-fluid' style={{ paddingTop: "30px" }} />
-                            <p className='para pt-3'>Social Media Marketing</p>
+                            <p className='para pt-3 text-center'>Social Media Marketing</p>
                         </div>
 
                     </Col>

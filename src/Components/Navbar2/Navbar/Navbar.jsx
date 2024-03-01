@@ -1,18 +1,46 @@
 import { FaAngleDown, FaSearch,FaAngleUp } from "react-icons/fa";
-import { CiMenuFries } from 'react-icons/ci';
 import { Link } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 
 
 import '../Navbar/Navbar.css';
-import { useState } from "react";
+import { useState , useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [click,setClick]=useState(false)
-  const[Dropicon,setDropIcon]=useState(false)
+  const[active,setActive]=useState(false)
+  const [aboutmenu,setAboutMenu]=useState(false)
+  const [Clientmenu,setClienttMenu]=useState(false)
+  const dropdownRef = useRef(null);
 
-  const handleDropClick=()=>{
-    setDropIcon(!Dropicon)
+
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setActive(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+ 
+  const handleClientdata=()=>{
+    setClienttMenu(!Clientmenu)
+  }
+  
+
+const handleAboutMenu=()=>{
+  setAboutMenu(!aboutmenu)
+}
+
+  const handleActive=()=>{
+    setActive(!active)
   }
 
 
@@ -31,7 +59,7 @@ const Navbar = () => {
   <div className="hidden group-hover:flex flex-col absolute left-0 top-20 py-3 w-full bg-gray-100 z-20 text-black duration-300 ">
   <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
   <div className="flex flex-col  items-center">
-  <h6 className="text-[#3b7fbf]">Design Marketing</h6>
+  <h5 className="text-[#3b7fbf] text-center">Design Marketing</h5>
   <Link to='/seo' className='no-underline  cusror-pointer text-white '>SEO</Link>
   <Link to='/SEM' className='no-underline  cusror-pointer text-white '>SEM</Link>
   <Link to='/' className='no-underline  cusror-pointer text-white '>SMO</Link>
@@ -41,14 +69,16 @@ const Navbar = () => {
 
   </div>
   <div className="flex flex-col  items-center">
-  <h6 className="text-[#3b7fbf]">Design</h6>
+
+  
+  <h6 className="text-[#3b7fbf] text-center ">Design</h6>
   <Link to='/seo' className='no-underline  cusror-pointer text-white  '>UI/UX Designs</Link>
   <Link to='/SEM' className='no-underline  cusror-pointer text-[#5e5e5e] '>Graphic Design </Link>
   <Link to='/' className='no-underline  cusror-pointer text-[#5e5e5e] '>Video Editing</Link>
 
   </div>
   <div className="flex flex-col items-center">
-  <h6 className="text-[#3b7fbf]">Development</h6>
+  <h5 className="text-[#3b7fbf] ">Development</h5>
   <Link to='/development' className='no-underline  cusror-pointer text-white'>App Development</Link>
   <Link to='/laraveldevlopment' className='no-underline  cusror-pointer text-white '>e- Commerce</Link>
   <Link to='/' className='no-underline  cusror-pointer text-white  '>Software development</Link>
@@ -138,20 +168,25 @@ const Navbar = () => {
     
     {/* Mega Menu Start*/}
     <div className="group">
-    <a href="/about" className="navlinkmenutitle no-underline">
-     <span className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[18px] navlinkmenutitle'>About
-     {Dropicon ? (
-      <FaAngleUp className="text-[#5e5e5e] ml-1 inline-block" /> 
+    <Link to="/about" className="navlinkmenutitle no-underline">
+     <span className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[18px] navlinkmenutitle' 
+     onClick={handleAboutMenu}
+     onMouseOver={handleAboutMenu} 
+     
+     >About      </span>
+     {aboutmenu ? (
+      <FaAngleDown className="text-[#5e5e5e] ml-1 inline-block"   onClick={handleAboutMenu} /> 
     ) : (
-      <FaAngleDown className="text-[#5e5e5e] ml-1 inline-block" /> 
+      <FaAngleUp className="text-[#5e5e5e] ml-1 inline-block"  onClick={handleAboutMenu}/> 
     )}
   
-     </span></a>
-    
-    <div className="hidden group-hover:flex flex-col absolute left-[140px] top-12 py-3 w-50 z-20 text-black duration-300   items-center ">
+  </Link>
+    <div className="hidden group-hover:flex flex-col absolute
+    top-15 py-3  z-20 text-black duration-300   items-center ">
     <div className="grid grid-cols  md:grid-cols">
     <div className="flex flex-col  items-center">
-    <Link to='/career'  className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Career</li></Link>
+    <Link to='/career'  className='no-underline navlinkmenutitle hover:no-underline'>
+    <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Career</li></Link>
   
     </div>
     
@@ -168,68 +203,155 @@ const Navbar = () => {
 
     {/* Mega Menu Start*/}
     <div className="group">
-    <Link href="/Services" className="navlinkmenutitle no-underline"> 
-    <span className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[18px] navlinkmenutitle onClick={handleDropClick}'> Services</span>
-    {Dropicon ? (
-      <FaAngleUp className="text-[#5e5e5e] ml-1 inline-block" /> 
+    <Link  to ="/" className="navlinkmenutitle no-underline"> 
+    <span 
+      className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'
+      onClick={handleActive}
+       onMouseOver={handleActive}
+    > Services</span>
+    {active ? (
+      <FaAngleDown className="text-[#5e5e5e] ml-1 inline-block"  onClick={handleActive}/> 
     ) : (
-      <FaAngleDown className="text-[#5e5e5e] ml-1 inline-block" /> 
+      <FaAngleUp className="text-[#5e5e5e] ml-1 inline-block"  onClick={handleActive}  /> 
     )}
-  
-    </Link>
-    <div className="hidden group-hover:flex flex-col absolute left-0 top-20 py-3 w-full bg-gray-100 z-20 text-black duration-300 ">
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
-    <div className="flex flex-col  items-center">
-    <h6 className="text-[#3b7fbf]">Design Marketing</h6>
-    <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>SEO</Link>
-    <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>SEM</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>SMO</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>SMM</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Email Marketing</Link>
+  </Link>
+    {active ? (
+      <>
+      <div ref={dropdownRef} className="flex-col items-center absolute  top-[103px] py-1 px-2  border-top 
+      rounded-1 shadow-lg
+     bg-gray-100 z-20 text-black duration-300 "
+     onMouseLeave={handleActive} >
+     <div className="grid grid-cols-4 md:grid-cols-3 gap-2">
+     <div className="flex flex-col  bg-[#ffff] p-3 rounded-1 inside-dev-shado-des" >
+     <span className="d-flex items-center gap-3">
+     <h6 className="text-[#3b7fbf] ">Design Marketing</h6> 
+     <img src="Image/nav-lar-1 (4).svg" className="w-[50px]"/>
+     </span>
+     <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
+     text-[15px] font-medium  hover:no-underline'   onClick={handleActive} >SEO</Link>
 
+     <Link to='/sem' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+     text-[15px] font-medium hover:no-underline   '  onClick={handleActive} >SEM</Link>
 
-    </div>
-    <div className="flex flex-col  items-center">
-    <h6 className="text-[#3b7fbf]">Design</h6>
-    <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>UI/UX Designs</Link>
-    <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Graphic Design </Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Video Editing</Link>
-  
-    </div>
-    <div className="flex flex-col items-center">
-    <h6 className="text-[#3b7fbf]">Development</h6>
-    <Link to='/development' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>App Development</Link>
-    <Link to='/laraveldevlopment' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>e- Commerce</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Software development</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Website development</Link>
-  
+     <Link to='/socialMediaOpt' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium hover:no-underline   '  onClick={handleActive} >SMO</Link>
+     <Link to='/socialMedia' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium  hover:no-underline   '  onClick={handleActive}>SMM</Link>
 
+     <Link to='/email' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
+     text-[15px] font-medium hover:no-underline '  onClick={handleActive} >Email Marketing</Link>
+     <Link to='/socialMediaMarketing' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
+     text-[15px] font-medium hover:no-underline '  onClick={handleActive} >Social Media Marketing</Link>
 
-    </div>
-    <div className="flex flex-col  items-center">
-    <h6 className="text-[#3b7fbf]">Support and Maintainence</h6>
-    <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Website M</Link>
-    <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Mobile App M</Link>
-   
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Domain and Hosting</Link>
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>VPS M</Link>
+ 
+     </div>
+     <div className="flex flex-col bg-[#ffff] p-3 rounded-1  inside-dev-shado-des">
+     <span className="d-flex justify-center items-center gap-5"><h6 className="text-[#3b7fbf] ">Design</h6> 
+     <img src="Image/nav-lar-1 (3).svg" className="w-[50px]"/>
+     </span> 
+     <Link to='/uI' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] 
+     text-[15px] font-medium
+     hover:no-underline   ' onClick={handleActive} >UI/UX Designs</Link>
 
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
+     text-[15px] font-medium hover:no-underline'  onClick={handleActive}>Graphic Design</Link>
 
-    </div>
-    <div className="flex flex-col  items-center">
-    <h6 className="text-[#3b7fbf]">Game Development</h6>
-    <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>2D</Link>
-    <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>3D</Link>
-   
-    <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Meta Verse</Link>
    
 
-    </div>
+     </div>
+     <div className="flex flex-col  bg-[#ffff] p-3 rounded-1 inside-dev-shado-des">
+     <span className="d-flex items-center gap-3"><h6 className="text-[#3b7fbf] ">Development</h6> 
+     <img src="Image/nav-lar-1 (2).svg" className="w-[50px]"/>
+     </span> 
+     <Link to='/development' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline  '  onClick={handleActive} >Website Development</Link>
+
+     <Link to='/CodeIgniter' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline  '  onClick={handleActive}>CodeIgniter Website
+     </Link>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+      text-[15px] font-medium
+     hover:no-underline  '  onClick={handleActive}>Informative Website</Link>
+
+     <Link to='/Php' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium
+     hover:no-underline  '  onClick={handleActive}>Php Website</Link>
+
+     <Link to='/htmlPage' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]    text-[15px] font-medium
+    hover:no-underline '  onClick={handleActive}>Html & Css Website</Link>
+
+     <Link to='/laraveldevlopment' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline '  onClick={handleActive}>Laravel Website
+     </Link>
+     
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline '  onClick={handleActive}> React js Website</Link>
+
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline '  onClick={handleActive}> Angular js Website</Link>
+
+    <Link to='/rubyRails' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline '  onClick={handleActive} > Ruby on Rails</Link> 
+     
+     <Link to='/eCommerce' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline ' onClick={handleActive} >E-commerce Website</Link> 
+
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline ' onClick={handleActive}>Payment Gateway</Link> 
+     
+   
+ 
+ 
+     </div>
+   
+     <div className="flex flex-col bg-[#ffff] p-3 rounded-1 inside-dev-shado-des">
+     <span className="d-flex items-center"><h6 className="text-[#3b7fbf] "> Game Development</h6> 
+     <img src="Image/nav-lar-1 (2).svg" className="w-[50px]"/>
+     </span> 
+     <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>2D</Link>
+     <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>3D</Link>
     
-    </div>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] 
+     text-[15px] font-medium
+     hover:no-underline '>Meta Verse</Link>
     
+ 
+     </div>
+     <div className="flex flex-col   bg-[#ffff] p-3 rounded-1  inside-dev-shado-des">
+     <span className="d-flex items-center"><h6 className="text-[#3b7fbf] "> Support and Maintenance</h6> 
+     <img src="Image/na-lar-5.svg" className="w-[50px]"/>
+     </span> 
+     <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Website M</Link>
+     <Link to='/SEM' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Mobile App M</Link>
     
-    </div>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline  '>Domain and Hosting</Link>
+  
+ 
+ 
+     </div>
+     <div className="flex flex-col   bg-[#ffff] p-3 rounded-1  inside-dev-shado-des">
+     <span className="d-flex items-center"><h6 className="text-[#3b7fbf] ">Mobile and  Maintenance</h6> 
+     <img src="Image/na-lar-5.svg" className="w-[50px]"/>
+     </span> 
+     <Link to='/Android' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Android Devloper</Link>
+     <Link to='/iOS' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>IOS Developer</Link>
+    
+   
+ 
+ 
+     </div>
+     
+     </div>
+     
+     
+     </div>
+ 
+      </>
+    ):null }
     </div>
 
 
@@ -262,9 +384,42 @@ const Navbar = () => {
 
     <Link to='/blogMain' className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Blogs</li></Link>
    
-    <Link to='/contact' className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Get in Touch</li></Link> 
-    <Link to='/contact' className='no-underline navlinkmenutitle'> 
-  <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] flex items-center gap-2'> 
+    {/* Mega Menu Start*/}
+    <div className="group">
+    <Link to="/contact" className="navlinkmenutitle no-underline">
+     <span className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[18px] navlinkmenutitle' 
+     onClick={handleClientdata}
+     onMouseOver={handleClientdata}
+     >Get in Touch  </span>
+     {Clientmenu ? (
+      <FaAngleDown className="text-[#5e5e5e] ml-1 inline-block"      onClick={handleClientdata} /> 
+    ) : (
+      <FaAngleUp className="text-[#5e5e5e] ml-1 inline-block"       onClick={handleClientdata}/> 
+    )}
+  
+    </Link>
+    
+    <div className="hidden group-hover:flex flex-col items-center absolute 
+    top-15 py-3 z-20 text-black duration-300   items-center ">
+    <div className="grid grid-cols md:grid-cols">
+    <div className="flex flex-col  items-center">
+    <Link to='/clients'  className='no-underline navlinkmenutitle  hover:no-underline'>
+    <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Our Clients</li></Link>
+  
+    </div>
+    
+    </div>
+    
+    
+    </div>
+    </div>
+
+
+
+      {/* Mega Menu End*/} 
+   
+    <Link to='/contact' className='no-underline navlinkmenutitle hover:no-underline'> 
+  <li className='hover:text-[#3b7fbfbe]  cusror-pointer text-[#3b7fbf] flex items-center gap-2'> 
     <MdPhoneInTalk size={30} className="rounded-5 bg-[#3b7fbf]  text-white p-1"  /> +91-8448158188 
   </li>
 </Link>
