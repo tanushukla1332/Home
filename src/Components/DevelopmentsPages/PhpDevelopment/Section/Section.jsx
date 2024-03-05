@@ -9,7 +9,7 @@ import Blog from '../../../HomePages/Blog/Blog2';
 export default function Section(){
     return(
         <>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
 
         <Col md={10}>
         <Marquee>
@@ -32,14 +32,14 @@ export default function Section(){
         </Col>
         
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={10}>
-        <h3 className='hed3 text-center'>PHP Web Application Development Services</h3>
-        <div className='d-flex justify-content-center align-items-center gap-5'>
+        <h3 className='hed2 text-center py-3'>PHP Web Application Development Services</h3>
+        <div className='d-md-flex justify-content-center align-items-center gap-5'>
         <div className='col-md-5'>
         <img src="Image/php-2.png" alt=""  className='img-fluid'/>
         </div>
-        <div className='col-md-5'>
+        <div className='col-md-5 pt-md-0 pt-5'>
         <p className='para  text-justify'>Ranked continuously as one of best PHP development companies in India, 
         Hidden Brains top php developers offers expertise in PHP based web app 
         development services working on complex web development processes 
@@ -74,9 +74,9 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
         
         </Row>
         <Section2/>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={10}>
-        <h3 className='hed2 text-center' >PHP Web Development Services</h3>
+        <h3 className='hed2 text-center'>PHP Web Development Services</h3>
         <p className='para text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -163,7 +163,7 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
         </Col>
 
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-4'
+        <Row className='d-flex justify-content-center align-items-center py-5'
         style={{
             backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Image/php-6.png)",height:"30vh",
            backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover"
@@ -181,20 +181,20 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
 
         </Row>
        <Section3/>
-       <Row className='justify-content-center align-items-center py-3'>
+       <Row className='justify-content-center align-items-center pb-5'>
             <h2 className='text-center pb-3 hed2' style={{color:"#5E5E5E"}}>Frequently Asked Questions</h2>
-            <p className='para text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, earum!</p>
+            <p className=' para text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, earum!</p>
                 <Col md={10}>
-                    <Accordion defaultActiveKey="0" className='main-accrodinstart'>
+                    <Accordion  className='main-accrodinstart'>
                         <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-2'>
                             <Accordion.Header className='headersection'>
                                 <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap'>
-                                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+                                    <p className='text-[22px] font-[600]'>Lorem ipsum dolor sit amet, consectetur</p>
                                 </div>
                             </Accordion.Header>
                             <Accordion.Body className='faqbodyitems '>
                             <div className='faqbodyitemstext'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            <p className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit 
@@ -207,34 +207,48 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
                             </Accordion.Body>
 
                         </Accordion.Item>
-                        <Accordion.Item eventKey='1' className='main-accrodinstartItem my-2'>
-                            <Accordion.Header className='headersection2'>
-                                <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap2'>
-                                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className='faqbodyitems'>
-                            <div className='faqbodyitemstext'>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium est adipisci culpa molestiae a repudiandae omnis eos sunt dicta! Architecto ad ex impedit ut suscipit amet non voluptatibus perspiciatis accusantium, repellat tempore atque in vitae voluptatum.</p>
-                        
-                            </div>
-                            
-                            </Accordion.Body>
-
-                        </Accordion.Item>
-                        <Accordion.Item eventKey='2' className='main-accrodinstartItem my-2'>
+                        <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-2'>
                         <Accordion.Header className='headersection'>
                             <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap'>
-                                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p className='text-[22px] font-[600]'>Lorem ipsum dolor sit amet, consectetur</p>
                             </div>
                         </Accordion.Header>
                         <Accordion.Body className='faqbodyitems '>
                         <div className='faqbodyitemstext'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus numquam, nobis recusandae voluptatibus, rerum perspiciatis aperiam minima ab, cupiditate soluta deleniti eum animi deserunt eius pariatur aut! Quae quia voluptates, nam debitis ipsum deleniti error placeat ad, culpa, cupiditate est tenetur reiciendis. Officia, deleniti.</p>
+                        <p className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit 
+                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
+                      
                         </Accordion.Body>
 
                     </Accordion.Item>
+                    <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-2'>
+                    <Accordion.Header className='headersection'>
+                        <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap'>
+                            <p className='text-[22px] font-[600]'>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </Accordion.Header>
+                    <Accordion.Body className='faqbodyitems '>
+                    <div className='faqbodyitemstext'>
+                    <p className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit 
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  
+                    </Accordion.Body>
+
+                </Accordion.Item>
                     </Accordion>
 
 

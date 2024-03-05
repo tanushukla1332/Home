@@ -6,7 +6,7 @@ export default function Testominials() {
         <Row className='py-5 justify-content-center align-items-center' style={{
             backgroundColor: "#3B7FBF"
 
-        }}>
+        }}> 
             <div className='text-center '>
                 <h3 className='hed2 text-light'>TESTIMONIALS</h3>
                 <p className='testpara text-light'>Don’t Go only with our commitments : Here what our clients says about us:</p>

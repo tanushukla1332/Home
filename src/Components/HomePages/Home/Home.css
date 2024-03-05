@@ -11,7 +11,32 @@
     background-color: black !important;
     color: white !important;
     font-weight: 550!important;
+
 }
+.btn-whitebg{
+display: flex!important;
+align-items: center !important;
+justify-content: center !important;
+color: #3B7FBF!important;
+background-color: #FFFFFF!important;
+font-weight:550!important;
+border: none!important;
+border-radius: 5px!important;
+border: none!important;
+outline: none!important;
+box-shadow: none!important;
+display: flex!important;
+justify-content: center!important;
+align-items: center!important;
+
+}
+.btn-whitebg:hover{
+color: #FFFFFF!important;
+background-color:gray!important;
+border: none!important;
+border-radius: 5px!important;
+}
+
 
 .spacing p {
     letter-spacing: 2px!important;
@@ -86,24 +111,7 @@
     box-shadow: none!important;
 
   }
-  .btnmain{
-    display: inline-block;
-    color:#3B7FBF!important;
-    border: 1px solid #5e5e5e91!important;
-    font-weight: 550 !important;
-    border-radius: 5px;
-    outline: none !important;
-    box-shadow: none!important;
-    width: auto !important;
-}
-.btnmain:hover{
-    color: white!important;
-    font-weight: 550!important;
-    background-color:#3B7FBF !important;
-    border: none!important;
-    box-shadow: none!important;
-    outline: none!important;
-}
+ 
   .btm1:hover {
     color:white !important;
     background-color: #3B7FBF !important;
@@ -188,6 +196,7 @@ input::-webkit-outer-spin-button,
     width: 30px;
     height: auto;
 }
+
 figcaption{
     position: absolute;
     bottom: 15rem;
@@ -204,6 +213,20 @@ figcaption{
         font-size:1rem;
         color:white;
     }
+}
+.para{
+    font-size:16px;
+    font-weight: 500;
+    color: rgba(94, 94, 94, 0.795);
+}
+@media screen and (max-width:786px) {
+    .para{
+        font-size:11px;
+        font-weight: 500;
+        color: rgba(94, 94, 94, 0.795);
+
+    }
+    
 }
 
 @media screen  and (max-width: 575.98px){
@@ -253,16 +276,19 @@ figcaption{
     color: #5e5e5e;
 }
 
+
+
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .hed2{
-        font-size: 38px!important;
+        font-size: 30px!important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
     .hed2{
-        font-size: 30px!important;
+        font-size: 20px!important;
     }
 }
 @media (max-width: 768px) and (min-width:576px) {
@@ -305,13 +331,7 @@ figcaption{
         font-size: 16px!important;
         letter-spacing: 1px;
     }
-    .hed3{
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp:1; /* Adjust the number of lines to show */
-        -webkit-box-orient: vertical;
-
-      }
+   
 }
 /* //For banner para */
 @media (max-width: 768px) and (min-width:576px) {

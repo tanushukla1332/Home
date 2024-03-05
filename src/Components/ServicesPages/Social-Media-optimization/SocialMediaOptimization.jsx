@@ -1,6 +1,7 @@
 
 import { Row, Col, Button } from 'react-bootstrap';
 import '../Social-Media-optimization/SocialMediaOptimization.css'
+import Blog from '../../HomePages/Blog/Blog2';
 
 
 export default function SocialMediaOpt() {
@@ -9,15 +10,19 @@ export default function SocialMediaOpt() {
 
         <>
            
-        <Row >
-        <Col md  className='MainrodivSmo' style={{backgroundImage:"url('Image/image 3 (1).png')"}}>
+        <Row 
+        className='justify-content-center align-items-center py-lg-5'
+        
+        
+        style={{backgroundImage:"url('Image/SMO-Banner.png')",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundSize:"cover",height:"300px"}}>
+        <Col md >
         <div>
-        <h1>Welcome to Social Media Optimization Page</h1>
+        <h1 className='hed1'>Social Media Optimization</h1>
         </div>
         </Col>
 
         </Row>
-                <Row className='justify-content-center align-items-center py-lg-4   bgim'  style={{backgroundImage:"url('Image/blue.png')",backgroundPosition:"right",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
+                <Row className='justify-content-center align-items-center py-lg-5  bgim'  style={{backgroundImage:"url('Image/blue.png')",backgroundPosition:"right",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
                     <Col md={10} >
                         <h1  className='text-center hed2 py-4'>Much more than posting!!!</h1>
                         <p className='text-center para'>
@@ -45,7 +50,8 @@ export default function SocialMediaOpt() {
                     {/* Content for all screens */}
                     <Col md={6} >
                         <h2 className='text-center hed2'>Platform analysis and prioritising</h2>
-                        <p className='para text-justify'>More than just some icons, images, and words, we take a holistic approach to web design. By harnessing the power of shape, font, and colour psychology, we bring the designs to life and ensure the designs portray the brand’s vision.</p>
+                        <p className='para text-justify'>Imagine someone having lunch in the bath-tub, It’s not a good look, Is it?
+                        Prioritising social media platforms for your business and creating content accordingly will get you the attention of your audience and potentially their business.</p>
                         <div className='d-flex justify-content-center align-items-center'>
                             <Button className='btn2 text-center'>Get in Touch</Button>
                         </div>
@@ -182,6 +188,7 @@ export default function SocialMediaOpt() {
                     </Col>
 
                 </Row>
+                <Blog/>
                 <Row style={{ backgroundColor: "#5e5e5e" }} className='py-2'>
                 <Col md={10} className='d-md-flex justify-content-between align-items-center my-lg-3 fw-bold'
                     style={{ color: "#FFFF", letterSpacing: "2px" }}>

@@ -1,34 +1,25 @@
-import React,{ useEffect, useMemo, useState } from "react";
+
+import React,{ useEffect, useMemo, useState} from "react";
 import Particles, {initParticlesEngine } from "@tsparticles/react";
-import {Row,Col,Button,Image} from 'react-bootstrap'
+import {Row,Col,Button} from 'react-bootstrap'
 import { loadSlim } from "@tsparticles/slim"; 
 import Data from '../../../Data.json';
 
 export default function App (){
   const [init, setInit] = useState(false);
-  const [currentTitle, setCurrentTitle] = useState(0)
-    const [subheading, setSubheading] = useState(0)
-    const [paras, setParas] = useState(0)
-    const [Allimagess, setAllImage] = useState(0)
-    
-    const titles = Data.map((data) => data.title)
- 
-    const subtitles = Data.map((data) => data.subTitle)
-    const paragraphs = Data.map((data) => data.paragraph)
-    const allimages = Data.map((data) => data.image)
-
-    
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentTitle((prev) => (prev + 1) % titles.length)
-            setSubheading((prev) => (prev + 1) % subtitles.length)
-            setParas((prev) => (prev + 1) % paragraphs.length)
-            setAllImage((prev) => (prev + 1) % allimages.length)
-        }, 3000)
-        return () => clearInterval(intervalId)
-    }, [titles.length,subtitles.length,paragraphs.length,allimages.length])
-
+  const [currentDataIndex, setCurrentDataIndex] = useState(0);
+   
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //         setCurrentDataIndex(prevIndex => (prevIndex + 1) % Data.length);
+  //     }, 3000);
+  //     return () => clearInterval(interval);
+  // }, [Data]);
+  
   useEffect(() => {
+
+
+    window.scrollTo(0, 0);
     initParticlesEngine(async (engine) => {
 
       await loadSlim(engine);
@@ -43,10 +34,10 @@ export default function App (){
 
   const options = useMemo(
     () => ({
-            fullScreen: {
-              enable: true,
-              zIndex: -1000,
-            },    
+      fullScreen: {
+        enable: true,
+        zIndex: -1000,
+      },    
       background: {
         color: {
           value: "#3B7FBF",
@@ -66,7 +57,7 @@ export default function App (){
         },
         modes: {
           push: {
-            quantity: 10,
+            quantity: 20,
           },
           repulse: {
             distance: 200,
@@ -79,11 +70,11 @@ export default function App (){
           value: "#ffffff",
         },
         links: {
-          color: "#fff",
-          distance: 150,
+          color: "#3b7fbf",
+          distance:150,
           enable: true,
-          opacity: 0.5,
-          width: 1,
+          opacity: 0.9,
+          width: 2,
         },
         move: {
           direction: "none",
@@ -99,45 +90,49 @@ export default function App (){
           density: {
             enable: true,
           },
-          value: 200,
+          value: 100,
         },
         opacity: {
           value: 0.5,
         },
         shape: {
-          type: "image",
-        image:{
-          src:"https://img.freepik.com/free-photo/creative-composition-world-book-day_23-2148883765.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705708800&semt=sph",
-          width:100,
-          height:100
-        }  
-        
+          type: "circle", // Changing shape type to image
+          stroke: {
+            width: 20,
+            color: "#3b7fbf",
+          },
+          // options: {
+          //   image: {
+          //     src: "Image/LOGO RAZOBYTE.png", // Add your image path here
+          //     width: 300, // Adjust width of the image particle
+          //     height: 500, // Adjust height of the image particle
+          //   },
+          // },
         },
         size: {
-          value: { min:10, max: 20 },
+          value: { min:10, max: 25},
         },
       },
       detectRetina: true,
     }),
     [],
   );
-
+  
   if (init) {
     return (
       <>
-      <div>
       <Particles
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={options}
     />
-      </div>
-      <Row className='py-2 justify-content-center align-items-center px-0'>      
-            <Col md= {5} className='text-light '>
-                <h1 className='hed1  pt-2'>{titles[currentTitle]} </h1>
-                <h3 className='hed3 text-white'>{subtitles[subheading]}
+      
+      <Row className='py-2 justify-content-center align-items-center px-0' >      
+            <Col md= {5} className='text-light'>
+                <h1 className='hed1  pt-2'>{Data[currentDataIndex].title}</h1>
+                <h3 className='hed3 text-white'>{Data[currentDataIndex].subTitle}
                 </h3>
-                <p className='bannerpara'>{paragraphs[paras]}</p>
+                <p className='bannerpara'>{Data[currentDataIndex].paragraph}</p>
                 <div className="d-flex jjustify-content-center align-itmes-center gap-3">
                 <Button className=" btm" variant='dark'>Get in touch </Button>
                 <Button variant='dark' className=" btm ">About Us</Button>
@@ -146,8 +141,8 @@ export default function App (){
             
             
             <Col md={6} className='d-flex justify-content-center align-items-center  pt-2 '>
-                <Image src={allimages[Allimagess]} alt='' fluid
-                    className='rounded-1 banner-images-firstsection' style={{height:"60vh"}}
+                <img src={Data[currentDataIndex].image} alt='' fluid
+                    className='rounded-1 banner-images-firstsection img-fluid  ' style={{height:"60vh"}}
                 />
             </Col>
            
@@ -158,3 +153,4 @@ export default function App (){
     );
   }
 };
+

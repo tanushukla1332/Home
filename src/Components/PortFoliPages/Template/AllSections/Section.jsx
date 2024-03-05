@@ -98,26 +98,35 @@ export default function Section() {
                 </Col>
             </Row>
             <Row className='justify-content-center my-5' style={{ background: "linear-gradient(to bottom,rgba(90,161,227,30%), rgba(90,161,227,10%))" }} >
-           <div className='allsections-text-desgin'>
+          
              <h2 className="text-center pt-5">Other Related Projects</h2>
-           </div>
-                <Col md={4}>
-                    <div className='img-shadow-Projectsec'>
-                        <img src="/Image/img (5).png" alt="" className='img-fluid' />
-                    </div>
+             <Col md={10}>
+             <div className='d-flex justify-content-center align-items-center gap-[150px] py-5'>
+             <div className='Semproj-shadow'>
+             <img src="Image/Sem-top-pr-1.png" alt="" className='img-fluid'/>
+             <img src=" Image/Sem-top-pr-2.png" alt="" className='img-fluid w-50'/>
+             </div>
+             <div className='Semproj-shadow'> 
+             <div className='d-flex justify-content-center align-items-center gap-2'>
+             <img src="Image/image 2 (1).png" alt=""  className='img-fluid w-50' />
+             <img src="Image/img (11).png" alt=""  className='img-fluid w-50'/>
+             <img src="Image/img (13).png" alt=""  className='img-fluid w-50'/>
+             
+             </div>
+             <div className='d-flex justify-content-center align-items-center gap-2'>
+             <img src="Image/img (9).png" alt=""  className='img-fluid w-50'/>
+             <img src="Image/img (12).png" alt=""  className='img-fluid w-50'/>
+             <img src="Image/img (15).png" alt=""  className='img-fluid w-50'/>
+             
+     
+             </div>
+             </div>
+             
+             </div>
+    
+        
                 </Col>
-                <Col md={5}>
-                    <div className='project-section-shadow-part d-sm-flex d-none'>
-                        <div className='d-flex flex-wrap justify-content-center align-items-center pb-4 pt-5'>
-                            <img src="/Image/image 2 (1).png" alt="" className='img-fluid ' />
-                            <img src="/Image/img (11).png" alt="" className='img-fluid ' />
-                            <img src="/Image/img (13).png" alt="" className='img-fluid' />
-                            <img src="/Image/img (9).png" alt="" className='img-fluid' />
-                            <img src="/Image/img (12).png" alt="" className='img-fluid' />
-                            <img src="/Image/img (15).png" alt="" className='img-fluid' />
-                        </div>
-                    </div>
-                </Col>
+               
             </Row>
         </>
     )

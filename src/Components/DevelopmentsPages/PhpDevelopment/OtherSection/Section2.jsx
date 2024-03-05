@@ -11,9 +11,9 @@ export default function Section3(){
         </Col>
         <Carousel className='phpindicators'>
         <Carousel.Item>
-        <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services2'> 
-        <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>Third-party 
+        <div className='d-flex justify-content-center align-items-center gap-4 py-3'> 
+        <div className='php-section-services2 '> 
+        <h3 className='hed2 py-2 text-center' style={{color:"#3b7fbf"}}>Third-party 
         Integrations</h3>
         <p className='para fs-6 text-center'>Enhance the functionality and 
         power of the website with 
@@ -21,7 +21,7 @@ export default function Section3(){
         party SDK, API , multiple tools 
         and applications.</p>
         </div>
-        <div className='php-section-services2'> 
+        <div className='php-section-services2 d-md-block d-none'> 
         <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>Progressive Web 
         Apps
         </h3>
@@ -31,7 +31,7 @@ export default function Section3(){
         party SDK, API , multiple tools 
         and applications.</p>
         </div>
-        <div className='php-section-services2'> 
+        <div className='php-section-services2 d-md-block d-none'> 
         <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>AMP Framework..</h3>
         <p className='para fs-6 text-center'>Enhance the functionality and 
         power of the website with 
@@ -39,7 +39,7 @@ export default function Section3(){
         party SDK, API , multiple tools 
         and applications. </p>
         </div>
-        <div className='php-section-services2'> 
+        <div className='php-section-services2 d-md-block d-none' > 
         <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>Cloud Solutions....</h3>
         <p className='para text-center fs-6'>Enhance the functionality and 
         power of the website with 
@@ -53,34 +53,40 @@ export default function Section3(){
         </Carousel.Item>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services2'> 
-        <h3 className='hed3' style={{color:"#3b7fbf"}}>30+ Domains
-        Served</h3>
-        <p className='para'>Enhance the functionality and 
+        <div className='php-section-services2  d-md-block d-none'> 
+        <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>Third-party 
+        Integrations</h3>
+        <p className='para fs-6 text-center'>Enhance the functionality and 
         power of the website with 
-        seamless </p>
+        seamless integration of third 
+        party SDK, API , multiple tools 
+        and applications.</p>
         </div>
-        <div className='php-section-services2'> 
-        <h3 className='hed3' style={{color:"#3b7fbf"}}>30+ Domains
-        Served</h3>
-        <p className='para'>Enhance the functionality and 
+        <div className='php-section-services2 d-md-block d-none'> 
+        <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>Progressive Web 
+        Apps
+        </h3>
+        <p className='para fs-6 text-center'>Enhance the functionality and 
         power of the website with 
-        seamless </p>
+        seamless integration of third 
+        party SDK, API , multiple tools 
+        and applications.</p>
         </div>
-        <div className='php-section-services2'> 
-        <h3 className='hed3' style={{color:"#3b7fbf"}}>30+ Domains
-        Served</h3>
-        <p className='para'>Enhance the functionality and 
+        <div className='php-section-services2 d-md-block d-none'> 
+        <h3 className='hed3 py-2 text-center' style={{color:"#3b7fbf"}}>AMP Framework..</h3>
+        <p className='para fs-6 text-center'>Enhance the functionality and 
         power of the website with 
-        seamless </p>
+        seamless integration of third 
+        party SDK, API , multiple tools 
+        and applications. </p>
         </div>
-        <div className='php-section-services2'> 
-
-        <h3 className='hed3' style={{color:"#3b7fbf"}}>30+ Domains
-        Served</h3>
-        <p className='para'>Enhance the functionality and 
+        <div className='php-section-services2 ' > 
+        <h3 className='hed2 py-2 text-center' style={{color:"#3b7fbf"}}>Cloud Solutions....</h3>
+        <p className='para text-center fs-6'>Enhance the functionality and 
         power of the website with 
-        seamless </p>
+        seamless integration of third
+        party SDK, API , multiple tools 
+        and applications.</p>
         </div>
 
         </div>

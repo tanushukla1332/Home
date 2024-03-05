@@ -11,6 +11,7 @@ export default function Blog() {
     const navigate=useNavigate()
 
   const handleSelect = (selectedIndex) => {
+    
     setIndex(selectedIndex);
   };
     return (
@@ -95,9 +96,9 @@ export default function Blog() {
                         ))}
                         
                     </Carousel>
-                
+
                 </Col>
-                    <Button className='btnmain mb-5' onClick={()=>navigate('/blogMain')}>Explore all blogs</Button>
+                    <Button className='btnmain mb-5 w-auto' onClick={()=>navigate('/blogMain')}>Explore all blogs</Button>
             </Row>
         </>
     );

@@ -1,22 +1,23 @@
 import {Row,Col} from 'react-bootstrap';
 import { GiCheckMark } from 'react-icons/gi';
 import './Section.css'
+import Blog from '../../../HomePages/Blog/Blog2';
 
 export default function Section(){
     return(
         <>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={10}>
-        <h3 className='hed2 text-center'>Creating an  impact with CodeIgniter</h3>
-        <p className='para text-center fs-md-6 fs-6'>With vast usage, Laravel development is a complete framework that includes a lot of components, making it fast and easy. Laravel can be used for a wide variety of projects including B2B projects to SaaS-based apps like CRM. Laravel is perfect for both small and large-scale businesses while building  custom web applications</p>
+        <h3 className='hed2  text-center'>Creating an  impact with CodeIgniter</h3>
+        <p className='para text-md-center text-sm-justify'>With vast usage, Laravel development is a complete framework that includes a lot of components, making it fast and easy. Laravel can be used for a wide variety of projects including B2B projects to SaaS-based apps like CRM. Laravel is perfect for both small and large-scale businesses while building  custom web applications</p>
 
         </Col>
         </Row>
-        <Row  className='d-flex justify-content-center align-items-center'>
+        <Row  className='d-md-flex justify-content-center align-items-center pb-5'>
         <Col md={5}>
-        <h3 className='hed3 text-justify'>Why  CodeIgniter should be your 
-        choice-</h3>
-        <p className='para text-justify fs-6 fs-md-6'>CodeIgniter stands out as an excellent choice for website development due to its versatility, efficiency, and user-friendly nature. Its lightweight framework facilitates rapid development without compromising on performance. With its clear documentation and straightforward syntax, CodeIgniter is accessible to developers of all skill levels, enabling them to quickly grasp and implement its features. The framework offers a robust set of libraries and helpers that expedite common tasks, such as form validation, database interactions, and session management. 
+        <h3 className='hed2 text-center'>Why  CodeIgniter should be your 
+        choice</h3>
+        <p className='para text-justify'>CodeIgniter stands out as an excellent choice for website development due to its versatility, efficiency, and user-friendly nature. Its lightweight framework facilitates rapid development without compromising on performance. With its clear documentation and straightforward syntax, CodeIgniter is accessible to developers of all skill levels, enabling them to quickly grasp and implement its features. The framework offers a robust set of libraries and helpers that expedite common tasks, such as form validation, database interactions, and session management. 
 
         CodeIgniter promotes security best practices, including input filtering and encryption, thereby enhancing the overall safety of web applications. Its MVC (Model-View-Controller) architecture ensures a clean separation of concerns, facilitating modular and maintainable codebases. Whether building a simple blog or a complex e-commerce platform, CodeIgniter empowers developers to create efficient, scalable, and secure websites with ease.</p>
         
@@ -28,14 +29,14 @@ export default function Section(){
 
         </Col>
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={10}>
         <h3 className='hed2 text-center'>CodeIgniter Development Services – The Benefits</h3>
-        <p className='para text-center pb-3 fs-md-6 fs-6' >Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
+        <p className='para text-md-center pb-3 ' >Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply of the printing and typesetting industry.</p>
        
       <div className='d-flex flex-col '>
-      <div className='d-flex gap-5'>
+      <div className='d-md-flex  d-none gap-5'>
       <div className='d-flex gap-2 w-50'>
       <GiCheckMark color='#3b7fbf' size={25}/>
       <p className='para  font-[550]  fs-md-6  fs-6'>
@@ -67,7 +68,7 @@ export default function Section(){
       
 
       </div>
-      <div className='d-flex  gap-5'>
+      <div className='d-md-flex  d-none  gap-5'>
       <div className='d-flex w-50'>
       <div className='d-flex gap-2'>
       <GiCheckMark color='#3b7fbf' size={25}/>
@@ -106,7 +107,7 @@ export default function Section(){
       
 
       </div> 
-      <div className='d-flex  gap-5'>
+      <div className='d-md-flex d-none  gap-5'>
       <div className='d-flex w-50'>
       <div className='d-flex gap-2'>
       <GiCheckMark color='#3b7fbf' size={25}/>
@@ -115,7 +116,7 @@ export default function Section(){
 accounts</p>
       </div>
       </div>
-      <div className='d-flex w-50'>
+      <div className='d-md-flex d-none w-50'>
       <div className='d-flex  gap-2'>
       <GiCheckMark color='#3b7fbf' size={25}/>
       <p className='para font-[550] fs-md-6 fs-6'>Easy migration from one server to another and 
@@ -127,7 +128,7 @@ accounts</p>
       
 
       </div> 
-      <div className='d-flex gap-5'>
+      <div className='d-md-flex  d-none gap-5'>
       <div className='d-flex w-50'>
       <div className='d-flex gap-2'>
       <GiCheckMark color='#3b7fbf' size={25}/>
@@ -150,12 +151,12 @@ accounts</p>
 
         </Col>
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-4'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md ={10}>
         <h3 className='hed2 text-center'>Avant-garde CodeIgniter Development Capabilities</h3>
-        <p className='para text-center fs-md-6  fs-6 py-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
+        <p className='para text-md-center py-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply of the printing and typesetting industry.</p>
-        <div className='d-flex justify-content-center align-items-center gap-5 mb-4'>
+        <div className='d-md-flex justify-content-center align-items-center gap-5'>
         <div className='d-flex flex-col items-center CodeIgniter-section'>
         <img src="Image/cod-3 (6).png" alt=""  className='img-fluid w-[100px]'/>
         <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Customized CodeIgniter 
@@ -178,7 +179,7 @@ accounts</p>
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='d-flex flex-col items-center CodeIgniter-section' style={{backgroundColor:"#3B7FBF"}}>
+        <div className='d-flex flex-col items-center CodeIgniter-section bg-[#3b7fbf]'>
         <img src="Image/cod-3 (4).png" alt=""  className='img-fluid w-[90px]'/>
         <h3 className='hed3 text-center text-white' style={{color:"#3b7fbf" }}>E-commerce
         Development</h3>
@@ -193,7 +194,7 @@ accounts</p>
         
 
         </div>
-        <div className='d-flex justify-content-center align-items-center gap-5'>
+        <div className='d-md-flex d-none justify-content-center align-items-center gap-5'>
         <div className='d-flex flex-col items-center CodeIgniter-section'>
         <img src="Image/cod-3 (3).png" alt=""  className='img-fluid w-[80px]'/>
         <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>CodeIgniter Migration 
@@ -240,14 +241,14 @@ accounts</p>
         <Col md={10} className='d-md-flex  flex-column justify-content-center  align-items-center' >
         <div> 
         <h3 className='hed2 text-white text-center'>Where We Excel</h3>
-        <p className='para text-white fs-md-6 fs-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
+        <p className='para text-white text-md-center text-sm-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply of the printing and typesetting industry.</p>
         </div>
         <div>
-        <div className='d-md-flex justify-content-center align-items-center gap-4 m-3'>
+        <div className='d-md-flex justify-content-center align-items-center gap-4 my-3'>
         <div className='laravel-section6'>
-        <h3 className='hed3 '>API Based Web Application</h3>
-        <p className='para text-sm-justify  fs-md-6 fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <h3 className='hed3'>API Based Web Application</h3>
+        <p className='para  text-md-center text-sm-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -255,9 +256,9 @@ accounts</p>
         Laravel API has extremely consistent coding styles with briefly 
         explained methods and classes.</p>
         </div>
-        <div className='laravel-section6  d-md-flex d-none'>
+        <div className='laravel-section6 my-3 '>
         <h3 className='hed3'>Extreme Security Encryption</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para  text-md-center text-sm-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -267,7 +268,7 @@ accounts</p>
         </div>
 
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 m-3'>
+        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 my-3'>
         <div className='laravel-section6'> 
         <h3 className='hed3'>Built-in Project Environment</h3>
         <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
@@ -295,12 +296,12 @@ accounts</p>
         </Col>
 
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-4 '>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md ={10}>
         <h3 className='hed2 text-center'>What We Offer</h3>
-        <p className='para text-center fs-md-6  fs-6 py-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
+        <p className='para text-center py-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply of the printing and typesetting industry.</p>
-        <div className='d-flex justify-content-center align-items-center gap-5 mb-4'>
+        <div className='d-md-flex justify-content-center align-items-center gap-5 mb-4'>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
     
         <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Certified PHP Expert 
@@ -337,7 +338,7 @@ accounts</p>
         
 
         </div>
-        <div className='d-flex justify-content-center align-items-center gap-5'>
+        <div className='d-md-flex  d-none justify-content-center align-items-center gap-5'>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
    
         <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>End-to-end Solutions</h3>
@@ -376,55 +377,55 @@ accounts</p>
 
         </Col>
         </Row>
-        <Row className='Codesectionbg d-flex justify-content-center align-items-center py-4 '>
-        <Col md={10}>
-        <div className='pt-3'>
+        <Row className='Codesectionbg d-flex justify-content-center align-items-center py-5'>
+        <Col md={10} className=' d-flex flex-col align-items-center justify-center'>
+        <div>
         <h3 className='hed2 text-white text-center'>Following The Best Practices</h3>
-        <p className='para fs-6 fs-md-6 text-white text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
+        <p className='para  text-white text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply</p>
     
         </div>
    
-        <div className='d-md-flex flex-sm-row justify-content-center align-items-center gap-5 mb-5'>
-        <div className='Code-section-3 '>
-        <img src="Image/cod-4 (8).png" alt=""  className='img-fluid '  />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Default Application 
+        <div className='d-flex justify-content-center align-items-center py-3 gap-md-3 gap-2'>
+        <div className='Code-section-3 d-md-flex d-none'>
+        <img src="Image/cod-4 (8).png" alt=""  className='img-fluid  w-20'/>
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>Default Application 
         Structure</h3>
         </div>
-        <div className='Code-section-3'>
-        <img src="Image/cod-4 (7).png" alt=""  className='img-fluid ' />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>ORM Library/Third 
+        <div className='Code-section-3 '>
+        <img src="Image/cod-4 (7).png" alt=""  className='img-fluid  w-20' />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>ORM Library/Third 
         Party Data Access</h3>
         </div>
         <div className='Code-section-3'>
-        <img src="Image/cod-4 (6).png" alt=""  className='img-fluid'  />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>JavaScript or CSS 
+        <img src="Image/cod-4 (6).png" alt=""  className='img-fluid w-20'  />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>JavaScript or CSS 
         Libraries</h3>
         </div>
         <div className='Code-section-3'>
-        <img src="Image/cod-4 (5).png" alt=""  className='img-fluid'/>
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Custom Web Developm
+        <img src="Image/cod-4 (5).png" alt=""  className='img-fluid w-20'/>
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>Custom Web Developm
         ent and Caching</h3>
         </div>
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center gap-5'>
-        <div className='Code-section-3'>
-        <img src="Image/cod-4 (4).png" alt=""  className='img-fluid ' />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Custom Template 
+        <div className='d-flex justify-content-center align-items-center py-3 gap-md-3 gap-2'>
+        <div className='Code-section-3 d-md-flex d-none'>
+        <img src="Image/cod-4 (4).png" alt=""  className='img-fluid w-20' />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>Custom Template 
         Engine</h3>
         </div>
-        <div className='Code-section-3'>
-        <img src="Image/cod-4 (3).png" alt=""  className='img-fluid ' />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Validate Your Inputs</h3>
+        <div className='Code-section-3'> 
+        <img src="Image/cod-4 (3).png" alt=""  className='img-fluid  w-20 ' />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>Validate Your Inputs</h3>
         </div>
         <div className='Code-section-3'>
-        <img src="Image/cod-4 (2).png" alt=""  className='img-fluid' />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>SEO-friendly URLs</h3>
+        <img src="Image/cod-4 (2).png" alt=""  className='img-fluid  w-20 ' />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>SEO-friendly URLs</h3>
         
         </div>
         <div className='Code-section-3'>
-        <img src="Image/cod-4 (1).png" alt=""  className='img-fluid' />
-        <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Store Configuration 
+        <img src="Image/cod-4 (1).png" alt=""  className='img-fluid  w-20 ' />
+        <h3 className='para text-center font-[600]' style={{color:"#3b7fbf"}}>Store Configuration 
 Information</h3>
         
         </div>
@@ -432,8 +433,9 @@ Information</h3>
    
 
         </Col>
-        <img src="Image/LAST.svg" alt="" className='px-0 img-fluid'/>
+  
         </Row>
+        <Blog/>
         </>
     )
 }

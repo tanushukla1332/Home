@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion';
 import '../SectionsCar/SectionCar.css'
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import Blog from '../../../HomePages/Blog/Blog2';
 
 
 export default function CarSection() {
@@ -104,26 +105,26 @@ export default function CarSection() {
                     </div>
                 </Col>
             </Row>
-            <Row className='justify-content-center py-3'>
-            <h2 className='text-center pb-3 hed2' style={{color:"#5E5E5E"}}>Openings</h2>
+            <Row className='justify-content-center py-5'>
+            <h2 className='text-center pb-3 hed2'>Openings</h2>
                 <Col md={10}>
                     <Accordion defaultActiveKey="0" className='main-accrodinstart'>
-                        <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-2'>
+                        <Accordion.Item eventKey='0' className='main-accrodinstartItem  my-3'>
                             <Accordion.Header className='headersection'>
-                                <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap'>
-                                    <h3>Digital Marketing Intern</h3>
-                                    <p>Gurugram</p>
+                                <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap gap-[350px]'>
+                                <h3 className='text-[22px] font-[600]'>Digital Marketing Intern</h3>
+                                    <p className='text-[#3b7fbf]'>Gurugram</p>
                                 </div>
                             </Accordion.Header>
-                            <Accordion.Body className='faqbodyitems '>
+                            <Accordion.Body className='faqbodyitems'>
                             <div className='faqbodyitemstext'>
-                            <h3>Digital Marketing Intern</h3>
-                            <p>Experience- 5 Years</p>
-                            <p>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
-                            <p>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
+                            <h3 className='hed3'>Digital Marketing Intern</h3>
+                            <p className='para'>Experience- 5 Years</p>
+                            <p className='para'>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
+                            <p className='para'>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
                             </div>
                             <div>
-                            <ul>
+                            <ul className='para'>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Minimum of 5 years of proven experience as an SEO Specialist.</li>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />In-depth knowledge of SEO tools, Google Analytics, Search Console, GMT, and industry trends.</li>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Proficiency in implementing on-page and off-page SEO best practices.</li>
@@ -137,20 +138,20 @@ export default function CarSection() {
                         </Accordion.Item>
                         <Accordion.Item eventKey='1' className='main-accrodinstartItem my-2'>
                             <Accordion.Header className='headersection'>
-                                <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap2'>
-                                    <h3>Web Designer Intern</h3>
-                                    <p>Delhi</p>
+                                <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap2 gap-[400px]'>
+                                    <h3 className='text-[22px] font-[600]'>Web Designer Intern</h3>
+                                    <p className=' text-[#3b7fbf] para'>Delhi</p>
                                 </div>
                             </Accordion.Header>
                             <Accordion.Body className='faqbodyitems'>
                             <div className='faqbodyitemstext'>
-                            <h3>Digital Marketing Intern</h3>
-                            <p>Experience- 5 Years</p>
-                            <p>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
-                            <p>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
+                            <h3 className='hed3'>Digital Marketing Intern</h3>
+                            <p className='para'>Experience- 5 Years</p>
+                            <p className='para'>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
+                            <p className='para'>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
                             </div>
                             <div>
-                            <ul>
+                            <ul className='para'>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Minimum of 5 years of proven experience as an SEO Specialist.</li>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />In-depth knowledge of SEO tools, Google Analytics, Search Console, GMT, and industry trends.</li>
                             <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Proficiency in implementing on-page and off-page SEO best practices.</li>
@@ -164,20 +165,20 @@ export default function CarSection() {
                         </Accordion.Item>
                         <Accordion.Item eventKey='2' className='main-accrodinstartItem my-2'>
                         <Accordion.Header className='headersection'>
-                            <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap'>
-                                <h3>Software Devlopments</h3>
-                                <p>Mumbai</p>
+                            <div className='d-md-flex justify-content-center align-items-center faqheaderstartgap gap-[370px]'>
+                                <h3 className='text-[22px] font-[600]'>Software Devlopments</h3>
+                                <p className='text-[#3b7fbf] para'>Mumbai</p>
                             </div>
                         </Accordion.Header>
                         <Accordion.Body className='faqbodyitems '>
                         <div className='faqbodyitemstext'>
-                        <h3>Digital Marketing Intern</h3>
-                        <p>Experience- 5 Years</p>
-                        <p>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
-                        <p>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
+                        <h3 className='hed3'>Digital Marketing Intern</h3>
+                        <p className='para'>Experience- 5 Years</p>
+                        <p className='para'>Preferred- e-COmmerce/ Shopify/ Magento/ Big Commerce Preferred</p>
+                        <p className='para'>Qualification- Bachelor’s degree in Marketing, Communications, or a related field.</p>
                         </div>
                         <div>
-                        <ul>
+                        <ul className='para'>
                         <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Minimum of 5 years of proven experience as an SEO Specialist.</li>
                         <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />In-depth knowledge of SEO tools, Google Analytics, Search Console, GMT, and industry trends.</li>
                         <li className='d-flex align-itmes-center'><MdKeyboardDoubleArrowRight />Proficiency in implementing on-page and off-page SEO best practices.</li>
@@ -212,6 +213,7 @@ export default function CarSection() {
 
             </Col>
             </Row>
+            <Blog/>
 
 
         </>

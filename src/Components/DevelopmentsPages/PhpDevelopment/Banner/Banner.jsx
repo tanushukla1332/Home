@@ -6,7 +6,7 @@ export default function Banner(){
         <Row className='d-flex justify-content-center align-items-center' 
         style={{
             backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(Image/php-1.jpg)",
-            height:"70vh",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover"
+            height:"398px",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover"
           }}>
 
         <Col md className='d-flex  flex-col justify-content-center align-items-center' >

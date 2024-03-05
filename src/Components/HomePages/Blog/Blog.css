@@ -122,3 +122,13 @@ width: 100%!important;
 
     }
 }
+@media screen and (max-width:786px) {
+
+    .blogsindicators>div>a>.carousel-control-prev-icon{
+        display: none !important;
+    } 
+    .blogsindicators>div>a>.carousel-control-next-icon{
+        display: none !important;
+    }
+    
+}

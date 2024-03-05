@@ -2,13 +2,14 @@ import {Row,Col,Button,Carousel} from 'react-bootstrap';
 import './Section.css'
 import { IoMdArrowForward } from "react-icons/io";
 import { GiCheckMark } from 'react-icons/gi';
+import Blog from '../../../HomePages/Blog/Blog2';
 
 export default function Section(){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center gap-5 py-5'>
         <Col md={5}>
-        <h3 className='hed3 fs-2'>Ruby on Rails Development 
+        <h3 className='hed2'>Ruby on Rails Development 
         Company</h3>
         <p className='para text-justify'>When searching for the ideal framework for your next website , Ruby on Rails spell productivity, promising a seamless journey from concept to execution. The speciality of Rails lies in its unwavering commitment to the principle of convention over configuration. By ignoring established conventions, Rails effectively streamlines the development process, saving developers from the burden of repetitive tasks and superfluous configurations.
         Imagine a world where developers are liberated from the shackles of repetitive setup procedures, where the focus shifts from trivialities to the heart of the matter: solving business problems. This is exactly what Ruby on Rails offers—an environment where creativity flourishes, and innovation thrives.
@@ -52,7 +53,7 @@ export default function Section(){
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>
-        <div className='php-section1'>
+        <div className='php-section1 mb-3'>
         <img src="Image/Ruby-3 (3).png" alt="" className='img-fluid ' style={{maxWidth:"100px"}} />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>CodeIgniter Web 
         Development</h3>
@@ -197,7 +198,7 @@ export default function Section(){
         <div className='d-md-flex justify-content-center align-items-center gap-4 m-3'>
         <div className='laravel-section6'>
         <h3 className='hed3 '>Cost Saving</h3>
-        <p className='para text-sm-justify  fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center '>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -205,9 +206,9 @@ export default function Section(){
         Laravel API has extremely consistent coding styles with briefly 
         explained methods and classes.</p>
         </div>
-        <div className='laravel-section6  d-md-flex d-none'>
+        <div className='laravel-section6 d-md-flex d-none'>
         <h3 className='hed3'>Rapid Development</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -217,10 +218,10 @@ export default function Section(){
         </div>
 
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 m-3'>
+        <div className='d-md-flex  justify-content-center align-items-center gap-4 m-3'>
         <div className='laravel-section6'> 
         <h3 className='hed3'>Possibilities</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -228,9 +229,9 @@ export default function Section(){
         Laravel API has extremely consistent coding styles with briefly 
         explained methods and classes.</p>
         </div>
-        <div className='laravel-section6'>
+        <div className='laravel-section6 d-md-flex  d-none'>
         <h3 className='hed3'>Extreme Scalability</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-center'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -251,7 +252,7 @@ export default function Section(){
         <h3 className='hed2 text-center'>Our Ruby on Rails Tech Stack</h3>
         <p className='para text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply</p>
-        <div className='Ruby-buttons  gap-3
+        <div className='Ruby-buttons  gap-3 d-md-flex d-none
         '>
         <Button>Ruby Framewroks</Button>
         <Button>Database</Button>
@@ -298,28 +299,28 @@ export default function Section(){
         of the printing and typesetting industry.</p>
         </div>
         <div>
-        <div className='d-md-flex justify-content-center align-items-center gap-4 m-3'>
-        <div className='laravel-section6'>
-        <h3 className='hed3 text-[#3b7fbf] '>Rails Programmers</h3>
-        <p className='para text-sm-justify  fs-6'>Lorem Ipsum is simply dummy 
+        <div className='d-md-flex justify-content-center align-items-center gap-4 my-3'>
+        <div className='laravel-section6 my-3'>
+        <h3 className='hed3 text-[#3b7fbf]'>Rails Programmers</h3>
+        <p className='para text-sm-justify '>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='laravel-section6'>
+        <div className='laravel-section6 my-3'>
         <h3 className='hed3  text-[#3b7fbf]'>Development Process</h3>
-        <p className='para text-sm-justify  fs-6'>Lorem Ipsum is simply dummy 
+        <p className='para text-sm-justify'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='laravel-section6  d-md-flex d-none'>
+        <div className='laravel-section6'>
         <h3 className='hed3 text-[#3b7fbf]' >Time Zone Alignment</h3>
-        <p className='para text-center fs-6'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -327,10 +328,10 @@ export default function Section(){
         text of the printing and text.</p>
         </div>
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 m-3'>
+        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 my-3'>
         <div className='laravel-section6'> 
         <h3 className='hed3 text-[#3b7fbf]' >RubyGems Expertise</h3>
-        <p className='para text-center fs-6'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -340,16 +341,16 @@ export default function Section(){
         <div className='laravel-section6'> 
         <h3 className='hed3 text-center text-[#3b7fbf]'>Rapid product 
         development</h3>
-        <p className='para text-center fs-6 '>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='laravel-section6'> 
+        <div className='laravel-section6 '> 
         <h3 className='hed3 text-[#3b7fbf]'>24/7 availability</h3>
-        <p className='para text-center fs-6'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -362,8 +363,8 @@ export default function Section(){
         </div>
 
         </Col>
-        <img src="Image/Ruby-Last2.svg" alt="" className='img-fluid px-0' />
         </Row>
+        <Blog/>
         </>
     )
 }

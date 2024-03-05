@@ -6,7 +6,7 @@ export default function Testominials() {
         <Row className='py-5 justify-content-center'   style={{backgroundImage:"url('Image/grey.png')",backgroundRepeat:"no-repeat",
         backgroundSize:"55%",backgroundPosition:"right"}}>
             <div className='text-center projects-hed1'>
-                <h4>Tow Web Design Projects</h4>
+                <h4>Top Web Design Projects</h4>
                 <p className='sm text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, consequuntur.</p>
             </div>
             <Col md={12} className='d-flex justify-content-center align-items-center projectsindictaors' >

@@ -2,6 +2,7 @@
 import {Row,Col} from 'react-bootstrap';
 import './Section.css';
 import { FaCheck } from "react-icons/fa6";
+import Blog from '../../../HomePages/Blog/Blog2';
 
 
 
@@ -10,7 +11,7 @@ export default function Section(){
         <>
         <Row className='d-flex justify-content-center align-items-center gap-5 py-5'>
         <Col md={5}>
-        <h3 className='hed3'>Redefining Web Solutions with 
+        <h3 className='hed3 text-md-justify'>Redefining Web Solutions with 
         CakePHP Framework</h3>
         <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat </p>
@@ -49,7 +50,7 @@ export default function Section(){
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='html-section1'>
+        <div className='html-section1 my-3'>
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>CakePHP Web App 
         Development</h3>
         <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy 
@@ -101,7 +102,7 @@ export default function Section(){
         </Col>
 
         </Row>
-        <Row className='d-flex justify-content-center align-items-center py-5'
+        <Row className='d-md-flex  d-none justify-content-center align-items-center py-5'
          style={{backgroundColor:"rgba(90,167,227,20%)",backgroundImage:"url('Image/blue.png')",backgroundRepeat:"no-repeat",backgroundPosition:"right",backgroundSize:"350px"
         }}>
         <h2 className='hed2 text-center' style={{color:"#3b7fbf"}}>On-demand CakePHP Migration Services</h2>
@@ -262,37 +263,37 @@ export default function Section(){
         <Col md={10}>
         <div className='pt-3'>
         <h3 className='hed2 text-white text-center'>CakePHP Development To Address Business Concerns</h3>
-        <p className='para fs-6 fs-md-6 text-white text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
+        <p className='para text-white text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply</p>
     
         </div>
         <div>
-        <div className='d-md-flex flex-sm-row justify-content-center align-items-center'>
+        <div className='d-flex justify-content-center align-items-center gap-md-5 gap-1'>
         <div className='htmlSection1'>
-        <img src="Image/Html-6 (6).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <img src="Image/Html-6 (6).png" alt=""  className='img-fluid w-20 '/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Debugging Issues</h3>
         </div>
-        <div className='htmlSection1'>
-        <img src="Image/Html-6 (5).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <div className='htmlSection1 d-md-flex d-none'>
+        <img src="Image/Html-6 (5).png" alt=""  className='img-fluid w-20' />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Customer-centric 
         Model</h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-6 (4).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
+        <img src="Image/Html-6 (4).png" alt=""  className='img-fluid w-20'/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Flexible Templates</h3>
         </div>
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center'>
+        <div className='d-flex justify-content-center align-items-center gap-md-5'>
         <div className='htmlSection1'>
-        <img src="Image/Html-6 (3).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <img src="Image/Html-6 (3).png" alt=""  className='img-fluid  w-20'/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Domain Expertise</h3>
         </div>
-        <div className='htmlSection1'>
-        <img src="Image/Html-6 (2).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <div className='htmlSection1 d-md-flex d-none'>
+        <img src="Image/Html-6 (2).png" alt=""  className='img-fluid  w-20' />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Protect Assets</h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-6 (1).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
+        <img src="Image/Html-6 (1).png" alt=""  className='img-fluid  w-20'  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Maximizing Returns</h3>
         </div>
         </div>
@@ -385,21 +386,21 @@ export default function Section(){
 
         </Row>
         <Row className='d-flex justify-content-center align-items-center py-5'>
-        <Col md={10}>
+        <Col md={10}  className='d-flex justify-content-center align-items-center flex-col'>
         <div className='pt-3'>
         <h3 className='hed2  text-center'>Our Differentiators</h3>
-        <p className='para fs-6 fs-md-6  text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
+        <p className='para text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply</p>
     
         </div>
         <div>
-        <div className='d-md-flex flex-sm-row justify-content-center align-items-center'>
-        <div className='htmlSection1'>
-        <img src="Image/Html-7 (6).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <div className='d-flex justify-content-center align-items-center'>
+        <div className='htmlSection1 d-md-flex d-none'>
+        <img src="Image/Html-7 (6).png" alt=""  className='img-fluid  w-20'  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Speedy Delivery</h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-7 (5).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <img src="Image/Html-7 (5).png" alt=""  className='img-fluid  w-20'  />
 
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>
         Agile Development
@@ -407,21 +408,21 @@ export default function Section(){
         </h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-7 (4).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
+        <img src="Image/Html-7 (4).png" alt=""  className='img-fluid w-20'  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Skilled Developers</h3>
         </div>
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center'>
-        <div className='htmlSection1'>
-        <img src="Image/Html-7 (1).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <div className='d-flex justify-content-center align-items-center'>
+        <div className='htmlSection1 d-md-flex d-none'>
+        <img src="Image/Html-7 (1).png" alt=""  className='img-fluid w-20 '  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Competitive Pricing</h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-7 (2).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
+        <img src="Image/Html-7 (2).png" alt=""  className='img-fluid w-20 '  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Active Support</h3>
         </div>
         <div className='htmlSection1'>
-        <img src="Image/Html-7 (3).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
+        <img src="Image/Html-7 (3).png" alt=""  className='img-fluid w-20'  />
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Global Clientele</h3>
         </div>
         </div>
@@ -429,6 +430,7 @@ export default function Section(){
 
         </Col>
         </Row>
+        <Blog/>
         
         
         

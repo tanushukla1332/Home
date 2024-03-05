@@ -1,4 +1,4 @@
-
+import { Helmet } from 'react-helmet';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -32,6 +32,14 @@ export default function Home() {
     return (
 
         <>
+        <Helmet>
+        <title>Home Page</title>
+        <meta
+        name="Home page"
+        content="This is my Home page"
+         />
+        
+        </Helmet>
 
             <ScrollTrigger onEnter={() => setClients(true)} onExit={() => setClients(false)} >
                 <Banner />
@@ -42,12 +50,12 @@ export default function Home() {
 
                     }}>
                     <div className='text-center'>
-                    <h2 className='hed2'>Our Features</h2>
+                    <h2 className='hed2'>What’s the Raze about!</h2>
                     <h2 className='subheading-sections'>Transforming Ideas into Digital Solutions</h2>
                     </div>
                     <Col md={4} className='d-md-flex align-items-center justify-content-center' 
                   >
-                        <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c "}}
+                        <Image src='/Image/Home-2.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c "}}
                     
                         /></Col>
                     <Col md={5}>
@@ -61,10 +69,22 @@ export default function Home() {
     
                         }}>
                           
-                            <p className='sm fs-6 fs-md-3'>Welcome to RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
-                            <div className='spacing2'>
-                                At RazoByte SoftTech we believe in the power of innovation and technology to transform your ideas into reality. Our team of skilled professionals is dedicated to crafting exceptional digital experiences that captivate your audience and drive tangible results. Whether you are a startup looking to establish your online presence or an established enterprise aiming to stay ahead in the digital race, we have the expertise and creativity to bring your vision to life.
-                            </div>
+                            <p className='sm'>A leading IT company that makes a perfect blend of 
+                            Technology and Marketing. With the world getting 
+                            smaller day by day, new trends are emerging much 
+                            more frequently than usual, specially with AI riding 
+                            the highest horses. So how can businesses ensure their 
+                            website remain relevant?</p>
+                           <p className='sm'> The solution is simple, stay ahead of the trends! 
+                            There are 3 phases in which people hop on trends, 
+                            Early Adopters, Followers, and the rest. The people who 
+                            gain the most from trends are the early adopters, and 
+                            that is what we aim for. Our team of Marketers and 
+                            Developers, constantly look for the patterns and 
+                            upcoming trends in order to ensure that our client’s 
+                            always look updated and the designs look latest.
+                            </p>
+                         
                             <div className='py-2'>
                             <Button variant='light' className='btnmain'
                             onClick={()=>navigate('/about')}>Know More</Button>
@@ -83,13 +103,26 @@ export default function Home() {
                     }}
                 >
                 <div className='text-center'>
-                <h2 className='hed2'>Our Features</h2>
+                <h2 className='hed2'>What’s the Raze about!</h2>
                 <h2 className='subheading-sections'>Transforming Ideas into Digital Solutions</h2>
                 </div>
                     <Col md ={6}>
                         <div className='spacing'>
-                            <p className='sm fs-6 fs-md-3 pt-2'>Welcome to
-                                RazoByte SoftTech, a leading IT Services and Digital solutions company empowering businesses globally. We specialize in delivering cutting-edge solutions that drive growth and propel your brand to new heights. With a comprehensive suite of services ranging from web design and development to mobile app design and development, ecommerce solutions, IoT integration, and digital marketing, we have all the tools you need to succeed in the digital landscape.</p>
+                            <p className='sm pt-2'>A leading IT company that makes a perfect blend of 
+                            Technology and Marketing. With the world getting 
+                            smaller day by day, new trends are emerging much 
+                            more frequently than usual, specially with AI riding 
+                            the highest horses. So how can businesses ensure their 
+                            website remain relevant?</p>
+                           <p className='sm'> The solution is simple, stay ahead of the trends! 
+                            There are 3 phases in which people hop on trends, 
+                            Early Adopters, Followers, and the rest. The people who 
+                            gain the most from trends are the early adopters, and 
+                            that is what we aim for. Our team of Marketers and 
+                            Developers, constantly look for the patterns and 
+                            upcoming trends in order to ensure that our client’s 
+                            always look updated and the designs look latest.
+                            </p>
                                 <div className='d-flex justify-content-center  pb-3'> 
                                 <Button variant='light' className='btnmain' style={{ borderRadius: '1px' }}
                                 onClick={()=>navigate('/about')}
@@ -99,7 +132,7 @@ export default function Home() {
                     </Col>
                     <Col md={4} className='d-md-flex align-items-center d-none'
                     >
-                    <Image src='/Image/our-removebg-preview (1).png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c ",paddingTop:"50px"}}
+                    <Image src='/Image/Home-2.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c ",paddingTop:"50px"}}
                     />
                     </Col>
                 </Row>

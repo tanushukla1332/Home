@@ -65,9 +65,14 @@ export default function Contact() {
                             <a href="https://maps.app.goo.gl/vTXfDoKJ9iTTwVvz9" target="_blank" >
                             <FcGoogle size={32} /></a>
                             <a href='https://www.linkedin.com/company/razobyte/?originalSubdomain=in' target="_blank" ><FaLinkedin size={32} color='#3B7FBF' /></a>
-                            <a href='https://www.instagram.com/razobyte/' target="_blank" ><img src="Image/instagram (1) 1.png" alt="" className='instra' /></a>
+                            <a href='https://www.instagram.com/razobyte/' target="_blank" >
+                            <img src="Image/instagram (1) 1.png" alt="" className='instra img-fluid' />
+                            </a>
+                            <a href='https://www.instagram.com/razobyte/' target="_blank" >
+                            <img src="Image/Twitter_new_X_logo Final.png" alt=""
+                             className='img-fluid w-[35px] rounded-1 ' /></a>
                             <a href='https://www.facebook.com/razobyte/' target="_blank">
-                            < FaFacebook size={32} color='#3B7FBF'  /></a>
+                            <FaFacebook size={37} color='#3B7FBF'  /></a>
                         </div>
                     </div>
                 </Form>

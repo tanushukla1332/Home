@@ -7,7 +7,7 @@ export default function IOS(){
     return(
         <>
         <Row className='d-flex items-center justify-center py-5'
-        style={{backgroundImage:"url('Image/Ios-1.png')",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"60vh"}}
+        style={{backgroundImage:"url('Image/Ios-banner.png')",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"60vh"}}
         >
         <Col md>
         <div className='col-md-5'>

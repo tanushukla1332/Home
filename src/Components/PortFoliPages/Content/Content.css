@@ -5,6 +5,14 @@
 .card-imgPort{
     width: 100%!important;
     height: 200px!important;
+    transition: 0.3ms ease !important;
+    box-shadow: 5px 10px  5px 10px  rgba(0, 0, 0, 0.041)!important;
+ 
+}
+.card-imgPort:hover{
+    box-shadow: 5px 10px  5px 10px  rgba(0, 0, 0, 0.041)!important;
+    animation: both !important;
+    cursor: pointer;
 }
 .cardmainPortfolioSec{
     display: flex;
@@ -12,25 +20,16 @@
     align-items: center;
     margin-top:20px!important;
     border: none!important;
-    border-radius:10px!important;
+    border-radius:5px!important;
+    border: 1px solid rgba(128, 128, 128, 0.377) !important;
+    transition: 0.3s ease-in;
+
+   
 }
 .cardmainPortfolioSec:hover{
     cursor: pointer;
-    box-shadow: 10px 10px 10px  rgb(0, 0, 0,0.4)!important;
-}
-.allcardDataPortfolioSec h3{
-    font-size: 20px;
-    color: #3B7FBF;
-
-}
-.allcardDataPortfolioSec h6{
-    font-size: 17px;
-}
-.allcardDataPortfolioSec p{
-    font-size: 14px;
-}
-.allcardDataPortfolioSec>h6>span{
-    font-weight: 500;
+    box-shadow: 5px 10px  5px 10px  rgba(0, 0, 0, 0.041)!important;
+    animation:both
 }
 
 
@@ -42,14 +41,34 @@
     background-color: gray;
     background-color: rgba(128, 128, 128, 0.055);
 }
+.Ruby-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Ruby-buttons>.btn{
+   
+}
+.Ruby-buttons >.btn:nth-child(1){
+    border-left:  0px !important;
+    color: gray;
+
+}
+.Ruby-buttons>.btn:nth-child(1):hover{
+    border-left:  0px !important;
+
+}
+.Ruby-buttons>.btn:hover{
+    color: #3b7fbf !important;
+    cursor: pointer;
+    border-left:  1px solid #3b7fbf !important;
+}
 .allportfoliobutton>button{
-    display: inline-flex!important;
-    justify-content: center!important;
-    align-items: center!important;
-    font-size: .85rem;
+    border-radius:  0px !important;
+    font-size: .85rem !important;
     cursor: pointer;
     font-weight: 500!important;
-    letter-spacing: 2px!important;
    overflow: hidden!important;
    box-shadow:none!important;
    border: none!important;
@@ -60,40 +79,11 @@
    border-left: 0.5px solid rgba(128, 128, 128, 0.226)!important;
 
 }
-.secportbutton{
-    gap:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.055);
 
-}
-.secportbutton>button{
-    display: block;
-    font-size: .85rem;
-    cursor: pointer;
-    font-weight: 500!important;
-    letter-spacing: 2px!important;
-    background-color:rgba(128, 128, 128, 0)!important;
-    color:#5E5E5E!important;
-    box-shadow:none!important;
-    border: none!important;
-    border-radius: 0px!important;
-    text-transform: uppercase;
-    border-left: 0.5px solid rgba(128, 128, 128, 0.226)!important;
-
-}
-.secportbutton>button:hover{
-    padding-bottom:5px!important;
-            border-bottom-style: solid!important;
-            border-bottom-width: 2.5px!important;
-            width: fit-content!important;
-            border-bottom-color: #3B7FBF!important;
-}
 .allportfoliobutton>button:hover{
-    padding-bottom:5px!important;
+             padding-bottom:5px!important;
             border-bottom-style: solid!important;
-            border-bottom-width: 2.5px!important;
+            border-bottom-width: 1.5px!important;
             width: fit-content!important;
             border-bottom-color: #3B7FBF!important;
 }

@@ -1,20 +1,10 @@
 
-
-.MainrodivSem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    min-height:60vh;
-
-}
 .MainrodivSem > div > h1{
     -webkit-background-clip: text;
     color:white;
     text-shadow: 2px  2px  5px #3b7fbff3, 0 0 1px #4ed0ff;
 }
+
 
 .image-smo{
     display: flex;
@@ -25,10 +15,7 @@
     padding:40px;
 
 }
-.para{
-    color:rgba(94,94,94,100%)!important;
-    font-size:20px!important;
-}
+
 @media (max-width: 768px) {
     .bgrem {
       background-image: none !important;
@@ -86,10 +73,7 @@
 .img-shadow  img {
     border-radius:5%;
 }
-.para{
-    color:rgba(94,94,94,100%)!important;
-    font-size:18px!important;
-}
+
 .allimages img {
     transition: transform 0.3s ease-in-out;
 }
@@ -97,31 +81,7 @@
 .allimages img:hover {
     transform: scale(1.1); 
 }
-@media screen and  (max-width: 1000px)  {
-    .para{
-        color: rgba(94,94,94,100%) !important;
-        font-size:17px !important;
-    
-    }    
- }
- @media screen and  (max-width: 768px) {
-    .para{
-        color: rgba(94,94,94,100%) !important;
-        font-size:15px !important;
-    
-    }
 
-
-  }
-
-@media screen and  (max-width: 576px) {
-    .para{
-        color: rgba(94,94,94,100%) !important;
-        font-size:14px !important;
-    
-    }
-
-  }
 @media screen  and (max-width:576px){
     .bgsectionsem1{
         border-top-right-radius:0px;

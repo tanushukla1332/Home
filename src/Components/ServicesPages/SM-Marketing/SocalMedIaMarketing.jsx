@@ -1,13 +1,14 @@
-import {Row,Col} from 'react-bootstrap'
+import {Row,Col,Button} from 'react-bootstrap'
+import Blog from '../../HomePages/Blog/Blog2'
 
 export default function SocialMediaMarketing(){
     return(
         <>
         <Row className='flex items-center justify-center'
-        style={{backgroundImage:"url('Image/Social-Media-banner.png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center" ,height:"60vh"}}
+        style={{backgroundImage:"url('Image/Social-Media-banner.png')",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center" ,height:"300px"}}
         >
         <Col md>
-        <div className='flex items-center justify-center '>
+        <div className='flex items-center'>
         <h1 className='hed1 text-white'>Social Media Marketing</h1>
         </div>
         </Col>
@@ -26,6 +27,9 @@ export default function SocialMediaMarketing(){
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
+        <div className='flex items-center justify-center py-3'>
+    <Button className='btn2'>Get in touch </Button>
+    </div>
 
         </div>
         <div className='col-md-6 d-flex align-items-center justify-content-center'>
@@ -45,6 +49,9 @@ export default function SocialMediaMarketing(){
         <h2 className='hed2'>Instagram Ads</h2>
         <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='flex items-center justify-center py-3'>
+    <Button className='btn2'>Get in touch </Button>
+    </div>
 
 
         </div>
@@ -59,6 +66,9 @@ export default function SocialMediaMarketing(){
         <h2 className='hed2'>LinkedIn Ads</h2>
         <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='flex items-center justify-center py-3'>
+    <Button className='btn2'>Get in touch </Button>
+    </div>
 
 
         </div>
@@ -84,6 +94,9 @@ export default function SocialMediaMarketing(){
         <h2 className='hed2 text-white'>Twitter Ads</h2>
         <p className='para text-justify text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='flex items-center justify-center'>
+         <Button className='btn-whitebg'>Get in touch </Button>
+    </div>
 
         </div>
    
@@ -96,6 +109,10 @@ export default function SocialMediaMarketing(){
         <h2 className='hed2 text-white'>Snapchat Ads</h2>
         <p className='para text-justify text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='flex items-center justify-center'>
+        <Button className='btn-whitebg'>Get in touch </Button>
+   </div>
+        
 
         </div>
         <div className=' col-md-6 flex justify-content-center align-items-center ' >
@@ -113,6 +130,9 @@ export default function SocialMediaMarketing(){
         <h2 className='hed2 text-white'>Twitter Ads</h2>
         <p className='para text-justify text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div className='flex items-center justify-center '>
+        <Button className='btn-whitebg'>Get in touch </Button>
+   </div>
 
         </div>
    
@@ -177,6 +197,13 @@ export default function SocialMediaMarketing(){
         </Col>
 
     </Row> 
+    <Blog/>
+    <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
+    <Col md={12} className='flex items-center justify-center gap-5 py-3'>
+        <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+        <Button variant='dark' className='btn-last-banner-contact-Us'>Contact-us</Button>
+    </Col>
+</Row>
         </>
     )
 }

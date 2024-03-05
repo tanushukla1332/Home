@@ -30,13 +30,32 @@ import Email from "./Components/ServicesPages/Email-Marketing/Email";
 import SocialMediaMarketing from "./Components/ServicesPages/SM-Marketing/SocalMedIaMarketing";
 import Android from "./Components/ServicesPages/Android/Android";
 import IOS from "./Components/ServicesPages/IosDeveloper/IOS";
+import { useEffect } from "react";
+
+import { useLocation } from "react-router";
+import { Helmet } from "react-helmet";
+
+
 
 
 
 export default function App() {
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [location]);
+
   return (
     <>
+    <Helmet>
+        <title>Razobyte</title>
+        <meta name="description" content="This is my Inital page" />
+        <meta name="keywords"content="Home page content" />
+      </Helmet> 
+      
       <Navbar/>
+    
       <ModalExample/>
       <Container fluid className="noscroll" >  
         <Routes>   

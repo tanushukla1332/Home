@@ -3,6 +3,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
 import Banner from './Banner/Banner';
 import Sec from './SecSection/SecSection';
+import Blog from '../../HomePages/Blog/Blog2';
 
 
 export default function ECommmerce() {
@@ -20,14 +21,13 @@ export default function ECommmerce() {
                 <Sec />
                 <Row className='justify-content-center align-items-center '
                    >
-                    <Col md>
-                        <div className='d-md-flex justify-content-center align-items-center gap-5 p-5'
+                    <Col md className='px-0 d-md-flex flex-col justify-content-center align-items-center'>
+                        <div className='d-md-flex justify-content-center align-items-center gap-5'
                         style={{ background: "linear-gradient(to bottom,rgba(90,161,227,30%), rgba(90,161,227, 10%))"}}
                         >
-
-                            <div>
-                                <h2 className='hed2'>Custom E-commerce Website Development</h2>
-                                <p className='para'>At Razobyte, we specialize in creating bespoke e-commerce websites that align perfectly with your brand and business goals. Our expert team of designers and developers will work closely with you to understand your vision and deliver a unique, user-friendly, and visually captivating online store.</p>
+                            <div classNam='px-5'>
+                                <h2 className='hed2 md:text-left sm:text-center'>Custom E-commerce Website Development</h2>
+                                <p className='para md:text-justify sm:text-center'>At Razobyte, we specialize in creating bespoke e-commerce websites that align perfectly with your brand and business goals. Our expert team of designers and developers will work closely with you to understand your vision and deliver a unique, user-friendly, and visually captivating online store.</p>
                                 <div className='d-flex justify-content-center align-items-center'>
                                     <Button className='btn2 text-center'>Get in Touch</Button>
                                 </div>
@@ -36,8 +36,8 @@ export default function ECommmerce() {
                                     <img src="/Image/img1 (2).png" alt="" className='img-fluid' />
                                 </div>
                             </div>
-                        <div className='d-md-flex justify-content-center align-items-center gap-5 p-5'>
-                            <div className='d-md-flex justify-content-center align-items-center col-md-6' > 
+                        <div className='d-md-flex justify-content-center align-items-center gap-5'>
+                            <div className='d-md-flex d-none justify-content-center align-items-center col-md-6' > 
                             <img src="/Image/img1 (1).png" alt="" className='img-fluid' />
                             </div>
                             <div>
@@ -47,12 +47,15 @@ export default function ECommmerce() {
                                     <Button className='btn2 text-center'>Get in Touch</Button>
                                 </div>
                             </div>
+                            <div className='d-flex d-sm-none justify-content-center align-items-center col-md-6' > 
+                            <img src="/Image/img1 (1).png" alt="" className='img-fluid' />
+                            </div>
                         </div>
                     </Col>
 
                 </Row>
-                <Row className='uppercontainer'  style={{background:"linear-gradient(to bottom, rgb(59, 127, 191), #063b6d21)" }}>
-                   <div className='d-md-flex justify-content-center align-items-center px-5 py-2'>
+                <Row className='uppercontainer py-5'  style={{background:"linear-gradient(to bottom, rgb(59, 127, 191), #063b6d21)" }}>
+                   <div className='d-md-flex justify-content-center align-items-center'>
                             <section>
                                 <h2 className='hed2 text-light'>Mobile-Optimized E-commerce Solutions</h2>
                                 <p className='para  text-light'>In the era of mobile commerce, having a responsive and optimized website is crucial. Our team ensures that your e-commerce platform provides a seamless and engaging experience across all devices, enabling your customers to shop conveniently from their desktops, tablets, or smartphones.</p>
@@ -265,11 +268,12 @@ export default function ECommmerce() {
                         <img src="/Image/tab_mobile 1.png" alt="" className='img-fluid' />
                     </Col>
                 </Row>
+                <Blog/>
                 <Row style={{ backgroundColor: "#5e5e5e" }} className='justify-content-center align-items-center'>
-                    <Col md={10} className='d-md-flex justify-content-center align-items-center py-lg-3 fw-bold For-gap'
-                        style={{ color: "#FFFF", letterSpacing: "2px" }}>
-                        <p className='my-2'>Interested in a little more details, let us know how we can assist you Button</p>
-                        <Button variant='dark' className='my-2 py-2 btn-last-banner-contact-Us'>Contact Us</Button>
+                    <Col md={10} className='d-md-flex justify-content-center align-items-center py-lg-3  gap-5'
+                        style={{letterSpacing: "1px" }}>
+                        <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+                        <Button variant='dark' className=' btn-last-banner-contact-Us'>Contact Us</Button>
                     </Col>
                 </Row>
               

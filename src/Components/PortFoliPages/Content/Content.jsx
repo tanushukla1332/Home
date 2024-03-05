@@ -10,17 +10,21 @@ export default function Content() {
 
     const filteredBlogs = currentCategory === 'All' ? portfolioData : portfolioData.filter(blog => blog.category === currentCategory);
 
+
+
+
+
     return (
         <Row className='justify-content-center align-items-center'>
             <div className='PortfoliomaindivButton'>
-                <div className='allportfoliobutton'>
+                <div className='allportfoliobutton d-md-flex d-none pb-3'>
                     <Button variant='dark' onClick={() => setCurrentCategory('All')}>Show All</Button>
                     <Button variant='dark' onClick={() => setCurrentCategory('Startup')}>Creative</Button>
                     <Button variant='dark' onClick={() => setCurrentCategory('Interacting')}>EcommerceDevelopment</Button>
                     <Button variant='dark' onClick={() => setCurrentCategory('Security')}>SEO</Button>
                     <Button variant='dark' onClick={() => setCurrentCategory('Health')}>Singapore</Button>
                 </div>
-                <div className='secportbutton'>
+                <div className='allportfoliobutton d-md-flex d-none'>
                     <Button variant='dark' onClick={() => setCurrentCategory('Fintech')}>Web desgine</Button>
                     <Button variant='dark' onClick={() => setCurrentCategory('SEO')}>Web Development</Button>
                 </div>
@@ -30,19 +34,19 @@ export default function Content() {
 
                 <Col key={id} md={4} className='pb-5 d-md-flex justify-conent-center align-items-center p-4' >
 
-                    <Card className='cardmainPortfolioSec'>
+                    <Card className='cardmainPortfolioSec animate__animated animate__shakeY'>
                         <CardImg src={data.image} variant='top' fluid className='card-imgPort' />
                         <CardBody>
                             <CardTitle>
-                                <div className='allcardDataPortfolioSec'>
-                                    <h3>{data.title}</h3>
+                                <div className='allcardDataPortfolioSec '>
+                                    <h3 className='hed3 text-[#3b7fbf]'>{data.title}</h3>
                                     <h6 className='d-flex align-items-center gap-2'>
                                         <FaUser color='white' className='rounded-5' size={22}
                                             style={{ backgroundColor: "#3B7FBF", padding: "5px" }}
                                         />
                                         <span> {data.author}</span>
                                     </h6>
-                                    <p>{data.content}</p>
+                                    <p className='para'>{data.content}</p>
                                     <Button className='read-more-btn'>Read more</Button>
                                 </div>
                             </CardTitle>

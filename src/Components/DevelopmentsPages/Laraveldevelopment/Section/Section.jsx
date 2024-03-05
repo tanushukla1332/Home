@@ -1,7 +1,8 @@
-import {Row,Col,Carousel,Card,CardBody,CardText,CardTitle,CardImg} from 'react-bootstrap';
+import {Row,Col,Carousel,Card,CardBody,CardText,CardTitle,CardImg,Button} from 'react-bootstrap';
 import { GiCheckMark } from "react-icons/gi";
 import './Section.css';
 import Testominials from '../../../HomePages/Testominals/Testomnials';
+import Blog from '../../../HomePages/Blog/Blog2';
 export default function Section(){
     return(
         <>
@@ -198,8 +199,8 @@ export default function Section(){
         <div>
         <div className='d-md-flex justify-content-center align-items-center gap-4 m-3'>
         <div className='laravel-section6'>
-        <h3 className='hed3 '>Easy Documentation Process</h3>
-        <p className='para text-sm-justify  fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <h3 className='hed3'>Easy Documentation Process</h3>
+        <p className='para text-md-center text-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -207,9 +208,9 @@ export default function Section(){
         Laravel API has extremely consistent coding styles with briefly 
         explained methods and classes.</p>
         </div>
-        <div className='laravel-section6  d-md-flex d-none'>
+        <div className='laravel-section6 d-md-flex d-none'>
         <h3 className='hed3'>Extreme Security Encryption</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center text-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -219,10 +220,10 @@ export default function Section(){
         </div>
 
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center gap-4 m-3'>
+        <div className='d-md-flex justify-content-center align-items-center gap-4 m-3'>
         <div className='laravel-section6'> 
         <h3 className='hed3'>Built-in Project Environment</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center text-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -230,9 +231,9 @@ export default function Section(){
         Laravel API has extremely consistent coding styles with briefly 
         explained methods and classes.</p>
         </div>
-        <div className='laravel-section6'>
+        <div className='laravel-section6 d-md-flex d-none'>
         <h3 className='hed3'>Sample Template Engine</h3>
-        <p className='para text-center fs-6'>Being a developer friendly framework, Laravel makes ot extremely 
+        <p className='para text-md-center text-justify'>Being a developer friendly framework, Laravel makes ot extremely 
         easy for developers to document releases. The Laravel API has 
         extremely consistent coding styles with briefly explained methods 
         and classes.Being a developer friendly framework, Laravel makes 
@@ -281,7 +282,7 @@ export default function Section(){
                                            <h3 className='hed3 text-white'>Bookstore Inventory</h3>
                                         </CardTitle>
                                         <CardText className='absolute bottom-[60px] left-[60px]'>
-                                        <p className='para fs-6 text-white fw-bold '>SINGAPORE, WEB DESIGN</p>
+                                        <p className='para text-white fw-bold '>SINGAPORE, WEB DESIGN</p>
                                         </CardText>
                                     </CardBody>
                                 </Card>
@@ -300,7 +301,7 @@ export default function Section(){
                                 </CardTitle>
                         
                                 <CardText className='absolute bottom-[60px] left-[60px] '>
-                                <p className='para fs-6 fw-bold text-white'>ECOMMERCE DEVELOPMENT</p>
+                                <p className='para  fw-bold text-white'>ECOMMERCE DEVELOPMENT</p>
                                     
                                     
                                 </CardText>
@@ -318,7 +319,7 @@ export default function Section(){
                                 </CardTitle>
             
                                 <CardText className='absolute bottom-[60px] left-[60px]  '>
-                                <p className='para fs-6 fw-bold text-white'>SINGAPORE, WEB DESIGN</p>
+                                <p className='para fw-bold text-white'>SINGAPORE, WEB DESIGN</p>
                                 </CardText>
                             </CardBody>
                         </Card>
@@ -333,7 +334,7 @@ export default function Section(){
         <Col md={10}>
         <div>
         <h3 className='hed3 text-center'>Extensive Expertise on Latest Frameworks</h3>
-        <p className='para text-center fs-md-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
+        <p className='para text-center '>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply</p>
         </div>
         <div>
@@ -401,16 +402,16 @@ export default function Section(){
         </div>
         </Col>
         </Row>
-        <Row className='laravelsection9 d-flex justify-content-center align-items-center p-4'>
+        <Row className='laravelsection9 d-flex justify-content-center align-items-center py-4'>
         <Col md={10}>
         <div className='pt-3'>
         <h3 className='hed2 text-white text-center'>Radixweb’s Laravel Web Development – Key Differentiators</h3>
-        <p className='para fs-6 fs-md-6 text-white text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
+        <p className='para text-white text-md-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply</p>
     
         </div>
         <div>
-        <div className='d-md-flex flex-sm-row justify-content-center align-items-center'>
+        <div className='d-flex justify-content-center align-items-center'>
         <div className='laravelSection10 '>
         <img src="Image/lar-9 (6).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Competent Pricing</h3>
@@ -419,12 +420,12 @@ export default function Section(){
         <img src="Image/lar-9 (5).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Flexible Collaboration</h3>
         </div>
-        <div className='laravelSection10'>
+        <div className='laravelSection10 d-md-flex d-none'>
         <img src="Image/lar-9 (4).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Code Standards</h3>
         </div>
         </div>
-        <div className='d-md-flex d-none justify-content-center align-items-center'>
+        <div className='d-flex  justify-content-center align-items-center'>
         <div className='laravelSection10'>
         <img src="Image/lar-9 (3).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Extensive QA Testing</h3>
@@ -433,7 +434,7 @@ export default function Section(){
         <img src="Image/lar-9 (2).png" alt=""  className='img-fluid '  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Project Methodology</h3>
         </div>
-        <div className='laravelSection10'>
+        <div className='laravelSection10  d-md-flex d-none'>
         <img src="Image/lar-9 (1).png" alt=""  className='img-fluid'  style={{width:"130px"}}/>
         <h3 className='hed3 fs-6 text-center' style={{color:"#3b7fbf"}}>Real-time 
         Communication</h3>
@@ -441,20 +442,20 @@ export default function Section(){
         </div>
         </div>
 
-        </Col>
+        </Col> 
         </Row>
         <Row className='d-flex justify-content-center align-items-center p-5'>
         <Col md={10}>
         <div>
         <h3 className='hed2 text-center'>Tailored After Care and Support for Laravel</h3>
-        <p className='para fs-6 fs-md-6 text-center'>At Radixweb we have designed tailored-to-needs maintenance and support packages for your Laravel interfaces. Here are some highlights:</p>
+        <p className='para  text-center'>At Radixweb we have designed tailored-to-needs maintenance and support packages for your Laravel interfaces. Here are some highlights:</p>
         </div>
         <div>
         <div className='d-flex justify-content-center align-items-center gap-5'>
         <div className='d-flex justify-content-center align-items-center'>
         <div className='d-flex gap-2'>
         <GiCheckMark color='#3b7fbf' size={35}/>
-        <p className='para  font-[550]  fs-md-6  fs-6'>
+        <p className='para'>
         90 days no-cost Bug-free warranty for bug control, 
         updates and security patches</p>
         </div>
@@ -462,7 +463,7 @@ export default function Section(){
         <div className='d-flex justify-content-center align-items-center'>
         <div className='d-flex  gap-2'>
         <GiCheckMark color='#3b7fbf' size={35}/>
-        <p className='para font-[550] fs-md-6 fs-6'>Option for access to ad-hoc developers for 
+        <p className='para'>Option for access to ad-hoc developers for 
         maintaining, upgrading web solutions</p>
         </div>
 
@@ -474,14 +475,14 @@ export default function Section(){
         <div className='d-flex justify-content-center align-items-center'>
         <div className='d-flex  gap-2'>
         <GiCheckMark color='#3b7fbf' size={35}/>
-        <p className='para font-[550] fs-6 fs-md-6'>Retained service agreement along with your 
+        <p className='para '>Retained service agreement along with your 
         existing agreement with fixed man hours</p>
         </div>
         </div>
         <div className='d-flex justify-content-center align-items-center'>
         <div className='d-flex  gap-2'>
         <GiCheckMark color='#3b7fbf' size={35}/>
-        <p className='para font-[550] fs-6 fs-md-6'>Flexibility of choosing support package – add 
+        <p className='para'>Flexibility of choosing support package – add 
 specific features, decide time frames.. </p>
         </div>
 
@@ -499,12 +500,12 @@ specific features, decide time frames.. </p>
         <Row className='laravelSection12 d-flex justify-content-center align-items-center  py-4'>
         <Col md={10}>
         <h3 className='hed2 text-white text-center'>Looking for Something Else?</h3>
-        <p className='para fs-6 fs-md-6 text-white text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat alias voluptatum quod error laborum!</p>
+        <p className='para text-white text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat alias voluptatum quod error laborum!</p>
         <div className='d-md-flex justify-content-center align-items-center'>
         <div className='laravelSection13'>
         <img src="Image/lar-10 (3).png" alt=""  className='img-fluid w-20'/>
         <h3 className='hed3  text-center'>CodeIgniter Development</h3>
-        <p className='para fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -516,7 +517,7 @@ specific features, decide time frames.. </p>
         <div className='laravelSection13'>
         <img src="Image/lar-10 (2).png" alt=""  className='img-fluid w-20'/>
         <h3 className='hed3  text-center'>PHP Development</h3>
-        <p className='para fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -528,7 +529,7 @@ specific features, decide time frames.. </p>
         <div className='laravelSection13 d-md-flex d-none'>
         <img src="Image/lar-10 (1).png" alt=""  className='img-fluid w-20'/>
         <h3 className='hed3  text-center'>CakePHP Development</h3>
-        <p className='para fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='para text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -543,6 +544,8 @@ specific features, decide time frames.. </p>
        
         </Col>
         </Row>
+        <Blog/>
+       
 
         </>
     )

@@ -2,15 +2,6 @@
 .main-heading{
     position: relative;
 }
-.main-heading>h1{
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-   
-}
 .btn-main-banner-knw-more{
     display: inline-block!important;
     color: #5E5E5E!important;

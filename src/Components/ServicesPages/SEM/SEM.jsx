@@ -1,6 +1,7 @@
-import Container from 'react-bootstrap/Container';
+
 import { Row, Col, Button } from 'react-bootstrap'
-import '../SEM/SEM.css'
+import '../SEM/SEM.css';
+import Blog from '../../HomePages/Blog/Blog2';
 
 
 export default function SEM() {
@@ -8,10 +9,10 @@ export default function SEM() {
     return (
 
         <>
-        <Row>
-        <Col md  className='MainrodivSem' style={{backgroundImage:"url('Image/image 3 (1).png')"}}>
+        <Row className='flex items-center align-items-center justify-center' style={{backgroundImage:"url('Image/Search-engine-banner.png')",backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:"no-repeat",height:"300px"}}>
+        <Col md >
         <div>
-        <h1>Welcome to Social Engine Marketing</h1>
+        <h1 className='hed1'> Search Engine Marketing</h1>
         </div>
         </Col>
         </Row>
@@ -163,11 +164,13 @@ export default function SEM() {
                     </Col>
 
                 </Row>
-                <Row style={{ backgroundColor: "#5e5e5e" }} className='py-3 d-flex justify-content-center align-items-center'>
+
+                <Blog/>
+                <Row style={{ backgroundColor: "#5e5e5e" }} className='py-3 d-flex justify-content-center align-items-center '>
                 <Col md={10} className='d-md-flex justify-content-center align-items-center gap-md-5 fw-bold'
-                    style={{ color: "#FFFF", letterSpacing: "2px" }}>
-                    <p className='my-2 ml-5'>Getting Your Dream Design is no sweat. a simple mouse click is all you need to get</p>
-                    <Button variant='dark' className='my-2 py-2 btn1'>Click Here</Button>
+                >
+                    <p className='para text-white'>Getting Your Dream Design is no sweat. a simple mouse click is all you need to get</p>
+                    <Button variant='dark' className='btn1'>Click Here</Button>
                 </Col>
             </Row>
    

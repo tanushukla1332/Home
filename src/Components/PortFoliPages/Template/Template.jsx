@@ -1,7 +1,7 @@
 import {Row,Col,Button} from 'react-bootstrap'
 import Main from './MainTemplate/Main'
 import Section from './AllSections/Section';
-import Blog from '../Template/Blog/Blog2'
+import Blog from '../../HomePages/Blog/Blog2';
 
 
 export default function Template(){
