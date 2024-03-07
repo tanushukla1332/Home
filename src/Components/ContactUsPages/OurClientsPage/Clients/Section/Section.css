@@ -1,14 +1,26 @@
 
 .clientspage-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(128, 128, 128, 0.11);
     border: 1px solid #8080800c;
-    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.055);
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.048);
     border-radius: 5px;
     width:200px;
     
     
 
   
+}
+@media screen and (max-width:786px) {
+    
+.clientspage-img{
+    width: 100px;
+    box-shadow: 5px 2px 5px 2px rgba(0,0,0,0.048);
+}
+
+    
 }
 
 .read-case-study{
