@@ -2,21 +2,23 @@
 import { Row, Col, Button } from 'react-bootstrap';
 import '../Social-Media-optimization/SocialMediaOptimization.css'
 import Blog from '../../HomePages/Blog/Blog2';
+import { useNavigate } from 'react-router';
+
 
 
 export default function SocialMediaOpt() {
+    const navigate=useNavigate()
 
     return (
 
         <>
            
         <Row 
-        className='justify-content-center align-items-center py-lg-5'
-        
-        
-        style={{backgroundImage:"url('Image/SMO-Banner.png')",backgroundRepeat:"no-repeat",backgroundPosition:"center",backgroundSize:"cover",height:"300px"}}>
-        <Col md >
-        <div>
+        className='justify-content-center align-items-center'
+        >
+        <Col md  className='px-0'>
+        <img src="Image/SMO-Banner.png" alt="" className='img-fluid' />
+        <div className='absolute top-5 left-5 w-50'>
         <h1 className='hed1'>Social Media Optimization</h1>
         </div>
         </Col>
@@ -25,18 +27,18 @@ export default function SocialMediaOpt() {
                 <Row className='justify-content-center align-items-center py-lg-5  bgim'  style={{backgroundImage:"url('Image/blue.png')",backgroundPosition:"right",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
                     <Col md={10} >
                         <h1  className='text-center hed2 py-4'>Much more than posting!!!</h1>
-                        <p className='text-center para'>
+                        <p className=' para'>
                         Instagram has around 2 billion active mobile users, about 28% of the whole world population with its largest database consisting of a young audience of 18-34 years of age. Twitter is one of the most active social media to ever exist with brands, leaders and celebrities regularly interacting with people.
-                        LinkedIn is the unopposed pioneer as a professional social media platform.
+                        LinkedIn is the unopposed pioneer as a professional social media platform.</p>
                         
-                    This is just the tip of the iceberg.
+                  <p className='para'>  This is just the tip of the iceberg.</p>
                         
-                      In the current age of Social Media dominance the regular random post here and there isn’t going to make the cut.
+                      <p className='para'>In the current age of Social Media dominance the regular random post here and there isn’t going to make the cut.</p>
                      
-                        So let’s dive into the depth of Social Media to understand what can make you stand out in the modern world.
+                       <p className='para'> So let’s dive into the depth of Social Media to understand what can make you stand out in the modern world.</p>
                         
 
-                        </p>
+                        
 
                     </Col>
                 </Row>
@@ -150,10 +152,10 @@ export default function SocialMediaOpt() {
                 <h2 className='hed2 text-center'>Top Soical Media Projects</h2>
                 <div className='d-flex justify-content-center align-items-center gap-[150px] py-5'>
                 <div className='Semproj-shadow'>
-                <img src="Image/Sem-top-pr-1.png" alt="" className='img-fluid'/>
+                <img src="Image/Sem-top-pr-1.png" alt="" className='img-fluid w-50'/>
                 <img src=" Image/Sem-top-pr-2.png" alt="" className='img-fluid w-50'/>
                 </div>
-                <div className='Semproj-shadow'> 
+                <div className='Semproj-shadow d-md-flex d-none'> 
                 <div className='d-flex justify-content-center align-items-center gap-2'>
                 <img src="Image/image 2 (1).png" alt=""  className='img-fluid w-50' />
                 <img src="Image/img (11).png" alt=""  className='img-fluid w-50'/>
@@ -172,31 +174,30 @@ export default function SocialMediaOpt() {
                 </div>
                 </Col>
                 </Row>   
-                <Row className='justify-content-center align-items-center py-3 bgsection-homepage-smo  bgim'  style={{backgroundImage:"url('Image/grey.png')",backgroundPosition:"left",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
-                    <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
-                        <div className='custom2-shadow'>
-                            <img src="/Image/Sem-last.png" alt="" className='img-fluid' style={{ paddingTop: "30px" }} />
-                            <p className='para pt-2 text-center'>Social Media Optimization</p>
-                        </div>
-                    </Col>
-                    <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
-                        <div className='custom2-shadow'>
-                            <img src="/Image/programming (1) 1 (3).png" alt="" className='img-fluid' style={{ paddingTop: "30px" }} />
-                            <p className='para pt-3 text-center'>Social Media Marketing</p>
-                        </div>
+                <Row className='d-flex justify-content-center align-items-center py-5'>
+                <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
+                    <div className='custom2-shadow'>
+                        <img src="/Image/Search-projects2.png" alt="" className='img-fluid w-50' />
+                        <p className='para pt-2 text-center cursor-pointer' onClick={() => navigate('/socialMedia')}> Social Media Strategy</p>
 
-                    </Col>
+                    </div>
+                </Col>
+                <Col md={5} className='d-flex justify-content-center align-items-center mb-3 '>
+                    <div className='custom2-shadow'>
+                        <img src="/Image/programming (1) 1 (3).png" alt="" className='img-fluid w-50' />
+                        <p className='para pt-3 text-center'>Search Media Marketing</p>
+                    </div>
 
-                </Row>
+                </Col>
+
+            </Row>
                 <Blog/>
-                <Row style={{ backgroundColor: "#5e5e5e" }} className='py-2'>
-                <Col md={10} className='d-md-flex justify-content-between align-items-center my-lg-3 fw-bold'
-                    style={{ color: "#FFFF", letterSpacing: "2px" }}>
-                    <p className='my-2 ml-5'>Getting Your Dream Design is no sweat. a simple mouse click is all you need to get</p>
-                    <Button variant='dark' className='my-2 py-2 btn1 d-flex justify-content-center align-items-center'>Click Here</Button>
+                <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center mt-5'>
+                <Col md={12} className='flex items-center justify-center gap-5 py-3'>
+                    <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+                    <Button variant='dark' className='btn-last-banner-contact-Us'>Contact-us</Button>
                 </Col>
             </Row>
-   
         </>
 
     )

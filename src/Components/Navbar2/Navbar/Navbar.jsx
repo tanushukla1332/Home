@@ -2,19 +2,51 @@ import { FaAngleDown, FaSearch,FaAngleUp} from "react-icons/fa";
 import {Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
-
+import { FiMenu } from "react-icons/fi";
+import { GrClose } from "react-icons/gr";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 
 import '../Navbar/Navbar.css';
 import { useState , useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [click,setClick]=useState(false)
+  const [showAboutSection, setShowAboutSection] = useState(false);
+  const [showServicesSection, setShowServicesSection] = useState(false);
   const[active,setActive]=useState(false)
   const [aboutmenu,setAboutMenu]=useState(false)
+  const [showsubMenuEcommerce,setsubMenuEcommerce]=useState(false)
+  const [showsubMenuDevelopment,setsubMenuDevelopment]=useState(false)
+  const [showsubMenuDesign,setshowsubMenuDesign] =useState(false)
+  const [showsubMenuDigital,setshowsubMenuDigital] =useState(false)
+  const [showsubMenuGame,setshowsubMenuGame] =useState(false)
+  const [showsubMenuMaintenance,setshowsubMenuMaintenace] =useState(false)
+  const [showsubMenuMobile,setshowsubMenuMobile] =useState(false)
   const dropdownRef = useRef(null);
 
-
+  const toggleEcommerceMenu=()=>{
+    setsubMenuEcommerce(!showsubMenuEcommerce)
+  }
+  const toggleMobile=()=>{
+    setshowsubMenuMobile(!showsubMenuMobile)
+  }
+  const toggleMaintenace=()=>{
+    setshowsubMenuMaintenace(!showsubMenuMaintenance)
+  }
+  const toggleGame=()=>{
+    setshowsubMenuGame(!showsubMenuGame)
+  }
+  const toggleDigitalMenu=()=>{
+    setshowsubMenuDigital(!showsubMenuDigital)
+  }
+  const toggleDevelopment=()=>{
+    setsubMenuDevelopment(!showsubMenuDevelopment)
+  }
   
+  const togglesubMneu=()=>{
+    setshowsubMenuDesign(!showsubMenuDesign)
+  }
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -35,10 +67,12 @@ const Navbar = () => {
 
 const handleAboutMenu=()=>{
   setAboutMenu(!aboutmenu)
+  setShowAboutSection(!aboutmenu);
 }
 
   const handleActive=()=>{
     setActive(!active)
+    setShowServicesSection(!showServicesSection)
   }
 
 
@@ -46,118 +80,444 @@ const handleAboutMenu=()=>{
     setClick(!click)
   }
   const content= <>
-  <div className="lg:hidden z-1000 block absolute top-26 w-full left-0 right-0 bg-slate-400 backdrop-blur-lg bg-opacity-30 h-auto">
-  <ul className="text-center text-xl p-10">
-  <Link to='/' className='no-underline hover:no-underline'> <li className=' cusror-pointer text-white hover:bg-[#3b7fbf] mb-3'>Home</li></Link>
-  <Link to='/about' className='no-underline hover:no-underline'> <li className=' cusror-pointer text-white mb-3 hover:bg-[#3b7fbf]'>About</li></Link>
-  {/* Mega Menu Start*/}
-  <div className="group">
-  <a href="/Services" className="navlinkmenutitle no-underline hover:no-underline"> <span className=' cusror-pointer text-white text-[18px] navlinkmenutitle hover:bg-[#3b7fbf]'> Services</span></a>
-  
-  <div className="hidden group-hover:flex flex-col absolute left-0 top-20 py-3 w-full bg-gray-100 z-20 text-black duration-300 ">
-  <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
-  <div className="flex flex-col  items-center">
-  <h6 className="text-[#3b7fbf] text-center">Design Marketing</h6>
-  <Link to='/seo' className='no-underline  cusror-pointer text-white '>SEO</Link>
-  <Link to='/SEM' className='no-underline  cusror-pointer text-white '>SEM</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white '>SMO</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white '>SMM</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white '>Email Marketing</Link>
+  <div   className="lg:hidden z-1000 block absolute top-26 h-[90vh] w-50  right-0 bg-white backdrop-blur-lg bg-opacity-30  py-3">
+  <ul className="flex flex-col gap-[25px] text-[18px] items-center ">
+    <Link to='/'  className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Home</li></Link>
 
+    
+    {/* Mega Menu Start*/}
+    <div className="group">
+      <div className="flex items-center">
+        <Link
+          to="/about"
+          className="navlinkmenutitle no-underline flex items-center"
+          onClick={handleAboutMenu}
+        >
+          <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'>
+            About
+          </li>
+        </Link>
+        {!showAboutSection && (
+          <IoIosArrowForward
+            className="text-[#5e5e5e] cursor-pointer"
+            onClick={handleAboutMenu}
+            size={25}
+          />
+          
+        )}
+      </div>
+      {showAboutSection && (
+        <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+          <div className="flex items-center">
+            <div className="w-96">
+          <span className="flex items-center px-3 gap-1 pt-3"> 
+          {showAboutSection && (
+              <IoIosArrowBack
+                className="text-[#5e5e5e]  cursor-pointer"
+                onClick={handleAboutMenu}
+                size={25}
+              />
+            )}
+            <h6 className="text-[#3b7fbf]   font-[550] ">AboutUs</h6>
+            </span> 
+              <ul>
+              <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] pb-2'>Career</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e]'>Our Clients</li> </Link>
+                {/* Add other submenu items as needed */}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+      {/* Mega Menu End*/} 
+    {/* Mega Menu Start*/}
+    <div className="group">
+    <div className="flex items-center">
+      <Link
+        to="/"
+        className="navlinkmenutitle no-underline flex items-center"
+        onClick={handleActive}
+      >
+        <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'>
+          Services
+        </li>
+      </Link>
+      {!showServicesSection && (
+        <IoIosArrowForward
+          className="text-[#5e5e5e] cursor-pointer"
+          onClick={handleActive}
+          size={25}
+        />
+      )}
+    </div>
+    {showServicesSection && (
+      <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+        <div className="flex items-center">
+          <div className="w-96">
+        <span className="flex items-center px-3  pt-3"> 
+        {showServicesSection && (
+            <IoIosArrowBack
+              className="text-[#5e5e5e]  cursor-pointer"
+              onClick={handleActive}
+              size={25}
+            />
+          )}
+          <h6 className="font-[550] text-[#3b7fbf] text-[20px]">Services</h6>
+          </span> 
+          <div className="px-5">
+          <div className="flex items-center gap-5">
+            <h6 className="py-1">Design</h6> 
+            {showServicesSection && (
+              <IoIosArrowForward
+                className="text-[#5e5e5e] cursor-pointer"
+                onClick={togglesubMneu}
+                size={25}
+              />
+              
+            )}
+            {showsubMenuDesign && (
+              <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+              <div className="flex items-center">
+                <div className="w-96">
+              <span className="flex items-center px-3 gap-1 pt-3"> 
+              {showsubMenuDesign && (
+                  <IoIosArrowBack
+                    className="text-[#5e5e5e]  cursor-pointer"
+                    onClick={togglesubMneu}
+                    size={25}
+                  />
+                )}
+                <h6 className="text-[#3b7fbf] font-[550] ">Design</h6>
+                </span> 
+                  <ul>
+                  <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'> UI/UX Design</li> </Link>
+                  <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Web Design</li> </Link>
+                    {/* Add other submenu items as needed */}
+                  </ul>
+                </div>
+              </div>
+            </div>
+                        )}
+          </div>
+          <div className="flex items-center gap-2">
+          <h6 className="py-1">Ecommerece Solution</h6> 
+          { !showsubMenuEcommerce && (
+            <IoIosArrowForward
+              className="text-[#5e5e5e] cursor-pointer"
+              onClick={toggleEcommerceMenu}
+              size={25}
+            />
+            
+          )}
+          {showsubMenuEcommerce && (
+            <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+            <div className="flex items-center">
+              <div className="w-96">
+            <span className="flex items-center px-3 gap-1 pt-3"> 
+            {showsubMenuEcommerce && (
+                <IoIosArrowBack
+                  className="text-[#5e5e5e]  cursor-pointer"
+                  onClick={toggleEcommerceMenu}
+                  size={25}
+                />
+              )}
+              <h6 className="text-[#3b7fbf]   font-[550]">Ecommerece Solution</h6>
+              </span> 
+              <ul>
+              <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2' > Shopify</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'> OpenKart</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Woocommerce</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Magento</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Prestashop</li> </Link>
+                {/* Add other submenu items as needed */}
+              </ul>
+              </div>
+            </div>
+          </div>
+                      )}
+        </div>
+        <div className="flex items-center gap-2">
+        <h6 className="py-1">Development</h6> 
+        {!showsubMenuDevelopment && (
+          <IoIosArrowForward
+            className="text-[#5e5e5e] cursor-pointer"
+            onClick={toggleDevelopment}
+            size={25}
+          />
+          
+        )}
+        {showsubMenuDevelopment && (
+          <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+          <div className="flex items-center">
+            <div className="w-96">
+          <span className="flex items-center px-3 gap-1 pt-3"> 
+          {showsubMenuDevelopment && (
+              <IoIosArrowBack
+                className="text-[#5e5e5e]  cursor-pointer"
+                onClick={toggleDevelopment}
+                size={25}
+              />
+            )}
+            <h6 className="text-[#3b7fbf]   font-[550]">Development</h6>
+            </span> 
+            <ul>
+            
+            <Link to='/development' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline   py-2'  onClick={handleActive} ><li className="py-2">Website Development</li> </Link>
 
-  </div>
-  <div className="flex flex-col  items-center">
+     <Link to='/CodeIgniter' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline py-2 '  onClick={handleActive}> <li className="py-2">CodeIgniter Website</li>
+     </Link>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+      text-[15px] font-medium
+     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Informative Websit</li> </Link>
 
-  
-  <h6 className="text-[#3b7fbf] text-center ">Design</h6>
-  <Link to='/seo' className='no-underline  cusror-pointer text-white  '>UI/UX Designs</Link>
-  <Link to='/SEM' className='no-underline  cusror-pointer text-[#5e5e5e] '>Graphic Design </Link>
-  <Link to='/' className='no-underline  cusror-pointer text-[#5e5e5e] '>Video Editing</Link>
+     <Link to='/Php' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium
+     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Html & Css Website</li> </Link>
 
-  </div>
-  <div className="flex flex-col items-center">
-  <h5 className="text-[#3b7fbf] ">Development</h5>
-  <Link to='/development' className='no-underline  cusror-pointer text-white'>App Development</Link>
-  <Link to='/laraveldevlopment' className='no-underline  cusror-pointer text-white '>e- Commerce</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white  '>Software development</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white  '>Website development</Link>
+     <Link to='/htmlPage' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]    text-[15px] font-medium
+    hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Html & Css Website</li></Link>
 
+     <Link to='/laraveldevlopment' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Laravel Website</li>
+     </Link>
+     
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline   py-2'  onClick={handleActive}> <li className="py-2">React js Website</li> </Link>
 
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline   py-2'  onClick={handleActive}> <li className="py-2">Angular js Website</li> </Link>
 
-  </div>
-  <div className="flex flex-col  items-center">
-  <h6 className="text-[#3b7fbf]">Support and Maintainence</h6>
-  <Link to='/seo' className='no-underline  cusror-pointer text-white  '>Website M</Link>
-  <Link to='/SEM' className='no-underline  cusror-pointer text-white  '>Mobile App M</Link>
- 
-  <Link to='/' className='no-underline  cusror-pointer text-white  '>Domain and Hosting</Link>
-  <Link to='/' className='no-underline  cusror-pointer text-white  '>VPS M</Link>
+    <Link to='/rubyRails ' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline   py-2'  onClick={handleActive} > <li className="py-2">Ruby on Rails</li> </Link> 
+     
+     <Link to='/eCommerce' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline   py-2' onClick={handleActive} ><li className="py-2">E-commerce Website</li></Link> 
 
-
-  </div>
-  <div className="flex flex-col  items-center">
-  <h6 className="text-[#3b7fbf]">Game Development</h6>
-  <Link to='/seo' className='no-underline  cusror-pointer text-white  '>2D</Link>
-  <Link to='/SEM' className='no-underline  cusror-pointer text-white  '>3D</Link>
- 
-  <Link to='/' className='no-underline  cusror-pointer text-white  '>Meta Verse</Link>
- 
-
-  </div>
-  
-  </div>
-  
-  
-  </div>
-  </div>
-
-
-
-    {/* Mega Menu End*/}    
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   text-[15px] font-medium
+     hover:no-underline ' onClick={handleActive}> <li className="py-2">Payment Gateway</li> </Link> 
+     
    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <Link to='/portfolio' className='no-underline hover:no-underline
- '> <li className=' cusror-pointer text-white  my-3 hover:bg-[#3b7fbf] '>Portfolio</li>
-  
-  
-  
-  
-  
-  </Link>
+ 
+            </ul>
+            </div>
+          </div>
+        </div>
+                    )}
+      </div>
+      <div className="flex items-center gap-3">
+            <h6 className="py-1">Digital Marketing</h6> 
+            { !showsubMenuDigital && (
+              <IoIosArrowForward
+                className="text-[#5e5e5e] cursor-pointer"
+                onClick={toggleDigitalMenu}
+                size={25}
+              />
+              
+            )}
+            {showsubMenuDigital && (
+              <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+              <div className="flex items-center">
+                <div className="w-96">
+              <span className="flex items-center px-3 gap-1 pt-3"> 
+              {showsubMenuDigital && (
+                  <IoIosArrowBack
+                    className="text-[#5e5e5e]  cursor-pointer"
+                    onClick={toggleDigitalMenu}
+                    size={25}
+                  />
+                )}
+                <h6 className="text-[#3b7fbf] font-[550] ">Digital Marketing</h6>
+                </span> 
+                  <ul>
+                  <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
+                  text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2">Search Engine Optimization</li>  </Link>
+             
+                  <Link to='/sem' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+                  text-[15px] font-medium hover:no-underline   '  onClick={handleActive}> <li className="py-2">Search Engine Marketing</li> </Link>
+             
+                  <Link to='/socialMediaOpt' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium hover:no-underline   '  onClick={handleActive} > <li className="py-2">Social Media Optimization</li> </Link>
+                  <Link to='/socialMediaMarketing' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
+                  text-[15px] font-medium hover:no-underline '  onClick={handleActive} > <li className="py-2">Social Media Marketing</li> </Link>
+                  <Link to='/email' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
+                  text-[15px] font-medium hover:no-underline '  onClick={handleActive} > <li className="py-2">Email Marketing</li> </Link>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                        )}
+      </div>
+          <div className="flex items-center gap-3">
+            <h6 className="py-1">Game Development</h6> 
+            { !showsubMenuGame && (
+              <IoIosArrowForward
+                className="text-[#5e5e5e] cursor-pointer"
+                onClick={toggleGame}
+                size={25}
+              />
+              
+            )}
+            {showsubMenuGame && (
+              <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+              <div className="flex items-center">
+                <div className="w-96">
+              <span className="flex items-center px-3 gap-1 pt-3"> 
+              {showsubMenuGame && (
+                  <IoIosArrowBack
+                    className="text-[#5e5e5e]  cursor-pointer"
+                    onClick={toggleGame}
+                    size={25}
+                  />
+                )}
+                <h6 className="text-[#3b7fbf] font-[550] ">Game Development</h6>
+                </span> 
+                  <ul>
+                  <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
+                  text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2">2D</li>  </Link>
+             
+                  <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+                  text-[15px] font-medium hover:no-underline   '  onClick={handleActive}> <li className="py-2">3D</li> </Link>
+             
+                  <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium hover:no-underline   '  onClick={handleActive} > <li className="py-2">Meta Versa</li> </Link>
+                
+                  </ul>
+                </div>
+              </div>
+            </div>
+                        )}
+          </div>
+          <div className="flex items-center gap-3">
+          <h6 className="py-1">Maintenace & Support</h6> 
+          { !showsubMenuMaintenance && (
+            <IoIosArrowForward
+              className="text-[#5e5e5e] cursor-pointer"
+              onClick={toggleMaintenace}
+              size={25}
+            />
+            
+          )}
+          {showsubMenuMaintenance && (
+            <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+            <div className="flex items-center">
+              <div className="w-96">
+            <span className="flex items-center px-3 gap-1 pt-3"> 
+            {showsubMenuMaintenance && (
+                <IoIosArrowBack
+                  className="text-[#5e5e5e]  cursor-pointer"
+                  onClick={toggleMaintenace}
+                  size={25}
+                />
+              )}
+              <h6 className="text-[#3b7fbf] font-[550] ">Maintenace & Support</h6>
+              </span> 
+                <ul>
+                <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
+                text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2"> 
+                Website Maintenance
+              
+                </li>  </Link>
+           
+                <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+                text-[15px] font-medium hover:no-underline   '  onClick={handleActive}> <li className="py-2">Mobile App Maintenance</li> </Link>
+           
+                <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium hover:no-underline   '  onClick={handleActive} > <li className="py-2">Domain & Hosting Maintenance</li> </Link>
+              
+                </ul>
+              </div>
+            </div>
+          </div>
+                      )}
+        </div>
+        <div className="flex items-center gap-3">
+        <h6 className="py-1">Mobile Applications</h6> 
+        {!showsubMenuMobile && (
+          <IoIosArrowForward
+            className="text-[#5e5e5e] cursor-pointer"
+            onClick={toggleMobile}
+            size={25}
+          />
+          
+        )}
+        {showsubMenuMobile && (
+          <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
+          <div className="flex items-center">
+            <div className="w-96">
+          <span className="flex items-center px-3 gap-1 pt-3"> 
+          {showsubMenuMobile && (
+              <IoIosArrowBack
+                className="text-[#5e5e5e]  cursor-pointer"
+                onClick={toggleMobile}
+                size={25}
+              />
+            )}
+            <h6 className="text-[#3b7fbf] font-[550] ">Mobile Applications</h6>
+            </span> 
+              <ul>
+              <Link to='/Android' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
+              text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2"> 
+         Android App
+            
+              </li>  </Link>
+         
+              <Link to='/iOS' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
+              text-[15px] font-medium hover:no-underline   '  onClick={handleActive}> <li className="py-2">IOS App</li> </Link>
+         
+            
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+                    )}
+      </div>
+          
+       
+    
 
 
 
 
-  <Link to='/blogMain' className='no-underline hover:no-underline'> <li className=' cusror-pointer text-white mb-3 hover:bg-[#3b7fbf]'>Blogs</li></Link>
-  <Link to='/career' className='no-underline hover:no-underline'> <li className=' cusror-pointer text-white mb-3  hover:bg-[#3b7fbf]'>Career</li></Link>
+       
+          </div>
+              {/* Add other submenu items as needed */}
+         
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
 
-  <Link to='/contact' className='no-underline hover:no-underline'> <li className=' cusror-pointer text-white  hover:bg-[#3b7fbf] '>Get in Touch</li></Link> 
-  
-  </ul>
+      
+ 
+ 
+
+
+
+
+    
+     
+
+    <Link to='/portfolio' className='no-underline 
+    navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Portfolio</li>    
+    </Link>
+    <Link to='/blogMain' className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Blogs</li></Link>
+    <Link to='/contact' className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Reach us</li></Link>
+    </ul>
   </div>
 
   </>
+
  
 
   
   return (
     <>
 
-    <nav className="z-50 bg-white navmaindiv">
-    <div className=" flex lg:py-3 px-[-100px]  items-center" >
+    <nav className="z-50 bg-white navmaindiv px-4">
+    <div className=" flex lg:py-3 px-[-100px]  items-center">
     <div className="flex items-center  justify-center">
-    <img src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg"alt="logo" className="md:cursor-pointer h-20 w-200 "/>
+    <img src="https://razobyte.com/wp-content/uploads/2023/11/Razobyte-Softtech-Logo.jpg"alt="logo" className="md:cursor-pointer h-20"/>
     </div>
     <div className= "lg:flex  md-flex flex-1 items-center justify-center  font-normal hidden">
     <ul className="flex gap-[25px] text-[18px] items-center ">
@@ -231,29 +591,48 @@ const handleAboutMenu=()=>{
   </Link>
     {active ? (
       <>
-      <div ref={dropdownRef} className="flex-col items-center absolute  top-[103px] py-1 px-2  border-top 
+      <div ref={dropdownRef} className="flex-col items-center absolute  top-[103px] py-2 px-2  border-top 
       rounded-1 shadow-lg
      bg-gray-100 z-20 text-black duration-300 "
      onMouseLeave={handleActive}>
-     <div className="grid grid-cols-4 md:grid-cols-3 gap-2">
-     <div className="flex flex-col bg-[#ffff] p-2 rounded-1 inside-dev-shado-des">
+     <div className="grid grid-cols-4 md:grid-cols-3 gap-3">
+     <div className="flex flex-col bg-[#ffff] px-1 py-2 rounded-1 inside-dev-shado-des">
      <span className="d-flex items-center gap-[100px]">
-     <h6 className="text-[#3b7fbf] ">Design</h6> 
+     <h6 className="text-[#3b7fbf]   font-[550] ">Design</h6> 
      <img src="Image/nav-lar-1 (3).svg" className="w-[50px]"/>
      </span> 
      <Link to='/Ui' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
      hover:no-underline '>UI/UX Design</Link>
      <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
      hover:no-underline '>Website Design</Link>
-    
+     <div className="flex flex-col pt-3">
+     <span className="d-flex items-center ">
+     <h6 className="text-[#3b7fbf] font-[550] ">Ecommerce Solutions</h6> 
+     <img src="Image/cart.png" className="w-10"/>
+     </span> 
+  
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Shopify</Link>
+
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>OpenKart</Link>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Woocommerce</Link>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Magento</Link>
+     <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
+     hover:no-underline '>Prestashop</Link>
+     </div>
+
+
    
     
  
      </div>
      
-     <div className="flex flex-col  bg-[#ffff] p-2 rounded-1 inside-dev-shado-des">
+     <div className="flex flex-col  bg-[#ffff] px-1  py-2 rounded-1 inside-dev-shado-des">
      <span className="d-flex items-center gap-5">
-     <h6 className="text-[#3b7fbf] ">Development</h6> 
+     <h6 className="text-[#3b7fbf]  font-[550]">Development</h6> 
      <img src="Image/nav-lar-1 (2).svg" className="w-[50px]"/>
      </span> 
      <Link to='/development' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
@@ -295,9 +674,9 @@ const handleAboutMenu=()=>{
  
  
      </div>
-     <div className="flex flex-col  bg-[#ffff] p-2 rounded-1 inside-dev-shado-des" >
+     <div className="flex flex-col  bg-[#ffff] px-1  py-2 rounded-1 inside-dev-shado-des" >
      <span className="d-flex items-center gap-4">
-     <h6 className="text-[#3b7fbf] ">Digital Marketing</h6> 
+     <h6 className="text-[#3b7fbf]  font-[550] ">Digital Marketing</h6> 
      <img src="Image/nav-lar-1 (4).svg" className="w-[50px]"/>
      </span>
      <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
@@ -318,9 +697,9 @@ const handleAboutMenu=()=>{
  
      </div>
    
-     <div className="flex flex-col bg-[#ffff] p-2 rounded-1 inside-dev-shado-des">
+     <div className="flex flex-col bg-[#ffff] px-1 py-2 rounded-1 inside-dev-shado-des">
      <span className="d-flex items-center gap-2">
-     <h6 className="text-[#3b7fbf] "> Game Development</h6> 
+     <h6 className="text-[#3b7fbf] font-[550] "> Game Development</h6> 
      <img src="Image/nav-lar-1 (5).svg" className="w-[50px]"/>
      </span> 
      <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
@@ -334,9 +713,9 @@ const handleAboutMenu=()=>{
     
  
      </div>
-     <div className="flex flex-col   bg-[#ffff] p-2  rounded-1  inside-dev-shado-des">
-     <span className="d-flex items-center">
-     <h6 className="text-[#3b7fbf] ">Maintenace & Support</h6> 
+     <div className="flex flex-col   bg-[#ffff] px-1 py-2  rounded-1  inside-dev-shado-des">
+     <span className="d-flex items-center gap-5">
+     <h6 className="text-[#3b7fbf]  font-[550]">Maintenace & Support</h6> 
      <img src="Image/nav-lar-1 (3).svg" className="w-[50px]"/>
      </span> 
      <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
@@ -346,9 +725,9 @@ const handleAboutMenu=()=>{
      <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
      hover:no-underline'>Domain & Hosting Maintenance </Link>
      </div>
-     <div className="flex flex-col   bg-[#ffff] p-2 rounded-1  inside-dev-shado-des">
-     <span className="d-flex items-center gap-2">
-     <h6 className="text-[#3b7fbf] ">Mobile Applications</h6> 
+     <div className="flex flex-col   bg-[#ffff] p-1 rounded-1  inside-dev-shado-des">
+     <span className="d-flex items-center gap-1">
+     <h6 className="text-[#3b7fbf] font-[550]">Mobile Applications</h6> 
      <img src="Image/na-lar-5.svg" className="w-[50px]"/>
      </span> 
      <Link to='/Android' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
@@ -390,17 +769,16 @@ const handleAboutMenu=()=>{
     </div>
 
     <div>
-            <button className="block sm:hidden transition-none" onClick={handleClick}>
-              {click ?<ion-icon name="close-outline" lassName='text-xl'/>:<ion-icon name="menu-outline"/>}
+            <button className="block sm:hidden " onClick={handleClick}>
+              {click ?<GrClose size={35}  />
+              
+              :<FiMenu size={35} />}
             </button>
           </div>
         </div>
         {click && content}
       </nav>
     </>
-  
-
-
   );
 };
 

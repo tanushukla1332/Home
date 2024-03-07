@@ -202,9 +202,9 @@ export default function CarSection() {
             </div>
             <Col md={10}>
             <div className='d-md-flex gap-4 allimages d-flex align-items-center justify-content-center'>
-            <div> <img src="Image/car-7 (2).jpg" alt=""  className='img-fluid  mt-3'  /></div>
-            <div><img src="Image/car-7 (1).jpg" alt=""  className='img-fluid  mt-3'/></div>
-            <div><img src="Image/car-7 (3).jpg" alt=""  className='img-fluid mt-3 ' /></div>
+            <div className='mt-3'> <img src="Image/car-7 (2).jpg" alt=""  className='img-fluid  '  /></div>
+            <div className='mt-3'><img src="Image/car-7 (1).jpg" alt=""  className='img-fluid'/></div>
+            <div className='mt-3'><img src="Image/car-7 (3).jpg" alt=""  className='img-fluid  ' /></div>
            
             
        

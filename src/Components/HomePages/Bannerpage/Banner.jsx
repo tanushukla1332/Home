@@ -90,27 +90,27 @@ export default function App (){
           density: {
             enable: true,
           },
-          value: 100,
+          value:50,
         },
         opacity: {
           value: 0.5,
         },
         shape: {
-          type: "circle", // Changing shape type to image
+          type: "image", // Changing shape type to image
           stroke: {
-            width: 20,
-            color: "#3b7fbf",
+            width:20,
+            color:"#3b7fbf",
           },
-          // options: {
-          //   image: {
-          //     src: "Image/LOGO RAZOBYTE.png", // Add your image path here
-          //     width: 300, // Adjust width of the image particle
-          //     height: 500, // Adjust height of the image particle
-          //   },
-          // },
+          options: {
+            image: {
+              src: "Image/Ellipse 2hjgf (1).png", // Add your image path here
+              width:100, // Adjust width of the image particle
+              height:100, // Adjust height of the image particle
+            },
+          },
         },
         size: {
-          value: { min:10, max: 25},
+          value: {min:25, max:25},
         },
       },
       detectRetina: true,
@@ -127,7 +127,7 @@ export default function App (){
       options={options}
     />
       
-      <Row className='py-2 justify-content-center align-items-center px-0' >      
+      <Row className='justify-content-center align-items-center px-0' >      
             <Col md= {5} className='text-light'>
                 <h1 className='hed1  pt-2'>{Data[currentDataIndex].title}</h1>
                 <h3 className='hed3 text-white'>{Data[currentDataIndex].subTitle}

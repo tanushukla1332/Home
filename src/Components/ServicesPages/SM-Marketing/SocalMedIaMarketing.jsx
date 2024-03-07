@@ -1,7 +1,9 @@
 import {Row,Col,Button} from 'react-bootstrap'
-import Blog from '../../HomePages/Blog/Blog2'
+import Blog from '../../HomePages/Blog/Blog2';
+import { useNavigate } from 'react-router';
 
 export default function SocialMediaMarketing(){
+    const navigate=useNavigate()
     return(
         <>
         <Row className='flex items-center justify-center'
@@ -184,14 +186,14 @@ export default function SocialMediaMarketing(){
         <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={5} className='d-flex justify-content-center align-items-center mb-3'>
             <div className='custom2-shadow'>
-                <img src="/Image/Sem-last.png" alt="" className='img-fluid'/>
+                <img src="/Image/Sem-last.png" alt="" className='img-fluid w-50'/>
                 <p className='para pt-2 text-center'> Social Media Optimization</p>
             </div>
         </Col>
         <Col md={5} className='d-flex justify-content-center align-items-center mb-3 '>
             <div className='custom2-shadow'>
-                <img src="/Image/programming (1) 1 (3).png" alt="" className='img-fluid'/>
-                <p className='para pt-3 text-center'>Social Media Marketing</p>
+            <img src="/Image/Search-projects2.png" alt="" className='img-fluid w-50' />
+            <p className='para pt-2 text-center cursor-pointer' onClick={() => navigate('/socialMedia')}> Social Media Strategy</p>
             </div>
 
         </Col>

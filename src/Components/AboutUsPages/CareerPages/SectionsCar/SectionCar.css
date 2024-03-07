@@ -138,3 +138,9 @@
     border-radius: 10px;
 
 }
+@media screen and (max-width:768px) {
+    .allimages img{
+        height:15vh !important;
+       
+    }
+}

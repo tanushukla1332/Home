@@ -7,7 +7,7 @@ export default function Sec() {
                 <Col md={10} className='py-5 text-center' >
                     <div>
                         <h3 className='text-center hed2'>We Deliver Your Essential Ecommerce Requirement</h3>
-                        <p className='para'>
+                        <p className='para md:text-center  text-justify'>
                             Your trusted partner for top-notch e-commerce solutions. Whether you’re an established enterprise or a budding startup, we are here to empower your online business and drive your success in the digital realm. At RazoByte, we understand the dynamic and ever-evolving nature of the e-commerce landscape. With our expertise and cutting-edge technology, we offer a comprehensive suite of services designed to enhance your online presence, streamline your operations, and maximize your revenue potential.
                         </p>
                     </div>

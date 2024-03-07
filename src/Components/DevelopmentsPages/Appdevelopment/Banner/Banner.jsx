@@ -6,7 +6,8 @@ export default function Banner(){
     return(
         <>
     
-        <Row className='bannermaindivdev d-md-flex d-none justify-content-center ' style={{backgroundImage:"url('Image/wave (14).svg')"}}>
+        <Row className='bannermaindivdev d-md-flex d-none justify-content-center '
+         style={{backgroundImage:"url('Image/wave (14).svg')"}}>
         <Col md={12}>
         <div className='maindevtextdiv'>
         <div>

@@ -8,3 +8,13 @@
     justify-content: center;
     align-items: center;
 }
+.video{
+    width: 460px ;
+    height: 255px;
+}
+@media screen  and (max-width:786px) {
+    .video{
+   display: none;
+    }
+    
+}

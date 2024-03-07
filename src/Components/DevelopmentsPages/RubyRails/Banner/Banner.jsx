@@ -22,7 +22,7 @@ export default function Banner(){
      
         </Col>
         </Row>
-        <Row className='d-flex justify-content-center align-items-center'
+        <Row className='d-flex  d-sm-none justify-content-center align-items-center'
 
       
         >
