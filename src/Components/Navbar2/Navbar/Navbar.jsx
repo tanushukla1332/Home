@@ -100,6 +100,9 @@ const handleAboutMenu=()=>{
         {!showAboutSection && (
           <IoIosArrowForward
             className="text-[#5e5e5e] cursor-pointer"
+
+
+
             onClick={handleAboutMenu}
             size={25}
           />
@@ -110,7 +113,7 @@ const handleAboutMenu=()=>{
         <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
           <div className="flex items-center">
             <div className="w-96">
-          <span className="flex items-center px-3 gap-1 pt-3"> 
+          <span className="flex items-center justify-center pt-3"> 
           {showAboutSection && (
               <IoIosArrowBack
                 className="text-[#5e5e5e]  cursor-pointer"
@@ -120,9 +123,9 @@ const handleAboutMenu=()=>{
             )}
             <h6 className="text-[#3b7fbf]   font-[550] ">AboutUs</h6>
             </span> 
-              <ul>
-              <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] pb-2'>Career</li> </Link>
-              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e]'>Our Clients</li> </Link>
+              <ul className="flex flex-col items-center justify-center">
+              <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Career</li> </Link>
+              <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline">  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Our Clients</li> </Link>
                 {/* Add other submenu items as needed */}
               </ul>
             </div>
@@ -153,9 +156,9 @@ const handleAboutMenu=()=>{
     </div>
     {showServicesSection && (
       <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <div className="w-96">
-        <span className="flex items-center px-3  pt-3"> 
+        <span className="flex items-center pt-3 justify-center"> 
         {showServicesSection && (
             <IoIosArrowBack
               className="text-[#5e5e5e]  cursor-pointer"
@@ -165,9 +168,9 @@ const handleAboutMenu=()=>{
           )}
           <h6 className="font-[550] text-[#3b7fbf] text-[20px]">Services</h6>
           </span> 
-          <div className="px-5">
-          <div className="flex items-center gap-5">
-            <h6 className="py-1">Design</h6> 
+          <div className="">
+          <div className="flex items-center justify-center ">
+            <h6 className=" py-2">Design</h6> 
             {showServicesSection && (
               <IoIosArrowForward
                 className="text-[#5e5e5e] cursor-pointer"
@@ -178,9 +181,9 @@ const handleAboutMenu=()=>{
             )}
             {showsubMenuDesign && (
               <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <div className="w-96">
-              <span className="flex items-center px-3 gap-1 pt-3"> 
+              <span className="flex items-center pt-3 justify-center"> 
               {showsubMenuDesign && (
                   <IoIosArrowBack
                     className="text-[#5e5e5e]  cursor-pointer"
@@ -190,9 +193,9 @@ const handleAboutMenu=()=>{
                 )}
                 <h6 className="text-[#3b7fbf] font-[550] ">Design</h6>
                 </span> 
-                  <ul>
-                  <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'> UI/UX Design</li> </Link>
-                  <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Web Design</li> </Link>
+                  <ul className="d-flex justify-center items-center flex-col">
+                  <Link  to ="/ui" className="navlinkmenutitle no-underline hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'> UI/UX Design</li> </Link>
+                  <Link  to ="/" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Web Design</li> </Link>
                     {/* Add other submenu items as needed */}
                   </ul>
                 </div>
@@ -200,8 +203,8 @@ const handleAboutMenu=()=>{
             </div>
                         )}
           </div>
-          <div className="flex items-center gap-2">
-          <h6 className="py-1">Ecommerece Solution</h6> 
+          <div className="flex items-center justify-center">
+          <h6 className="py-2">Ecommerece</h6> 
           { !showsubMenuEcommerce && (
             <IoIosArrowForward
               className="text-[#5e5e5e] cursor-pointer"
@@ -212,9 +215,9 @@ const handleAboutMenu=()=>{
           )}
           {showsubMenuEcommerce && (
             <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <div className="w-96">
-            <span className="flex items-center px-3 gap-1 pt-3"> 
+            <span className="flex items-center pt-3 justify-center"> 
             {showsubMenuEcommerce && (
                 <IoIosArrowBack
                   className="text-[#5e5e5e]  cursor-pointer"
@@ -222,9 +225,9 @@ const handleAboutMenu=()=>{
                   size={25}
                 />
               )}
-              <h6 className="text-[#3b7fbf]   font-[550]">Ecommerece Solution</h6>
+              <h6 className="text-[#3b7fbf]   font-[550] ">Ecommerece</h6>
               </span> 
-              <ul>
+              <ul className="flex items-center justify-center flex-col">
               <Link  to ="/career" className="navlinkmenutitle no-underline hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2' > Shopify</li> </Link>
               <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'> OpenKart</li> </Link>
               <Link  to ="/clients" className="navlinkmenutitle no-underline  hover:no-underline" onClick={handleActive}>  <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] py-2'>Woocommerce</li> </Link>
@@ -237,8 +240,8 @@ const handleAboutMenu=()=>{
           </div>
                       )}
         </div>
-        <div className="flex items-center gap-2">
-        <h6 className="py-1">Development</h6> 
+        <div className="flex items-center justify-center ">
+        <h6 className="py-2">Development</h6> 
         {!showsubMenuDevelopment && (
           <IoIosArrowForward
             className="text-[#5e5e5e] cursor-pointer"
@@ -249,9 +252,9 @@ const handleAboutMenu=()=>{
         )}
         {showsubMenuDevelopment && (
           <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <div className="w-96">
-          <span className="flex items-center px-3 gap-1 pt-3"> 
+          <span className="flex items-center pt-3  justify-center"> 
           {showsubMenuDevelopment && (
               <IoIosArrowBack
                 className="text-[#5e5e5e]  cursor-pointer"
@@ -261,7 +264,7 @@ const handleAboutMenu=()=>{
             )}
             <h6 className="text-[#3b7fbf]   font-[550]">Development</h6>
             </span> 
-            <ul>
+            <ul className="flex items-center justify-center flex-col">
             
             <Link to='/development' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[15px] font-medium
      hover:no-underline   py-2'  onClick={handleActive} ><li className="py-2">Website Development</li> </Link>
@@ -274,7 +277,7 @@ const handleAboutMenu=()=>{
      hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Informative Websit</li> </Link>
 
      <Link to='/Php' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium
-     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Html & Css Website</li> </Link>
+     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Php Development</li> </Link>
 
      <Link to='/htmlPage' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]    text-[15px] font-medium
     hover:no-underline  py-2 '  onClick={handleActive}> <li className="py-2">Html & Css Website</li></Link>
@@ -306,8 +309,8 @@ const handleAboutMenu=()=>{
         </div>
                     )}
       </div>
-      <div className="flex items-center gap-3">
-            <h6 className="py-1">Digital Marketing</h6> 
+      <div className="flex items-center justify-center ">
+            <h6 className="py-2">Digital Marketing</h6> 
             { !showsubMenuDigital && (
               <IoIosArrowForward
                 className="text-[#5e5e5e] cursor-pointer"
@@ -318,9 +321,9 @@ const handleAboutMenu=()=>{
             )}
             {showsubMenuDigital && (
               <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <div className="w-96">
-              <span className="flex items-center px-3 gap-1 pt-3"> 
+              <span className="flex items-center  pt-3 justify-center"> 
               {showsubMenuDigital && (
                   <IoIosArrowBack
                     className="text-[#5e5e5e]  cursor-pointer"
@@ -330,12 +333,14 @@ const handleAboutMenu=()=>{
                 )}
                 <h6 className="text-[#3b7fbf] font-[550] ">Digital Marketing</h6>
                 </span> 
-                  <ul>
+                  <ul  className="flex items-center justify-center flex-col">
                   <Link to='/seo' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
-                  text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2">Search Engine Optimization</li>  </Link>
+                  text-[15px] font-medium  hover:no-underline'   onClick={handleActive} >
+                   <li className="py-2">Search Engine Optimization</li>  </Link>
              
                   <Link to='/sem' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  
-                  text-[15px] font-medium hover:no-underline   '  onClick={handleActive}> <li className="py-2">Search Engine Marketing</li> </Link>
+                  text-[15px] font-medium hover:no-underline   '  onClick={handleActive}>
+                   <li className="py-2">Search Engine Marketing</li> </Link>
              
                   <Link to='/socialMediaOpt' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] text-[15px] font-medium hover:no-underline   '  onClick={handleActive} > <li className="py-2">Social Media Optimization</li> </Link>
                   <Link to='/socialMediaMarketing' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]
@@ -348,8 +353,8 @@ const handleAboutMenu=()=>{
             </div>
                         )}
       </div>
-          <div className="flex items-center gap-3">
-            <h6 className="py-1">Game Development</h6> 
+          <div className="flex items-center  justify-center">
+            <h6 className="py-2">Game Development</h6> 
             { !showsubMenuGame && (
               <IoIosArrowForward
                 className="text-[#5e5e5e] cursor-pointer"
@@ -362,7 +367,7 @@ const handleAboutMenu=()=>{
               <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
               <div className="flex items-center">
                 <div className="w-96">
-              <span className="flex items-center px-3 gap-1 pt-3"> 
+              <span className="flex items-center pt-3"> 
               {showsubMenuGame && (
                   <IoIosArrowBack
                     className="text-[#5e5e5e]  cursor-pointer"
@@ -387,8 +392,8 @@ const handleAboutMenu=()=>{
             </div>
                         )}
           </div>
-          <div className="flex items-center gap-3">
-          <h6 className="py-1">Maintenace & Support</h6> 
+          <div className="flex items-center justify-center ">
+          <h6 className="py-2 text-center"> Maintenace Support </h6> 
           { !showsubMenuMaintenance && (
             <IoIosArrowForward
               className="text-[#5e5e5e] cursor-pointer"
@@ -399,19 +404,19 @@ const handleAboutMenu=()=>{
           )}
           {showsubMenuMaintenance && (
             <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <div className="w-96">
-            <span className="flex items-center px-3 gap-1 pt-3"> 
+            <span className="flex items-center pt-3 justify-center"> 
             {showsubMenuMaintenance && (
                 <IoIosArrowBack
-                  className="text-[#5e5e5e]  cursor-pointer"
+                  className="text-[#5e5e5e]  cursor-pointer "
                   onClick={toggleMaintenace}
                   size={25}
                 />
               )}
-              <h6 className="text-[#3b7fbf] font-[550] ">Maintenace & Support</h6>
+              <h6 className="text-[#3b7fbf] font-[550] ">Maintenace Support</h6>
               </span> 
-                <ul>
+                <ul  className="flex items-center justify-center flex-col">
                 <Link to='/' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
                 text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2"> 
                 Website Maintenance
@@ -429,7 +434,7 @@ const handleAboutMenu=()=>{
           </div>
                       )}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center  justify-center">
         <h6 className="py-1">Mobile Applications</h6> 
         {!showsubMenuMobile && (
           <IoIosArrowForward
@@ -441,9 +446,9 @@ const handleAboutMenu=()=>{
         )}
         {showsubMenuMobile && (
           <div className="absolute top-0 right-0 w-full h-screen bg-white z-50">
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <div className="w-96">
-          <span className="flex items-center px-3 gap-1 pt-3"> 
+          <span className="flex items-center  pt-3 justify-center"> 
           {showsubMenuMobile && (
               <IoIosArrowBack
                 className="text-[#5e5e5e]  cursor-pointer"
@@ -453,7 +458,7 @@ const handleAboutMenu=()=>{
             )}
             <h6 className="text-[#3b7fbf] font-[550] ">Mobile Applications</h6>
             </span> 
-              <ul>
+              <ul  className="flex items-center justify-center flex-col">
               <Link to='/Android' className='no-underline hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]   
               text-[15px] font-medium  hover:no-underline'   onClick={handleActive} > <li className="py-2"> 
          Android App
