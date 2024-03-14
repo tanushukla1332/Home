@@ -45,8 +45,7 @@ export default function UI(){
         <div className='d-md-flex align-items-center justify-content-center gap-5'>
         <div>
         <h2 className='hed2 text-center'>User Centricity</h2>
-        <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='para text-left'>In the world of constantly evolving digital designs, one principle remains unmoved and certain: user centricity. At Razobyte, we place this principle at the very core of our UI/UX design philosophy. Every design decision is meticulously shaped by an in-depth understanding of user needs, preferences, and behaviors. Through comprehensive user research, persona development, and iterative testing, we forge designs that are not just visually appealing but also intuitive, accessible, and deeply resonant with your target audience.</p>
 
 
         </div>
@@ -65,8 +64,10 @@ export default function UI(){
         </div>
         <div>
         <h2 className='hed2 text-center'>Smooth User Journey</h2>
-        <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='para text-left'>A smooth user journey is the core of a success in this  digital era where internet reigns supreme. It's the difference between frustration and delight, confusion and clarity, disengagement and conversion. A smooth user journey can be the difference between a recurring client and a bounced user.</p>
+        <p className='para text-left'>
+
+        At Razobyte, we carefully craft every aspect of the user journey, ensuring a seamless progression from entry point to desired outcome. Through intuitive navigation structures, strategically placed calls-to-action, and fluid interaction design, we pave the way for users to effortlessly traverse your digital ecosystem, fostering deeper engagement and driving tangible results.</p>
 
 
         </div>
@@ -82,8 +83,10 @@ export default function UI(){
         <div className='d-md-flex align-items-center justify-content-center gap-5'>
         <div>
         <h2 className='hed2 text-center'>Sleek Design</h2>
-        <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='para text-left'>Sleek design isn't merely about aesthetics – it's about marrying form with function in a harmonious union. Our team of designers at Razobyte specializes in creating sleek, modern designs that transcend visual appeal, enhancing usability and fostering emotional connections. 
+</p>
+<p className='para text-left'>
+        From specially crafted custom layouts to elegant typographic choices, every design element is thoughtfully curated to contribute to a polished and professional aesthetic that resonates with your audience and reinforces your brand identity.</p>
 
 
         </div>
@@ -102,8 +105,8 @@ export default function UI(){
         </div>
         <div>
         <h2 className='hed2 text-center'>Custom looks</h2>
-        <p className='para text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='para  text-left'>In a world filled with generic templates and cookie-cutter designs, standing out requires authenticity and originality. That's why we offer custom design solutions tailored to the specific needs and branding requirements of your business. Whether you're aiming for bold and daring or minimalist and refined, our designers collaborate closely with you to breathe life into your vision. 
+        With custom looks that authentically reflect your brand identity and deeply resonate with your audience, you'll carve out a distinct niche in the digital world, setting yourself apart as a symbol of innovation and creativity.</p>
 
 
         </div>

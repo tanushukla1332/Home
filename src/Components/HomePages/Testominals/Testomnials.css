@@ -1,10 +1,15 @@
 /* Testiominals */ 
 .card-main-Testominals{
     display:flex!important;
-    justify-content: center!important;
+align-items: center !important;
     border: none!important;
-   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.281)!important;
+   box-shadow:5px 3px 5px 3px rgba(0, 0, 0, 0.068)!important;
    background-color: #FFFF!important;
+   width:550px !important;
+   max-height: 300px !important;
+   min-height:200px !important;
+   height: 250px !important;
+   padding:10px;
 
 }
 .cardinnerdata{
@@ -18,15 +23,8 @@
     max-width: 250px !important;
     border-radius: 50%!important;
 }
-.review{
-    padding: 0px;
-}
-
 .review h4{
    position: relative;
-   font-size: 22px;
-   color: #5e5e5e;
-   font-weight:600;
  
 }
 .review h4::before{
@@ -39,29 +37,14 @@
     width: 100%;
     background-color:#5e5e5e5d;
 }
-.review h5{
-    font-size: 14px;
-    color: #5e5e5e;
-}
-.testpara{
-    font-size: 14px;
-    color: #5e5e5e;
-}
 
-
-.review img{
-    margin-top: 0px;
-    width: 20px;
-    height: 20px;
-
-}
 .testominialsindicators>div>a>.carousel-control-prev-icon {
     border-radius: 50px!important;
     border: 2px solid white!important;
     background-color:transparent!important;
     padding: 10px; 
     position: absolute;
-    left:-5px;
+    left:-45px;
 }
 .testominialsindicators>div>a>.carousel-control-next-icon{
     border-radius: 50px!important;
@@ -69,12 +52,35 @@
     background-color:transparent!important;
     padding: 10px; 
     position: absolute;
-    right: -5px;
+    right: -45px;
 
 }
- @media screen and  (max-width: 576px) { 
+@media screen and (max-width:768px) and (min-width:576px) {
+    .card-main-Testominals{
+       width:250px !important;
+       max-height: 300px !important;
+       min-height: 200px !important;
+     
+    }
+    .cardinnerdata{
+        gap: 20px;
+    }
+    .testominialsindicators>div>a>.carousel-control-next-icon {
+        display: none!important;
+    }
+    .testominialsindicators>div>a>.carousel-control-prev-icon {
+        display: none!important;
+    }
+
+    
+}
+ @media screen and (max-width: 576px) { 
 .cardinnerdata{
     gap: 50px;
+}
+.card-main-Testominals{
+    width: 300px !important;
+    height: 240px !important;
 }
 
 }

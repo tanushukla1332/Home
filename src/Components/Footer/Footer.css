@@ -14,10 +14,8 @@
     background-color: #3B7FBF;
     border: 1px solid white;
     border-radius:5px;
-    margin-top: 17px;
-    font-weight: 600px;
+   font-weight: 600px;
     padding: 5px;
-    width: 28%;
 }
 .fsbtn:hover{
     outline: none;
@@ -26,27 +24,10 @@
     background-color: white;
     border: 1px solid white;
     border-radius:5px;
-    margin-top: 17px;
     font-weight:bold;
 }
-.Companytext{
-    position: relative;
-    text-transform: uppercase;
 
-}
-.Companytext::after{
-    background-color:rgba(255, 255, 255, 0.493);
-    display: block;
-    width: 80%;
-    height: 1px;
-    content: "";
-    position: absolute;
-    margin-right: 75px;
-    right: 0;
-    top: 65%;
-    z-index: 1;
-    text-align: center;
-}
+
 .Companytext2{
     position: relative;
     text-transform: uppercase;
@@ -55,7 +36,7 @@
 .Companytext2::after{
     background-color:rgba(255, 255, 255, 0.493);
     display: block;
-    width:74.5%;
+    width:76.5%;
     height: 1px;
     content: "";
     position: absolute;
@@ -89,35 +70,25 @@
    margin-top: 20px;
 
 }
-.link ul{
+.link{
     justify-content: center;
     align-items: center;
-    gap:100px
+    gap:60px
   
 }
-.link ul>li{
-    justify-content: center;
-    align-items: center;
 
-  
-    
-}
-.link ul li {
+.link  {
     list-style: none;
     cursor: pointer;
     color: white;
     text-transform: capitalize;
 }
-.link ul li:hover {
+.link :nth-child(n-5):hover {
     text-decoration:underline;
-    color: rgba(255, 255, 255, 0.603);
+    color: rgba(255, 255, 255, 0.603) !important; 
 
 }
-.mainServicesDiv{
-    justify-content: center;
-    align-items: center;
-    gap:40px
-}
+
 .AdresssectionText{
     justify-content: center;
     align-items:center;
@@ -207,19 +178,12 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    .Companytext::after{
-        width:76%;
-
-    }
-    .link ul{
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .link{
         justify-content: center;
         align-items: center;
         gap:40px
       
-    }
-    .mainServicesDiv{
-        gap:20px
     }
  .Companytext2::after{
     width:72%;
@@ -237,15 +201,13 @@
         width:70%;
 
     }
-    .link ul{
+    .link{
         justify-content: center;
         align-items: center;
         gap:20px
       
     }
-    .mainServicesDiv{
-        gap:10px
-    }
+   
  .Companytext2::after{
     width:65%;
 
@@ -257,83 +219,27 @@
    }
 
 }
-@media  screen and (max-width: 767.98px) and (min-width: 575.98px) {
-    .Companytext::after{
-        width:68%;
-
-    }
-    .link ul{
-        justify-content: center;
-        align-items: center;
-        gap:20px
+@media  screen and (max-width:768px) and (min-width:375px) {
+    .link {
+        justify-content:start;
+        align-items: self-start;
+        gap:10px
       
     }
     .mainServicesDiv{
         gap:10px
     }
  .Companytext2::after{
-    width:60%;
-
-
-    }
-
-.Companytext3::after{
-   width:68%;
-   }
-
-} 
-    
+   width:40%;
  
- @media screen and  (max-width: 575.98px) { 
-    .Companytext::after{
-        width:60%;
+    }
 
-    }
-    .link ul{
-        justify-content: center;
-        align-items: center;
-        gap:20px
-      
-    }
-    .mainServicesDiv{
-        gap:10px
-    }
- .Companytext2::after{
-    width:50%;
-
-
-    }
 .Companytext3::after{
-   width:60%;
+width:53%;
    }
+
 } 
-@media screen and (max-width:360px){
-    .Companytext::after{
-   display: none;
-    }
- .Companytext2::after{
-    display: none;
-
-
-    }
-.Companytext3::after{
-display: none;
-   }
-
-
-}
-@media screen and (max-width:786px) {
-    .fsbtn{
-        outline: none;
-        border: none;
-        color: white;
-        background-color: #3B7FBF;
-        border:none;
-        border-radius:0px;
-        margin-top: 20px;
-        font-weight: 600px;
-        padding: 5px;
-        width:auto;
-    }
     
-}
+
+
+

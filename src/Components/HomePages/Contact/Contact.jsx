@@ -17,7 +17,7 @@ export default function Contact() {
          >
          <div>
          <h2 className=' hed2 text-center'>Let's Talk To Our Experts</h2>
-         <p className='subheading-sections'>Let's Talk To Our Experts Let's Talk To Our Experts</p>
+         <p className='subheading-sections'>Take the first step towards success</p>
          </div>
     
         <Col md={5}>
@@ -52,29 +52,19 @@ export default function Contact() {
                         <FormCheck type="checkbox" label="Remember Me " className='form-check-mian-page'>
                         </FormCheck>
                     </FormGroup>
-                    <div className='w-100  d-flex justify-content-center align-items-center'>
-                        <Button type="submit" variant='outline-dark' className='my-4 px-5 btnsubmit'
+                    <div className='w-100 pt-4 d-flex justify-content-center align-items-center'>
+                        <Button type="submit" variant='outline-dark' className='btnsubmit'
                             style={{ width: "80%" }}>Submit</Button>
-                    </div>
-
-                    <div className='text-center'>
-                        <p className='sm mx-5'>if you don't have an account <span className=' text-decoration-underline ' style={{color:"#3B7FBF", cursor:"pointer"}}>Go with </span> </p>
-                        <hr />
-                        <p className='sm text-center'>or</p>
-                        <div className='d-flex justify-content-center align-items-center gap-2 '>
-                            <a href="https://maps.app.goo.gl/vTXfDoKJ9iTTwVvz9" target="_blank" >
-                            <FcGoogle size={32} /></a>
-                            <a href='https://www.linkedin.com/company/razobyte/?originalSubdomain=in' target="_blank" ><FaLinkedin size={32} color='#3B7FBF' /></a>
-                            <a href='https://www.instagram.com/razobyte/' target="_blank" >
-                            <img src="Image/instagram (1) 1.png" alt="" className='instra img-fluid' />
-                            </a>
-                            <a href='https://www.instagram.com/razobyte/' target="_blank" >
-                            <img src="Image/Twitter_new_X_logo Final.png" alt=""
-                             className='img-fluid w-[35px] rounded-1 ' /></a>
-                            <a href='https://www.facebook.com/razobyte/' target="_blank">
-                            <FaFacebook size={37} color='#3B7FBF'  /></a>
-                        </div>
-                    </div>
+                     
+                    </div>  
+                    <p className='para text-center'>or</p>                  
+                      <div className='flex justify-center align-items-center cursor-pohvinter gap-3'>
+                      <img src="Image/whatsap.png" alt="" className='img-fluid w-10 ' />
+                      <img src="Image/msg1 (1).png" alt="" className='img-fluid w-10' />
+                      <img src="Image/msg1 (2).png" alt="" className='img-fluid w-10' />
+                      <p className='para text-[#3b7fbf] text-center flex items-center pt-3'>8448158188</p>
+                      </div>
+           
                 </Form>
             </div>
         </Col>
@@ -87,12 +77,12 @@ export default function Contact() {
           backgroundRepeat:"no-repeat",backgroundSize:"155px 105px",backgroundPosition:"center"}} 
           className='pt-5'>
          <div className='d-flex justify-content-center align-items-center'>
-          <img src="/Image/prtn1 (4).png" alt="" className='img-fluid' />
-          <img src="Image/prtn1 (1).png" alt="" className='img-fluid' />
+          <img src="/Image/prtn1 (4).png" alt="" className='img-fluid w-50' />
+          <img src="Image/prtn1 (1).png" alt="" className='img-fluid w-50' />
           </div>
           <div className='d-flex justify-content-center align-items-center'>
-          <img src="/Image/prtn1 (3).png" alt="" className='img-fluid' />
-          <img src="Image/prtn1 (2).png" alt="" className='img-fluid' />
+          <img src="/Image/prtn1 (3).png" alt="" className='img-fluid w-50' />
+          <img src="Image/prtn1 (2).png" alt="" className='img-fluid w-50' />
           </div>
           </div>
          

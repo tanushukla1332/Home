@@ -15,6 +15,7 @@
     border-radius: 10px;
     padding: 20px 15px;
     width:230px;
+    height: 300px;
 }
 .php-section-services2{
     background-color: white;
@@ -23,8 +24,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     width:230px;
+    height:250px;
 
 }
 .php-section1{

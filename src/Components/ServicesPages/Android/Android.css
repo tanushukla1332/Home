@@ -19,7 +19,7 @@
     align-items: center; 
     height: 200px;
     padding: 20px;
-min-width:230px;
+    min-width:230px;
     transition: 0.3ms ease-in;
 }
 .android-btn:hover{
@@ -27,3 +27,14 @@ min-width:230px;
     background-color: white !important;
     border: 1px solid #5e5e5e91!important;
 } 
+@media screen and (max-width:786px) {
+    .And-section1{
+        border-radius:5px;
+        align-items: center; 
+        height: 160px;
+        padding: 10px;
+        min-width:110px;
+        max-width: 140px;
+    }
+    
+}

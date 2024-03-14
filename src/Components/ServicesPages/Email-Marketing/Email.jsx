@@ -175,7 +175,6 @@ export default function Email(){
             <div className='custom2-shadow'>
                 <img src="/Image/Search-projects2.png" alt="" className='img-fluid w-50' />
                 <p className='para pt-2 text-center cursor-pointer' onClick={() => navigate('/socialMedia')}> Social Media Strategy</p>
-
             </div>
         </Col>
         <Col md={5} className='d-flex justify-content-center align-items-center mb-3 '>

@@ -6,14 +6,15 @@ import Marquee from 'react-fast-marquee';
 export default function IOS(){
     return(
         <>
-        <Row className='d-flex items-center justify-center py-5'
-        style={{backgroundImage:"url('Image/Ios-banner.png')",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"60vh"}}
+        <Row className='d-flex items-center justify-center'
+      
         >
-        <Col md>
-        <div className='col-md-5'>
+        <Col md className='px-0'>
+        <img src="Image/Ios-banner.png" alt="" className='img-fluid'/>
+        <div className='absolute top-10 w-50 left-5'>
         <h1 className='hed1 text-[#3b7fbf]'>Hire iOS/iPhone App Developers</h1>
-        <p className='para text-black font-[600]'>Hire  top Ios/Iphone App Devlopers and Programmers to build high quality iphone/ipad app with a truly immersive user experience</p>
-         <div className='flex'>
+        <p className='para text-black d-md-flex d-none'>Hire  top Ios/Iphone App Devlopers and Programmers to build high quality iphone/ipad app with a truly immersive user experience</p>
+         <div className='flex d-md-flex d-none'>
            <Button className='android-btn'>Get in Touch</Button>
             </div>
 
@@ -86,24 +87,24 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <Carousel className='phpindicators'>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (4).png" alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (4).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Team 
         Augmentation</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (3).png" alt="" className='img-fluid' />
+        <div className='php-section-services  d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (3).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Quick time to
         Market</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (2).png " alt="" className='img-fluid' />
+        <div className='php-section-services  d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (2).png " alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Skilled 
         Resources</h3>
         <p>Enhance the functionality and 
@@ -111,7 +112,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         seamless </p>
         </div>
         <div className='php-section-services'> 
-        <img src="Image/Ios1 (1).png" alt="" className='img-fluid' />
+        <img src="Image/Ios1 (1).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Cost 
         Savings</h3>
         <p>Enhance the functionality and 
@@ -124,8 +125,8 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         </Carousel.Item>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (4).png" alt="" className='img-fluid' />
+        <div className='php-section-services  d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (4).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Team 
         Augmentation</h3>
         <p>Enhance the functionality and 
@@ -133,23 +134,23 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         seamless </p>
         </div>
         <div className='php-section-services'> 
-        <img src="Image/Ios1 (3).png" alt="" className='img-fluid' />
+        <img src="Image/Ios1 (3).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Quick time to
         Market</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (2).png " alt="" className='img-fluid' />
+        <div className='php-section-services  d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (2).png " alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Skilled 
         Resources</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Ios1 (1).png" alt="" className='img-fluid' />
+        <div className='php-section-services  d-md-flex flex-col d-none'> 
+        <img src="Image/Ios1 (1).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Cost 
         Savings</h3>
         <p>Enhance the functionality and 
@@ -174,45 +175,46 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         quis nostrud exercitation ulla+*-mco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         <div className='d-md-flex  justify-content-center align-items-center gap-5 p-3'>
-        <div className='php-section1 my-3'>
-        <img src="Image/Ios2 (6).png" alt="" className='img-fluid' />
+        <div className='php-section1 my-3 '>
+        <img src="Image/Ios2 (6).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 pt-2 text-center' style={{color:"#3b7fbf"}}>iPhone App Strategy</h3>
         <p  className='para  text-center pt-2' >Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>
-        <div className='php-section1'>
-        <img src="Image/Ios2 (5).png" alt="" className='img-fluid '  />
+        <div className='php-section1 my-3'>
+        <img src="Image/Ios2 (5).png" alt="" className='img-fluid   w-50'  />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>iPhone App Design</h3>
         <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>
-        <div className='php-section1'>
-        <img src="Image/Ios2 (4).png" alt="" className='img-fluid ' />
+        <div className='php-section1 my-3'>
+        <img src="Image/Ios2 (4).png" alt="" className='img-fluid   w-20'  />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>Custom iPhone App 
         Development</h3>
         <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>
+   
         </div>
         <div className='d-md-flex  d-none justify-content-center align-items-center gap-5 p-3'>
         <div className='php-section1'>
-        <img src="Image/Ios2 (3).png" alt="" className='img-fluid' />
+        <img src="Image/Ios2 (3).png" alt="" className='img-fluid  w-50' />
         <h3 className='hed3 pt-2' style={{color:"#3b7fbf"}}>iPhone App Testing</h3>
         <p  className='para text-center pt-2' >Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
         </div>
         <div className='php-section1 '>
-        <img src="Image/Ios2 (2).png" alt="" className='img-fluid '  />
+        <img src="Image/Ios2 (2).png" alt="" className='img-fluid  w-20'  />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>iPhone Support and 
         Maintenance</h3>
         <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
         </div>
         <div className='php-section1'>
-        <img src="Image/Ios2 (1).png" alt="" className='img-fluid ' />
+        <img src="Image/Ios2 (1).png" alt="" className='img-fluid w-50 ' />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>iOS App Migration</h3>
         <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
@@ -237,7 +239,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <Carousel className='phpindicators'>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
     
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Direct Point of 
         Contact</h3>
@@ -253,14 +255,14 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Build your Own 
         Team</h3>
         <p className='para'>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Technical 
         Expertise</h3>
         <p className='para'>Enhance the functionality and 
@@ -281,7 +283,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
    
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Build your 
         Own Team</h3>
@@ -289,14 +291,14 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Build your Own 
         Team</h3>
         <p className='para'>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col '> 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Technical 
         Expertise</h3>
         <p className='para'>Enhance the functionality and 
@@ -320,21 +322,21 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <p className='para text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ulla+*-mco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <div className='d-md-flex  d-none justify-content-center align-items-center gap-5 p-3'>
+        <div className='d-md-flex  justify-content-center align-items-center gap-5 p-3'>
         <div className='php-section1'>
-        <img src="Image/Ios3 (1).png" alt="" className='img-fluid'/>
-        <h3 className='hed3 pt-2' style={{color:"#3b7fbf"}}>Hidden BrainsManaged Team</h3>
+        <img src="Image/Ios3 (1).png" alt="" className='img-fluid w-50'/>
+        <h3 className='hed3 pt-2  text-center' style={{color:"#3b7fbf"}}>Hidden BrainsManaged Team</h3>
         <p  className='para text-center pt-2' >Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
         </div>
         <div className='php-section1 '>
-        <img src="Image/Ios3 (2).png" alt="" className='img-fluid ' style={{width:"100px"}} />
+        <img src="Image/Ios3 (2).png" alt="" className='img-fluid w-50 '  />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>ClientManaged Team</h3>
         <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
         </div>
         <div className='php-section1'>
-        <img src="Image/Ios3 (3).png" alt="" className='img-fluid ' style={{width:"100px"}} />
+        <img src="Image/Ios3 (3).png" alt="" className='img-fluid  w-50'  />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>Hybrid Model</h3>
         <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
         printing and typesetting industry.Lorem</p>
@@ -377,29 +379,29 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <h3 className='hed2 text-center' >Hire Dedicated Android App Developers In 5 Simple Steps</h3>
         <p className='para text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ulla+*-mco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div className='d-md-flex justify-content-center align-items-center gap-4 '>
+        <div className='d-flex justify-content-center align-items-center gap-4 '>
         <div className='And-section1'>
-        <img src="Image/Andro7 (5).png" alt="" className='img-fluid' />
+        <img src="Image/Andro7 (5).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 pt-2 text-center'>Drop anInquiry</h3>
    
         </div>
         <div className='And-section1 '>
-        <img src="Image/Andro7 (4).png" alt="" className='img-fluid'/>
+        <img src="Image/Andro7 (4).png" alt="" className='img-fluid  w-50'/>
         <h3 className='hed3  pt-2 text-center'>Consult WithOur Experts</h3>
         
         </div>
         <div className='And-section1'>
-        <img src="Image/Andro7 (3).png" alt="" className='img-fluid ' />
-        <h3 className='hed3  pt-2 text-center' >Select Engagement Model</h3>
+        <img src="Image/Andro7 (3).png" alt="" className='img-fluid   w-50' />
+        <h3 className='hed3  pt-2 text-center' >Select Engag <br />ement Model</h3>
        
         </div>
-        <div className='And-section1'>
-        <img src="Image/Andro7 (2).png" alt="" className='img-fluid ' />
+        <div className='And-section1 d-md-flex d-none'>
+        <img src="Image/Andro7 (2).png" alt="" className='img-fluid  w-50 ' />
         <h3 className='hed3  pt-2 text-center'>Sign off andBegin Work</h3>
     
         </div>
-        <div className='And-section1'>
-        <img src="Image/Andro7 (1).png" alt="" className='img-fluid '  />
+        <div className='And-section1 d-md-flex d-none'>
+        <img src="Image/Andro7 (1).png" alt="" className='img-fluid   w-50'  />
         <h3 className='hed3  pt-2 text-center' >Scale Your 
         Team</h3>
      

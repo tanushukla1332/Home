@@ -366,12 +366,13 @@ figcaption{
 font-size:15px!important;
 letter-spacing:2px;
 font-weight: 450;
-text-align: justify;
+
+color: #5e5e5e;
 }
 .subheading-sections{
     font-size: 15px;
     color: #5e5e5e;
-    letter-spacing:2px;
+    letter-spacing:1px;
     font-weight: 450;
     text-align: center;
 }

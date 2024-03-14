@@ -22,7 +22,7 @@ export default function Blog() {
         }}>
                 <div className='text-center text-light'>
                     <h3 className='hed2 '>Blogs</h3>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, optio?</p>
+                    <p className='para'>Take a peak inside our expert’s minds</p>
                 </div>
                 <Col md={12} className='pb-3 d-flex justify-content-center align-items-center 
                 blogsindicators'>

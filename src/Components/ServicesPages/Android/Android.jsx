@@ -9,15 +9,16 @@ import Testominials from '../../HomePages/Testominals/Testomnials';
 export default function Android(){
     return(
         <>
-        <Row className='d-flex items-center justify-center py-5'
-        style={{backgroundImage:"url('Image/Ios-1.png')",backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"60vh"}}
+        <Row className='d-flex items-center justify-center'
+       
         >
-        <Col md>
-        <div className='col-md-5'>
+        <Col md className='px-0'> 
+        <img src="Image/Ios-1.png" alt=""  className='img-fluid'/>
+        <div className='absolute top-5  w-50 left-5'>
         <h1 className='hed1 text-[#3b7fbf]'>Hire Android App Developers</h1>
         <p className='para text-black font-[600]'>Hire Android Developers and Programmers,who can take your app idea from concept to reality</p>
          <div className='flex'>
-           <Button className='android-btn '>Get in Touch</Button>
+           <Button className='android-btn d-md-flex d-none '>Get in Touch</Button>
             </div>
 
 
@@ -88,23 +89,23 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <Carousel className='phpindicators'>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services'> 
-        <img src="Image/Andro (4).png" alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'>  
+        <img src="Image/Andro (4).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Focus on Core
         Processess</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Andro (3).png" alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'> 
+        <img src="Image/Andro (3).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Flexibili</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Andro (2).png " alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'> 
+        <img src="Image/Andro (2).png " alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Risk
         Mangement</h3>
         <p>Enhance the functionality and 
@@ -112,7 +113,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         seamless </p>
         </div>
         <div className='php-section-services'> 
-        <img src="Image/Andro (1).png" alt="" className='img-fluid' />
+        <img src="Image/Andro (1).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Cost 
         Savings</h3>
         <p>Enhance the functionality and 
@@ -126,30 +127,30 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
         <div className='php-section-services'> 
-        <img src="Image/Andro (4).png" alt="" className='img-fluid' />
+        <img src="Image/Andro (4).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Focus on Core
         Processess</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Andro (3).png" alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'> 
+        <img src="Image/Andro (3).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Flexibili</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Andro (2).png " alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'> 
+        <img src="Image/Andro (2).png " alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Risk
         Mangement</h3>
         <p>Enhance the functionality and 
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
-        <img src="Image/Andro (1).png" alt="" className='img-fluid' />
+        <div className='php-section-services d-md-flex d-none flex-col'> 
+        <img src="Image/Andro (1).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Cost 
         Savings</h3>
         <p>Enhance the functionality and 
@@ -245,7 +246,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         </Col>
 
         </Row>
-        <Row className='bgphp py-4'>
+        <Row className='bgphp py-5'>
         <Col md={10} >
         <h3 className='hed3 text-white text-center'>Key Reasons to Hire Dedicated Android Developers</h3>
         <p className='text-white para text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -254,7 +255,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <Carousel className='phpindicators'>
         <Carousel.Item>
         <div className='d-flex justify-content-center align-items-center gap-4 py-4'> 
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
     
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Workforce 
         Reimagined</h3>
@@ -262,7 +263,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
    
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Direct Point of 
         Contact</h3>
@@ -277,7 +278,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Technical 
         Expertise</h3>
         <p>Enhance the functionality and 
@@ -298,7 +299,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
 
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Direct Point of 
         Contact</h3>
@@ -306,7 +307,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
      
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Build your Own 
         Team</h3>
@@ -314,7 +315,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         power of the website with 
         seamless </p>
         </div>
-        <div className='php-section-services'> 
+        <div className='php-section-services d-md-flex d-none flex-col'> 
    
         <h3 className='hed3 py-2' style={{color:"#3b7fbf"}}>Technical 
         Expertise</h3>
@@ -392,29 +393,29 @@ full-time, part-time or hourly basis to build secure and scalable applications f
         <h3 className='hed2 text-center' >Hire Dedicated Android App Developers In 5 Simple Steps</h3>
         <p className='para text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ulla+*-mco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div className='d-md-flex justify-content-center align-items-center gap-4 '>
-        <div className='And-section1'>
-        <img src="Image/Andro7 (5).png" alt="" className='img-fluid' />
+        <div className='d-flex justify-content-center align-items-center gap-4 '>
+        <div className='And-section1  d-md-flex d-none'>
+        <img src="Image/Andro7 (5).png" alt="" className='img-fluid w-50' />
         <h3 className='hed3 pt-2 text-center'>Drop anInquiry</h3>
    
         </div>
-        <div className='And-section1 '>
-        <img src="Image/Andro7 (4).png" alt="" className='img-fluid'/>
+        <div className='And-section1  d-md-flex d-none '>
+        <img src="Image/Andro7 (4).png" alt="" className='img-fluid w-50'/>
         <h3 className='hed3  pt-2 text-center'>Consult WithOur Experts</h3>
         
         </div>
-        <div className='And-section1'>
-        <img src="Image/Andro7 (3).png" alt="" className='img-fluid ' />
-        <h3 className='hed3  pt-2 text-center' >Select Engagement Model</h3>
+        <div className='And-section1 '>
+        <img src="Image/Andro7 (3).png" alt="" className='img-fluid w-50' />
+        <h3 className='hed3  pt-2 text-center' >Select Engage <br />ment Model</h3>
        
         </div>
         <div className='And-section1'>
-        <img src="Image/Andro7 (2).png" alt="" className='img-fluid ' />
+        <img src="Image/Andro7 (2).png" alt="" className='img-fluid  w-50' />
         <h3 className='hed3  pt-2 text-center'>Sign off andBegin Work</h3>
     
         </div>
         <div className='And-section1'>
-        <img src="Image/Andro7 (1).png" alt="" className='img-fluid '  />
+        <img src="Image/Andro7 (1).png" alt="" className='img-fluid  w-50'  />
         <h3 className='hed3  pt-2 text-center' >Scale Your 
         Team</h3>
      

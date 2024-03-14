@@ -23,6 +23,7 @@ export default function SocialMediaOpt() {
         </div>
         </Col>
 
+
         </Row>
                 <Row className='justify-content-center align-items-center py-lg-5  bgim'  style={{backgroundImage:"url('Image/blue.png')",backgroundPosition:"right",backgroundSize:"50%",backgroundRepeat:"no-repeat"}}>
                     <Col md={10} >
@@ -36,6 +37,7 @@ export default function SocialMediaOpt() {
                       <p className='para'>In the current age of Social Media dominance the regular random post here and there isn’t going to make the cut.</p>
                      
                        <p className='para'> So let’s dive into the depth of Social Media to understand what can make you stand out in the modern world.</p>
+                      
                         
 
                         

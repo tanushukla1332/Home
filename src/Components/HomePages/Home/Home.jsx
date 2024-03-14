@@ -51,11 +51,11 @@ export default function Home() {
                     }}>
                     <div className='text-center'>
                     <h2 className='hed2'>What’s the Raze about!</h2>
-                    <h2 className='subheading-sections'>Transforming Ideas into Digital Solutions</h2>
+                    <h2 className='para'>Transforming Ideas into Digital Solutions</h2>
                     </div>
-                    <Col md={4} className='d-md-flex align-items-center justify-content-center' 
+                    <Col md={5} className='d-md-flex' 
                   >
-                        <Image src='/Image/Home-2.png' alt='' fluid style={{ maxWidth: "100%", maxHeight: "105%", borderRadius: "4px",boxShadow:"2px 2px 2px 2px rgba(0,0,0,0.1)",backgroundColor:"#3b7fbf6c "}}
+                        <Image src='/Image/Home-2.png' alt='' fluid style={{borderRadius: "4px",boxShadow:"5px 2px 5px 2px rgba(0,0,0,0.0.168)",backgroundColor:"#3b7fbf6c "}}
                     
                         /></Col>
                     <Col md={5}>
@@ -69,13 +69,13 @@ export default function Home() {
     
                         }}>
                           
-                            <p className='sm'>A leading IT company that makes a perfect blend of 
+                            <p className='sm text-left'>A leading IT company that makes a perfect blend of 
                             Technology and Marketing. With the world getting 
                             smaller day by day, new trends are emerging much 
                             more frequently than usual, specially with AI riding 
                             the highest horses. So how can businesses ensure their 
                             website remain relevant?</p>
-                           <p className='sm'> The solution is simple, stay ahead of the trends! 
+                           <p className='sm text-left'> The solution is simple, stay ahead of the trends! 
                             There are 3 phases in which people hop on trends, 
                             Early Adopters, Followers, and the rest. The people who 
                             gain the most from trends are the early adopters, and 
@@ -108,13 +108,13 @@ export default function Home() {
                 </div>
                     <Col md ={6}>
                         <div className='spacing'>
-                            <p className='sm pt-2'>A leading IT company that makes a perfect blend of 
+                            <p className='sm text-left'>A leading IT company that makes a perfect blend of 
                             Technology and Marketing. With the world getting 
                             smaller day by day, new trends are emerging much 
                             more frequently than usual, specially with AI riding 
                             the highest horses. So how can businesses ensure their 
                             website remain relevant?</p>
-                           <p className='sm'> The solution is simple, stay ahead of the trends! 
+                           <p className='sm text-left'> The solution is simple, stay ahead of the trends! 
                             There are 3 phases in which people hop on trends, 
                             Early Adopters, Followers, and the rest. The people who 
                             gain the most from trends are the early adopters, and 
@@ -143,12 +143,12 @@ export default function Home() {
                     >
                     <div className='text-center'>
                         <h2 className='hed2 text-light'>Our Clients</h2>
-                        <p className='sm text-light text-center'>From startups to Fortune 500 companies,</p>
+                        <p className='para text-light text-center'>From startups to Fortune 500 companies,</p>
                     </div>
                     <Col md >
                         <Marquee>
                             <div className='allclients'>
-                                <div className='d-flex   ' >
+                                <div className='d-flex'>
                                     <img src="https://razobyte.com/wp-content/uploads/2019/04/image005-300x200.jpg" alt=" hello" className='img-fluid' />
                                 </div>
                                 <div className='d-flex '>

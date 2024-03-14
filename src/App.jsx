@@ -85,13 +85,6 @@ export default function App() {
           <Route path="/socialMediaMarketing" element={<SocialMediaMarketing/>}></Route>
           <Route path="/Android" element={<Android/>}></Route>
           <Route path="/iOS" element={<IOS/>}></Route>
-          
-
-
-
-      
-         
-        
         </Routes>
         <Footer/>
       </Container>
