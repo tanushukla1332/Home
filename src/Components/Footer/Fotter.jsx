@@ -51,7 +51,7 @@ export default function Footer() {
         <Col md ={10} >
         <h3 className="Companytext3 text-light hed3">
         <span className="text-light hed1 text-white">C</span>ompany</h3>
-          <ul className="d-flex para text-white justify-start link ml-[100px] ">
+          <ul className="d-flex para text-white justify-start link  md:ml-[100px] ">
             <li>Home</li>
             <li>About us</li>
             <li>Services</li>
@@ -68,7 +68,7 @@ export default function Footer() {
         <Col md={10} >
           <h3 className="Companytext3 text-light hed3 mt-[-20px]">
           <span className="text-light hed1">S</span>ervices</h3>
-          <div className='d-flex justify-start ml-[100px]'>
+          <div className='d-flex justify-start md:ml-[100px]'>
            <div className='d-md-flex  justify-center'>
            <div className="items-center justify-center">
            <ul className='para text-white link'>
@@ -123,10 +123,11 @@ export default function Footer() {
              <li>Mobile App Maintenace</li>
              <li>Domain & Hosting Maintenace</li>
              <li>Payment Gateway</li>
-             <li className=" pt-2 hed3 fw-bold text-white">Game Development</li>
-             <li>2D</li>
-             <li>3D</li>
-             <li>Meta Versa</li>
+
+             <li className=" pt-2 hed3 fw-bold text-white d-md-flex d-none">Game Development</li>
+             <li className='d-md-flex d-none'>2D</li>
+             <li className='d-md-flex d-none'>3D</li>
+             <li className='d-md-flex d-none'>Meta Versa</li>
            
            </ul>
          </div>
@@ -143,7 +144,7 @@ export default function Footer() {
       
       <Col md={10}>
       <h3 className="Companytext2 text-light hed3"><span className="text-light hed1">G</span>ET IN TOUCH</h3>
-      <div className='flex justify-center ml-[20px]'>
+      <div className='flex justify-center md:ml-[20px]'>
       <div className='col-md-5 flex flex-col justify-center'>
               <h3 className="text-light hed3"><span className="text-light hed1" style={{ opacity: '0.3' }}>G</span>urugram
                   </h3>
@@ -179,7 +180,8 @@ export default function Footer() {
       </Row>
       <Row className="bgsection justify-content-center align-items-center">
         <Col md={10}>
-          <div className='d-sm-flex  justify-content-center align-items-center text-light last gap-3'>
+          <div className='d-sm-flex  justify-content-start align-items-center text-light last gap-3 
+          md:ml-[100px]'>
           <p>© COPYRIGHT 2023 RAZOBYTE SOFTTECH. ALL RIGHTS RESERVED.</p>
           <p>Privacy Policy</p>
           <p className='d-flex align-items-center gap-1'><a href="mailto:razobyte.com" className="text-light"><CiMail  size={20}/></a>contact-us@razobyte.com</p>

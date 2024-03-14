@@ -71,8 +71,8 @@
 
 }
 .link{
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items:self-start;
     gap:60px
   
 }
@@ -182,7 +182,7 @@
     .link{
         justify-content: center;
         align-items: center;
-        gap:40px
+        gap:30px
       
     }
  .Companytext2::after{
@@ -196,15 +196,15 @@
    }
 
 }
-@media screen and (min-width: 768px) and (max-width: 991.98px) { 
+@media screen and (min-width: 768px) and (max-width: 1000px) { 
     .Companytext::after{
         width:70%;
 
     }
     .link{
-        justify-content: center;
-        align-items: center;
-        gap:20px
+        justify-content:start;
+        align-items:self-start;
+        gap:10px
       
     }
    
@@ -219,16 +219,14 @@
    }
 
 }
-@media  screen and (max-width:768px) and (min-width:375px) {
+@media  screen and (max-width:768px)  {
     .link {
         justify-content:start;
         align-items: self-start;
-        gap:10px
+        gap:7px
       
     }
-    .mainServicesDiv{
-        gap:10px
-    }
+    
  .Companytext2::after{
    width:40%;
  
