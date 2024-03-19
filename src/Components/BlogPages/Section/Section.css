@@ -1,10 +1,16 @@
 .inputfield{
-    border:1px solid rgba(59, 127, 191, 0.308)!important;
     box-shadow: none!important;  
     outline: none!important;  
-    font-size:19px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    border: 1px solid #3b7fbf52;
+    width: 960px !important;
+    height: 40px !important;
+    border-radius:15px !important;
+}
+.radius{
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    height: 40px !important;
+    width: 100px !important;
 }
 .inputfield:focus{
     border: 1px solid gray!important;
@@ -13,14 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:20px!important;
-    border: 1px solid #3b7fbf63!important;
     border-radius: 0px!important;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.144)!important;
+    box-shadow: 0 15px 40px 0 rgb(154, 170, 207,25%)!important;
     transition: 0.3ms ease-in-out;
-    border-radius:10px!important;
-    min-height: 550px !important;
+    min-height: 600px !important;
+    max-height: 600px !important;
+    border: 0px !important;
 }
 .card-main-blog:hover{
     transform: translateY(-2px);
@@ -32,14 +37,7 @@
     font-weight: 600;
 
 }
-.card-imag0main-blog{
-    border-radius:10px!important;
-    max-height:200px!important;
-    min-height: 270px !important;
-    padding: 10px;
 
-
-}
 .card-text-mainblog{
     font-size: 14px;
     font-weight: 500;

@@ -35,31 +35,39 @@ export default function Section() {
 
     return (
         <>
-            <Row  className=''>
+            <Row  className='d-flex justify-content-center align-items-center '>
             <div className='d-flex justify-content-center align-items-center py-5 mainsearchbardiv'>
-               <div className='d-flex justify-content-center align-items-center gap-2'>
-               <FaSearch  className='searchbar' color='#3b7fbf' onClick={handleSearch} size={25}/>
-               <input
-                   type="text"
-                   placeholder='Search'
-                   onChange={handleChange}
-                   value={input}
-                   className='inputfield text-center'
-             
-               />
-               </div> 
+            <input
+                type="text"
+                placeholder='What are you searching for ?'
+                className='inputfield text-left p-3'
+                onChange={handleChange}
+          
+            />
+            <div className=" p-[3px] ml-[-45px] bg-[#3b7fbf] w-40 h-[40px] flex items-center justify-center gap-2 radius">
+    
+          <FaSearch  className='searchbar  cursor-pointer'  color="#fff" size={15} 
+          onClick={handleSearch}/>
+          <p className='text-white text-center flex items-center justify-center pt-3'>Search</p>
+          
+            </div>
+        
             </div>
                 {filteredData.map((item,index) => (
                     <Col key={item.id} md={4} className='d-flex justify-content-center align-items-center pb-5'>
                         <Card className='d-md-flex justify-content-centerm card-main-blog' onClick={()=>navigate(routes[index])} >
-                            <CardImg src={item.IMAGE} alt={item.full_name} className='img-fluid d-flex justify-content-center align-items-center card-imag0main-blog' />
-                            <CardBody>
+                            <img src={item.IMAGE} alt={item.full_name} className='img-fluid w-100 
+                             d-flex justify-content-center align-items-center '  style={{minHeight:"300px",maxHeight:"300px"}}/>
+                            <CardBody className='p-4'>
                             <CardTitle className='title-h4'>
                                 <h4 >{item.full_name}</h4>
                             </CardTitle>
                                 <CardText className='card-text-mainblog'>
                                     <p className='para text-left'>{item.title}</p>
-                                    <Button className='read-more-btn'>Click here</Button>
+                                    <div className='flex items-center pt-3'>
+                                    <Button className='read-more-btn'>Read More</Button>
+                                    </div>
+                                  
                                 </CardText>
                             </CardBody>
                         </Card>

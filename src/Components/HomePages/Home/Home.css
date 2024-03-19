@@ -122,7 +122,7 @@ border-radius: 5px!important;
   }
 .Form{
     background-color: white;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.178)!important;
+    box-shadow: 0 15px 30px 15px  rgb(154, 170, 207,15%)!important;
     border-top-right-radius: 15%!important;
     border-bottom-left-radius: 15%!important;
     /* padding-top:3rem!important; */

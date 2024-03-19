@@ -263,10 +263,10 @@ export default function SixthBlog({title,image}) {
             </Row>
             <Blog title="Feature Blogs"/>
             <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
-                <Col md={12} className='flex items-center justify-center gap-5 py-3'>
-                    <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+                <Col md={10} className='flex items-center justify-center gap-5 py-3'>
+                    <p className='para text-white pt-2'>Interested in a little more details, let us know how we can assist you Button</p>
                     <Button variant='dark' className='btn-last-banner-contact-Us'>Expolre Services</Button>
-                    <Button variant='dark' className='btn-last-banner-contact-Us'>Get Code</Button>
+                    <Button variant='dark' className='btn-last-banner-contact-Us d-md-flex d-none'>Get Code</Button>
 
                 </Col>
             </Row>

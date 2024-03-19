@@ -5,7 +5,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import '../FirstBlogpage/FirstBlog.css'
 import Blog from '../../../Blog/Blog2';
 import Banner from '../../../Banner/Banner';
-import BlogData from './FirstBlog.json'
+import BlogData from './FirstBlog.json';
 
 
 export default function FirstBlog({title,image}) {
@@ -49,8 +49,8 @@ export default function FirstBlog({title,image}) {
                             <h2 className="hed2 text-left">A little magic of Keywords
                             </h2>
                             <p className="para text-left">
-                            Keywords are the foundation of Search Engine Optimisation. Just like a treasure map leads to hidden riches, strategically placed keywords guide search engines to your website. Identify relevant keywords related to your niche and use them naturally in your content but do not overuse them, you don’t want to be on Google’s Bad list, Do you?
                             </p>
+                            Keywords are the foundation of Search Engine Optimisation. Just like a treasure map leads to hidden riches, strategically placed keywords guide search engines to your website. Identify relevant keywords related to your niche and use them naturally in your content but do not overuse them, you don’t want to be on Google’s Bad list, Do you?
                         </div>
                       
                         <div className="d-flex flex-column align-items-center py-3 justify-content-center">
@@ -160,7 +160,7 @@ export default function FirstBlog({title,image}) {
                 <div className="blog-post-linkallmaindiv py-4 "> 
                 <h3 className="text-left  hed3">Recent Posts</h3>
                 <ul className="para">
-                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/> <li></li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
                 color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
@@ -220,10 +220,10 @@ export default function FirstBlog({title,image}) {
             </Row>
             <Blog title="Feature Blogs"/>
             <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
-                <Col md={12} className='flex items-center justify-center gap-5 py-3'>
-                    <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+                <Col md={10} className='flex items-center justify-center gap-5 py-3'>
+                    <p className='para text-white pt-2'>Interested in a little more details, let us know how we can assist you Button</p>
                     <Button variant='dark' className='btn-last-banner-contact-Us'>Expolre Services</Button>
-                    <Button variant='dark' className='btn-last-banner-contact-Us'>Get Code</Button>
+                    <Button variant='dark' className='btn-last-banner-contact-Us d-md-flex d-none'>Get Code</Button>
 
                 </Col>
             </Row>
