@@ -6,7 +6,7 @@ import { Button} from 'react-bootstrap';
 import { useState, } from 'react';
 import Marquee from 'react-fast-marquee';
 import '../../HomePages/Home/Home.css'
-import Blog2 from '../../HomePages/Blog/Blog2';
+import Blog from '../../Blog/Blog2';
 import Contact from '../../HomePages/Contact/Contact';
 import Banner from '../../HomePages/Bannerpage/Banner';
 import Count from '../../HomePages/Count/Count'
@@ -21,7 +21,7 @@ import Technical from '../TechnicalDev/Technical';
 
 
 
-export default function Home() {
+export default function Home({title}) {
     const [clients, setClients] = useState(false)
     const navigate=useNavigate()
 
@@ -208,7 +208,8 @@ export default function Home() {
                 <Testominials />
 
                 <Port />
-                <Blog2 />
+                <Blog 
+                title="Blogs"/>
            
 
             </ScrollTrigger>

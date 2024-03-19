@@ -3,10 +3,10 @@ import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 import './Android.css';
 import Marquee from 'react-fast-marquee';
-import Blog from '../../HomePages/Blog/Blog2';
+import Blog from '../../Blog/Blog2';
 import Testominials from '../../HomePages/Testominals/Testomnials';
 
-export default function Android(){
+export default function Android({title}){
     return(
         <>
         <Row className='d-flex items-center justify-center'
@@ -496,7 +496,7 @@ full-time, part-time or hourly basis to build secure and scalable applications f
             </Col>
 
         </Row>
-        <Blog/>
+        <Blog title="Blogs"/>
         
         
         

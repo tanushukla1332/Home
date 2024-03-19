@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion';
 import '../SectionsCar/SectionCar.css'
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import Blog from '../../../HomePages/Blog/Blog2';
+import Blog from '../../../Blog/Blog2';
 
 
 export default function CarSection() {

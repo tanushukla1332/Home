@@ -21,11 +21,21 @@ export default function Section() {
         setInput(e.target.value);
       
     }
+    const routes = [
+        '/firstBlog',
+        '/secondBlog',
+        '/thirdBlog',
+        '/fourthBlog',
+        '/fifthBlog',
+        '/sixthBlog'
+        // Add more routes as needed
+    ];
+
    
 
     return (
         <>
-            <Row  className='py-5'>
+            <Row  className=''>
             <div className='d-flex justify-content-center align-items-center py-5 mainsearchbardiv'>
                <div className='d-flex justify-content-center align-items-center gap-2'>
                <FaSearch  className='searchbar' color='#3b7fbf' onClick={handleSearch} size={25}/>
@@ -39,16 +49,16 @@ export default function Section() {
                />
                </div> 
             </div>
-                {filteredData.map((item) => (
-                    <Col key={item.id} md={4} className='d-flex justify-content-center align-items-center'>
-                        <Card className='d-md-flex justify-content-centerm card-main-blog' onClick={()=>navigate('/firstBlog')} >
+                {filteredData.map((item,index) => (
+                    <Col key={item.id} md={4} className='d-flex justify-content-center align-items-center pb-5'>
+                        <Card className='d-md-flex justify-content-centerm card-main-blog' onClick={()=>navigate(routes[index])} >
                             <CardImg src={item.IMAGE} alt={item.full_name} className='img-fluid d-flex justify-content-center align-items-center card-imag0main-blog' />
                             <CardBody>
                             <CardTitle className='title-h4'>
                                 <h4 >{item.full_name}</h4>
                             </CardTitle>
                                 <CardText className='card-text-mainblog'>
-                                    <p>{item.title}</p>
+                                    <p className='para text-left'>{item.title}</p>
                                     <Button className='read-more-btn'>Click here</Button>
                                 </CardText>
                             </CardBody>

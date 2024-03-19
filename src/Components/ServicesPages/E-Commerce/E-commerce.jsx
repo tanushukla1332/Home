@@ -3,10 +3,10 @@ import { Row, Col, Button } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
 import Banner from './Banner/Banner';
 import Sec from './SecSection/SecSection';
-import Blog from '../../HomePages/Blog/Blog2';
+import Blog from '../../Blog/Blog2';
 
 
-export default function ECommmerce() {
+export default function ECommmerce(title) {
 
 
 
@@ -327,7 +327,7 @@ export default function ECommmerce() {
                     <img src="/Image/tab_mobile 1.png" alt="" className='img-fluid' />
                 </Col>
             </Row>
-            <Blog />
+            <Blog  title="Blogs"/>
            
             <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
             <Col md={12} className='flex items-center justify-center gap-5 py-3'>

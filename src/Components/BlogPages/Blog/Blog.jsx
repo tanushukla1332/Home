@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Banner from '../Banner/Banner';
+import Banner from '../../Banner/Banner';
 import Section from '../Section/Section';
 import { Helmet } from 'react-helmet';
-import { useNavigate } from 'react-router';
+
 
 
 export default function BlogMain() {
-    const navigtae=useNavigate()
+
 
     return (
         <>
@@ -18,8 +18,9 @@ export default function BlogMain() {
          />
 
         </Helmet>
-        <Banner/>
-        <Section onClick={()=>navigtae('/firstBlog')}/>
+        <Banner title="Welcome To Our Blog Pages"
+        image="Image/Blog1.jpg"/>
+        <Section/>
 
 
            

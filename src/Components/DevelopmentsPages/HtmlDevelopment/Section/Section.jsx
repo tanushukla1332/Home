@@ -2,11 +2,11 @@
 import {Row,Col} from 'react-bootstrap';
 import './Section.css';
 import { FaCheck } from "react-icons/fa6";
-import Blog from '../../../HomePages/Blog/Blog2';
+import Blog from '../../../Blog/Blog2';
 
 
 
-export default function Section(){
+export default function Section(title){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center gap-5 py-5'>
@@ -430,7 +430,7 @@ export default function Section(){
 
         </Col>
         </Row>
-        <Blog/>
+        <Blog title="Blogs"/>
         
         
         

@@ -11,6 +11,9 @@ import Template from "./Components/PortFoliPages/Template/Template";
 import Contact from "./Components/ContactUsPages/ContactPage/Contact";
 import BlogMain from "./Components/BlogPages/Blog/Blog";
 import FirstBlog from "./Components/BlogPages/SubBlog/FirstBlogpage/FirstBlog";
+import ThirdBlog from "./Components/BlogPages/SubBlog/ThirdBlog/ThirdBlog";
+import FifthBlog from "./Components/BlogPages/SubBlog/FifthBlog/FifthBlog";
+import SecondBlog from "./Components/BlogPages/SubBlog/SeceondBlog/SecondBlog";
 import ServicesMain from './Components/ServicesPages/ServicesMain/Services'
 import './App.css';
 import ModalExample from "./Components/Modal/Modal";
@@ -34,6 +37,8 @@ import { useEffect } from "react";
 
 import { useLocation } from "react-router";
 import { Helmet } from "react-helmet";
+import FourthBlog from "./Components/BlogPages/SubBlog/FouthBlog/FourthBlog";
+import SixthBlog from "./Components/BlogPages/SubBlog/SixthBlog/SixthBlog";
 
 
 
@@ -73,6 +78,10 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/blogmain" element={<BlogMain/>}></Route>
           <Route path="/firstBlog" element={<FirstBlog/>}></Route>
+          <Route path="/secondBlog" element={<SecondBlog/>}></Route>
+          <Route path="/thirdBlog" element={<ThirdBlog/>}></Route>
+          <Route path="/fourthBlog" element={<FourthBlog/>}></Route>
+          <Route path="/fifthBlog" element={<FifthBlog/>}></Route>
           <Route path="/socialMedia" element={<SocialMedia/>}></Route>
           <Route path="/laraveldevlopment" element={<Laraveldevlopment/>}></Route>
           <Route path="/clients" element={<Clients/>}></Route>
@@ -85,8 +94,11 @@ export default function App() {
           <Route path="/socialMediaMarketing" element={<SocialMediaMarketing/>}></Route>
           <Route path="/Android" element={<Android/>}></Route>
           <Route path="/iOS" element={<IOS/>}></Route>
+          <Route path="/sixthBlog" element={<SixthBlog/>}></Route>
         </Routes>
+      
         <Footer/>
+
       </Container>
     </>
   );

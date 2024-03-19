@@ -2,8 +2,8 @@ import {Row,Col,Carousel,Card,CardBody,CardText,CardTitle,CardImg,Button} from '
 import { GiCheckMark } from "react-icons/gi";
 import './Section.css';
 import Testominials from '../../../HomePages/Testominals/Testomnials';
-import Blog from '../../../HomePages/Blog/Blog2';
-export default function Section(){
+import Blog from '../../../Blog/Blog2';
+export default function Section(title){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center py-4'>
@@ -544,7 +544,7 @@ specific features, decide time frames.. </p>
        
         </Col>
         </Row>
-        <Blog/>
+        <Blog title="Blogs"/>
        
 
         </>

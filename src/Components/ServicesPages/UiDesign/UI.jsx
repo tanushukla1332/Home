@@ -1,8 +1,8 @@
 import {Row,Col,Button}  from 'react-bootstrap'
-import Blog from '../../HomePages/Blog/Blog2'
+import Blog from '../../Blog/Blog2'
 
 
-export default function UI(){
+export default function UI(title){
     return(
         <>
         <Row className='d-md-flex d-none align-items-center justify-content-center '
@@ -168,7 +168,7 @@ export default function UI(){
         </Col>
 
     </Row> 
-    <Blog/>
+    <Blog title="Blogs"/>
     <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
     <Col md={12} className='flex items-center justify-center gap-5 py-3'>
         <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>

@@ -1,9 +1,9 @@
 import {Row,Col} from 'react-bootstrap';
 import { GiCheckMark } from 'react-icons/gi';
 import './Section.css'
-import Blog from '../../../HomePages/Blog/Blog2';
+import Blog from '../../../Blog/Blog2';
 
-export default function Section(){
+export default function Section(title){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center py-5'>
@@ -435,7 +435,7 @@ Information</h3>
         </Col>
   
         </Row>
-        <Blog/>
+        <Blog title="Blogs"/>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import {Row,Col,Button} from 'react-bootstrap'
-import Blog from '../../HomePages/Blog/Blog2';
+import Blog from '../../Blog/Blog2';
 import { useNavigate } from 'react-router';
 
-export default function SocialMediaMarketing(){
+export default function SocialMediaMarketing({title}){
     const navigate=useNavigate()
     return(
         <>
@@ -200,7 +200,7 @@ export default function SocialMediaMarketing(){
         </Col>
 
     </Row> 
-    <Blog/>
+    <Blog title="Blogs"/>
     <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center'>
     <Col md={12} className='flex items-center justify-center gap-5 py-3'>
         <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>

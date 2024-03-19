@@ -1,12 +1,12 @@
 
 import { Row, Col, Button } from 'react-bootstrap';
 import '../Social-Media-optimization/SocialMediaOptimization.css'
-import Blog from '../../HomePages/Blog/Blog2';
+import Blog from '../../Blog/Blog2';
 import { useNavigate } from 'react-router';
 
 
 
-export default function SocialMediaOpt() {
+export default function SocialMediaOpt(title) {
     const navigate=useNavigate()
 
     return (
@@ -193,7 +193,7 @@ export default function SocialMediaOpt() {
                 </Col>
 
             </Row>
-                <Blog/>
+                <Blog title="Blogs"/>
                 <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center mt-5'>
                 <Col md={12} className='flex items-center justify-center gap-5 py-3'>
                     <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>

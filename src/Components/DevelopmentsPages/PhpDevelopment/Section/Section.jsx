@@ -5,8 +5,8 @@ import './Section.css';
 import Section2 from '../OtherSection/Section';
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import Section3 from '../OtherSection/Section2';
-import Blog from '../../../HomePages/Blog/Blog2';
-export default function Section(){
+import Blog from '../../../Blog/Blog2';
+export default function Section(title){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center py-5'>
@@ -255,7 +255,7 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
                 </Col>
 
             </Row>
-            <Blog/>
+            <Blog title="Blogs"/>
         </>
     )
 }

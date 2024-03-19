@@ -1,11 +1,11 @@
 
 import { Row, Col, Button } from 'react-bootstrap'
 import '../SEM/SEM.css';
-import Blog from '../../HomePages/Blog/Blog2';
 import { useNavigate } from 'react-router';
+import Blog from '../../Blog/Blog2';
 
 
-export default function SEM() {
+export default function SEM(title) {
 const navigate=useNavigate()
     return (
 
@@ -421,7 +421,7 @@ const navigate=useNavigate()
 
             </Row>
 
-            <Blog />
+            <Blog  title="Blogs"/>
             <Row style={{ backgroundColor: "#5e5e5e" }} className='d-flex justify-content-center align-items-center '>
                 <Col md={10} className='d-flex justify-content-center align-items-center gap-md-5  py-3'
                 >
