@@ -414,7 +414,7 @@ const navigate=useNavigate()
                 <Col md={5} className='d-flex justify-content-center align-items-center mb-3 '>
                     <div className='custom2-shadow'>
                         <img src="/Image/Sem-project.png" alt="" className='img-fluid w-50' />
-                        <p className='para pt-3 text-center'>Search Engine Optimization</p>
+                        <p className='para pt-3 text-center cursor-pointer' onClick={()=>navigate('/seo')}>Search Engine Optimization</p>
                     </div>
 
                 </Col>
@@ -425,7 +425,7 @@ const navigate=useNavigate()
             <Row style={{ backgroundColor: "#5e5e5e" }} className='d-flex justify-content-center align-items-center '>
                 <Col md={10} className='d-flex justify-content-center align-items-center gap-md-5  py-3'
                 >
-                    <p className='para text-white'>Getting Your Dream Design is no sweat. a simple mouse click is all you need to get</p>
+                    <p className='para text-white pt-3'>Getting Your Dream Design is no sweat. a simple mouse click is all you need to get</p>
 
 
                     <Button variant='dark' className='btn1'>Click Here</Button>

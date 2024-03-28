@@ -2,16 +2,20 @@
     background-color: #3B7FBF;
 }
 .cardmain-blog2{
-    border: 1px solid rgba(128, 128, 128, 0.945)!important;
+    border: 1px solid rgba(128, 128, 128, 0.24)!important;
     border-radius: 10px;
-    margin: 10px;
+    max-width: 350px !important;
+    min-width: 350px !important;
+    min-height: 500px !important;
+    max-height: 500px !important;
+    box-shadow: 15px 15px 40px 0 rgba(154, 170, 207, 0.171)!important;
+  
 
 
 }
 .cardmain-blog2:hover{
     cursor: pointer;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.185)!important;
-    border: 1px solid  gray!important;
+    border: 1px solid  rgba(128, 128, 128, 0.233)!important;
     padding: 0px;
  
 }
@@ -82,12 +86,19 @@ width: 100%!important;
     border: 2px solid white!important;
     background-color:#020f1b5e!important;
     padding: 10px; 
+    position: absolute !important;
+    right: -35px!important;
+    overflow: hidden !important;
 }
 .blogsindicators>div>a>.carousel-control-prev-icon{
     border-radius: 50px!important;
     border: 2px solid white!important;
     background-color:#020f1b5e!important; 
     padding: 10px;
+    position: absolute !important;
+    left: -35px !important;
+    overflow: hidden !important;
+
 }
 @media screen and (max-width:786px) {
     .blogsindicators>div>a>.carousel-control-next-icon{
@@ -109,18 +120,16 @@ width: 100%!important;
     
     }
     .card-imgblogs2{
-        max-width:300px;
-        padding-top: 10px;
+        height: 600px !important;
+     
 
     }
-    .cardmain{
-        max-width: 320px!important;
-
-    }
+   
     .explore-btn-blog{
         width: 200px!important;
 
     }
+   
 }
 @media screen and (max-width:786px) {
 

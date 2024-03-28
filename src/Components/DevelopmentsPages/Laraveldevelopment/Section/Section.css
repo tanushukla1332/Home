@@ -5,6 +5,13 @@
     border-radius:20px;
     width:100%;
     border-left:20px solid #3b7fbf;
+   color: rgba(94, 94, 94);;
+}
+.laravle-section:hover{
+    background-color: #3b7fbf;
+    border-left:20px solid white;
+    border-radius:20px;
+    color: #ffff;
 }
 .laravle-section2{
     box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.082);

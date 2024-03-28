@@ -126,6 +126,7 @@ export default function Testominials(){
             </Carousel>
         </Col>
     </Row>
+    
 
     )
 }

@@ -61,11 +61,11 @@ export default function Section(title){
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>
-        <div className='php-section1 bg-[#3b7fbf]' >
+        <div className='php-section1 ' >
         <img src="Image/Ruby-3 (4).png" alt="" className='img-fluid ' style={{maxWidth:"100px"}} />
-        <h3 className='hed3  pt-2 text-center text-white'>E-commerce
+        <h3 className='hed3  pt-2 text-center text-[#3b7fbf]'>E-commerce
         Development</h3>
-        <p  className='para text-center  pt-2 text-white'>Lorem Ipsum is simply dummy 
+        <p  className='para text-center  pt-2 '>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem</p>
         </div>

@@ -3,14 +3,61 @@
 }
 
 .card-imgPort{
-    width: 100%!important;
-    height: 200px!important;
-    transition: 0.3ms ease !important;
-    box-shadow: 5px 10px  5px 10px  rgba(0, 0, 0, 0.041)!important;
+width:400px;
+height: 440px;
+
+}
+.cardmainPortfolioSec{
+    background-color: rgba(240, 248, 255, 0.74);
+box-shadow: 0 15px 20px 15px rgb(154, 170, 207,25%)!important;
+border:  0px !important;
+}
+
+.cardmainPortfolioSec .card-imgPort {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardmainPortfolioSec .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .cardmainPortfolioSec:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon-button {
+    font-size: 1rem !important;
+    color: white !important;
+    transition: transform 0.3s ease;
+    box-shadow: none !important;
+    background-color: #3B7FBF !important;
+  }
+  .cardmainPortfolioSec:hover .icon-button {
+    transform: scale(1.2);
+  }
+.card-imgPort>img{
+  width: 100%;
+  height: auto;
+transition: 0.3ms ease !important;
+border: 0px !important;
+background-color: red !important;
+
  
 }
+
+
 .card-imgPort:hover{
-    box-shadow: 5px 10px  5px 10px  rgba(0, 0, 0, 0.041)!important;
     animation: both !important;
     cursor: pointer;
 }
@@ -21,7 +68,6 @@
     margin-top:20px!important;
     border: none!important;
     border-radius:5px!important;
-    border: 1px solid rgba(128, 128, 128, 0.377) !important;
     transition: 0.3s ease-in;
 
    

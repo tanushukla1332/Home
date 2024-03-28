@@ -34,7 +34,7 @@ export default function Technical() {
                             {category.languages.map((language, languageId) => (
                                 <div key={languageId}>
                                     <img src={language.image} alt={language.name} className='img-fluid' />
-                                    <p className='para text-center text-white'>{language.name}</p>
+                                    <h3 className='text-center py-3 font-[500]'>{language.name}</h3>
                                 </div>
                             ))}
                         </div>

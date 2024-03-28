@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Rodriguez-Villegas",
-        "image": "https://www.elegantthemes.com/blog/wp-content/uploads/2018/11/shutterstock_1049564585-960.jpg",
+        "image": "https://razobyte.com/wp-content/uploads/2021/06/Blue-Ecoomerce-590x388.png",
         "category": "Health",
         "author": "Darrell Etherington",
         "authorPic": "author1.jpg",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "title": "Rainforest raises",
-        "image": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
+        "image": "https://razobyte.com/wp-content/uploads/2021/06/Forever-Ecoomerce-1-590x307.png",
         "category": "Fintech",
         "author": "Mary Ann Azevedo",
         "authorPic": "author1.jpg",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "title": "Pow.bio",
-        "image": "https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/Raseo-technology-solutions-portfolio-image-590x550.png",
         "category": "Startups",
         "author": "Christine Hall",
         "authorPic": "author1.jpg",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "title": "Recapitalization",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYK7XDaEWkDfMRMaulKEYKuWXkej6tNM43ONwuJ7bIuYwfPlAI0EJ6dwgSAQCs0ps-ILA&usqp=CAU",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/Avon-malaysia-590x453.png",
         "category": "Interacting",
         "author": "Christine Hall",
         "authorPic": "author1.jpg",
@@ -50,8 +50,8 @@
     {
         "id": 5,
         "title": "Rabbit works",
-        "image": "https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg",
-        "category": "Interacting",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/Raseo-technology-solutions-luminousprinting-portfolio-590x550.png",
+        "category": "Security",
         "author": "Kyle Wiggers",
         "authorPic": "author1.jpg",
         "published_date": "2023-10-01",
@@ -62,8 +62,8 @@
     {
         "id": 6,
         "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-        "category": "Interacting",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/Raseo-technology-Singapore-Limousine-Cars-Rental-590x550.png",
+        "category": "SEO",
         "author": "Ron Miller",
         "authorPic": "author1.jpg",
         "published_date": "2023-10-01",
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/Raseo-technology-solutions-Tribe-car-portfolio-590x550.png",
         "category": "Startup",
         "author": "Ron Miller",
         "authorPic": "author1.jpg",
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "title": "Yubico users",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16lOZY9VhyD4M4f9j-Uwja9T0ISvyLQb0bcd_tzqPKnC99Zpx4CQI-X8hnmEHD79OydE&usqp=CAU",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/RASEO-TECHNOLOGY-MGP-THE-LABEL-590x550.png",
         "category": "Startup",
         "author": "Frederic Lardinois",
         "authorPic": "author1.jpg",
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "title": "Resy platform",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16lOZY9VhyD4M4f9j-Uwja9T0ISvyLQb0bcd_tzqPKnC99Zpx4CQI-X8hnmEHD79OydE&usqp=CAU",
+        "image": "https://razobyte.com/wp-content/uploads/2017/11/RASEO-TECHNOLOGY-SOLUTIONS-Solos-590x550.png",
         "category": "Startup",
         "author": "Kyle Wiggers",
         "authorPic": "author1.jpg",
@@ -106,116 +106,8 @@
         "reading_time": "8 minutes",
         "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
         "tags": ["Startups", "Writing"]
-    },
-    {
-        "id": 10,
-        "title": "TC Startup",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0EztGrrGWCA9CYjGkTmcQEmmqdDQaxLvQg&usqp=CAU",
-        "category": "Security",
-        "author": "Neesha A. Tambe",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        "tags": ["Growth", "Writing"]
-    },
-    {
-        "id": 11,
-        "title": "Yahoo spins",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16lOZY9VhyD4M4f9j-Uwja9T0ISvyLQb0bcd_tzqPKnC99Zpx4CQI-X8hnmEHD79OydE&usqp=CAU",
-        "category": "Security",
-        "author": "Kyle Wiggers",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-        "tags": ["AI", "Writing"]
-    },
-    {
-        "id": 12,
-        "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-        "category": "Security",
-        "author": "Ron Miller",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-        "tags": ["Security", "Writing"]
-    },
-    {
-        "id": 13,
-        "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-        "category": "SEO",
-        "author": "Ron Miller",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-        "tags": ["Security", "Writing"]
-    },
-    {
-        "id": 14,
-        "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-        "category": "SEO",
-        "author": "Ron Miller",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-        "tags": ["Security", "Writing"]
-    },
-    {
-        "id": 15,
-        "title": "Okta models",
-        "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-        "category": "SEO",
-        "author": "Ron Miller",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "5 minutes",
-        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-        "tags": ["Security", "Writing"]
     }
-   ,{
-    "id": 16,
-    "title": "Okta models",
-    "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-    "category": "SEO",
-    "author": "Ron Miller",
-    "authorPic": "author1.jpg",
-    "published_date": "2023-10-01",
-    "reading_time": "5 minutes",
-    "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-    "tags": ["Security", "Writing"]
-},
-{
-    "id": 17,
-    "title": "Okta models",
-    "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-    "category": "Interacting",
-    "author": "Ron Miller",
-    "authorPic": "author1.jpg",
-    "published_date": "2023-10-01",
-    "reading_time": "5 minutes",
-    "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-    "tags": ["Security", "Writing"]
-},
-{
-    "id": 18,
-    "title": "Okta models",
-    "image": "https://static.wixstatic.com/media/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg/v1/fill/w_1000,h_603,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_a8044c42fb524b39b99632150f24494d~mv2.jpg",
-    "category": "Interacting",
-    "author": "Ron Miller",
-    "authorPic": "author1.jpg",
-    "published_date": "2023-10-01",
-    "reading_time": "5 minutes",
-    "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat cum nam ipsum voluptate. Nobis?",
-    "tags": ["Security", "Writing"]
-}
-
+    
    
    
     

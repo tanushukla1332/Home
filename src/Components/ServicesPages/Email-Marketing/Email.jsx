@@ -180,7 +180,7 @@ export default function Email({title}){
         <Col md={5} className='d-flex justify-content-center align-items-center mb-3 '>
             <div className='custom2-shadow'>
                 <img src="/Image/Sem-project.png" alt="" className='img-fluid w-50' />
-                <p className='para pt-3 text-center'>Search Engine Optimization</p>
+                <p className='para pt-3 text-center cursor-pointer' onClick={()=>navigate('/seo')}>Search Engine Optimization</p>
             </div>
 
         </Col>
@@ -189,8 +189,8 @@ export default function Email({title}){
 
 <Blog title="Blogs"/>
 <Row style={{ backgroundColor: "#5e5e5e"}} className='justify-content-center align-items-center mt-5'>
-                <Col md={12} className='flex items-center justify-center gap-5 py-3'>
-                    <p className='para text-white'>Interested in a little more details, let us know how we can assist you Button</p>
+                <Col md={10} className='flex items-center justify-center gap-5 py-3'>
+                    <p className='para text-white pt-3'>Interested in a little more details, let us know how we can assist you.</p>
                     <Button variant='dark' className='btn-last-banner-contact-Us'>Contact-us</Button>
                 </Col>
             </Row>

@@ -157,33 +157,33 @@ accounts</p>
         <p className='para text-md-center py-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry.Lorem Ipsum is simply of the printing and typesetting industry.</p>
         <div className='d-md-flex justify-content-center align-items-center gap-5'>
-        <div className='d-flex flex-col items-center CodeIgniter-section'>
+        <div className='d-flex flex-col items-center CodeIgniter-section  hover:text-[#ffff]'>
         <img src="Image/cod-3 (6).png" alt=""  className='img-fluid w-[100px]'/>
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Customized CodeIgniter 
+        <h3 className='text-center font-[600] text-[22px]'>Customized CodeIgniter 
         Services</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='d-flex flex-col items-center CodeIgniter-section'>
+        <div className='d-flex flex-col items-center CodeIgniter-section hover:text-[#fff]'>
         <img src="Image/cod-3 (5).png" alt=""  className='img-fluid w-[70px]'/>
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>CodeIgniter Web 
+        <h3 className=' text-center font-[600] text-[22px]'>CodeIgniter Web 
         Development</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500]  text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='d-flex flex-col items-center CodeIgniter-section bg-[#3b7fbf]'>
+        <div className='d-flex flex-col items-center CodeIgniter-section  hover:text-[#ffff]'>
         <img src="Image/cod-3 (4).png" alt=""  className='img-fluid w-[90px]'/>
-        <h3 className='hed3 text-center text-white' style={{color:"#3b7fbf" }}>E-commerce
+        <h3 className='text-center font-[600] text-[22px]'>E-commerce
         Development</h3>
-        <p className='para fs-md-6 fs-6 text-center text-white'>Lorem Ipsum is simply dummy 
+        <p className='text-center text-[15px]  fs-sm-6  font-[500]'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -197,9 +197,9 @@ accounts</p>
         <div className='d-md-flex d-none justify-content-center align-items-center gap-5'>
         <div className='d-flex flex-col items-center CodeIgniter-section'>
         <img src="Image/cod-3 (3).png" alt=""  className='img-fluid w-[80px]'/>
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>CodeIgniter Migration 
+        <h3 className=' text-center font-[600] text-[22px]' >CodeIgniter Migration 
         Services</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -208,9 +208,9 @@ accounts</p>
         </div>
         <div className='d-flex flex-col items-center CodeIgniter-section'>
         <img src="Image/cod-3 (2).png" alt=""  className='img-fluid w-[70px]'/>
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>CodeIgniter Upgrade 
+        <h3 className=' text-center font-[600] text-[22px]'>CodeIgniter Upgrade 
         Services</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -219,9 +219,9 @@ accounts</p>
         </div>
         <div className='d-flex flex-col items-center CodeIgniter-section'>
         <img src="Image/cod-3 (1).png" alt=""  className='img-fluid w-[90px]'/>
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Module/Plug-in 
+        <h3 className='text-center font-[600] text-[22px]'>Module/Plug-in 
         Development</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -304,9 +304,9 @@ accounts</p>
         <div className='d-md-flex justify-content-center align-items-center gap-5 mb-4'>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
     
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Certified PHP Expert 
+        <h3 className=' text-center font-[600] text-[22px]'>Certified PHP Expert 
         Team</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -315,9 +315,9 @@ accounts</p>
         </div>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
         
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Affordable Collaboration
+        <h3 className=' text-center font-[600] text-[22px]'>Affordable Collaboration
         </h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'> Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -326,8 +326,8 @@ accounts</p>
         </div>
         <div className='d-flex flex-col items-center CodeIgniter-section1' >
 
-        <h3 className='hed3 text-center ' style={{color:"#3b7fbf" }}>Flexible Hiring Models</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <h3 className=' text-center font-[600] text-[22px]'>Flexible Hiring Models</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -341,8 +341,8 @@ accounts</p>
         <div className='d-md-flex  d-none justify-content-center align-items-center gap-5'>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
    
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>End-to-end Solutions</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <h3 className=' text-center font-[600] text-[22px]'>End-to-end Solutions</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
@@ -351,18 +351,18 @@ accounts</p>
         </div>
         <div className='d-flex flex-col items-center CodeIgniter-section1'>
 
-        <h3 className='hed3 text-center' style={{color:"#3b7fbf"}}>Transparent Approach</h3>
-        <p className='para fs-md-6 fs-6 text-center'>Lorem Ipsum is simply dummy 
+        <h3 className=' text-center font-[600] text-[22px]'>Transparent Approach</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text
         Lorem Ipsum is simply dummy 
         text of the printing and text.</p>
         </div>
-        <div className='d-flex flex-col items-center CodeIgniter-section1' style={{backgroundColor:"#3b7fbf"}}>
+        <div className='d-flex flex-col items-center CodeIgniter-section1' >
       
-        <h3 className='hed3 text-center text-white' style={{color:"#3b7fbf"}}>100% Client Satisfaction</h3>
-        <p className='para fs-md-6 fs-6 text-center text-white'>Lorem Ipsum is simply dummy 
+        <h3 className=' text-center font-[600] text-[22px]'>100% Client Satisfaction</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-center'>Lorem Ipsum is simply dummy 
         text of the printing and 
         typesetting industry.Lorem 
         Ipsum is simply dummy text

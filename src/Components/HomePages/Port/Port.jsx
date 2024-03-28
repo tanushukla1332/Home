@@ -3,15 +3,16 @@ import { Row, Col, Card, CardBody, CardImg, CardTitle, CardText, Button } from '
 import Portdata from '..//Port/Port.json';
 import '../Port/Port.css'
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useNavigate } from 'react-router';
 
 export default function Port() {
-    const [currentPage, setCurrentPage] = useState(2);
+    const navigate=useNavigate()
+    const [currentPage, setCurrentPage] = useState(1);
     const recordsPerPage =2;
     const lastIndex = currentPage * recordsPerPage;
     const firstIndex = lastIndex - recordsPerPage;
     const visibleRecords = Portdata.slice(firstIndex, lastIndex);
     const numberOfPages = Math.ceil(Portdata.length / recordsPerPage);
-
     const handlePageClick = (index) => {
         setCurrentPage(index);
 
@@ -35,28 +36,24 @@ export default function Port() {
                     <h3 className='hed2 '>Portfolio</h3>
                     <p className='subheading-sections'>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div className={`AllbuttonForMove port-text ${currentPage === 2 ? '' : 'slide'}`} >
-                    {visibleRecords.map((item) => (
-                        <Col key={item.id} md={6}>
-                            <div className='port-text'>
-                                <Card className='card-portfolio-main'>
-                                    <CardBody>
-                                        <FaExternalLinkAlt className='icon-link' size={45} color='#3B7FBF' />
-                                        <img src={item.image} alt="" className='img-fluid'
-                                            style={{
-                                               height  :"50vh",
-                                                padding: "16px",
-                                                objectFit: "cover",
-                                                opacity: "0.9",
-                                            }}
-                                        />
-                                        <CardTitle><h4>{item.title}</h4></CardTitle>
+                <div className={`AllbuttonForMove port-text ${currentPage === 1 ? '' : 'slide'}`} >
+                    {visibleRecords.map((item,id) => (
+                        <Col key={id} md={6} className='d-md-flex justify-content-center align-items-center pt-5'>
+                        <Card className='Card-Portfolio'>
+                            <div className='Port-imgPort'>
+                                <img src={item.image} variant='top' className='img-fluid' />
+                                <div className="overlay-link">
+                                    <FaExternalLinkAlt  className="icon-button" size={35} color='#ffff'onClick={()=>navigate('/portfolio')}/>
+                                </div>
+                            </div>
+                                    <CardBody>   
+                                        <CardTitle><h4 className='hed3'>{item.title}</h4></CardTitle>
                                         <CardText>
-                                            <h6>{item.subTitle}</h6>
+                                            <h6 className='para text-center'>{item.subTitle}</h6>
                                         </CardText>
                                     </CardBody>
                                 </Card>
-                            </div>
+                            
                         </Col>
                     ))}
                 </div>

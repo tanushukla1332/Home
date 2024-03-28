@@ -34,28 +34,29 @@ export default function Section(title){
         <Col md={10} className='p-4 d-flex flex-column gap-3'>
         <h3 className='hed2 text-center'>Advantages of Laravel</h3>
         <div className='laravle-section'>
-        <h3 className='hed3'>Modular pacakging system</h3>
-        <p className='para'>Laravel comes with a dedicated dependency manager called Composer, allowing developers to easily add or remove packages as needed, 
+        <h3 className='font-[600] text-[25px]'>Modular pacakging system</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-left'>Laravel comes with a dedicated dependency manager called Composer, allowing developers to easily add or remove packages as needed, 
         enhancing flexibility and scalability.</p>
         </div>
-        <div className='laravle-section2'>
-        <h3 className='hed3 text-white'>Eloquent ORM</h3>
-        <p className='para text-white'>Laravel's ORM (Object-Relational Mapping) simplifies database interactions by providing a fluent, expressive syntax for working with 
+        <div className='laravle-section'>
+        <h3 className='font-[600] text-[25px]'>Eloquent ORM</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-left'>
+        Laravel's ORM (Object-Relational Mapping) simplifies database interactions by providing a fluent, expressive syntax for working with 
         databases. This not only reduces boilerplate code but also improves readability and maintainability..</p>
         </div>
         <div className='laravle-section'>
-        <h3 className='hed3'>Blade Templating Engine</h3>
-        <p className='para'>Blade, Laravel's powerful templating engine, offers a simple yet robust way to create layouts and include dynamic content. With features like 
+        <h3 className='font-[600] text-[25px]'>Blade Templating Engine</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-left'>Blade, Laravel's powerful templating engine, offers a simple yet robust way to create layouts and include dynamic content. With features like 
         inheritance, sections, and directives, Blade accelerates the development of UI components.</p>
         </div>
         <div className='laravle-section d-md-block d-none'>
-        <h3 className='hed3'>Built-in Authentication and Authorization</h3>
-        <p className='para'>Laravel provides a seamless authentication system out of the box, making it effortless to implement user authentication and access control. 
+        <h3 className='font-[600] text-[25px]'>Built-in Authentication and Authorization</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-left'>Laravel provides a seamless authentication system out of the box, making it effortless to implement user authentication and access control. 
         This helps enhance the security of your web applications without the need for extensive custom coding.</p>
         </div>
         <div className='laravle-section d-md-block d-none'>
-        <h3 className='hed3'>Task Scheduling and Queues</h3>
-        <p className='para'>Laravel simplifies the execution of recurring tasks and background jobs through its intuitive task scheduling and queueing mechanisms. This 
+        <h3 className='font-[600] text-[25px]'>Task Scheduling and Queues</h3>
+        <p className='text-[15px]  fs-sm-6  font-[500] text-left'>Laravel simplifies the execution of recurring tasks and background jobs through its intuitive task scheduling and queueing mechanisms. This 
         ensures smoother performance and improved responsiveness for your web applications.</p>
         </div>
 

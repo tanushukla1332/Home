@@ -80,6 +80,7 @@ const handleAboutMenu=()=>{
     setClick(!click)
   }
   const content= <>
+
   <div   className="lg:hidden z-1000 block absolute top-26 h-[90vh] w-50  right-0 bg-white backdrop-blur-lg bg-opacity-30  py-3">
   <ul className="flex flex-col gap-[25px] text-[18px] items-center ">
     <Link to='/'  className='no-underline navlinkmenutitle '> <li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] '>Home</li></Link>
@@ -89,8 +90,8 @@ const handleAboutMenu=()=>{
     <div className="group">
       <div className="flex items-center">
         <Link
-          to="/about"
-          className="navlinkmenutitle no-underline flex items-center"
+        
+          className="navlinkmenutitle no-underline flex items-center disable"
           onClick={handleAboutMenu}
         >
           <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'>
@@ -139,7 +140,7 @@ const handleAboutMenu=()=>{
     <div className="flex items-center">
       <Link
         to="/"
-        className="navlinkmenutitle no-underline flex items-center"
+        className="navlinkmenutitle no-underline flex items-center disable"
         onClick={handleActive}
       >
         <li className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'>
@@ -531,7 +532,7 @@ const handleAboutMenu=()=>{
     
     {/* Mega Menu Start*/}
     <div className="group">
-    <Link to="/about" className="navlinkmenutitle no-underline">
+    <Link className="navlinkmenutitle no-underline disable">
      <span className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e]  text-[18px] navlinkmenutitle' 
      onClick={handleAboutMenu}
      onMouseOver={handleAboutMenu} 
@@ -549,6 +550,15 @@ const handleAboutMenu=()=>{
     <div ref={dropdownRef} className="flex-col items-center absolute  top-[103px] py-1 px-2  border-top 
     rounded-1 shadow-lg bg-gray-100 z-20 text-black duration-300 "
     onMouseLeave={handleAboutMenu} >
+    <div className="grid grid-cols  md:grid-cols">
+<div className=" flex flex-col justify-center items-center">
+<Link to='/about'  className='no-underline navlinkmenutitle hover:no-underline'>
+<li className='hover:text-[#3B7FBF]  cusror-pointer text-[#5e5e5e] ' onClick={handleAboutMenu}>About Us</li>
+</Link>
+
+</div>
+
+</div>
 <div className="grid grid-cols  md:grid-cols">
 <div className=" flex flex-col justify-center items-center">
 <Link to='/clients'  className='no-underline navlinkmenutitle hover:no-underline'>
@@ -582,7 +592,7 @@ const handleAboutMenu=()=>{
 
     {/* Mega Menu Start*/}
     <div className="group">
-    <Link  to ="/services" className="navlinkmenutitle no-underline"> 
+    <Link className="navlinkmenutitle no-underline disable"> 
     <span 
       className='hover:text-[#3B7FBF] cursor-pointer text-[#5e5e5e] text-[18px] navlinkmenutitle'
       onClick={handleActive}
@@ -774,7 +784,9 @@ const handleAboutMenu=()=>{
     </div>
 
     <div>
-            <button className="block sm:hidden " onClick={handleClick}>
+
+            <button className="block sm:hidden " 
+            onClick={handleClick}>
               {click ?<GrClose size={35}  />
               
               :<FiMenu size={35} />}
