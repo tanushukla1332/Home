@@ -85,48 +85,39 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
         <img src="Image/php-5 (9).png" alt="" className='img-fluid' style={{maxWidth:"100px"}} />
         <h3 className='hed3 pt-2 text-center' style={{color:"#3b7fbf"}}>Custom PHP Web 
         Development</h3>
-        <p  className='para  text-center pt-2' >Lorem Ipsum is simply dummy 
-        text of the printing and 
-        typesetting industry.Lorem</p>
+      
         </div>
         <div className='php-section1'>
         <img src="Image/php-5 (8).png" alt="" className='img-fluid ' style={{maxWidth:"100px"}} />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>Full-Stack PHP 
         Development</h3>
-        <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy 
-        text of the printing and 
-        typesetting industry.Lorem</p>
+      
         </div>
         <div className='php-section1'>
         <img src="Image/php-5 (7).png" alt="" className='img-fluid ' style={{maxWidth:"100px"}} />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>PHP API Development 
         & Integrations</h3>
-        <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy 
-        text of the printing and 
-        typesetting industry.Lorem</p>
+    
         </div>
         </div>
         <div className='d-md-flex  d-none justify-content-center align-items-center gap-5 p-3'>
         <div className='php-section1'>
         <img src="Image/php-5 (6).png" alt="" className='img-fluid' style={{maxWidth:"100px"}} />
-        <h3 className='hed3 pt-2' style={{color:"#3b7fbf"}}>PHP Framework 
+        <h3 className='hed3 pt-2 text-center' style={{color:"#3b7fbf"}}>PHP Framework 
         Development</h3>
-        <p  className='para text-center pt-2' >Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem</p>
+    
         </div>
         <div className='php-section1 '>
         <img src="Image/php-5 (5).png" alt="" className='img-fluid ' style={{width:"100px"}} />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>PHP CMS/Platforms 
         Development</h3>
-        <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem</p>
+     
         </div>
         <div className='php-section1'>
-        <img src="Image/php-5 (4).png" alt="" className='img-fluid ' style={{width:"100px"}} />
+        <img src="Image/php.png" alt="" className='img-fluid ' style={{width:"100px"}} />
         <h3 className='hed3  pt-2 text-center' style={{color:"#3b7fbf"}}>PHP Back-End & Web 
         Services</h3>
-        <p  className='para text-center pt-2'>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem</p>
+      
         </div>
         </div>
         <div className='d-md-flex  d-none justify-content-center align-items-center gap-5 p-3'>
@@ -134,22 +125,19 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
         <img src="Image/php-5 (3).png" alt="" className='img-fluid' style={{width:"100px"}} />
         <h3 className='hed3 pt-2 text-center' style={{color:"#3b7fbf"}}>Custom CRM, ERP & 
         Portal Development</h3>
-        <p  className='para text-center pt-2' >Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem</p>
+      
         </div>
         <div className='php-section1'>
         <img src="Image/php-5 (2).png" alt="" className='img-fluid ' style={{width:"100px"}} />
         <h3 className='hed3 text-center pt-2' style={{color:"#3b7fbf"}}>PHP Website Support 
         & Maintenance</h3>
-        <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem </p>
+     
         </div>
         <div className='php-section1'>
         <img src="Image/php-5 (1).png" alt="" className='img-fluid ' style={{width:"100px"}} />
         <h3 className='hed3 text-center pt-2' style={{color:"#3b7fbf"}}>PHP Web APP 
         Upgradation & Migration</h3>
-        <p  className='para text-center  pt-2'>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry.Lorem </p>
+   
         </div>
        
 
@@ -162,6 +150,62 @@ style={{backgroundImage:"url('Image/Rectangle 211 (1).png')",backgroundRepeat:"n
 
         </Col>
 
+        </Row>
+
+  <Row className='d-flex justify-content-center align-items-center py-5 bg-[#5aa1e333]'>
+        <h2 className='hed2 text-[#3b7fbf] text-center'>Leveraging Latest PHP Versions and Features</h2>
+        <p className='para text-center text-[#3b7fbf]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply</p>
+        <Col md={10}>
+        <div>
+        <div className='flex items-center justify-center gap-5 py-5'>
+        <div className='php-version-div'>
+        <img src="Image/php-6 (1).png" alt="" className='img-fluid' />
+        <h3 className='hed3'>Embracing PHP 8</h3>
+        <p className='para'>Leveraging the newest features and 
+        performance improvements introduced in 
+        PHP 8 to enhance the functionality and 
+        efficiency of your website.</p>
+        </div>
+        <div className='php-version-div'>
+        <img src="Image/php-6 (5).png" alt="" className='img-fluid' />
+        <h3 className='hed3'>Improved Error Handling</h3>
+        <p className='para'>Implementing PHP's enhanced error 
+        handling mechanisms to ensure robustness 
+        and reliability in your applications.</p>
+        </div>
+        <div className='php-version-div'> 
+        <img src="Image/php-6 (4).png" alt="" className='img-fluid' />
+        <h3 className='hed3'>JIT Compilation</h3>
+        <p className='para'>Harnessing PHP's just-in-time (JIT) 
+        compilation capabilities to boost the 
+        performance of CPU-intensive tasks, 
+        delivering faster execution times and 
+        improved responsiveness.</p>
+        </div>
+        </div>
+        <div className='flex items-center justify-center gap-5'>
+        <div className='php-version-div'>
+        <img src="Image/php-6 (1).png" alt="" className='img-fluid' />
+        <h3 className='hed3'>Embracing PHP 8</h3>
+        <p className='para'>Leveraging the newest features and 
+        performance improvements introduced in 
+        PHP 8 to enhance the functionality and 
+        efficiency of your website.</p>
+        </div>
+        <div className='php-version-div'>
+        <img src="Image/php-6 (5).png" alt="" className='img-fluid' />
+        <h3 className='hed3'>Improved Error Handling</h3>
+        <p className='para'>Implementing PHP's enhanced error 
+        handling mechanisms to ensure robustness 
+        and reliability in your applications.</p>
+        </div>
+      
+  
+        </div>
+        </div>
+
+        </Col>
         </Row>
         <Row className='d-flex justify-content-center align-items-center py-5'
         style={{

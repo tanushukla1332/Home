@@ -1,6 +1,23 @@
 .Codesectionbg{
     background: linear-gradient(to bottom, rgba(78,207,255), rgba(59,127,191));
 }
+.code-firstdiv-section{
+    box-shadow: 0 15px 40px 10px  rgba(154,170,207,25%) !important;
+    border-radius: 15px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+  
+ 
+}
+.code-firstdiv-section:hover{
+    animation:swing;
+    animation-duration: 1s;
+
+}
 
 .CodeIgniter-section{
     box-shadow: 0 15px 20px 15px rgb(154, 170, 207,25%)!important;
@@ -75,6 +92,18 @@
         height: 120px;
         width: 100px;
         padding: 20px 30px;
+    }
+    .code-firstdiv-section{
+        box-shadow: 0 15px 40px 10px  rgba(154,170,207,25%) !important;
+        border-radius: 15px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 250px;
+      
+     
     }
 
 

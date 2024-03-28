@@ -4,30 +4,46 @@
     width:100px;
 }
 .bgphp{
-    background: linear-gradient( #3B7FBF,#4ECEFE);
+    background: linear-gradient(#4ECEFE,50%,#3B7FBF);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.bgphp2{
+    background: linear-gradient(#3B7FBF,50%,#4ECEFE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+
+}
+.php-version-div{
+    background-color: white;
+    box-shadow: 0 15px 40px 10px rgb(154, 170, 207,20%);
+    width: 300px;
+    padding: 15px ;
+    border-radius: 5px;
+}
+
 .php-section-services{
     background-color: white;
-    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.062);
+    box-shadow: 15px 15px 40px 0 rgba(154, 170, 207, 0.171)!important;
     border-radius: 10px;
     padding: 20px 15px;
-    width:230px;
-    height: 300px;
+    width:335px;
+    height: 327px;
 }
 .php-section-services2{
     background-color: white;
-    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.062);
+    box-shadow: 15px 15px 40px 0 rgba(154, 170, 207, 0.171)!important;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+     padding: 5px 10px ;
     width:230px;
-    height:250px;
+    height:300px;
+    text-align: left;
 
 }
 .php-section1{

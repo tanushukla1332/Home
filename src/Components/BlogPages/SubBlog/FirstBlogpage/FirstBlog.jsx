@@ -6,9 +6,11 @@ import '../FirstBlogpage/FirstBlog.css'
 import Blog from '../../../Blog/Blog2';
 import Banner from '../../../Banner/Banner';
 import BlogData from './FirstBlog.json';
+import { useNavigate } from 'react-router';
 
 
 export default function FirstBlog({title,image}) {
+    const navigate =useNavigate()
 
       
     
@@ -26,7 +28,7 @@ export default function FirstBlog({title,image}) {
                 className="px-0  py-5  justify-content-center gap-5"
                >
                {BlogData.map((item,index)=>(
-                <Col md={7} className="d-flex flex-column align-items-center py-3 justify-content-center" >
+                <Col md={6} className="d-flex flex-column align-items-center py-3 justify-content-center" >
 
                 <div className="px-0 ">
                         <div
@@ -144,7 +146,7 @@ export default function FirstBlog({title,image}) {
            
                
                 
-                <Col md={3} className=" py-5 coldiv">
+                <Col md={4} className=" py-5 coldiv">
                 <div className='d-flex justify-content-center align-items-center'>
                 <input
                     type="text"
@@ -152,25 +154,23 @@ export default function FirstBlog({title,image}) {
                     className='inputfield text-center'
               
                 />
-                <div className="bg-[#3b7fbf] p-[3px] ml-[-5px]">
+                <div className="bg-[#3b7fbf] p-[8px] ml-[-5px] ">
                 <FaSearch  className='searchbar '  color="#ffff" size={25}/>
                 </div>
-            
                 </div> 
                 <div className="blog-post-linkallmaindiv py-4 "> 
                 <h3 className="text-left  hed3">Recent Posts</h3>
                 <ul className="para">
-                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/> <li></li></div>
+                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/><li onClick={()=>navigate('/secondBlog')}>Mobile Website v/s responsive website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-                color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/thirdBlog')}>How to Make Your E-commerce Website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/fourthBlog')}>Figma v/s Adobe XD</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-               color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+               color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/fifthBlog')}>Why e-commerce Brands are failing.</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
-                <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/sixthBlog')}>How Social Media is changing .</li></div>
+                
                
               
                 </ul>
@@ -178,37 +178,35 @@ export default function FirstBlog({title,image}) {
                 </div>
                 <div className="blog-post-linkallmaindiv "> 
                 <h3 className="text-left  hed3">Related Posts</h3>
+              
                 <ul className="para">
-                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/><li onClick={()=>navigate('/secondBlog')}>Mobile Website v/s responsive website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-                color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/thirdBlog')}>How to Make Your E-commerce Website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/fourthBlog')}>Figma v/s Adobe XD</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-               color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+               color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/fifthBlog')}>Why e-commerce Brands are failing.</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
-                <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/sixthBlog')}>How Social Media is changing .</li></div>
+                
                
               
                 </ul>
-        
                 </div>
                 <div className="blog-post-linkallmaindiv"> 
                 <h3 className="text-left hed3">Other Post</h3>
                 <ul className="para">
-                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                <div className="d-flex align-items-center gap-2"><MdKeyboardDoubleArrowRight  color="#3b7fbf" size={25}/><li onClick={()=>navigate('/secondBlog')}>Mobile Website v/s responsive website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-                color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/thirdBlog')}>How to Make Your E-commerce Website</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/fourthBlog')}>Figma v/s Adobe XD</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight 
-               color="#3b7fbf" size={25}/> <li>Lorem, ipsum dolor.</li></div>
+               color="#3b7fbf" size={25}/> <li onClick={()=>navigate('/fifthBlog')}>Why e-commerce Brands are failing.</li></div>
                 <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
-                <div className="d-flex  align-items-center gap-2"><MdKeyboardDoubleArrowRight
-                color="#3b7fbf" size={25} /> <li>Lorem, ipsum dolor.</li></div>
+                color="#3b7fbf" size={25} /> <li onClick={()=>navigate('/sixthBlog')}>How Social Media is changing .</li></div>
+                
                
               
                 </ul>
